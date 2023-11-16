@@ -36,3 +36,15 @@ person.name = '';
 const targetMember = 'name';
 person['name'] = 'John';
 
+
+const person = {
+    name: "Mosh",
+    walk () {
+        console.log(this);
+    }
+};
+
+person.walk();
+
+const walk = person.walk;
+
