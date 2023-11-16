@@ -68,10 +68,19 @@ walk();
 
 // Arrow Function
 
-const square = function(number) {
-    return number * number;
-}
+// const square = function(number) {
+//     return number * number;
+// }
 
 const square = number => number * number;
+
+
+const jobs =  [
+    { id: 1, isActive: true },
+    { id: 2, isActive: true },
+    { id: 3, isActive: false},
+];
+
+jobs.filter(function(job) {return job.isActive; })
 
 
