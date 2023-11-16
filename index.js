@@ -81,6 +81,7 @@ const jobs =  [
     { id: 3, isActive: false},
 ];
 
-jobs.filter(function(job) {return job.isActive; })
+jobs.filter(function(job) {return job.isActive; });
+const activeJobs = jobs.filter(job => job.isActive);
 
 
