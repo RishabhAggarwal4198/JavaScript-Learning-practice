@@ -72,7 +72,6 @@ const square = function(number) {
     return number * number;
 }
 
-const square = () => {
-    return number * number;
-}
+const square = number => number * number;
+
 
