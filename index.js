@@ -24,6 +24,17 @@ function greet (name , lastName) {
 greet('Rakshita', 'Aggarwal');
 
 
+
+
+
+
+
+
+
+
+
+// ES6 Tutorial: Learn Modern JavaScript in 1 Hour
+
 const person = {
     name: 'Mosh',
     walk() {},
@@ -46,5 +57,22 @@ const person = {
 
 person.walk();
 
-const walk = person.walk;
+const walk = person.walk(person);
+walk();
+
+
+
+
+
+
+
+// Arrow Function
+
+const square = function(number) {
+    return number * number;
+}
+
+const square = () => {
+    return number * number;
+}
 
