@@ -17,7 +17,20 @@ console.log(selectedColors.length);
 
 
 function greet (name , lastName) {
-    console.log('Hello' + name + 'Your complete lastname is ' + lastName + ' right ?');
+    console.log('Hello ' + name + 'Your complete lastname is ' + lastName + ' right ?');
+    
 }
 
 greet('Rakshita', 'Aggarwal');
+
+
+const person = {
+    name: 'Mosh',
+    walk() {},
+    talk() {}
+};
+
+person.talk();
+
+const targetMember = 'name';
+person['name'] = 'John';
