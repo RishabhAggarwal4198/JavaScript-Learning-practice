@@ -31,6 +31,8 @@ const person = {
 };
 
 person.talk();
+person.name = '';
 
 const targetMember = 'name';
 person['name'] = 'John';
+
