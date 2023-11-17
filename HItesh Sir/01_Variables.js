@@ -13,6 +13,12 @@ accountEmail =  "rushikesh@gmail.com";
 accountPassword = "21212121";
 accountCity = "Bengaluru";
 
+
+/*
+Prefer not to user "var"
+because of issue in block scope and functional scope
+*/
+
 console.table([accountId, accountEmail, accountPassword, accountCity]);
 
 
