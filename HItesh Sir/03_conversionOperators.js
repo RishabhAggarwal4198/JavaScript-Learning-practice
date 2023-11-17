@@ -20,3 +20,16 @@ console.log(valueInNumber_2);  // it shows "NaN" i.e. NOT A NUMBER
 // true => 1;  false => 0;
 
 
+
+
+let isLoggedIn = 0;
+
+let booleanNumber = Boolean(isLoggedIn);
+console.log(typeof booleanNumber);
+console.log(booleanNumber);
+
+// 1 => true; 0 => false
+// "" => false 
+// "Hitesh" => true
+
+
