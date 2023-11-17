@@ -1,3 +1,5 @@
+Commit message :- docs: Changes in the documentation
+
 for JAVASCRIPT :-
 
 1) Ist CLI APP video by TANAY PRATAP Sir
@@ -7,6 +9,36 @@ for JAVASCRIPT :-
 3) JavaScript Full Course (2023) - Beginner to Pro - Part 1
 (by SUPER SIMPLE DEV )
 
+
+
+
+
++ read SELF EL books (books which talks about productivity etc.)
+
+
++ use CODE-FORCES for DSA rather than LEETCODE (bcoz on LeetCode basically u cram the DSA )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>> Javascript in 1 shot in Hindi | part 1 (By Hitesh Sir)
+
+
++ watch @1:43:44  
+If u want to master JavaScript just 
+master "JavaScript Objects" &   "Browser Web events/ Browser Events"
+
++ watch @1:53:50 Very importanr for intervies
 
 
 
