@@ -13,6 +13,14 @@ console.log(balance.toFixed(4));
 
 
 
+
+
+// Precision value
+
 const otherNumber = 23.8966
 
 console.log(otherNumber.toPrecision(3));
+
+const otherNumber2 = 123.2966
+
+console.log(otherNumber2.toPrecision(3));
