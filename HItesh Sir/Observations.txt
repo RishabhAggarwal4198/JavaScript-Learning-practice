@@ -44,7 +44,9 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events"
 
 + [watch @2:09:57]  String Interpolation
 
-+ [ watch @2:12:59] Strings k bare mein Padhayi  
++ [ watch @2:12:59, @2:19:53] Strings k bare mein Padhayi  
+
++ [ watch @2:28:12 ] Split Strings 🍁🍁🍁🍁
 
 
 

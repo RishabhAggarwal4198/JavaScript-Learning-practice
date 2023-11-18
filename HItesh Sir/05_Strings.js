@@ -60,3 +60,15 @@ console.log(url.includes('sundar'))
 
 
 
+let value = "I went to a nice hill station. "
+
+console.log(value.split('-'));
+
+
+
+
+
+
+
+
+
