@@ -56,6 +56,32 @@ const myFunction = function () {
 
 
 
+let myYoutubename = "aggarwalrishabh4198@gmail.com";
+
+let anothername = myYoutubename
+anothername = "Delhi_Cannaught_Place"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+
+
+let userTwo = userOne 
+
+userTwo.email = "rishabh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
 
 
   

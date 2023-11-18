@@ -32,13 +32,21 @@ for JAVASCRIPT :-
 
 
 >>>> Javascript in 1 shot in Hindi | part 1 (By Hitesh Sir)
+start watching from @2:03:59
 
 
-+ watch @1:43:44  
-If u want to master JavaScript just 
++ [watch @1:43:44] If u want to master JavaScript just 
 master "JavaScript Objects" &   "Browser Web events/ Browser Events"
 
-+ watch @1:53:50 Very importanr for intervies
++ [watch @1:53:50] Very importanr for interviews
+
++ [watch @2:04:11] Very importanr for interviews about STORAGE in STACK & HEAP 
+
++ [watch @2:09:57]  String Interpolation
+
++ [ watch @2:12:59] Strings k bare mein Padhayi  
+
+
 
 
 
