@@ -50,6 +50,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events"
 
 +[ watch @2:37:26 ] Precision Strings 🍁🍁🍁🍁
 
++ [ watch @2:51:40 ]Math.floor use in MINIMUM & MAXIMUM value 🍁🍁🍁🍁
+
 
 
 

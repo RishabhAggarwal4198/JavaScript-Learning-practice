@@ -83,7 +83,3 @@ const maxValue = 20;
 
 console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);
 
-
-
-
-
