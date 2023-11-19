@@ -18,6 +18,13 @@ let myCreatedDate3 = new Date ("01-14-2023");
 // console.log(myCreatedDate3.toLocaleString()); // Answer is "14/1/2023, 12:00:00 am"
 
 
+let myTimeStamp = Date.now();
+
+console.log(myTimeStamp);
+console.log(myCreatedDate.getTime());
+
+console.log(Date.now());
+
 
 
 
