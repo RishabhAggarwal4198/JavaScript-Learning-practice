@@ -36,8 +36,13 @@ let newDate = new Date (2023, 2 , 22);
 console.log(newDate.getMonth() + 1);
 console.log(newDate.getDay()); 
 
+// console.log(`${newDate.getDay()} is the time`);  
 
-console.log(`${newDate.getDay()} is the time`);  
+newDate.toLocaleString('default', {
+    weekday: "long"
+
+})
+
 
 
 
