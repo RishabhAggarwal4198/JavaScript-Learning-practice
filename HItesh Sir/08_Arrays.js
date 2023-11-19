@@ -1,6 +1,6 @@
 //  Arrays
 
-const myArr = [1, 2, 3, 4, 5]
+const myArr = [0, 1, 2, 3, 4, 5]
 
 const myHeros = ["Superman", "Batman", "Zoro"]
 // console.log(myHeros[1]);
@@ -28,17 +28,17 @@ myArr.shift(); // For  REMOVING a value on to the 0th position of the Array
 // console.log(myArr); //  Answer is [ 0, 1, 2, 3, 4, 5 ]
 
 
-console.log(myArr.includes(9)); // For knowing wether given value is in the original Array or not ?
+// console.log(myArr.includes(9)); // 📍 For knowing wether given value is in the original Array or not ?
 //  Answer is "false"
 
-console.log(myArr.indexOf(4)); // For knowing wether given value of INDEX is in the original Array or not ?
+// console.log(myArr.indexOf(4)); // 📍For knowing wether given value of INDEX is in the original Array or not ?
 //  Answer is "-1"  i.e. i don't know
 
 
 const newArr = myArr.join()  // converts all the values of an array into STRING
 
-// console.log(myArr);  //  Answer is "[ 1, 2, 3, 4, 5 ]"
-// console.log(newArr); //  Answer is "1,2,3,4,5" [as it got JOINED]
+// console.log(myArr);  // 📍 Answer is "[ 1, 2, 3, 4, 5 ]"
+// console.log(newArr); //  📍 Answer is "1,2,3,4,5" [as it got JOINED]
 
 
 
@@ -46,10 +46,21 @@ const newArr = myArr.join()  // converts all the values of an array into STRING
 
 // slice, splice
 
-console.log("A ", myArr);
+// console.log("A ", myArr);  // 📍
 
-const myn1 = myArr. slice(1, 3)  // return the value of  the ARRAY oo place 1 & 2 [3rd one is not icluded into it]
+const myn1 = myArr. slice(1, 3)  // returns the value of  the ARRAY oo place 1 & 2 [3rd one is not icluded into it]
 
-console.log(myn1);
-console.log("B ", myArr);
+// console.log(myn1);
+// console.log("B ", myArr);
+
+
+
+
+const myn2 = myArr. splice(1, 3)  // return the value of  the ARRAY oo place 1, 2 & 3 [and gonna DELETE that value from the original ARRAY]
+console.log("C ", myArr ); // Answer :- "C  [ 0, 4, 5 ]"  📍will DELETE those place values which are asked above in SPLICE
+console.log(myn2); //  Answer :- "[ 1, 2, 3 ]"
+
+
+
+
 
