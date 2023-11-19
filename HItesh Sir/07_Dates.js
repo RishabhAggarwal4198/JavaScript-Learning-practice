@@ -20,12 +20,24 @@ let myCreatedDate3 = new Date ("01-14-2023");
 
 let myTimeStamp = Date.now();
 
-console.log(myTimeStamp);
-console.log(myCreatedDate.getTime());
-
-console.log(Date.now());
+// console.log(myTimeStamp);
+// console.log(myCreatedDate.getTime());
 
 
+
+// console.log(Date.now());
+
+// console.log(Math.floor(Date.now()/10000000000)); // Answer will be "170" seconds
+
+
+
+
+let newDate = new Date (2023, 2 , 22);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getDay()); 
+
+
+console.log(`${newDate.getDay()} is the time`);  
 
 
 
