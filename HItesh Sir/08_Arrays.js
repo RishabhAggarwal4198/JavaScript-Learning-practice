@@ -48,7 +48,8 @@ const newArr = myArr.join()  // converts all the values of an array into STRING
 
 console.log("A ", myArr);
 
-const myn1 = myArr. slice(1, 3)
+const myn1 = myArr. slice(1, 3)  // return the value of  the ARRAY oo place 1 & 2 [3rd one is not icluded into it]
 
-console.log();
+console.log(myn1);
+console.log("B ", myArr);
 
