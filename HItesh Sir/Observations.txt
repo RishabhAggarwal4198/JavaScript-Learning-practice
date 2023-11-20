@@ -35,8 +35,8 @@ for JAVASCRIPT :-
 start watching from  { @3:33:43 }
 
 
-+ [watch @1:43:44] If u want to master JavaScript just 
-master "JavaScript Objects" &   "Browser Web events/ Browser Events"
++ [watch @1:43:44]  📍 📍 📍 📍 📍 📍 📍If u want to master JavaScript just 
+master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"  📍 📍 📍 📍 📍 📍
 
 + [watch @1:53:50] Very importanr for interviews
 
