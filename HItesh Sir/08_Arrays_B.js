@@ -20,11 +20,22 @@ const dc_heros = [ "superman", "flash", "batman"]
 
 // MUCH MORE PREFFERED METHOD FOR ADDING TWO "STRINGS" 👇👇
 
-// const all_new_heros = [...dc_heros, ...marvel_heros]; // 📍 it ADDS multiple  ARRAYS  just by etering dots in front of them
+const all_new_heros = [...dc_heros, ...marvel_heros]; // 📍 it ADDS multiple  ARRAYS  just by etering dots in front of them
 
 // console.log(all_new_heros);  // 📍 Answer is "[ 'superman', 'flash', 'batman', 'thor', 'Ironman', 'spiderman' ]"
 
 
+
+
+// TO SPREAD an ARRAY INSIDE AN ARRAY 👇👇
+
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]  
+
+const real_another_array =  another_array.flat(Infinity)   // 📍 it gonna spread the whole ARRAY evenly 
+console.log(real_another_array);  // 📍 Answer is " [1, 2, 3, 4, 5,6, 7, 6, 7, 4, 5]"
+
+const real_another_array2 =  another_array.flat(1)   // 📍 Here "1" represents the depth upto which we have to solve that
+console.log(real_another_array2);  // 📍 Answer is " [ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]"
 
 
 
