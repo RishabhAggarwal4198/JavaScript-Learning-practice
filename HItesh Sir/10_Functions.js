@@ -127,7 +127,8 @@ function loginUserMessage (username) {
     }
 
    console.log( returnSecondValue(myNewArray));   //📍Answer is "400"
-
+                        // OR
+   console.log( returnSecondValue([ 200, 400, 100, 600]));  //📍Answer is "400"        
    
 
 
