@@ -113,21 +113,20 @@ function loginUserMessage (username) {
 
 
 
-    handleObject({
-            username: "Rishabh",
-            price: 399
-    })                           // 📍Answer is "Username is Rishabh and price is 399"
+    // handleObject({
+    //         username: "Rishabh",
+    //         price: 399
+    // })                           // 📍Answer is "Username is Rishabh and price is 399"
 
 
 
     const myNewArray = [ 200, 400, 100, 600]
 
     function returnSecondValue (getArray) {
-        let output = console.log(getArray [1]);
-        return output
+        return getArray [1];
     }
 
-    returnSecondValue(myNewArray[3])
+   console.log( returnSecondValue(myNewArray));   //📍Answer is "400"
 
    
 
