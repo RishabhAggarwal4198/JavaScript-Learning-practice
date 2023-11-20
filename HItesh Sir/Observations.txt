@@ -32,7 +32,7 @@ for JAVASCRIPT :-
 
 
 >>>> Javascript in 1 shot in Hindi | part 1 (By Hitesh Sir)
-start watching from  { @3:33:43 }
+♦️♦️start watching from  { @3:33:43 }♦️♦️
 
 
 + [watch @1:43:44]  📍 📍 📍 📍 📍 📍 📍If u want to master JavaScript just 
@@ -57,6 +57,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 + [watch @4:02:54 ] (Important) When we access values we mainly do it with......
 
 + [watch @4:08:55 ] for preventing from using    IF - ELSE
+
++ [watch @4:31:05 ] very very IMPORTANT regarding APIs 🍁🍁🍁🍁
 
 
 
