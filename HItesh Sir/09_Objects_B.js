@@ -114,12 +114,3 @@ console.log(instructor);  // 📍 Answer is  "Rishabh"
 
 
 
-
-
-
-// APIs 👇👇
-
-{
-    
-}
-
