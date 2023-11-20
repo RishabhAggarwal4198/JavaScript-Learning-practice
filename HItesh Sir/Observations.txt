@@ -56,6 +56,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @4:02:54 ] (Important) When we access values we mainly do it with......
 
++ [watch @4:08:55 ] for preventing from using    IF - ELSE
+
 
 
 
