@@ -52,6 +52,10 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @2:51:40 ]Math.floor use in MINIMUM & MAXIMUM value 🍁🍁🍁🍁
 
++ [watch @3:54:43, @3:57:50] SYMBOL data type
+
++ [watch @4:02:54 ] (Important) When we access values we mainly do it with......
+
 
 
 
