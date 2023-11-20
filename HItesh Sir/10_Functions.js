@@ -19,6 +19,9 @@ function sayMyName () {
 
 
 
+
+
+
 // EXAMPLE- FUNCTION -2  👇👇
 
 function addTwoNumbers (number1, number2) {
@@ -59,10 +62,73 @@ function loginUserMessage (username) {
         } 
     }
 
-    console.log(loginUserMessage2());      // 📍 Answer is  "Please enter a username"
+    // console.log(loginUserMessage2());      // 📍 Answer is  "Please enter a username"
 
     // 📍 Or to avoid "!username2" condition we could do one thing in place of "username2" we could use "username2 = 'ANYTHING'"
 
 
+
+
+
+
+    // EXAMPLE- FUNCTION -4  👇👇
+
+    function calculateCarPrice (...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
+        return num1
+    }
+
+    // console.log(calculateCarPrice(200, 400, 500, 2000));   // 📍Answer is "[ 200, 400, 500, 2000 ]"
+
+
+    //📍📍INTERVIEW Questions Case 📍📍
+
+    function calculateCarPrice2 (val1, val2, ...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
+        return num1
+    }
+
+    // console.log(calculateCarPrice2(200, 400, 500, 2000));  // 📍Answer is "[ 500, 2000 ]"
+
+
+
+
+    const user = {
+        username: "Rishabh",
+        price: 199
+    }
+
+    function handleObject(anyObject) {
+        console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    }
+
+    // handleObject(user);  // 📍Answer is "Username is Rishabh and price is 199"
+
+
+    const user2 = {
+        username: "Rishabh",
+        prices: 199
+    }
+
+    // handleObject(user2)  // 📍Answer is "Username is Rishabh and price is undefined [ bcoz "price" got changed to "prices"]
+
+
+
+
+    handleObject({
+            username: "Rishabh",
+            price: 399
+    })                           // 📍Answer is "Username is Rishabh and price is 399"
+
+
+
+    const myNewArray = [ 200, 400, 100, 600]
+
+    function returnSecondValue (getArray) {
+        let output = console.log(getArray [1]);
+        return output
+    }
+
+    returnSecondValue(myNewArray[3])
+
+   
 
 
