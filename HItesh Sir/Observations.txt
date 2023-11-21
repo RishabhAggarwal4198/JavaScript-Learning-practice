@@ -74,6 +74,12 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @5:27:59 ] HOISTING
 
++ [ watch @5:37:50 ]  IMPORTANT interview    
+  Question
+
++ [ watch @5:45:03, 5:46:22 ] V. V. IMPORTANT
+
+
 
 
 
