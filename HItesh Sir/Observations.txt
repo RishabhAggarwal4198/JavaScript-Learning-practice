@@ -72,6 +72,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 + [watch @5:21:27 ]  CHILD- FUNCTION vs  
     PARENT-FUNCTION
 
++ [ watch @5:27:59 ] HOISTING
+
 
 
 

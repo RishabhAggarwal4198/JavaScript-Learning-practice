@@ -37,12 +37,7 @@ function one() {
 
     // two()
 }
-
 // one()  // 📍No answer will print bcoz function "one()" is only having "two()" to execute
-
-
-
-
 
 
 
@@ -55,13 +50,35 @@ if (true) {
     const username = "Rishabh"
     if(username === "Rishabh") {
         const website = " youtube"
-        console.log(username+website);  // 📍Answer will be "Rishabh youtube"
+        // console.log(username+website);  // 📍Answer will be "Rishabh youtube"
     }
     // console.log(website);   // 📍Answer will be ERROR bcoz "variable website" is limited to above SCOPE
 }
-
 // console.log(username);   // 📍Answer will be ERROR bcoz "variable username" is limited to above SCOPE
 
+
+
+
+
+
+
+// HOISTING 👇👇
+
+
+
+// console.log(addone(5));      // 📍Answer will be "6" [bcoz below it we have just declared a simple function]
+
+function addone (num) {
+    return num + 1
+}
+
+
+
+// console.log(addTwo(5))        // 📍Answer will be "ERROR"  [bcoz below it we have not only declared that function but also have holded it inside a "VARIABLE"]
+
+const addTwo = function (num) {
+    return num + 2
+}
 
 
 
