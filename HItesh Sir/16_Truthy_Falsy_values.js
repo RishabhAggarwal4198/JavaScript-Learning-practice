@@ -24,8 +24,31 @@
 
 
 
+
+
+
+// EXAMPLE - 1 👇👇
+
 const userEmail2 = []
 
-if (userEmail2.length === 0) {
-    console.log("Array is Empty");
-}                   //  📍 And since value of "userEmail2.length = 0", condition is TRUE,  Answer is  "Array is Empty"
+// if (userEmail2.length === 0) {
+//     console.log("Array is Empty");
+// }   
+
+//  📍 And since value of "userEmail2.length = 0", condition is TRUE,  Answer is  "Array is Empty"
+
+
+
+
+
+// EXAMPLE - 2 👇👇
+
+// const emptyObj = {}
+
+// if (Object.keys(emptyObj).length === 0) {
+//     console.log("Object is Empty");
+// }                   //  📍 Answer is  "Object is Empty"
+
+
+
+
