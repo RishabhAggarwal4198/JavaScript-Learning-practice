@@ -18,10 +18,6 @@ function sayMyName () {
 
 
 
-
-
-
-
 // EXAMPLE- FUNCTION -2  👇👇
 
 function addTwoNumbers (number1, number2) {
