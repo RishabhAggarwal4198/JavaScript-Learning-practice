@@ -23,6 +23,47 @@ is called GLOBAL- SCOPE
 
 
 
+// SCOPE EXAMPLE WITH "FUNCTION" 👇👇
+
+function one() {
+    const username = "Rishabh"
+
+    function two () {
+        const website = "youtube"
+        console.log(username);
+    }
+
+    // console.log(website);   // 📍Answer will not be error bcoz it won't get executed variable website is inside the scope
+
+    // two()
+}
+
+// one()  // 📍No answer will print bcoz function "one()" is only having "two()" to execute
+
+
+
+
+
+
+
+
+
+// SCOPE EXAMPLE WITH "IF - ELSE" 👇👇
+
+
+if (true) {
+    const username = "Rishabh"
+    if(username === "Rishabh") {
+        const website = " youtube"
+        console.log(username+website);  // 📍Answer will be "Rishabh youtube"
+    }
+    // console.log(website);   // 📍Answer will be ERROR bcoz "variable website" is limited to above SCOPE
+}
+
+// console.log(username);   // 📍Answer will be ERROR bcoz "variable username" is limited to above SCOPE
+
+
+
 
 
 

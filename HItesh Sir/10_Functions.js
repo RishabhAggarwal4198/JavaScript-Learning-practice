@@ -52,7 +52,7 @@ function loginUserMessage (username) {
   // 📍👇📍 For preventing the above "undefined just logged in" case we use IF - ELSE statement 👇
 
   function loginUserMessage2 (username2) {   
-        if (!username2) {     //  here  "!username2" is exactly  same as using "username2 === undefined" 
+        if (!username2) {     //  here  "!username2" [not -username2] is exactly  same as using "username2 === undefined" 
             console.log("Please enter a username");
             return   // ud=sing return as a "full-stop" here
         } 
