@@ -91,7 +91,7 @@ const addTwo2 = (num1, num2) =>  (num1 + num2)      // 💎 Is called IMPLICIT -
 
                     // OR
 
-const addTwo3 = (num1, num2) =>  num1 + num2         // 💎 Is called IMPLICIT - RETURN
+const addTwo3 = (num1, num2) =>  num1 + num2         // 💎 Is also called IMPLICIT - RETURN
 
 // console.log(addTwo2(3,4));                        // 📍 Answer is "7" 
 
