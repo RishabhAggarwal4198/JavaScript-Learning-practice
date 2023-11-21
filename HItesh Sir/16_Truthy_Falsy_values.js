@@ -16,8 +16,16 @@
 
 
 
+
 // TRUTHY - VALUES 👇👇
 
 // "0", "False", " ", [], {}, function(){}
 
 
+
+
+const userEmail2 = []
+
+if (userEmail2.length === 0) {
+    console.log("Array is Empty");
+}                   //  📍 And since value of "userEmail2.length = 0", condition is TRUE,  Answer is  "Array is Empty"
