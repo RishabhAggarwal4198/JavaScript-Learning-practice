@@ -99,6 +99,12 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @7:10:12 ] 🍁🍁🍁 SUMMARY 🍁🍁🍁
 
++ [ watch @7:20:16, @7:20:56 ] 🍁🍁 How FOR- 
+   LOOP  works ??  🍁🍁
+
++ [ watch @7:38:16 ] 🍁🍁 Differnce b/w   
+  BREAK &  CONTINUE  🍁🍁
+
 
 
 
