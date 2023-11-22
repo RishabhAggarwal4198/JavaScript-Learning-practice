@@ -101,7 +101,7 @@ for (let index = 0; index <= myArray.length; index++) {
 for (let i = 1; i <= 20; i++)  {
     if (i == 5){
         // console.log(`Detected 5, not running further`);
-        break;
+        break;                             // 📍 it will break the LOOP instantly over there only [ will not continue the loop after it]
     }
     // console.log(`Value of i is ${i}`);   //📍Answer is "Value of i is 1
 }                                           //              Value of i is 2
@@ -119,7 +119,7 @@ for (let i = 1; i <= 20; i++)  {
 for (let i = 1; i <= 20; i++) {
     if (i == 5){
         console.log(`Detected 5, running further`);
-        continue;
+        continue;                           // 📍 it will SKIP  that particular line [as mentioned in the condition] & will continue after that
     }
     console.log(`Value of i is ${i}`);
 }
