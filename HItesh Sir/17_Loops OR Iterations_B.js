@@ -130,3 +130,56 @@ coding.forEach((item) => {
     // console.log(item);                       // 📍 RUN statement for result
 })
 
+            // OR (passing a whole function in FOR-EACH loop)
+
+
+function printMe(item) {
+    // console.log(item);
+}
+
+// coding.forEach(printMe)                     // 📍 RUN statement for result
+
+
+
+
+
+
+
+
+coding.forEach((itemmm, indexxxx, arr) => {
+    // console.log(itemmm, indexxxx, arr);           // ✅📍✅ RUN statement for result
+})
+
+
+
+
+
+//✅✅ accessing OBJECTS inside an ARRAY (very common & important)
+
+const myCoding = [
+    {
+        languageName : "javascript",
+        languageFileName : "js"
+    },
+    {
+        languageName : "Java",
+        languageFileName : "java"
+    },
+    {
+        languageName : "Python",
+        languageFileName : "py"
+    }
+]
+  
+
+myCoding.forEach( (item) => {
+    // console.log(item.languageName);      // 📍 Answer is "javascript  Java  Python"
+})
+
+
+
+
+
+
+
+
