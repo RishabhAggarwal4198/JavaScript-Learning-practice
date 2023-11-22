@@ -162,11 +162,23 @@ while (arr < myArray.length) {
 
 
 
+
 // DO - WHILE  LOOP 👇👇
 
-let score = 1;
-
+let score1 = 1;
 do{
-    console.log(`Score is ${score}`);
-    score++
-} while (score <= 10) 
+    // console.log(`Score is ${score}`);
+    score1++
+} while (score1 <= 10) 
+
+
+
+
+
+// 📍 do-while LOOP special case
+
+let score2 = 11;
+do{
+    // console.log(`Score is ${score2}`);   // 📍 Answer is "Score is 11"
+    score2++
+} while (score2 <= 10) 
