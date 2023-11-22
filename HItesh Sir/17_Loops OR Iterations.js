@@ -73,7 +73,6 @@ for (let i = 0; i <= 10; i++) {
 
 
 
-
 // EXAMPLE - 5 👇
 
 let myArray = ["flash", "batman", "superman"]
@@ -83,11 +82,6 @@ for (let index = 0; index <= myArray.length; index++) {
     const element = myArray[index];
     // console.log(element);
 }
-
-
-
-
-
 
 
 
@@ -113,13 +107,66 @@ for (let i = 1; i <= 20; i++)  {
 
 
 
-
 // Continue 👇 
 
 for (let i = 1; i <= 20; i++) {
     if (i == 5){
-        console.log(`Detected 5, running further`);
-        continue;                           // 📍 it will SKIP  that particular line [as mentioned in the condition] & will continue after that
+        // console.log(`Detected 5, running further`);
+        continue;                          
     }
-    console.log(`Value of i is ${i}`);
+    // console.log(`Value of i is ${i}`);               // 📍 it will SKIP  that particular line [as mentioned in the condition] & will continue after that
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// WHILE - LOOP 👇👇
+
+
+let  index = 0
+while(index <= 10) {
+    // console.log(`Value of index is ${index}`);
+    index = index + 2;
+}
+
+
+// in ARRAY format👇
+
+let myArray1 = ['flash', "batman", "superman"]
+
+let arr = 0
+while (arr < myArray.length) {
+        // console.log(`Value is ${myArray[arr]}`);
+        arr = arr + 1
+}
+
+
+
+
+
+
+
+
+
+
+
+// DO - WHILE  LOOP 👇👇
+
+let score = 1;
+
+do{
+    console.log(`Score is ${score}`);
+    score++
+} while (score <= 10) 
