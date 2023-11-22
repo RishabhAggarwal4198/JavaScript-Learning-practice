@@ -89,8 +89,15 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @6:43:01 ] Use of &&  
 
-+ [ watch @6:50:01 ] 🍁 SWITCH-STATEMENTS Important 
-  Interview Questions       
++ [ watch @6:50:01 ] 🍁 SWITCH-STATEMENTS Important Interview Questions   
+
++ [ watch @7:01:51 ] 🍁 Interview Questions &
+  Competitive Programming
+
++ [ watch @7:04:30, @7:13:11 ] NULLISH  
+   COALESCING  OPERATOR
+
++ [ watch @7:10:12 ] 🍁🍁🍁 SUMMARY 🍁🍁🍁
 
 
 

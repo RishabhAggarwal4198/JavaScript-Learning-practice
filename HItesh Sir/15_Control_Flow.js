@@ -47,6 +47,8 @@ const balance = 1000;
 //  📍 Instead of using {} we could also directly do this 👇
 // if (balance2 > 500) console.log("tested ");
 
+                           //OR
+
 //  📍 But try to do this for one liner only writing like this 👇 is very UNPROFESSIONAL
 // if (balance2 > 500) console.log("tested "), console.log("tested 2");  // ❌❌❌❌ Dont do this PROFESSIONALLY
 
@@ -55,6 +57,8 @@ const balance = 1000;
 
 
 
+
+// IF- ELSE  STATEMENTS 👇👇
 
 
 // const balance2 = 900
@@ -92,7 +96,7 @@ const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
 
-// USE OF "&&" SIGN👇👇
+// USE OF "&&" SIGN 👇👇 [all conditions must be true]
 
 // if (isUserLoggedIn && debitCard) {
 //         console.log("Allow to buy course");
@@ -106,7 +110,7 @@ const loggedInFromEmail = true
 
 
 
-// USE OF "||" SIGN👇👇
+// USE OF "||" SIGN👇👇 [only one condition needs to be true]
 
 // if (loggedInFromGoogle ||  loggedInFromEmail) {
 //     console.log("User logged in");
@@ -126,7 +130,7 @@ const loggedInFromEmail = true
 
 
 
-// "SWITCH"  STATEMENTS (Shorter form of writing multiple IF - ELSE)👇👇
+// "SWITCH"  STATEMENTS (Shorter way of writing multiple IF - ELSE)👇👇
 
   // Basic - Syntax 👇
     
