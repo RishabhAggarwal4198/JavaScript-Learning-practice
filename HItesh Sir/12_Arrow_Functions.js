@@ -93,7 +93,7 @@ const addTwo3 = (num1, num2) =>  num1 + num2         // 💎 Is also called IMPL
 
 /*  🚩🚩NOTE(for above)🚩🚩 
 ✅ If we Gona use "{}"  CURLY brackets around  "num1 + num2" then use of "return" keyword before it is must
-✅ If we Gona use "()" parenthesis around  "num1 + num2" then use of "return" keyword before it is must
+✅ If we Gona use "()" parenthesis around  "num1 + num2" then use of "return" keyword before it is not
 */
 
 

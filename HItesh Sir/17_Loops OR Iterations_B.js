@@ -179,7 +179,98 @@ myCoding.forEach( (item) => {
 
 
 
+// const coding2 = ["apple", "oranges", "bananas", "pineapples"]
+
+// const values = coding2.forEach( (item) => {
+//     console.log(item);
+//     return item
+// })
+// console.log(values);          //📍 Answer is "undefined"
 
 
+
+
+
+
+
+
+
+
+
+// FILTER Operation👇👇
+
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const newNums = myNums.filter( (ankk) =>  ankk > 4 )
+// console.log(newNums);          //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
+
+                        //OR
+
+const newNums0 = myNums.filter( (ankk) =>  {
+    return ankk > 4               // We have to use "return" as we have used "{ }"
+})
+// console.log(newNums);          //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
+
+
+                        //OR  
+
+
+// 📍 by using FOR-EACH (in above condition in place of FILTER operation)
+
+const myNums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const newNums1 = [] 
+
+myNums2.forEach ((num) => {
+    if (num > 4 ) {
+        newNums1.push(num)    
+    }
+})
+// console.log(newNums1);            //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
+
+
+
+
+
+
+// FILTER Operation examples 👇 (for better understanding)
+
+const books = [
+    {title: 'Book One', genre: 'Fiction', publish : 1981, 
+     edition : 2004},
+    {title: 'Book Two', genre: 'Non-Fiction', publish : 1992, 
+     edition : 2004},
+    {title: 'Book Three', genre: 'History', publish : 1999, 
+     edition : 2004},
+    {title: 'Book Four', genre: 'Non-Fiction', publish : 1989, 
+     edition : 2004},
+    {title: 'Book Five', genre: 'Science', publish : 2009, 
+     edition : 2004},
+    {title: 'Book Six', genre: 'Fiction', publish : 1987, 
+     edition : 2004},
+    {title: 'Book Seven', genre: 'History', publish : 2007, 
+     edition : 2004},
+    {title: 'Book Eight', genre: 'Science', publish : 2011, 
+     edition : 2004},
+    {title: 'Book Nine', genre: 'Non-Fiction', publish : 1981, 
+     edition : 2004},
+];
+
+const userBooks1 = books.filter( (bk) => bk.genre === 'History')
+// console.log(userBooks1);                                // 📍 RUN statement for resul
+
+
+const userBooks2 = books.filter ( (bk) => {
+    return bk.publish >= 2000 &&  bk.genre === "History"
+})
+console.log(userBooks2);                                    // 📍 Answer is :- 
+                                                            // "[
+                                                            //     {
+                                                            //       title: 'Book Seven',
+                                                            //       genre: 'History',
+                                                            //       publish: 2007,
+                                                            //       edition: 2004
+                                                            //     }
+                                                            //   ]"
 
 

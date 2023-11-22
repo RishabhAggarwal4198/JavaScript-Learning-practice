@@ -116,7 +116,11 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 + [ watch @8:05:32 ] 🍁FOR-IN LooP🍁 key-  
   value Pair 
 
++ [ watch @8:24:41 ] 🍁 FOR-EACH LooP (revision) 🍁
 
++ [ watch @8:49:23 ] 🍁 REDUCE method 🍁
 
++ [ watch @8:55:28 ] 🍁 REDUCE method -   
+  Explanation 🍁
 
 
