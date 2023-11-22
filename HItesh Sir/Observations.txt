@@ -108,6 +108,14 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 + [ watch @7:47:36 ] 🍁🍁 DO-WHILE loop 
   special case 🍁🍁
 
++ [ watch @7:52:50 ]  🍁🍁 FOR-OF Loop 
+🍁🍁
+
++ [ watch @7:59:01 ] 🍁🍁 MAPS
+
++ [ watch @8:05:32 ] 🍁FOR-IN LooP🍁 key-  
+  value Pair 
+
 
 
 
