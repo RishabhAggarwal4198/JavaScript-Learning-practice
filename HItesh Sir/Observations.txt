@@ -34,6 +34,14 @@ for JAVASCRIPT :-
 >>>> Javascript in 1 shot in Hindi | part 1 (By Hitesh Sir)
 ♦️♦️start watching from  { @7:01:21 }♦️♦️
 
++ [ watch @50:47 ] CODE readibility is the priority
+
+
++ [ watch @52:05, @53:07 ] Original documentation of JAVASCRIPT is at :-   	   
+ ➤   "https://tc39.es/ecma262/#sec-intro"
+	             &
+ ➤   "https://developer.mozilla.org/en- 
+       US/docs/Learn/JavaScript"
 
 + [watch @1:43:44]  📍 📍 📍 📍 📍 📍 📍If u want to master JavaScript just 
 master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"  📍 📍 📍 📍 📍 📍
@@ -64,7 +72,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @4:44:00, @4:52:48 ] Difference b/w  "console.log" & "return"
 
-+ [watch @5:11:22 ] Difference b/w  "Block-Scope" & "Global-Scope"
++ [watch @5:11:22 ] Difference b/w  "Block-Scope", "Global-Scope" & "Functional-Scope"
 
 + [watch @5:13:06 ] IMPORTANT interview    
   Question

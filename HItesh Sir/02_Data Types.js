@@ -1,14 +1,32 @@
 "use strict";   // treat all JS code as newer version
 
 
+// alert(3 + 3) // It Won't work here bcoz we are not using Node.js
+
+
+// 📍📍Code readibilty is the priority in any language 📍📍
+
+// Range of "number" data type is somewhere upto      2 to the power 53
+
+//  "BigInt" for  string big numbers.  btw it's very rare to use "BigInt" 
+
+//  String = "xyz" or = 'xyz'  (we could use any of the quotes)
+
+//  boolean = true / false
+
+// null  ➤ it's an STAND-ALONE value, it means the "empty value" (not ZERO just simply "nothing")
+
+// undefined  ➤ it means the value is not defined yet
+
+// symbol ➤ used for defining UNIQUE COMPONENTS
+
+
+
 console.log("Rishabh");
 
-let name = "Rishabh" // String Data Type
+let name = "Rishabh"   // String Data Type
 
-console.log(typeof null);
-
-
-
+console.log(typeof null);    // 📍 Answer is "object"
 
 
 
