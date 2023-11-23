@@ -25,8 +25,13 @@
 console.log("Rishabh");
 
 let name = "Rishabh"   // String Data Type
+let currentYear = 2023
 
-console.log(typeof null);    // 📍 Answer is "object"
+console.log(typeof name);    // 📍 Answer is "string"
+console.log(typeof currentYear);    // 📍 Answer is "number"
+
+console.log(typeof null);    // 📍 Answer is "object" [so null is of "Object"  type]
+console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is a type in itself]
 
 
 
@@ -98,6 +103,14 @@ userTwo.email = "rishabh@google.com"
 
 console.log(userOne.email);
 console.log(userTwo.email);
+
+
+
+
+
+
+
+
 
 
 
