@@ -6,7 +6,7 @@ let score = "33";
 
 // CONVERSION 👇👇 converting one data type to another
 
-let valueInNumber = Number (score); // 📍 for Conversion of the "score" variable into numbers
+// let valueInNumber = Number (score); // 📍 for Conversion of the "score" variable into numbers
 // console.log(valueInNumber);
 // console.log(typeof valueInNumber);
 
@@ -45,8 +45,8 @@ let booleanNumber = Boolean(isLoggedIn);
 let Number = 33
 
 let stringNumber = String(Number)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);          // 📍Answer is "33"
+// console.log(typeof stringNumber);   // 📍Answer is "String"
 
 
 
@@ -56,24 +56,45 @@ console.log(typeof stringNumber);
 let value = 3;
 let negValue = -value;
 
-// console.log(negValue);
+// console.log(negValue);        // 📍Answer is "-3"
 
+
+ // some important CONVERSIONs 👇👇
 
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
-// console.log(2%2); 
+// console.log(2**3);      // 📍Gives the "square" i.e. 8
+// console.log(4/2);       // 📍Gives the "quotient" i.e. 2
+// console.log(2%2);       // 📍Gives the "remainder" i.e. 0
 
+
+
+
+ // CONCATENATION 👇👇
+let str1 = "Rishabh"
+let str2 = " Aggarwal"
+
+let str3 = str1 + str2 
+// console.log(str3);       // 📍Gives the  "Rishabh Aggarwal"
+ 
 
 let num1, num2 , num3
 
 num1 = num2 = num3 = 2+2
 
 
+
+
+
+// PRE-FIX & POST-FIX operators 👇👇
+
 let gameCounter = 100;
+gameCounter++ ;
+console.log(gameCounter);     // 📍Gives the  "101"
+
 ++gameCounter;
-// console.log(gameCounter);
+console.log(gameCounter);     // 📍Gives the  "101"
 
 
 
