@@ -92,8 +92,11 @@ console.log(anothername);
 
 
 let userOne = {
+    Name: "Rishabh",
+    LastName: "Aggarwal",
     email: "user@google.com",
     upi: "user@ybl"
+
 } 
 
 
