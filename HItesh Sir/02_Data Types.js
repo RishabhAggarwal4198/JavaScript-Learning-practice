@@ -82,7 +82,6 @@ const myFunction = function () {
 console.log(typeof myFunction);             // 📍 Answer is "function"
 
 
-
 let myYoutubename = "aggarwalrishabh4198@gmail.com";
 
 let anothername = myYoutubename
