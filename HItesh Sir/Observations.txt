@@ -29,10 +29,8 @@ for JAVASCRIPT :-
 
 
 
-
-
 >>>> Javascript in 1 shot in Hindi | part 1 (By Hitesh Sir)
-♦️♦️start watching from  { @7:01:21 }♦️♦️
+♦️♦️start watching from  { @1:59:25 }♦️♦️
 
 + [ watch @50:47 ] CODE readibility is the priority
 
@@ -46,7 +44,11 @@ for JAVASCRIPT :-
 + [watch @1:43:44]  📍 📍 📍 📍 📍 📍 📍If u want to master JavaScript just 
 master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"  📍 📍 📍 📍 📍 📍
 
-+ [watch @1:53:50] Very importanr for interviews
++ [watch @1:53:50] Very importanr for  
+  interviews
+
++ [ watch @01:56:40 ] Stack and heap 
+   memory
 
 + [watch @2:04:11] Very importanr for interviews about STORAGE in STACK & HEAP 
 

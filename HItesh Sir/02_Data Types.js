@@ -37,7 +37,7 @@ console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is
 
 
 
-// Primitive Data Types
+// Primitive Data Types [They are stored in STACK memory]
 
 //  7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -52,15 +52,15 @@ let userEmail;
 const id = Symbol('123');
 const anotherId = Symbol('123');
 
-console.log(id === anotherId);
+console.log(id === anotherId);        // 📍 Answer is "false"
 
 const bigNumber = 348242494898598989859895n;  // "BigInt" data type
-console.log(typeof bigNumber); // answer is "bigInt"
+console.log(typeof bigNumber);        //📍 Answer is "bigInt"
 
 
 
 
-// Refrence (Non - Primitive)
+// Refrence (Non - Primitive) Types [They are stored in HEAP memory]
 
 // Array, Objects, Functions
 
@@ -74,8 +74,12 @@ let myObj = {
 
 
 const myFunction = function () {
+
+    
     console.log("Hello world")
 }
+
+console.log(typeof myFunction);             // 📍 Answer is "function"
 
 
 
@@ -88,27 +92,26 @@ console.log(myYoutubename);
 console.log(anothername);
 
 
-
-
 let userOne = {
     email: "user@google.com",
     upi: "user@ybl"
-}
+} 
 
 
-
-let userTwo = userOne 
+let userTwo = userOne
 
 userTwo.email = "rishabh@google.com"
 
 console.log(userOne.email);
 console.log(userTwo.email);
 
+ 
 
+let aman = "44"
 
-
-
-
+let converted = Number(aman);
+console.log(converted);
+console.log(typeof converted);
 
 
 
