@@ -118,7 +118,9 @@ console.log(userTwo.email);
 console.log(userThree.email);
 
 
- 
+
+
+
 
 let aman = "44"
 
@@ -128,6 +130,11 @@ console.log(typeof converted);
 
 
 
+
+
+
+let number = "55"
+let typeConversion = Number(number);
 
 
 
