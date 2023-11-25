@@ -136,6 +136,7 @@ console.log(typeof converted);
 let number = "55"
 let typeConversion = Number(number);
 
-
+console.log(typeConversion);
+console.log(typeof typeConversion);
 
   
