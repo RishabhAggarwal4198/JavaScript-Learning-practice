@@ -108,6 +108,12 @@ userTwo.email = "rishabh@google.com"
 console.log(userOne.email);
 console.log(userTwo.email);
 
+
+
+let userThree = userTwo
+
+userThree.email = "aggarwal"
+
  
 
 let aman = "44"
