@@ -139,4 +139,6 @@ let typeConversion = Number(number);
 console.log(typeConversion);
 console.log(typeof typeConversion);
 
+console.log();
+
   
