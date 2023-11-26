@@ -129,16 +129,21 @@ console.log(converted);
 console.log(typeof converted);
 
 
-
-
-
-
-let number = "55"
+let number = "55";
 let typeConversion = Number(number);
 
 console.log(typeConversion);
 console.log(typeof typeConversion);
 
+let number0 = "99";
+let typeConversion0 = Number(number0);
+
+console.log(typeConversion0);
+console.log(typeof typeConversion0);
+
+
 console.log();
+
+
 
   
