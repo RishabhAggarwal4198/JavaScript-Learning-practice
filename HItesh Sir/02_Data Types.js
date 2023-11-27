@@ -142,7 +142,9 @@ console.log(typeConversion0);
 console.log(typeof typeConversion0);
 
 
-console.log();
+console.log(); 
+
+
 
 
 
