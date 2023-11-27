@@ -93,8 +93,16 @@ let gameCounter = 100;
 gameCounter++ ;
 console.log(gameCounter);     // 📍Gives the  "101"
 
+
+ley gameCounter2 = 200;
+gameCounter2++;
+console.log();
+
 ++gameCounter;
 console.log(gameCounter);     // 📍Gives the  "101"
+
+
+
 
 
 

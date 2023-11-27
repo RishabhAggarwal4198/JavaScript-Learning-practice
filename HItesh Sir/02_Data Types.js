@@ -144,8 +144,3 @@ console.log(typeof typeConversion0);
 
 console.log(); 
 
-
-
-
-
-  
