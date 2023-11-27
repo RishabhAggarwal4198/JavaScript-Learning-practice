@@ -96,7 +96,7 @@ console.log(gameCounter);     // 📍Gives the  "101"
 
 ley gameCounter2 = 200;
 gameCounter2++;
-console.log();
+console.log(gameCounter2);
 
 ++gameCounter;
 console.log(gameCounter);     // 📍Gives the  "101"
