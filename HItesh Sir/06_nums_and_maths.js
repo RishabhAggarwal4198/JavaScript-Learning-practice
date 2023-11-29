@@ -1,15 +1,15 @@
 const score = 400;
-// console.log(score);
+// console.log(score);          // 📍 Answer is "400"
 
 const balance = new Number (100)
-// console.log(balance);
+// console.log(balance);       // 📍 Answer is "[Number: 100]"
 
 // Converting it to STRING
 
 // console.log(balance.toString());  // Got converted to a STRING
 
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(4));
+// console.log(balance.toFixed(4));       // 📍 Answer is "100.0000" [it gonna give us value upto 4 digits]
 
 
 
@@ -18,15 +18,19 @@ const balance = new Number (100)
 // Precision value
 
 const otherNumber = 23.8966
-// console.log(otherNumber.toPrecision(3));
+// console.log(otherNumber.toPrecision(3));     // 📍 Answer is "23.9"  [3 precise values]
 
 
 const otherNumber2 = 123.2966
-// console.log(otherNumber2.toPrecision(3));
+// console.log(otherNumber2.toPrecision(3));    // 📍 Answer is "123"  [3 precise values]
 
 
-const otherNumber3 = 1123.8966
-// console.log(otherNumber3.toPrecision(4));
+const otherNumber3 = 1123.8966 
+// console.log(otherNumber3.toPrecision(3));    // 📍 Answer is "1.12e+3"  [3 precise values]
+
+
+const otherNumber4 = 1123.8966 
+// console.log(otherNumber4.toPrecision(3));    // 📍 Answer is "1124"  [3 precise values]
 
 
 

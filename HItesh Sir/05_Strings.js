@@ -58,7 +58,6 @@ console.log(url.includes('sundar'))      // 📍 Answer will be  "false" [Will t
 
 
 
-
 let value = "I went to a nice hill station. "
 
 console.log(value.split('-'));
