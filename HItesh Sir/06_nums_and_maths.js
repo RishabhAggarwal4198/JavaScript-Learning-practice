@@ -76,12 +76,13 @@ console.log(Math.max(4, 3, 6, 8));   // 📍 Answer is "8"
 
 
 
+
 // When u want values between two NUMBERS only 👇 
 
 const  minValue = 10;
 const maxValue = 20;
 
-// console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);
+// console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
-
+ 
 
