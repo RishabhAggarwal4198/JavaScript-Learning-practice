@@ -34,58 +34,54 @@ const otherNumber4 = 1123.8966
 
 
 const hundreds = 100000000000
-console.log(hundreds.toLocaleString('en-IN'));   // 📍 Answer is "1,00,00,00,00,000"  [commas as per INDIAN numeric system]
-console.log(hundreds.toLocaleString('en-US'));   // 📍 Answer is "100,000,000,000"    [commas as per US numeric system]
-
-
-
+// console.log(hundreds.toLocaleString('en-IN'));   // 📍 Answer is "1,00,00,00,00,000"  [commas as per INDIAN numeric system]
+// console.log(hundreds.toLocaleString('en-US'));   // 📍 Answer is "100,000,000,000"    [commas as per US numeric system]
 
 
 
 // +++++++++++++++++++ Maths +++++++++++++++++++
 
+
+
 // console.log(Math);
 
-// console.log(Math.abs(-4));   // Turns negative value into positive 
+// console.log(Math.abs(-4));    // 📍Turns negative value into positive 
 
-// console.log(Math.round(4.4)); // answer will be 4
+// console.log(Math.round(4.4));  // 📍answer will be 4  [rounds off the value]
 
-// console.log(Math.ceil(4.2));  // chooses the HIGHEST value
-// console.log(Math.floor(4.9)); // chooses the LOWEST value
-
-
-
-
-// For choosing the MINIMUM & MAXIMUM value
-
-// console.log(Math.min(4, 3, 6, 8));
-// console.log(Math.max(4, 3, 6, 8));
+// console.log(Math.ceil(4.2));   // 📍 Answer is "5"     [chooses the HIGHEST value]
+// console.log(Math.floor(4.9));  // 📍 Answer is "4"   [chooses the LOWEST value]
 
 
 
 
 
+// For getting the MINIMUM & MAXIMUM value (out of te given value) 👇
+
+console.log(Math.min(4, 3, 6, 8));   // 📍 Answer is "3"  
+console.log(Math.max(4, 3, 6, 8));   // 📍 Answer is "8"  
 
 
-// MATH - RANDOM
 
-// console.log(Math.random());  // Values will alwyas come b/w  0 - 1 (mostly in decimals)
+
+
+// MATH - RANDOM 👇 [Values will always come b/w  0 - 1 (mostly in decimals)]
+
+// console.log(Math.random());  
 // So we do the following thing to it
 
-// console.log((Math.random()*10) + 1);
+// console.log((Math.random()*10) + 1);   // 📍 [ We mutliplied "10" to avoid decimal value & as value could also come zero so to avoid that we added "1" to it ]
 
-// console.log(Math.floor(Math.random()*10) + 1);  // to round off the CURRENT value we could add "Math.floor"
-
-
+// console.log(Math.floor(Math.random()*10) + 1);  // 📍 to round off the CURRENT value we could add "Math.floor"
 
 
 
-
+// When u want values between two NUMBERS only 👇 
 
 const  minValue = 10;
 const maxValue = 20;
 
-console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);
+// console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);
 
 
 
