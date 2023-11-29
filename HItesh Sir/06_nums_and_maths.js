@@ -30,12 +30,12 @@ const otherNumber3 = 1123.8966
 
 
 const otherNumber4 = 1123.8966 
-// console.log(otherNumber4.toPrecision(3));    // 📍 Answer is "1124"  [3 precise values]
-
+// console.log(otherNumber4.toPrecision(4));    // 📍 Answer is "1124"  [3 precise values]
 
 
 const hundreds = 100000000000
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString('en-IN'));   // 📍 Answer is "1,00,00,00,00,000"  [commas as per INDIAN numeric system]
+console.log(hundreds.toLocaleString('en-US'));   // 📍 Answer is "100,000,000,000"    [commas as per US numeric system]
 
 
 
