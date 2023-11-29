@@ -82,6 +82,9 @@ const myFunction = function () {
 console.log(typeof myFunction);             // 📍 Answer is "function"
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 let myYoutubename = "aggarwalrishabh4198@gmail.com";
 
 let anothername = myYoutubename
@@ -97,7 +100,6 @@ let userOne = {
     CountryName: "India",
     email: "user@google.com",
     upi: "user@ybl"
-
 } 
 
 
@@ -105,9 +107,8 @@ let userTwo = userOne
 
 userTwo.email = "rishabh@google.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
-
+console.log(userOne.email);           // 📍 Answer is "rishabh@google.com"
+console.log(userTwo.email);           // 📍 Answer is "rishabh@google.com"
 
 
 let userThree = userTwo
