@@ -12,24 +12,32 @@ function sayMyName () {
     console.log("H");
 }
 
-// sayMyName();   //  📍 Answer is  "R"  "I"  "S" "H" "A" "B" "H" 
+// sayMyName();   //  📍 Answer is  "R  I  S  H  A  B  H" 
 
 
 
 
 
-// EXAMPLE- FUNCTION -2  👇👇
+// EXAMPLE- FUNCTION -2a  👇👇
 
 function addTwoNumbers (number1, number2) {
-     return number1**number2
-     console.log("Rishabh Aggarwal"); // After return nothing is going to get printed
+     return number1 + number2;
 }; 
 
 const result = addTwoNumbers(3, 4);
-// console.log(result);   // 📍 Answer is  "81"
+// console.log(result);   // 📍 Answer is  "7"
 
 
 
+// EXAMPLE- FUNCTION -2b  👇👇
+
+function addTwoNumbers0 (number1, number2) {
+     return number1**number2
+     console.log("Rishabh Aggarwal"); // 📍 After return nothing is going to get printed
+}; 
+
+const result0 = addTwoNumbers0 (3, 4);
+// console.log(result0);   // 📍 Answer is  "81"
 
 
 
@@ -41,15 +49,15 @@ function loginUserMessage (username) {
     return `${username} just logged in`
 }
 
+//   loginUserMessage("Rishabh");               // 📍 Nothing will get printed bcoz we havn't said instructed the function to PRINT something
 //   console.log( loginUserMessage("Rishabh"));   // 📍 Answer will be "Rishabh just logged in"
-  
-//   console.log( loginUserMessage(""));  // 📍 Answer will be "just logged in" [bcoz passed string argument is empty]
- 
-
-
-//   console.log( loginUserMessage());  // 📍 Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
+//   console.log( loginUserMessage(""));       // 📍 Answer will be "just logged in" [bcoz passed string argument is empty]
+//   console.log( loginUserMessage());         // 📍 Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
     
-  // 📍👇📍 For preventing the above "undefined just logged in" case we use IF - ELSE statement 👇
+
+
+
+// 📍👇📍 For preventing the above "undefined just logged in" case we use IF - ELSE statement 👇
 
   function loginUserMessage2 (username2) {   
         if (!username2) {     //  here  "!username2" [not -username2] is exactly  same as using "username2 === undefined" 
@@ -122,9 +130,9 @@ function loginUserMessage (username) {
         return getArray [1];
     }
 
-   console.log( returnSecondValue(myNewArray));   //📍Answer is "400"
-                        // OR
-   console.log( returnSecondValue([ 200, 400, 100, 600]));  //📍Answer is "400"        
+//    console.log( returnSecondValue(myNewArray));   //📍Answer is "400"
+//                         // OR
+//    console.log( returnSecondValue([ 200, 400, 100, 600]));  //📍Answer is "400"        
    
 
 
