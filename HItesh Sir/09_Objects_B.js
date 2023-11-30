@@ -2,15 +2,17 @@
 const tinderUser0 = new Object () // 📍 its an "SINGLETON-OBJECT" 📍
 const tinderUser = {}  // 📍 its an "NON-SINGLETON-OBJECT" 📍
 
+
+// to add more values in an existing object 👇👇
+
 tinderUser.id = "123abc"
 tinderUser.name = "Rishabh"
 tinderUser.isLoggedIn = false
-
 // console.log(tinderUser);  // 📍 Answer is "{ id: '123abc', name: 'Rishabh', isLoggedIn: false }"
 
 
 
-
+//Object inside an OBJECT 👇👇
 
 const regularUser =  {
     email: "some@gmail.com",
