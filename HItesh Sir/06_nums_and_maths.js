@@ -94,7 +94,7 @@ const maxValue0 = 20;
 const  minValue1 = 10;
 const maxValue1 = 20;
 
-console.log(Math.floor(Math.random() * (maxValue1 - minValue1 + 1)) + minValue1);    // 📍 Run it to know how it works  [watch @2:52:05 ]
+// console.log(Math.floor(Math.random() * (maxValue1 - minValue1 + 1)) + minValue1);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
 
  
