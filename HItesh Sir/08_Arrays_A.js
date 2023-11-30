@@ -6,7 +6,7 @@ const myArr = [0, 1, 2, 3, 4, 5]
 const myHeros = ["Superman", "Batman", "Zoro"]
 // console.log(myHeros[1]);   // 📍 Answer is "Batman"
 
-const myArr2 = new Array (1, 2, 3, 4)
+// const myArr2 = new Array (1, 2, 3, 4) 
 // console.log(myArr2[2]);   // 📍 Answer is "3"
 
 
@@ -32,18 +32,20 @@ myArr.unshift(9);    // 📍 For ADDING a value on to the 0th position of the Ar
 
 myArr.shift();      // 📍 For  REMOVING a value on to the 0th position of the Array
 // console.log(myArr);    // 📍  Answer is [ 0, 1, 2, 3, 4, 5 ]
-
 myArr.shift(); 
 // console.log(myArr);    // 📍  Answer is [ 1, 2, 3, 4, 5 ]
 
 
 
-console.log(myArr.includes(9));    // 📍 For knowing whether given value is in the original Array or not ?
+// console.log(myArr.includes(9));    // 📍 For knowing whether given value is in the original Array or not ?
 // 📍 Answer is "false"
 
 
-console.log(myArr.indexOf(9));    // 📍For knowing whether given value of INDEX is in the original Array or not ?
+console.log(myArr.indexOf());    // 📍For knowing whether given value of INDEX is in the original Array or not ?
+// 📍 Answer is "3"  
+// console.log(myArr.indexOf(9));    // 📍For knowing whether given value of INDEX is in the original Array or not ?
 // 📍 Answer is "-1"  i.e. i don't know
+
 
 
 const newArr = myArr.join()     // converts all the values of an array into STRING
