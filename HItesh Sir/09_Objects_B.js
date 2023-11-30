@@ -88,10 +88,10 @@ let output = users[2].id
 
 
 
+
 // FOR -ASKING whether the OBJECT have a particular property or not ?👇👇
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //  📍 Answer is  "true"
 // console.log(tinderUser.hasOwnProperty('isLoggedOff'));  //  📍 Answer is  "false"
-
 
 
 
@@ -105,9 +105,12 @@ const course = {
     courseInstructor: "Rishabh"
 }
 
+
 // const {courseInstructor } = course  // 📍
 const {courseInstructor : instructor} = course // 📍  If "CourseInstructor" is a big name so we could also name it just "instructor"
 console.log(instructor);  // 📍 Answer is  "Rishabh"
+
+
 
 
 
