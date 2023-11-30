@@ -38,16 +38,13 @@ const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = Object.assign( obj1, obj2)  // 📍 Answer is  "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }"
-const obj3 = Object.assign({}, obj1, obj2)  // 📍 Although results are same as that of the  UPPER-ONE but this Syntax to be followed with "{}" for perfect results
+const obj3 = Object.assign({}, obj1, obj2)  // 📍 Although results are same as that of the  UPPER-ONE but this Syntax to be followed with "{}" for perfect results [in this "{}" acts as the target & rest "obj1, obj2" as source ]
 // console.log(obj3);   // 📍 Answer is "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }"
 
 
-
-// SYNTAX mostly used in the ACTUAL- WORLD 👇👇
+//👇👇 SPREAD-OPERATOR  [ above statement syntax mostly used in the ACTUAL- WORLD ]👇👇
 const obj5 = { ...obj1, ...obj2, ...obj4}
 // console.log(obj5);  // 📍 Answer is  "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }"
-
-
 
 
 // When value comes from DATA-BASE 👇👇
@@ -74,19 +71,17 @@ const users = [
     },
 ]
 
+
 let output = users[2].id
 // console.log(output);  // 📍 Answer is  "3"
-
-
-
 
 // console.log(tinderUser);  // 📍 Answer is  "{ id: '123abc', name: 'Rishabh', isLoggedIn: false }"
 
 // For EXTRACTING - KEYS 👇👇
-// console.log(Object.keys(tinderUser));  // 📍 Answer is  "[ 'id', 'name', 'isLoggedIn' ]"
+// console.log(Object.keys(tinderUser));  // 📍 Answer is  "[ 'id', 'name', 'isLoggedIn' ]"       [Answer which we gets is in the form of ARRAY]
 
 // For EXTRACTING - VALUES 👇👇
-// console.log(Object.values(tinderUser));  // 📍 Answer is  "[ '123abc', 'Rishabh', false ]"
+// console.log(Object.values(tinderUser));  // 📍 Answer is  "[ '123abc', 'Rishabh', false ]"     [Answer which we gets is in the form of ARRAY]
 
 // ENTRIES (makes a Key-value pair an ARRAY) 👇👇
 // console.log(Object.entries(tinderUser));  // 📍 Answer is  "[ [ 'id', '123abc' ], [ 'name', 'Rishabh' ], [ 'isLoggedIn', false ] ]"
