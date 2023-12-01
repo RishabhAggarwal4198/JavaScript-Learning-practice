@@ -106,7 +106,7 @@ map.set('USA', "United States of America")
 map.set('Fr', "france")
 
 for (const key1 in map1) {
-   console.log(key1);
+//    console.log(key1);
 }                                      // ❌❌❌❌Nothing will get printed  [bcoz this map is not Iterable], so FOR-IN loop can't be applied to MAP
 
 
@@ -124,21 +124,21 @@ for (const key1 in map1) {
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-coding.forEach(function (val){
-    // console.log(val);                          // 📍 RUN statement for result
+coding.forEach(function (valll){
+    // console.log(valll);                          // 📍 RUN statement for result
 })
 
-             // OR (by using arrow function)
+             // OR (🔽 by using arrow function)
 
-coding.forEach((item) => {
-    // console.log(item);                       // 📍 RUN statement for result
+coding.forEach((valll) => {
+    // console.log(valll);                       // 📍 RUN statement for result
 })
 
-            // OR (passing a whole function in FOR-EACH loop)
+            // OR (🔽 defining the function first & then passing in FOR-EACH loop)
 
 
-function printMe(item) {
-    // console.log(item);
+function printMe(valll) {
+    // console.log(valll);
 }
 
 // coding.forEach(printMe)                     // 📍 RUN statement for result
@@ -149,16 +149,15 @@ function printMe(item) {
 
 
 
-
-coding.forEach((itemmm, indexxxx, arr) => {
-    // console.log(itemmm, indexxxx, arr);           // ✅📍✅ RUN statement for result
+coding.forEach((itemmm, indexxxx, arrrr) => {
+    // console.log(itemmm, indexxxx, arrrr);           // ✅📍✅ RUN statement for result
 })
 
 
 
 
 
-//✅✅ accessing OBJECTS inside an ARRAY (very common & important)
+//✅💎✅ accessing OBJECTS inside an ARRAY (very common & 📍IMPORTANT📍)   [watch @8:21:14]
 
 const myCoding = [
     {
@@ -181,7 +180,7 @@ myCoding.forEach( (item) => {
 })
 
 
-
+  
 
 // const coding2 = ["apple", "oranges", "bananas", "pineapples"]
 
