@@ -4,43 +4,40 @@
 
 // BASIC-syntax  👇👇 
 
-// if(true) {      // if "true" only then gonna executed, if "false" nothing is going to get executed
+if(true) {      // if "true" only then gonna executed, if "false" nothing is going to get executed
 
-// }
+}
 
 
 // const isUserLoggedIn = true;
-// const temperature = 41;
+const temperature = 41;
 
 
-// if(temperature === 41) {       // 📍 in place of "temperature < 50"
+if(temperature === 41) {       // 📍 in place of "temperature < 50"
 //     console.log("Temperature is less than 50 Degrees");
-// }else {
+} else {
 //     console.log("Temperature is greater than 50 Degrees");
-// }     // 📍 Answer will be "Temperature is less than 50 Degrees"
+}     // 📍 Answer will be "Temperature is less than 50 Degrees"
 
 
 
-// if(temperature === 40) {       
+if(temperature === 40) {       
 //     console.log("Temperature is less than 50 Degrees");
-// }else {
+}else {
 //     console.log("Temperature is greater than 50 Degrees");
-// }     // 📍 Answer will be "Temperature is greater than 50 Degrees"
+}     // 📍 Answer will be "Temperature is greater than 50 Degrees"
 
 
 
 
-// const score = 200
+const score = 200
 
-// if (score > 100) {
-//     let power = "power to fly"
-//     console.log(`User power: ${power}`);
-// }                                        //  📍 Answer will be "TUser power: power to fly"
+if (score > 100) {
+    let power = "power to fly"
+    console.log(`User power: ${power}`);
+}                                        //  📍 Answer will be "TUser power: power to fly"
 
 // console.log(`User power: ${power}`);     //  📍 Answer will be "ERROR" [bcoz variable "power" can't be accessed out of its scope]
-
-
-
 
 
 
