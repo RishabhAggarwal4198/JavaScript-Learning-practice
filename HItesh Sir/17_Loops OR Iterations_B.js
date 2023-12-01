@@ -1,22 +1,26 @@
-//  FOR of LOOP   
+//  FOR-OF  LOOP   
 
-// Like its very common to put STRINGS in ARRAYS like [" ", " ", " "]
-//  Similarly it is also common to put OBJECTS in ARRAYS [{ }, { }, { }]
-
-
+// its very common to put or store STRINGS in ARRAYS like [" ", " ", " "]
+//  Similarly it is also common to put or store OBJECTS in ARRAYS [{ }, { }, { }]
 
 
-// 📍 FOR-OF Loop
+
+
+// 💎📍💎  FOR-OF Loop
 
 const arr = [1, 2, 3, 4, 5 ]
 for (const num of arr) {
-    // console.log(num);
+    // console.log(num);                   //📍 Answer is "1 2 3 4 5"
 }
 
+
+
+
+// Applying on STRINGS 👇
 
 const greetings = "Hello world!"
 for (const greet of greetings ) {
-    // console.log(`Each char is ${greet}`);
+    // console.log(`Each char is ${greet}`);   //📍 Print the statement to see the Answer
 }
 
 
@@ -25,24 +29,24 @@ for (const greet of greetings ) {
 
 
 
-// 📍 Maps
+// 💎📍💎 Maps  [ MAPs is an object which holdes the KEY-VALUE pair ]   [watch @7:56:49]
 
-// Example-1
+// 💎 Example-1
 const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "france")
 // console.log(map);
 
-
-// Applying "For-of" Loop
+// 📍 Applying "FOR-OF" Loop MAP 
 for(const [key, value] of map) {
     // console.log(key, ':-', value);   // 📍 RUN statement for result
 }
 
 
 
-// Example-2
+// 💎 Example-2  [tryig to apply MAP on OBJECTs]
+
 const myObject = {
     'game1' : 'NFS',
     'game2' : 'Spiderman'
@@ -52,11 +56,15 @@ const myObject = {
 //     console.log(key, ':-', value);     
 // }                                        // 📍This SYNTAX-STRUCTURE not working over here
 
+// ❌--❌--❌--❌--❌--❌--❌--❌--❌
 
 
 
 
-// 📍printing OBJECT using FOR-IN loop
+
+
+
+//💎📍💎 printing OBJECT using FOR-IN loop
 
 const myObject1 = {
         js: 'javascript',
@@ -65,8 +73,8 @@ const myObject1 = {
         swift: 'swift by apple'
 }
 
-for (const val in myObject1) {
-    // console.log(`${val} shortcut is for ${myObject1[val]}`);   // 📍 RUN statement for result
+for (const key in myObject1) {
+    // console.log(`${key} shortcut is for ${myObject1[key]}`);   // 📍 RUN statement for result
 }
 
 
@@ -75,8 +83,7 @@ for (const val in myObject1) {
 
 
 
-
-// 📍printing ARRAY using FOR-IN loop
+//💎📍💎printing ARRAY using FOR-IN loop   [watch @8:07:14]
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
@@ -91,18 +98,16 @@ for (const key0 in programming) {
 
 
 
+//💎📍💎printing MAP using FOR-IN loop
 
+const map1 = new Map()
+map.set('IN', "India")
+map.set('USA', "United States of America")
+map.set('Fr', "france")
 
-// 📍printing MAP using FOR-IN loop
-
-// const map1 = new Map()
-// map.set('IN', "India")
-// map.set('USA', "United States of America")
-// map.set('Fr', "france")
-
-// for (const key1 in map1) {
-//    console.log(key1);
-// }                                      // ❌❌❌❌Nothing Got printed, so FOR-IN loop can't be applied to MAP
+for (const key1 in map1) {
+   console.log(key1);
+}                                      // ❌❌❌❌Nothing will get printed  [bcoz this map is not Iterable], so FOR-IN loop can't be applied to MAP
 
 
 
@@ -115,10 +120,9 @@ for (const key0 in programming) {
 
 
 
-// FOR-EACH LOOP 👇👇
+// 💎💎 FOR-EACH LOOP 👇👇   [ watch @8:11:28 & @8:14:35 ]
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
-
 
 coding.forEach(function (val){
     // console.log(val);                          // 📍 RUN statement for result
