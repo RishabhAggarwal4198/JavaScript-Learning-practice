@@ -75,16 +75,16 @@ function loginUserMessage (username) {
 
 
 
-    // EXAMPLE- FUNCTION -4  👇👇
+    // [REST-OPERATORS]  EXAMPLE- FUNCTION -4  👇👇
 
     function calculateCarPrice (...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
         return num1
     }
 
-    // console.log(calculateCarPrice(200, 400, 500, 2000));   // 📍Answer is "[ 200, 400, 500, 2000 ]"
+    // console.log(calculateCarPrice(200, 400, 500, 2000));   // 📍Answer is "[ 200, 400, 500, 2000 ]"   { we received an ARRAY }
 
 
-    //📍📍INTERVIEW Questions Case 📍📍
+    //📍👇📍INTERVIEW Questions Case 📍👇📍
 
     function calculateCarPrice2 (val1, val2, ...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
         return num1
@@ -94,6 +94,8 @@ function loginUserMessage (username) {
 
 
 
+
+    // How to pass an OBJECT inside a FUNCTION 👇👇
 
     const user = {
         username: "Rishabh",
@@ -105,24 +107,36 @@ function loginUserMessage (username) {
     }
 
     // handleObject(user);  // 📍Answer is "Username is Rishabh and price is 199"
+ 
 
+
+
+
+    // If we turned PRICE to PRICES 👇👇
 
     const user2 = {
         username: "Rishabh",
         prices: 199
     }
 
-    // handleObject(user2)  // 📍Answer is "Username is Rishabh and price is undefined [ bcoz "price" got changed to "prices"]
+    function handleObject0(anyObject) {
+        console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    }
+
+    // handleObject0(user2)  // 📍Answer is "Username is Rishabh and price is undefined [ bcoz "price" got changed to "prices"]
 
 
+    //📍We could also directly pass the OBJECT only 👇👇 [We inserted whole "user" block into it]
 
-
-    // handleObject({
+    // handleObject({ 
     //         username: "Rishabh",
     //         price: 399
     // })                           // 📍Answer is "Username is Rishabh and price is 399"
 
 
+
+
+    //📍We could also directly pass ARRAY into it 👇👇 
 
     const myNewArray = [ 200, 400, 100, 600]
 
