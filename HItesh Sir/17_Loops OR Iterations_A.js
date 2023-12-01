@@ -9,14 +9,13 @@
 
 
 
-// EXAMPLE - 1 👇
+//💎EXAMPLE - 1 👇
 
 // for (let index = 0; index <= 10; index++) {
 //     const element = index;
 //     console.log(element);                         // 📍 Answer is  "0 1 2 3 4 5 6 7 8 9 10"
     
 // }
-
 
 
 // for (let i = 0; i <= 10; i++) {
@@ -30,11 +29,12 @@
 
 
 
-// EXAMPLE - 2 👇
+
+//💎 EXAMPLE - 2 👇 [implementing IF-ELSE inside FOR-LOOP]
 
 for (let i = 0; i <= 10; i++) {
     const element = i;
-    if(element ==5){
+    if(element == 5){
         // console.log("5 is the best number");
     }
 
@@ -48,7 +48,7 @@ for (let i = 0; i <= 10; i++) {
 
 
 
-// EXAMPLE - 3 👇
+// 💎 EXAMPLE - 3 👇  [implementing FOR-LOOP inside FOR-LOOP]   [watch @7:27:58]
 
 for (let i = 0; i <= 10; i++) {
     // console.log(`Outer loop value: ${i}`);
@@ -59,7 +59,7 @@ for (let i = 0; i <= 10; i++) {
 
 
 
-// EXAMPLE - 4 👇
+//💎 EXAMPLE - 4 👇
 
 for (let i = 0; i <= 10; i++) {
     // console.log(`Outer loop value: ${i}`);
@@ -70,10 +70,13 @@ for (let i = 0; i <= 10; i++) {
     }                                               
 }
 
+ 
 
 
 
-// EXAMPLE - 5 👇
+
+
+//💎 EXAMPLE - 5 👇
 
 let myArray = ["flash", "batman", "superman"]
 // console.log(myArray.length);          // 📍Answer is "3" 
@@ -88,9 +91,9 @@ for (let index = 0; index <= myArray.length; index++) {
 
 
 
-// BREAK & CONTINUE 👇👇
+//💎 BREAK & CONTINUE 👇👇
 
-// Break 👇 
+//📍📍 Break 👇 
 
 for (let i = 1; i <= 20; i++)  {
     if (i == 5){
@@ -107,12 +110,12 @@ for (let i = 1; i <= 20; i++)  {
 
 
 
-// Continue 👇 
+//📍📍 Continue 👇 
 
 for (let i = 1; i <= 20; i++) {
     if (i == 5){
         // console.log(`Detected 5, running further`);
-        continue;                          
+        continue;                         // 📍 it will skip the condition for once  
     }
     // console.log(`Value of i is ${i}`);               // 📍 it will SKIP  that particular line [as mentioned in the condition] & will continue after that
 }
