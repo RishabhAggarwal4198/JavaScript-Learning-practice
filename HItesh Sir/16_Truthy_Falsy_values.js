@@ -116,10 +116,11 @@ const userEmail2 = []
 // 💎💎 NULLISH COALESCING OPERATOR (??) : null defined 👇👇  [@ 7:04:00 ]
 
 /* ✅ what this operator basically does is the safety check of the "null" value i.e.
-       bcoz sometime it might happen that when we recived a value from other fucntion 
-       is "null" & due to null it might be possible that program may not run or some other 
-       problem might arise so in place of it an ALTERNATIVE value automatically gets assigned 
-       to it
+       sometime it might happen that when we could recive a value from other source
+       that could be "null" & due to "null" it might be possible that program may not 
+       run or some other problem might arise in the whole program so in place of it 
+       an ALTERNATIVELY-SAFE is given using this "operator" so that, that alternative 
+       value automatically gets assigned in such unfavourable conditions 
  */
 
 let val1 =  5 ?? 10
