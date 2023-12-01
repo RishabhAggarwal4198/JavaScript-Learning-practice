@@ -24,7 +24,7 @@ is called GLOBAL- SCOPE
 
 
 
-// SCOPE EXAMPLE WITH "FUNCTION" 👇👇
+// NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇
 
 function one() {
     const username = "Rishabh"
@@ -34,17 +34,19 @@ function one() {
         console.log(username);
     }
 
-    // console.log(website);   // 📍Answer will not be error bcoz it won't get executed variable website is inside the scope
+    // console.log(website);   // 📍Answer will not be "error" bcoz it won't get executed as variable "website" is inside the above scope
 
     // two()
 }
-// one()  // 📍No answer will print bcoz function "one()" is only having "two()" to execute
+
+    // one()  // 📍No answer will print bcoz function "one()" is only having "two()" to execute
 
 
 
 
+    
 
-// SCOPE EXAMPLE WITH "IF - ELSE" 👇👇
+//📍 SCOPE EXAMPLE WITH "IF - ELSE" STATEMENTS 👇👇
 
 
 if (true) {
@@ -63,11 +65,14 @@ if (true) {
 
 
 
-// HOISTING 👇👇
 
 
+//📍📍+++++++ HOISTING ++++++ 👇👇
 
-// console.log(addone(5));      // 📍Answer will be "6" [bcoz below it we have just declared a simple function]
+
+// 📍Method - 1 [of declaring a function] 👇
+
+// console.log(addone(5));      // 📍📍📍Answer will be "6" [bcoz below it we have just declared a simple function]
 
 function addone (num) {
     return num + 1
@@ -75,11 +80,25 @@ function addone (num) {
 
 
 
-// console.log(addTwo(5))        // 📍Answer will be "ERROR"  [bcoz below it we have not only declared that function but also have holded it inside a "VARIABLE"]
+
+// 📍Method - 2 [of declaring a function] 👇
+
+// console.log(addTwo(5))        // 📍Answer will be "ERROR"  [bcoz below it, we have not only declared that function but we have also holded it inside a "VARIABLE"]
 
 const addTwo = function (num) {
     return num + 2
 }
+
+
+
+
+function addThree (num) {
+    let output = num + 1;
+    let finalOutput = console.log(output);
+    return finalOutput;
+}
+
+addThree(5)         // 📍Answer will be "6"  
 
 
 
