@@ -16,25 +16,30 @@ const user = {
     }
 }
 
-user.welcomeMessage()   
+// user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
 
-// console.log(this); // 📍Answer is "{}"
+// user.username = "sam Altman"
+// user.welcomeMessage()    // 📍Answer is  "sam Altman, welcome to website"
 
-
-
-
-
+// console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect came empty bcoz]
 
 
+
+
+
+
+
+// ARROW-FUNCTION (preliminary) 👇👇
 
 function play () {
     console.log(this);
 }
+ 
+// play()            // 📍There will be lots of values in the "Answer" [run it to see that]
 
-// play()
 
-
-
+      // 🔽
+      // 🔽
 
 
 const play2 = function () {
@@ -47,10 +52,7 @@ const play2 = function () {
 
 
 
-
-
-
-// ARROW-FUNCTION (prerequisites) 👇👇
+//💎💎 ARROW-FUNCTION (prerequisites) 👇👇 [@ 5:42:00]
 
 const play3 =  () =>  {
     let username = "Rishabh"
@@ -63,13 +65,7 @@ const play3 =  () =>  {
 
 
 
-
-
-
-// ARROW-FUNCTION 👇👇
-
-
-// basic Syntax 👇
+// ARROW-FUNCTION >> basic Syntax 👇
 const addTwo = (num1, num2) => {
     return num1 + num2                              // 💎 Is called EXPLICIT - RETURN
 }
