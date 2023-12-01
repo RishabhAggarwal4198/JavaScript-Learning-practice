@@ -26,7 +26,7 @@ function game() {
                 // OR
 
 
-// ((name) => {                                // 💎 Is called UN-NAMED - IIFE
+// ((name) => {                               // 💎 Is called UN-NAMED - IIFE
 //     console.log(`DB CONNECTED TWO ${name}`);
 // }) ("Rishabh");                           // 📍 Answer is "DB CONNECTED TWO Rishabh" [ 📍using ";" at the end is must ]
 
