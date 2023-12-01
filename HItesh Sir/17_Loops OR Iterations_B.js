@@ -180,7 +180,11 @@ myCoding.forEach( (item) => {
 })
 
 
+
+
+
   
+//💎💎 To check whether FOR-EACH LOOP returns any value or not ?  👇👇
 
 // const coding2 = ["apple", "oranges", "bananas", "pineapples"]
 
@@ -188,7 +192,7 @@ myCoding.forEach( (item) => {
 //     console.log(item);
 //     return item
 // })
-// console.log(values);          //📍 Answer is "undefined"
+// console.log(values);          //📍 Answer is "undefined" [so conclusion is that FOR-EACH LOOP don't returns any value]
 
 
 
@@ -197,28 +201,25 @@ myCoding.forEach( (item) => {
 
 
 
-
-
-
-// FILTER Operation👇👇
+// 💎💎 FILTER - OPERATION 👇👇 [it returns the value unlike FOR-EACH LOOP]
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-const newNums = myNums.filter( (ankk) =>  ankk > 4 )
+const newNums = myNums.filter( (ankk) =>  ankk > 4 )    // [we want all "ankk" values which are greater than 4]
 // console.log(newNums);          //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
 
-                        //OR
+                        //OR🔽🔽 
 
 const newNums0 = myNums.filter( (ankk) =>  {
-    return ankk > 4               // We have to use "return" as we have used "{ }"
+    return ankk > 4               // We have to use "return" as we have used "{}"
 })
 // console.log(newNums);          //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
 
 
-                        //OR  
+                        //OR🔽🔽 (little lengthy Way)
 
 
-// 📍 by using FOR-EACH (in above condition in place of FILTER operation)
+//📍📍 by using FOR-EACH (in above condition in place of FILTER operation) [watch @8:33:08]
 
 const myNums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -235,8 +236,7 @@ myNums2.forEach ((num) => {
 
 
 
-
-// FILTER Operation examples 👇 (for better understanding)
+//📍💎📍FILTER Operation examples 👇 (for better understanding)  [watch @8:34:45]
 
 const books = [
     {title: 'Book One', genre: 'Fiction', publish : 1981, 
@@ -259,14 +259,16 @@ const books = [
      edition : 2004},
 ];
 
+
+
 const userBooks1 = books.filter( (bk) => bk.genre === 'History')
-// console.log(userBooks1);                                // 📍 RUN statement for resul
+console.log(userBooks1);                                // 📍 RUN statement for result
 
 
-const userBooks2 = books.filter ( (bk) => {
-    return bk.publish >= 2000 &&  bk.genre === "History"
-})
-console.log(userBooks2);                                    // 📍 Answer is :- 
+// const userBooks2 = books.filter ( (bk) => {
+//     return bk.publish >= 2000 &&  bk.genre === "History"
+// })
+// console.log(userBooks2);                                    // 📍 Answer is :- 
                                                             // "[
                                                             //     {
                                                             //       title: 'Book Seven',
