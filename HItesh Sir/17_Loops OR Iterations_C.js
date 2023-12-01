@@ -1,4 +1,4 @@
-const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    // [watch @8:42:00]
 
 const newNums = myNumers.map( (num) => {return num + 10})
 // console.log(newNums);                   //📍 Answer is "[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
@@ -7,25 +7,25 @@ const newNums = myNumers.map( (num) => {return num + 10})
 
 
 
-// CHAINING 👇👇 (applying MAP more than once)
+// 💎💎 CHAINING 👇👇 (applying MAP more than once)
 
 const myNumers0 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const newNums0 = myNumers0
-                        .map((num) => num*10)     // at this stage values will be [10, 20, 30, 40, .......]
-                        .map((num) => num + 1 )    // at this stage values will be [11, 21, 31, 41, .......]
-                        .filter ( (num) => num >= 40)
+                        .map((num) => num*10)      //📍 at this stage values will be [10, 20, 30, 40, .......]
+                        .map((num) => num + 1 )     //📍at this stage values will be [11, 21, 31, 41, .......]
+                        .filter ( (num) => num >= 40) 
 
-// console.log(newNums0);                     //📍 Answer is "[ 41, 51,  61, 71, 81, 91, 101]"
-
-
+// console.log(newNums0);                          //📍 Answer is "[ 41, 51,  61, 71, 81, 91, 101]"
 
 
 
 
 
 
-// REDUCE- METHOD👇👇 
+
+
+//💎💎 REDUCE- METHOD👇👇 
 
 
 const myNums1 = [1,2,3]

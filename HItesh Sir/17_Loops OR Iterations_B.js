@@ -29,7 +29,7 @@ for (const greet of greetings ) {
 
 
 
-// 💎📍💎 Maps  [ MAPs is an object which holdes the KEY-VALUE pair ]   [watch @7:56:49]
+// 💎📍💎 MAPS  [ MAPs is an object which holdes the KEY-VALUE pair ]   [watch @7:56:49]
 
 // 💎 Example-1
 const map = new Map()
@@ -262,12 +262,13 @@ const books = [
 
 
 const userBooks1 = books.filter( (bk) => bk.genre === 'History')
-console.log(userBooks1);                                // 📍 RUN statement for result
+// console.log(userBooks1);                                // 📍 RUN statement for result
 
+                        // 🔽🔽 
 
-// const userBooks2 = books.filter ( (bk) => {
-//     return bk.publish >= 2000 &&  bk.genre === "History"
-// })
+const userBooks2 = books.filter ( (bk) => {
+    return bk.publish >= 2000 &&  bk.genre === "History"
+})
 // console.log(userBooks2);                                    // 📍 Answer is :- 
                                                             // "[
                                                             //     {
