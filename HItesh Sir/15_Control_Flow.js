@@ -2,6 +2,12 @@
 // <, >, <=, >=, ==, !=, ===, !==
 
 
+// BASIC-syntax  👇👇 
+
+// if(true) {      // if "true" only then gonna executed, if "false" nothing is going to get executed
+
+// }
+
 
 // const isUserLoggedIn = true;
 // const temperature = 41;
