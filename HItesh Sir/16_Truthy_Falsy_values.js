@@ -53,9 +53,6 @@
 
 
 
-
-
-
 //💎💎 FALSY - VALUES 👇👇
 
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
@@ -102,7 +99,7 @@ const userEmail2 = []
 
 
 
-// INTERVIEW - QUESTIONS 👇👇
+// INTERVIEW - QUESTIONS 👇👇  // 💎📍💎 V. IMPORTANT  [@7:01:57]
 
 // console.log(false == 0);    //  📍 Answer is  "true"
 
@@ -116,11 +113,14 @@ const userEmail2 = []
 
 
 
+// 💎💎 NULLISH COALESCING OPERATOR (??) : null defined 👇👇  [@ 7:04:00 ]
 
-
-
-
-// NULLISH COALESCING OPERATOR (??) : null defined 👇👇
+/* ✅ what this operator basically does is the safety check of the "null" value i.e.
+       bcoz sometime it might happen that when we recived a value from other fucntion 
+       is "null" & due to null it might be possible that program may not run or some other 
+       problem might arise so in place of it an ALTERNATIVE value automatically gets assigned 
+       to it
+ */
 
 let val1 =  5 ?? 10
 // console.log(val1);     //  📍 Answer is  "5"
@@ -139,13 +139,14 @@ let val4 = null ?? 10 ?? 20
 
 
 
-// TERNIARY OPERATORS 👇👇
+//💎💎 TERNIARY OPERATORS 👇👇  [✅ It's basically a kind of One-Liner "IF-ELSE" statement]
 
 // condition ? true : false
 
 // Example 👇
+
 const iceTeaPrice = 100 
-// iceTeaPrice <= 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");
+iceTeaPrice <= 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");
 // 📍 Answer is  "Price is more than 80"
 
 
