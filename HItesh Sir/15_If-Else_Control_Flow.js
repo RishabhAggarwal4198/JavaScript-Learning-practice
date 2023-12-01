@@ -34,7 +34,7 @@ const score = 200
 
 if (score > 100) {
     let power = "power to fly"
-    console.log(`User power: ${power}`);
+    // console.log(`User power: ${power}`);
 }                                        //  📍 Answer will be "TUser power: power to fly"
 
 // console.log(`User power: ${power}`);     //  📍 Answer will be "ERROR" [bcoz variable "power" can't be accessed out of its scope]
@@ -47,16 +47,13 @@ if (score > 100) {
 
 const balance = 1000;
 
-//  📍 Instead of using {} we could also directly do this 👇
+//  📍 Instead of using {} we could also directly do this 👇 [But try to do this for one liner "console.log" only ]
 // if (balance2 > 500) console.log("tested ");
 
                            //OR
 
-//  📍 But try to do this for one liner only writing like this 👇 is very UNPROFESSIONAL
+//  📍 We can add more "console.log" statements as well by using comma (,) but writing like this 👇 is very UNPROFESSIONAL
 // if (balance2 > 500) console.log("tested "), console.log("tested 2");  // ❌❌❌❌ Dont do this PROFESSIONALLY
-
-
-
 
 
 
@@ -113,6 +110,7 @@ const loggedInFromEmail = true
 
 
 
+
 // USE OF "||" SIGN👇👇 [only one condition needs to be true]
 
 // if (loggedInFromGoogle ||  loggedInFromEmail) {
@@ -130,7 +128,7 @@ const loggedInFromEmail = true
 
 
 
-
+  
 
 
 // "SWITCH"  STATEMENTS (Shorter way of writing multiple IF - ELSE)👇👇
@@ -149,31 +147,32 @@ const loggedInFromEmail = true
 
 
 
+
     // EXAMPLE - 1 👇
 
-    // const month = 3;
+    const month = 3;
 
-    // switch (month) {
-    //     case 1:
-    //         console.log("month is January");
-    //         break;
+    switch (month) {
+        case 1:
+            console.log("month is January");
+            break;
 
-    //     case 2:
-    //         console.log("month is February");
-    //         break;
+        case 2:
+            console.log("month is February");
+            break;
 
-    //     case 3:
-    //         console.log("month is March");
-    //         break;
+        case 3:
+            console.log("month is March");
+            break;
     
-    //     case 4:
-    //         console.log("month is April");
-    //         break;
+        case 4:
+            console.log("month is April");
+            break;
     
-    //     default:
-    //         console.log("No Match found");
-    //         break;
-    // }           //  📍 Answer is "month is March"  
+        default:
+            console.log("No Match found");
+            break;
+    }           //  📍 Answer is "month is March"  
 
 
 
@@ -209,5 +208,10 @@ const loggedInFromEmail = true
 
 
 
+/*  🚩🚩NOTE(for above)🚩🚩 
+✅  In above SWITCh statements, if we are not going to provide "break;" keyword after
+    every "case" statement, so the system will print each & every "case" statement 
+    which comes after the matched "case" statements except the "default" statements
 
+*/
         
