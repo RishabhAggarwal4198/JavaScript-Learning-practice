@@ -1,4 +1,4 @@
-//  FOR of LOOP 
+//  FOR of LOOP   
 
 // Like its very common to put STRINGS in ARRAYS like [" ", " ", " "]
 //  Similarly it is also common to put OBJECTS in ARRAYS [{ }, { }, { }]

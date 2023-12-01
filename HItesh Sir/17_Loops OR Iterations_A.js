@@ -135,14 +135,15 @@ for (let i = 1; i <= 20; i++) {
 
 
 
-// WHILE - LOOP 👇👇
+// 💎 WHILE - LOOP 👇👇     [watch @7:40:02]
 
 
 let  index = 0
 while(index <= 10) {
     // console.log(`Value of index is ${index}`);
-    index = index + 2;
+    index = index + 2;                             // 📍 run the LOOP to see the result
 }
+
 
 
 // in ARRAY format👇
@@ -152,7 +153,7 @@ let myArray1 = ['flash', "batman", "superman"]
 let arr = 0
 while (arr < myArray.length) {
         // console.log(`Value is ${myArray[arr]}`);
-        arr = arr + 1
+        arr = arr + 1                              // 📍 run the LOOP to see the result
 }
 
 
@@ -166,22 +167,22 @@ while (arr < myArray.length) {
 
 
 
-// DO - WHILE  LOOP 👇👇
+//💎DO - WHILE  LOOP 👇👇
 
 let score1 = 1;
 do{
-    // console.log(`Score is ${score}`);
+    // console.log(`Score is ${score}`);          
     score1++
-} while (score1 <= 10) 
+} while (score1 <= 10)                      // 📍 run the LOOP to see the result
 
 
 
 
 
-// 📍 do-while LOOP special case
+// 📍📍 DO - WHILE  LOOP special case  [in this LOOP "print" command works first "condition" runs after that]
 
 let score2 = 11;
 do{
-    // console.log(`Score is ${score2}`);   // 📍 Answer is "Score is 11"
+    // console.log(`Score is ${score2}`);   // 📍 Answer is "Score is 11" [bcoz in this case "console.log" got printed first but "condition" got checked later on]
     score2++
 } while (score2 <= 10) 
