@@ -25,32 +25,34 @@ const newNums0 = myNumers0
 
 
 
-//💎💎 REDUCE- METHOD👇👇 
+//💎💎 REDUCE- METHOD👇👇   [watch @8:49:39] [also read on MDN website]
 
 
 const myNums1 = [1,2,3]
 
 const myTotal = myNums1. reduce (function (acc, currntVal){
-    console.log(`acc: ${acc} and currntVal: ${currntVal}`);
+    console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // 📍 [Run the code to know the Output or watch @8:55:37 ]  This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
     return acc + currntVal
-},0)
+},0)                                 // 📍"0" here means you have to start from 0
 
 // console.log(myTotal);             // 📍Answer is "6"
 
 
+                        // 🔽🔽
 
-// 📍writing above function in  ARROW-FUNCTION 👇 (short-code)
+
+// 📍💎📍writing above function in  ARROW-FUNCTION 👇 (short-code)
 
 const myTotal_1 = myNums1.reduce((acc, curr) => acc + curr, 0)
 
-// console.log(myTotal_1);           //📍Answer is "6"
+// console.log(myTotal_1);           //📍Answer is "6"   [watch @8:55:37 to know how it worked]
 
 
 
 
 
 
-// example 👇
+//💎💎 example 👇
 
 const shoppingCart = [
     {
@@ -73,4 +75,4 @@ const shoppingCart = [
 
 const priceToPay = shoppingCart.reduce ((acc, item) => acc + item.price, 0);
 
-console.log(priceToPay);              //📍Answer is "22996"
+// console.log(priceToPay);              //📍Answer is "22996"
