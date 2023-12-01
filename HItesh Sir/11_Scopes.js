@@ -7,12 +7,13 @@ if (true) {
     let a = 10
     const b = 20
     var c =20
+    d = 40
 }
 
 // console.log(a);    // 📍Answer will not be printed bcoz "a" is not accesible outside scope
 // console.log(b);    // 📍Answer will not be printed bcoz "b" is not accesible outside scope
-// console.log(c);       // 📍 🚩🚩{Problem with VAR}🚩🚩 Answer will not be "30" [which should not be as variable "var c" is definded in a SCOPE]
- 
+// console.log(c);    // 📍 🚩🚩{Problem with VAR}🚩🚩 Answer will not be "30" [which should not be, as variable "var c" is definded in a SCOPE]
+// console.log(d);    // 📍 🚩🚩{this kind of variable is also a problem}🚩🚩 Answer will not be "40" [which should not be, as this variable is definded in an SCOPE]
 
 /*  🚩🚩NOTE🚩🚩 Anything written inside a Scope is 
 called BLOCK - SCOPE & anything written outside of a scope 
