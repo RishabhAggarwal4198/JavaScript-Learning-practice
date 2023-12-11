@@ -33,7 +33,7 @@
                 <li>two</li>
                 <li>three</li>
             </ul>
-            
+
             
         </div>
 
@@ -58,44 +58,72 @@
    ➤   document.getElementById('title').className
    ➤   document.getElementById('title').getAtrribute('id') 
    ➤   document.getElementById('title').getAtrribute('class') 
-
-
    ➤   document.getElementById('title').getAtrribute('class', 'test') ✅✅ [📍in "Elements" section  heading will get overwrited  to test in class]
-
-
-   ➤   title.textContent
-   ➤   title.innerText
-   ➤   title.innerHTML      [📍 shows everything whatever is there in the Text Node]
-
-   ➤   title.textContent    [📍 only shows the text part dont supports the HTML tags ]
    
+
+
+
+   🔽🔽 👇👇 targeting STYLE elements :-
+
+   ➤   title.style.backgroundColor = 'green'
+   ➤   title.style.padding = "15px"
+   ➤   title.style.borderRadius = "5px"
+   ➤   title.style.borderRadius = "15px"
+
+
+
+   🔽🔽 Adding Contents 👇👇 :-
+
+   ➤   title.innerText      [📍 only displays the text part that is visible on the page ( i.e. doesn't  displays any additional HTML tags present in the text node) ] 
+   
+   ➤   title.textContent    [📍 displays everything whatever is there in the Text Node ]
+   
+   ➤   title.innerHTML      [📍 displays everything whatever is there in the Text Node along with their HTML tags]
+
+   
+
+
+
+   💎 Other Methods 👇👇
+
    ➤   document.getElementsByClassName('heading')   
+   ➤   document.getElementsByTagName  
+   ➤   document.getElementsByName 
+   ➤   document.getElementById
 
 
    
 
 
-
-   // Query-Selectors 👇👇
+   🔽🔽Query-Selectors 👇👇
 
    ➤  document.querySelector('h1')  [📍 Will give the first h1 of the page to you] 
    ➤  document.querySelector('h2')  [📍 Will give the first h2 of the page to you] 
-   ➤  document.querySelector('#title')    [📍 Just like CSS selectors] 
-   ➤  document.querySelector('.heading')  [📍 Just like CSS selectors] 
-   ➤  document.querySelector('input[type="passowrd"]')  [📍 Just like CSS selectors] 
-   
+   ➤  document.querySelector('#title')    [📍for selecing by "id" (Just like CSS selectors)] 
+   ➤  document.querySelector('.heading')  [📍for selecing by "class" (Just like CSS selectors)] 
+   ➤  document.querySelector('input[type="passowrd"]')  [📍 for selecting by "input types" (Just like CSS selectors)] 
+      
    ➤  document.querySelector('p:first-child') 
 
-   ➤  const myul = document.querySelector('ul')
-   ➤  myul.querySelector('li')
-   ➤  const turnGreen = myul.querySelector('li')
-   ➤  turnGreen.style.backgroundColor = "green"
-   ➤  turnGreen.style.padding = "10x"
-   ➤  turnGreen.innerText
-   ➤  turnGreen.innerText = "five"
+
+   ➤  document.querySelector('ul')        [📍for selecing a list ] 
+       const myul = document.querySelector('ul')
+       myul.querySelector('li')
+       const turnGreen = myul.querySelector('li')
+       turnGreen.style.backgroundColor = "green"
+       turnGreen.style.padding = "10x"
+       turnGreen.innerText
+       turnGreen.innerText = "five"
    
 
+   ➤  document.querySelectorAll('li')
+       const tempLiList = document.querySelectorAll('li')
+       tempLiList
+       tempLiList[0].style.color = 'green'
 
+
+       const myH1 = document.querySelectorAll('h1')
+       myH1[0].style.color = 'green' 
 
    
 
