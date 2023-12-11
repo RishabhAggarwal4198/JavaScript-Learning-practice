@@ -7,7 +7,9 @@
         <style>
             body{
                 background-color: #212121;
-                color: white;    
+                color: white; 
+                 
+                   
             }
 
 
@@ -32,6 +34,7 @@
                 <li>three</li>
             </ul>
             
+            
         </div>
 
 
@@ -47,8 +50,19 @@
 
 
 
-<!--ddddddd
+<!--DOM Methods for targeting Elemnts of the above document :- 
+
+   ➤   document.getElementById('title')
+   ➤   document.getElementById('title').id
+   ➤   document.getElementById('title').class  ❌❌❌❌ [📍Nothing will come bcoz it supports the key word "className"]
+   ➤   document.getElementById('title').className
+   ➤   document.getElementById('title').getAtrribute('id') 
    ➤   document.getElementById('title').getAtrribute('class') 
+
+
+   ➤   document.getElementById('title').getAtrribute('class', 'test') ✅✅ [📍in "Elements" section  heading will get overwrited  to test in class]
+
+
    ➤   title.textContent
    ➤   title.innerText
    ➤   title.innerHTML      [📍 shows everything whatever is there in the Text Node]
