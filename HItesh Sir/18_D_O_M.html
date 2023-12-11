@@ -116,10 +116,20 @@
        turnGreen.innerText = "five"
    
 
+
    ➤  document.querySelectorAll('li')
        const tempLiList = document.querySelectorAll('li')
-       tempLiList
        tempLiList[0].style.color = 'green'
+
+                    // OR
+
+       document.querySelectorAll('li')
+       const tempLiList = document.querySelectorAll('li')
+       tempLiList        
+
+       tempLiList.forEach(function (l) {            [📍used it's PROTOTYPE attribute ] 
+       l.style.backgroundColor = 'green'
+       })                                           [📍all of the list got green in Color ]
 
 
        const myH1 = document.querySelectorAll('h1')
