@@ -39,7 +39,7 @@
 
 
 
-        //👇👇 For Editing any VALUE (from the above one's)
+        //👇💎👇 EXAMPLE 1 - For Editing any VALUE (from the above one's)
 
         const secondLang = document.querySelector("li:nth-child(2)")
         // console.log(secondLang);          // [📍Answer will be "<li>python</li>"]
@@ -47,6 +47,19 @@
         const newLi = document.createElement('li')
         newLi.textContent = "Mojo"
         secondLang.replaceWith(newLi)
+
+
+
+        //👇💎👇 EXAMPLE 2 - For Editing any VALUE (from the above one's)
+
+        const firstLang = document.querySelector("li:first-child")
+        firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+
+        //👇💎👇 For Removing any VALUE (from the above one's)
+        const lastlang = document.querySelector('li:last-child')
+        lastlang.remove()            // [ 📍"Rust" got removed from the list ]
  
 
  </script>
