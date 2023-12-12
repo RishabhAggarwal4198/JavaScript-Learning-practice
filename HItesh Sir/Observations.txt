@@ -149,7 +149,17 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @1:14:37 ] 🍁TREE structure in DOM
 
-+ [watch @1:16:31 ]  🍁🍁 IMPORTANT 🍁🍁
++ [watch @1:16:31 ]  🍁🍁node-list  V. IMPORTANT 🍁🍁
+
++ [watch @1:26:24 ] 🍁Exercise to be done 🍁
+
+
+
+
+
+
+
+
 
 
 
