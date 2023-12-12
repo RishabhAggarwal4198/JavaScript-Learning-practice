@@ -138,7 +138,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
- 👇👇 🔽🔽  💎💎 📍📍 ✅✅- ❌❌
+ 👇👇 🔽🔽 💎💎 📍📍 ✅✅- ❌❌
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir)
@@ -153,7 +153,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @1:26:24 ] 🍁Exercise to be done 🍁
 
-
++ [watch @1:43:00, @1:43:49 ] 🍁🍁 REVISION 🍁🍁
 
 
 

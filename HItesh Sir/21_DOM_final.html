@@ -18,28 +18,36 @@
  <script>
 
         function addLanguage (langName) {
-            const li = document.createElement('li');
-            li.innerHTML = `${langName}`
-            document.querySelector('.language'). appendChild(li)
+            const listz = document.createElement('li');
+            listz.innerHTML = `${langName}`
+            document.querySelector('.language'). appendChild(listz)
         }
 
         addLanguage("python")      // 📍 "python"  will get added in the list
         addLanguage("typeScript")  // 📍 "typeScript"  will get added in the list
 
-
-                    //OR (much optimized form of above METHOD) 👇 [📍 in this approach we don't have to "TRAVERSE" the whole tree (like the above one) ]
-
-
+                     //🔽🔽 OR (much more optimized & PROFESSIONAL form of writing above METHOD) 👇 [📍 in this approach we don't have to "TRAVERSE" the whole tree (like the above one) ]
+ 
         function addOptiLanguage(langName){
-                const li = document.createElement('li')
-                li.appendChild(document.createTextNode(langName))
-                document.querySelector('.language').appendChild(li)
+                const listz = document.createElement('li')
+                listz.appendChild(document.createTextNode(langName))
+                document.querySelector('.language').appendChild(listz)
         }
-        
-        addOptiLanguage('golang')  // 📍 "golang"  will get added in the list
+
+        addOptiLanguage('Golang')  // 📍 "golang"  will get added in the list
+        addOptiLanguage('Rust')  // 📍 "Rust"  will get added in the list
 
 
 
+        //👇👇 For Editing any VALUE (from the above one's)
+
+        const secondLang = document.querySelector("li:nth-child(2)")
+        // console.log(secondLang);          // [📍Answer will be "<li>python</li>"]
+        // secondLang.innerHTML = "Mojo"     // [ 📍refrain using it bcoz it's an "UN-OPTIMIZED" approach ]
+        const newLi = document.createElement('li')
+        newLi.textContent = "Mojo"
+        secondLang.replaceWith(newLi)
+ 
 
  </script>
 
