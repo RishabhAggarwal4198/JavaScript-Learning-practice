@@ -23,17 +23,20 @@
             document.querySelector('.language'). appendChild(li)
         }
 
-        addLanguage("python")
-        addLanguage("typeScript")
+        addLanguage("python")      // 📍 "python"  will get added in the list
+        addLanguage("typeScript")  // 📍 "typeScript"  will get added in the list
+
 
                     //OR (much optimized form of above METHOD) 👇 [📍 in this approach we don't have to "TRAVERSE" the whole tree (like the above one) ]
+
 
         function addOptiLanguage(langName){
                 const li = document.createElement('li')
                 li.appendChild(document.createTextNode(langName))
                 document.querySelector('.language').appendChild(li)
         }
-        addOptiLanguage('golang')
+        
+        addOptiLanguage('golang')  // 📍 "golang"  will get added in the list
 
 
 
