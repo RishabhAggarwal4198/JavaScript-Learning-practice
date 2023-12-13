@@ -141,8 +141,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
  👇👇 🔽🔽 💎💎 📍📍 ✅✅- ❌❌
 
 
->>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir)
-♦️♦️start watching from  { @1:04:33 }♦️♦️
+>>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
+♦️♦️start watching from  { @2:04:35  }♦️♦️
 
 + [ watch @48:11 ] 🍁 REDUCE method -   
   Explanation 🍁
