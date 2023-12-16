@@ -25,10 +25,27 @@ html {
   #white {
     background: white;
   }
+
   #blue {
     background: blue;
   }
+
   #yellow {
     background: yellow;
   }
   
+  #Red{
+    background: red;
+  }
+
+  #Orange{
+    background: orange;
+  }
+
+  #Purple{
+    background: purple;
+  }
+
+  #Sky_Blue{
+    background: skyblue;
+  }
