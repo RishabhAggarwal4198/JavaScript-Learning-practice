@@ -155,6 +155,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @1:43:00, @1:43:49 ] 🍁🍁 REVISION 🍁🍁
 
++ [watch @2:35:22 ] 🍁🍁 SET-INTERVAL function 🍁🍁
+
 
 
 
