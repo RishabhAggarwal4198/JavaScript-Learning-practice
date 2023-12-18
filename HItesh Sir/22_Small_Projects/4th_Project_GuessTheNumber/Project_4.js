@@ -26,7 +26,7 @@ if(playGame){
 
 
 function validateGuess(guess){
-    if(isNan(guess)){
+    if(isNaN(guess)){
         alert ('Please enter a valid number')
     } else if ( guess < 1){
         alert ('Please enter a number more than 1')
@@ -61,8 +61,8 @@ function checkGuess(guess){
 
 
 function displayGuess(guess){
-    userInput.value = ''
-    guessSlot.innerHTML += `${guess}`
+    userInput.value = '';
+    guessSlot.innerHTML += `${guess}   `;
     numGuess++;
     remaining.innerHTML = `${11 - numGuess}`
 }
@@ -70,7 +70,7 @@ function displayGuess(guess){
 
 
 function displayMessage(message){
-    
+    lowOrHi.innerHTML = `<h2>${message}</h2>`
 }
 
 
