@@ -20,6 +20,7 @@ html {
     padding: 7px;
   }
   
+
   button {
     background-color: #141414;
     color: #fff;
@@ -67,12 +68,12 @@ html {
   .guesses {
     background-color: #7a7a7a;
   }
-  
+   
   #wrapper {
     box-sizing: border-box;
     text-align: center;
     width: 450px;
-    height: 550px;
+    height: 600px;
     background-color: #474747;
     color: #fff;
     font-size: 25px;
@@ -88,5 +89,5 @@ html {
   p {
     font-size: 16px;
     text-align: center;
-  }
+  }      
   
