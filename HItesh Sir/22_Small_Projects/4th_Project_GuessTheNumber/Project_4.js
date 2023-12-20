@@ -19,9 +19,9 @@ if(playGame){
     submit.addEventListener('click', function(e){
         e.preventDefault();
         const guess = parseInt(userInput.value);
-        console.log(guess);
+        // console.log(guess);
         validateGuess(guess);
-    });
+    }); 
 } 
 
 
@@ -34,13 +34,13 @@ function validateGuess(guess){
         alert ('Please enter a number less than 100')
     } else {
         prevGuess.push(guess)
-        if(numGuess === 11){
+        if(numGuess === 11){  
             displayGuess(guess)
             displayMessage(`Game Over. Random number was ${randomNumber}`)
             endGame()
-        } else {
+        } else {  
             displayGuess(guess)
-            checkGuess(guess)
+            checkGuess(guess) 
         }
     }
 }
@@ -64,7 +64,7 @@ function displayGuess(guess){
     userInput.value = '';
     guessSlot.innerHTML += `${guess}   `;
     numGuess++;
-    remaining.innerHTML = `${11 - numGuess}`;
+    remaining.innerHTML = `${11 - numGuess}`; 
 }
 
 
