@@ -47,7 +47,7 @@ function validateGuess(guess){
 
 
 
-function checkGuess(guess){
+function checkGuess(guess) {
     if(guess === randomNumber){
         displayMessage(`You guessed it right`)
         endGame()
@@ -98,7 +98,6 @@ function newGame () {
         remaining.innerHTML =  `${11 - numGuess}`;
         userInput.removeAttribute(`disabled`)
         startOver.removeChild(p);
-
 
         playGame = true;
     })
