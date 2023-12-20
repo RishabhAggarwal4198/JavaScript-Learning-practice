@@ -10,7 +10,7 @@ const startOver = document.querySelector('.resultParas')
 const p = document.createElement('p')
 
 
-let prevGuess = []
+let prevGuess = []  
 let numGuess = 1;
 
 let playGame = true;
@@ -42,7 +42,7 @@ function validateGuess(guess){
             displayGuess(guess)
             checkGuess(guess) 
         }
-    }
+    }  
 }
 
 
@@ -62,8 +62,8 @@ function checkGuess(guess) {
 
 
 function displayGuess(guess){
-    userInput.value = '';
-    guessSlot.innerHTML += `${guess}   `;
+    userInput.value = '';                              // [📍 Here the value inside the "userInput.value" got cleaned i.e. there is now no value in it ]
+    guessSlot.innerHTML += `${guess},   `;            // [📍 At this stage it's not updating the values in GUESS, istead its PUSHING those values into that ]
     numGuess++;
     remaining.innerHTML = `${11 - numGuess}`; 
 }
@@ -78,14 +78,13 @@ function displayMessage(message){
 
 
 function endGame () {
-    userInput.value = '';
+    userInput.value = '';                             // [📍 Here the value inside the "userInput.value" got cleaned i.e. there is now no value in it ]
     userInput.setAttribute('disabled', '');
     p.classList.add('button');
     p.innerHTML = `<h2 id = "newGame"> Start new Game</h2>`;
     startOver.appendChild(p);
     playGame = false;
     newGame();
-
 }
 
 
