@@ -111,9 +111,56 @@
                                  
                               // 🔽🔽
 
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target);   // [📍 At this point In "console.log" its basically showing that from which TARGET this EVENT is occuring ]
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target);   // [📍 At this point In "console.log" its basically showing that from which TARGET this EVENT is occuring ]
+    // })
+
+                              // 🔽🔽
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.parentNode);   // [📍 At this point In "console.log" its basically showing the original PARENT-NODE (in which the image is present)]
+    // })
+
+                              // 🔽🔽
+
+    // document.querySelector('#images').addEventListener('click', function(e){ 
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()         // [📍 At this point due to this METHOD we could actaully "remove" the images by clicking on it]
+    // })
+
+                              // 🔽OR 🔽 (✅another way of doing the above thing) (watch @3:55:21 ) 
+
+    // document.querySelector('#images').addEventListener('click', function(e){ 
+    //     let removeIt = e.target.parentNode
+    //     removeIt.parentNode.removeChild(removeIt)      // [📍 Another Method of doing the above thing....  (Explanation @watch @33:55:21 ) ]
+    // })
+
+    /*
+    💎 In the above code snippet in "Let removeIt" we targated & then stored 
+    List tag (li) but when we targated  'removeIt' directly using 'removeChild' after 
+    it, it actually gonna remove the child of the elemnt targated in 'removeIt'
+    variable i.e. List element....
+    So to stop this we have used the method '.parentNode' after 'removeIt' & hence the
+    expression :-
+     removeIt.parentNode.removeChild(removeIt)  
+     */
+
+
+                               // 🔽🔽
+
+
+        document.querySelector('#images').addEventListener('click', function(e){ 
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG')  {
+            
+        }
     })
+
+  
+
+
+
+
 
 
 </script>
