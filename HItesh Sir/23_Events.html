@@ -14,7 +14,8 @@
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+            <!-- <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li> -->
+            <li><a style="color: aliceblue;"  id="google">Google</a></li>
         </ul>
    </div>
 </body>
@@ -50,13 +51,13 @@
 
     // 💎💎 CASE - 1 (BUBBLING)👇
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false);   // [📍 We could just remove FALSE value as well bcoz it gonna give the same result]
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false);   // [📍 We could just remove FALSE value as well bcoz it gonna give the same result]
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    // }, false);
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+    }, false);
    
     // [📍Just click the "owl" image & then see in the console....you would see "owl clicked" first & then "clicked inside the ul"
 
@@ -73,8 +74,6 @@
 
 
 
-
-
     // 💎💎 CASE - 2 (CAPTURING) 👇
 
     // document.getElementById('images').addEventListener('click', function(e){
@@ -87,8 +86,25 @@
 
 
     // [📍Just click the "owl" image & then see in the console....you would see  "clicked inside the ul" first  & then "owl clicked" 
+ 
+   
+
+
+
+     // 💎💎 Prevent - Default  👇   
+
+     document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault;        // [📍 To stop the BUBBLING ]
+        e.stopPropagation();     // [📍 To stop the PROPAGATION ]
+        console.log(("google clicked"));
+     }, false)
+
 
    
+
+
+
+
 </script>
 </html>
 
