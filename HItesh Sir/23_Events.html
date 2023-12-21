@@ -51,13 +51,13 @@
 
     // 💎💎 CASE - 1 (BUBBLING)👇
 
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log("clicked inside the ul");
-    }, false);   // [📍 We could just remove FALSE value as well bcoz it gonna give the same result]
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false);   // [📍 We could just not write FALSE at the last as well bcoz it gonna give the same result]
 
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log("owl clicked");
-    }, false);
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    // }, false);
    
     // [📍Just click the "owl" image & then see in the console....you would see "owl clicked" first & then "clicked inside the ul"
 
@@ -91,18 +91,29 @@
 
 
 
-     // 💎💎 Prevent - Default  👇   
+     // 💎💎 REVENT DEFAULT 👇👇   
 
-     document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault;        // [📍 To stop the BUBBLING ]
-        e.stopPropagation();     // [📍 To stop the PROPAGATION ]
-        console.log(("google clicked"));
-     }, false)
-
-
-   
+    //  document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault;        // [📍 To stop the BUBBLING ]
+    //     e.stopPropagation();     // [📍 To stop the PROPAGATION ]
+    //     console.log(("google clicked"));
+    //  }, false)
 
 
+
+
+
+    //💎💎 For making IMAGES disapper just by clicking 👇👇
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e);    // [📍 At this point In "console.log" on clicking the images we are getting events]
+    // })
+                                 
+                              // 🔽🔽
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target);   // [📍 At this point In "console.log" its basically showing that from which TARGET this EVENT is occuring ]
+    })
 
 
 </script>
