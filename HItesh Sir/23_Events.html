@@ -24,10 +24,73 @@
     // }
 
 
-    document.getElementById('owl').addEventListener('click', function(){
-        alert("owl clicked again")
-    })
+    //attachEvent()
+
+    //jQuery - on 
+
+
+
+    // document.getElementById('owl').addEventListener('click', function(){
+    //     alert("owl clicked again")
+    // })
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log(e);
+    }, false)
+
+    /* 📍Events which got generated in the console due to above "addEventListner" & we need to study them are :-
+      ➤ type, timestamp, defaultPrevented
+      ➤ target, toElement, srcElement, currentTarget
+      ➤ clientX, clientY, screenX, screenY
+      ➤ altkey, ctrlkey, shiftkey, keycode
+    */ 
+
+
+
+
+    // 💎💎 CASE - 1 (BUBBLING)👇
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false);   // [📍 We could just remove FALSE value as well bcoz it gonna give the same result]
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    // }, false);
+   
+    // [📍Just click the "owl" image & then see in the console....you would see "owl clicked" first & then "clicked inside the ul"
+
+
+
+    //👇 when u want to stop BUBBLING of the elemnts 
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation    // [💎 this property was used for stopping the BUBBLINg]
+    // }, false);
+   
+   // [📍Just click the "owl" image now & then see in the console....you would only see "owl clicked"
+
+
+
+
+
+    // 💎💎 CASE - 2 (CAPTURING) 👇
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, true);  
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    // }, true);
+
+
+    // [📍Just click the "owl" image & then see in the console....you would see  "clicked inside the ul" first  & then "owl clicked" 
 
    
 </script>
 </html>
+
+
+
