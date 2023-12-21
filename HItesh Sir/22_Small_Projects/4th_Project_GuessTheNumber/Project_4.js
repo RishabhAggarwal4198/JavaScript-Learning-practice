@@ -7,7 +7,7 @@ const remaining = document.querySelector ('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
 const startOver = document.querySelector('.resultParas')
 
-const p = document.createElement('p')
+const p = document.createElement('p') 
 
 
 let prevGuess = []  
@@ -78,8 +78,8 @@ function displayMessage(message){
 
 
 function endGame () {
-    userInput.value = '';                             // [📍 Here the value inside the "userInput.value" got cleaned i.e. there is now no value in it ]
-    userInput.setAttribute('disabled', '');
+    userInput.value = '';                             // [📍 Here the value inside the "userInput.value" got cleaned i.e. there is now no value in it (remember not ZERO but NO - VALUE) ]
+    userInput.setAttribute('disabled', '');           // [📍 this ".setAttribute('disabled', '');"  is done so that the User won't be able to add any value to "userInput" ]
     p.classList.add('button');
     p.innerHTML = `<h2 id = "newGame"> Start new Game</h2>`;
     startOver.appendChild(p);
@@ -92,14 +92,14 @@ function newGame () {
     const newGameButton = document.querySelector('#newGame')
     newGameButton.addEventListener('click', function(e){
         randomNumber = parseInt(Math.random() * 100 + 1);
-        prevGuess = []
+        prevGuess = []                            // [📍 Here the "previouGuess" varaible got RESET ]
         numGuess = 1
         guessSlot.innerHTML = ''
         remaining.innerHTML =  `${11 - numGuess}`;
         userInput.removeAttribute(`disabled`)
         startOver.removeChild(p);
-
         playGame = true;
+
     })
    
 }
