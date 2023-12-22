@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>asynchronous Javascript</h1>
+    <button id="stop"> Stop </button>
+</body>
+
+<script>
+
+
+
+    // 💎💎 SET-TIMEOUT basically a FUNCTIOn which basically executes a particular function after a set time
+
+    // setTimeout(function () {
+    //     console.log("Rishabh");
+    // }, 2000)     // [📍 2000 is 2000 miliseconds = 2 seconds]
+
+                    //🔽🔽
+
+    // const trialVar = setTimeout(function () {
+    //     console.log("Rishabh");
+    // }, 2000)     // [📍 2000 is 2000 miliseconds = 2 seconds]
+
+    // setTimeout(trialVar, 2000)
+
+    
+                    //🔽🔽
+
+//     const trialVar = setTimeout(function () {
+//         console.log("Rishabh");
+//     }, 2000)     // [📍 2000 is 2000 miliseconds = 2 seconds]
+
+//    const changeText = function () {
+//     document.querySelector('h1').innerHTML = 
+//     "JavaScript Learning Course"
+//    }
+
+//     setTimeout(changeText, 2000)      // [📍 Now code will execute after 2 seconds]
+                    
+
+                    //🔽🔽
+
+
+    //💎💎 Using "clearTimeout()" to stop the execution of any "setTimeout"
+
+//     const trialVar = setTimeout(function () {
+//         console.log("Rishabh");
+//     }, 2000)     // [📍 2000 is 2000 miliseconds = 2 seconds]
+
+//    const changeText = function () {
+//     document.querySelector('h1').innerHTML = 
+//     "JavaScript Learning Course"
+//    }
+
+//    const changeMe = setTimeout(changeText, 2000)   
+
+//    clearTimeout(changeMe);
+                    
+
+                    //🔽🔽
+
+
+    //💎💎 Using "clearTimeout()" to stop the execution of any "setTimeout"
+
+    const trialVar = setTimeout(function () {
+        console.log("Rishabh");
+    }, 2000)     // [📍 2000 is 2000 miliseconds = 2 seconds]
+
+   const changeText = function () {
+    document.querySelector('h1').innerHTML = 
+    "JavaScript Learning Course"
+   }
+
+   const changeMe = setTimeout(changeText, 2000)   
+
+   document.querySelector('#stop').
+   addEventListener('click', function (){
+    clearTimeout(changeMe)
+    console.log("STOPPED");     //
+   })
+
+  
+
+
+</script>
+
+</html>
+ 

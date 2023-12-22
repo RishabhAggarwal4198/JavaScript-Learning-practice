@@ -138,12 +138,12 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
- 👇👇 🔽🔽 💎💎 📍📍 ✅✅ ❌❌
+ 👇👇 👇 💎💎 📍📍 ✅✅ ❌❌ 🔽🔽
 
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
-♦️♦️start watching from  { @3:35:03 }♦️♦️
+♦️♦️start watching from  { @4:24:13 }♦️♦️
 
 🔽🔽PROJECT-4 Left Out:- @3:13:19🔽🔽  
 
@@ -164,8 +164,13 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
  
 + [watch @3:44:53 ] 🍁🍁BUBBLING-Important 🍁🍁
 
++ [watch @33:55:21  ] 🍁🍁REMOVECHILD-Important 🍁🍁
 
++ [watch @4:05:46  ] 🍁🍁BLOCKING & NON-BLOCKING code 🍁🍁
 
++ [watch @4:15:37  ] 🍁🍁~ IMPORTANT ~🍁🍁
+
++ [watch @4:23:47  ] 🍁🍁important INTERVIEW question 🍁🍁
 
 
 
