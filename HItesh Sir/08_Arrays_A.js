@@ -3,6 +3,9 @@
 const myArr = [0, 1, 2, 3, 4, 5]
 // console.log(myArr[1]);   // 📍 Answer is "1"
 
+const ally = ["A", "B", "C", "D", "E", "F"]
+// console.log(ally[2]);      // 📍 Answer is "C"
+
 const myHeros = ["Superman", "Batman", "Zoro"]
 // console.log(myHeros[1]);   // 📍 Answer is "Batman"
 
