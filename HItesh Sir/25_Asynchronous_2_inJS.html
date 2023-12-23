@@ -9,12 +9,80 @@
 
 
 <body>
-    <h1>Asynchronous in JS </h1>
+    <h1>Asynchronous Concept in JS </h1>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop</button>
     
+
+
 </body>
 
 
 <script>
+
+
+    // 💎💎 SET-INTERVAL 👇👇 [to Loop or Keep executing/printing a function after certain interval of time]
+
+
+    // setInterval(function(){
+    //     console.log("Rishabh", Date.now());
+    // },1000)           // [📍 We will have "Rishabh" printed in console.log after every 1 second ]
+
+
+                                 // 🔽🔽 
+
+    // const sayDate = function(){
+    // console.log("Rishabhhhh", Date.now());
+    // }   
+    // setInterval(sayDate, 1000)     // [📍 We will have "Rishabh" printed in console.log after every 1 second ]
+
+
+                                 // 🔽🔽 (We could also add 3rd Parameter to it)
+
+    // const sayDate = function(strrr){
+    // console.log( strrr,"Rishabhhhh", Date.now());
+    // }   
+    // setInterval(sayDate, 1000, "Hiiii")     // [📍 We will have "Hiiii Rishabhhhh" printed in console.log after every 1 second ]
+
+
+                                 // 🔽🔽 
+
+
+    // const sayDate = function(strrr){
+    // console.log( strrr,"Rishabhhhh", Date.now());
+    // }   
+
+    // const intervalId =  setInterval(sayDate, 1000, "Hiiii")    
+
+    // clearInterval(intervalId)       // [📍 Now it will stop the "setInterval" thing]
+
+
+    
+
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //                                  ✅✅✅✅  APPLYING - IT  ✅✅✅✅
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+    const intervallll = function(strrrr){
+        console.log(strrrr,"Everyone",Date.now());
+        console.log("Running");
+    } 
+
+    let calling;
+
+    document.querySelector('#start').addEventListener('click', function(){
+        calling = setInterval(intervallll, 1000 , "Hellooo")
+    })
+
+    
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(calling);
+    })
+
+
+    
+
 
 </script>
 
