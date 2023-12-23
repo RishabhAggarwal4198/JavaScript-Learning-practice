@@ -62,17 +62,20 @@
         let intervalId;
 
         const startChangingColor = function () {
-            if(!intervalId){
-                intervalId = setInterval(changeBgColor, 1000)     // ✅✅
-            }
             
             function changeBgColor () {
                 document.body.style.backgroundColor = randomColor();
             }
 
             intervalId = setInterval (changeBgColor, 1000 )
+
+            if(!intervalId){                                     // [📍📍 a way of writing "intervalId == null"  ]      
+                intervalId = setInterval(changeBgColor, 1000)     // ✅✅
+            }
+
         }
 
+        
 
         const stopChangingColor = function () {
             clearInterval(intervalId);
@@ -82,7 +85,7 @@
 
         document.querySelector('#Start').addEventListener('click', startChangingColor);
 
-        document.querySelector('#Stop').addEventListener('click', stopChangingColor )
+        document.querySelector('#Stop').addEventListener('click', stopChangingColor );
 
 
     </script>
