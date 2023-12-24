@@ -25,9 +25,9 @@ const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in o
 
 
 
-// 💎💎 Consuming a PROMISE 👇👇
+// // 💎💎 Consuming a PROMISE 👇👇
     
-PromiseOne.then (function(){                 // [📍📍 ".then" is directly related to "resolve" ]
+PromiseOne.then (function(){                 // [📍📍 ".then" is put over here as it is directly related to "resolve" ]
     // console.log("Promise in consumed");      // [📍📍 "Promise in consumed"  got printed after 1 minute]
 })
 
@@ -35,7 +35,7 @@ PromiseOne.then (function(){                 // [📍📍 ".then" is directly re
                         // 🔽🔽 (little short way of doing the above thing)
 
 
-new PromiseTwo(function(resolve, reject){
+new Promise(function(resolve, reject){
     setTimeout(function(){
         // console.log("Async task 2");
         resolve()
@@ -48,10 +48,23 @@ new PromiseTwo(function(resolve, reject){
 
 
 
+
 // 💎💎 PROMISE - 3 👇👇
 
+
+// Creating "promise" 👇 
 const promiseThree = new Promise (function(resolve, reject){
-    setTimeout(function)
+    setTimeout(function(){
+        resolve({
+            username : "Rishabh",
+            email : "code@example.com"})
+    }, 1000)
+})
+
+
+// Consuming "promise" 👇 
+promiseThree.then(function(user){
+    console.log(user);              // [📍 "{ username: 'Chai', email: 'code@example.com' }" got printed in console.log ]
 })
 
 
@@ -61,3 +74,88 @@ const promiseThree = new Promise (function(resolve, reject){
 
 
 
+// 💎💎 PROMISE - 4 👇👇
+
+// Creating "promise" 👇 
+const promiseFour = new Promise (function (resolve, reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve ({username: "Rishabh",
+                     password: "123"})
+        }else{
+            reject("!ERROR: Something went wrong")
+        }
+    },1000)
+})
+
+
+
+// Consuming "promise" 👇 
+
+// promiseFour.then().catch()    // [📍 One-Way of doing this]
+
+promiseFour.then((user) => {
+    console.log(user);
+    return user.username
+}).then((username) => {                 // [📍This is called chaining (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+    console.log(username);
+}).catch(function (errorrr){
+    console.log(errorrr);
+}).finally(() => console.log("The promise is either resolved or rejected"))
+
+// [📍💎📍 Answer is "!ERROR: Something went wrong" & "The promise is either resolved or rejected"  bcoz "let error = true;" in line 79]
+// [📍💎📍 Answer is "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
+
+
+
+
+
+
+
+// 💎💎 PROMISE - 5 👇👇
+
+const promiseFive = new Promise(function (resolve, reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve ({username: "JavaScript",
+                     password: "123"})
+        }else{
+            reject("!ERROR: JS went wrong")
+        }
+    },1000)
+})
+
+async function consumePromiseFive () {
+    const response = await promiseFive
+    // console.log(response);
+}
+// consumePromiseFive();
+
+
+        // 🔽🔽  (OR) [for Handling error much more gracefully ]
+
+
+    const promiseFivee = new Promise(function (resolve, reject){
+        setTimeout(function(){
+            let error = true;
+            if(!error){
+                resolve ({username: "JavaScript",
+                            password: "123"})
+            }else{
+                reject("!ERROR: JS went wrong")
+            }
+        },1000)
+    })
+
+    async function consumePromiseFive () {
+        try {
+            const response = await promiseFivee
+            console.log(response);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    consumePromiseFive();
