@@ -17,7 +17,7 @@ const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in o
 
 
     setTimeout(function (e) {
-        console.log('Async task is complete');    // [📍📍 "Async task is complete"  got printed after 1 minute]
+        // console.log('Async task is complete');    // [📍📍 "Async task is complete"  got printed after 1 minute]
         resolve ();                               //[💎📍💎 "resolve()" is very important to be called to connect it to ".then" below]
     },1000)
     
@@ -28,7 +28,30 @@ const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in o
 // 💎💎 Consuming a PROMISE 👇👇
     
 PromiseOne.then (function(){                 // [📍📍 ".then" is directly related to "resolve" ]
-    console.log("Promise in consumed");      // [📍📍 "Promise in consumed"  got printed after 1 minute]
+    // console.log("Promise in consumed");      // [📍📍 "Promise in consumed"  got printed after 1 minute]
+})
+
+
+                        // 🔽🔽 (little short way of doing the above thing)
+
+
+new PromiseTwo(function(resolve, reject){
+    setTimeout(function(){
+        // console.log("Async task 2");
+        resolve()
+    },1000)
+}).then(function(){
+    // console.log("Async 2 resolved");
+})
+
+
+
+
+
+// 💎💎 PROMISE - 3 👇👇
+
+const promiseThree = new Promise (function(resolve, reject){
+    setTimeout(function)
 })
 
 
