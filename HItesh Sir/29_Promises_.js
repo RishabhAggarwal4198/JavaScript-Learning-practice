@@ -115,28 +115,29 @@ promiseFour.then((user) => {
 
 // 💎💎 PROMISE - 5 👇👇
 
-const promiseFive = new Promise(function (resolve, reject){
-    setTimeout(function(){
-        let error = true;
-        if(!error){
-            resolve ({username: "JavaScript",
-                     password: "123"})
-        }else{
-            reject("!ERROR: JS went wrong")
-        }
-    },1000)
-})
+// const promiseFive = new Promise(function (resolve, reject){
+//     setTimeout(function(){
+//         let error = true;
+//         if(!error){
+//             resolve ({username: "JavaScript",
+//                      password: "123"})
+//         }else{
+//             reject("!ERROR: JS went wrong")
+//         }
+//     },1000)
+// })
 
-async function consumePromiseFive () {
-    const response = await promiseFive
-    // console.log(response);
-}
-// consumePromiseFive();
+// async function consumePromiseFive () {
+//     const response = await promiseFive
+//     // console.log(response);
+// }
+// // consumePromiseFive();
 
 
         // 🔽🔽  (OR) [for Handling error much more gracefully ]
 
 
+ // Creating "promise" 👇 
     const promiseFivee = new Promise(function (resolve, reject){
         setTimeout(function(){
             let error = true;
@@ -149,6 +150,8 @@ async function consumePromiseFive () {
         },1000)
     })
 
+
+    // Consuming "promise" 👇 
     async function consumePromiseFive () {
         try {
             const response = await promiseFivee
@@ -158,4 +161,7 @@ async function consumePromiseFive () {
         }
     }
 
-    consumePromiseFive();
+    consumePromiseFive();      // [📍 Answer is "!ERROR: JS went wrong" bcpz " let error = true;"  in the line 143 ]
+
+
+    
