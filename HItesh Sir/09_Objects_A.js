@@ -8,7 +8,6 @@
 
 
 
-
 // SYMBOL DATA - TYPE & only way to access it  👇👇
 
 const mySym = Symbol ("key1")
