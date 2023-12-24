@@ -173,7 +173,7 @@ promiseFour.then((user) => {
     //    }
     // }
 
-    // getAllUsers()
+    // getAllUsers()     // [📍📍 Run to see the RESULT]
 
 
                   // 🔽🔽 (writing above function in ".then & .catch" format)
@@ -183,5 +183,8 @@ promiseFour.then((user) => {
     .then((response) => {
         return response.json()
     })
-    .catch((error) => console.log(error))
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => console.log(error))    // [📍📍 Run to see the RESULT (will be same as the above method)]
 
