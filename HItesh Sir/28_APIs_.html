@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> APIs in JavaScript </title>
 </head>
 
 
 
-<body>
+<body style="background-color: #212121; color: white;">
+
+    <p> Hello Everyone</p>
     
 
 </body>
@@ -19,13 +21,23 @@
 
 <script>
 
-    const requestUrl = 'https://github.com/RishabhAggarwal4198'
+    const requestUrl = 'https://api.github.com/users/RishabhAggarwal4198'
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl)
-    xhr.onreadystatechange
-    console.log(xhr.readyState);
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            let data = this.responseText
+            console.log(data);
+            console.log(typeof data);     // [📍📍 Most of the time the response which we gets from URL is in the form of a STRING only]
+            data = JSON.parse(this.responseText)    // [📍📍 "JSON.parse" converts String data into JSON ]
+            console.log(typeof data);      // [📍📍Now "data" is object ]
+            console.log(data.public_repos);   // [📍📍We will get "18" as answer in console.log]
+        }
+    }
+    
     xhr.send()
-
+    
 
 
 </script>
