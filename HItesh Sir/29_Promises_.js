@@ -127,7 +127,7 @@ promiseFour.then((user) => {
 //     },1000)
 // })
 
-// async function consumePromiseFive () {
+// async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
 //     const response = await promiseFive
 //     // console.log(response);
 // }
@@ -152,7 +152,7 @@ promiseFour.then((user) => {
 
 
     // Consuming "promise" 👇 
-    async function consumePromiseFive () {
+    async function consumePromiseFive () {        // [📍📍 Async means "some response is about to come"]
         try {
             const response = await promiseFivee
             console.log(response);
@@ -163,5 +163,11 @@ promiseFour.then((user) => {
 
     consumePromiseFive();      // [📍 Answer is "!ERROR: JS went wrong" bcpz " let error = true;"  in the line 143 ]
 
+    async function getAllUsers () {
+        const response = await fetch ('https://jsonplaceholder.typicode.com/users')
+        response.json()
+        const data = response.json()
+        console.log(data); 
+    }
 
-    
+    getAllUsers()
