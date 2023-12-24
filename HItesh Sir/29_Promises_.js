@@ -16,15 +16,20 @@ const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in o
     // + Network
 
 
-    setTimeout(function () {
-        console.log('ASync task is complete');
+    setTimeout(function (e) {
+        console.log('Async task is complete');    // [📍📍 "Async task is complete"  got printed after 1 minute]
+        resolve ();                               //[💎📍💎 "resolve()" is very important to be called to connect it to ".then" below]
     },1000)
     
 })
 
 
-// 💎💎 Creating a PROMISE 👇👇
+
+// 💎💎 Consuming a PROMISE 👇👇
     
+PromiseOne.then (function(){                 // [📍📍 ".then" is directly related to "resolve" ]
+    console.log("Promise in consumed");      // [📍📍 "Promise in consumed"  got printed after 1 minute]
+})
 
 
 
