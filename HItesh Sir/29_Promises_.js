@@ -10,7 +10,7 @@
 
 const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in our daily world a PROMISE done by someone will only have two aspects 1) Either it will be completed 2) Or it will not get completed, So Similarly in JS also PROMISE have two aspects "resolve" & "rejected"]
 
-    // Do an Async task :-
+    // Do an Async task (some of these things takes time ):-
     // + DB calls
     // + Cryptography
     // + Network
@@ -152,22 +152,33 @@ promiseFour.then((user) => {
 
 
     // Consuming "promise" 👇 
-    async function consumePromiseFive () {        // [📍📍 Async means "some response is about to come"]
-        try {
-            const response = await promiseFivee
-            console.log(response);
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // async function consumePromiseFive () {        // [📍📍 Async means "some response is about to come"]
+    //     try {
+    //         const response = await promiseFivee
+    //         console.log(response);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
-    consumePromiseFive();      // [📍 Answer is "!ERROR: JS went wrong" bcpz " let error = true;"  in the line 143 ]
+    // consumePromiseFive();      // [📍 Answer is "!ERROR: JS went wrong" bcpz " let error = true;"  in the line 143 ]
 
-    async function getAllUsers () {
-        const response = await fetch ('https://jsonplaceholder.typicode.com/users')
-        response.json()
-        const data = response.json()
-        console.log(data); 
-    }
+    // async function getAllUsers () {
+    //    try {
+    //         const response = await fetch ('https://jsonplaceholder.typicode.com/users')
+    //         const data = await response.json()
+    //         console.log(data); 
+    //    } catch (error) {
+    //         console.log("E: ", error );
+    //    }
+    // }
 
-    getAllUsers()
+    // getAllUsers()
+
+
+                  // 🔽🔽 (writing above function in ".then & .catch" format)
+
+
+    fetch ('https://jsonplaceholder.typicode.com/users')
+    
+
