@@ -53,12 +53,17 @@
    const user = {
     usrename: "Rishabh",
     loginCount: 8,
-    signedIn : true
+    signedIn : true,
+
+    getUserDetails : function () {
+        console.log("Got user details from database");
+    }
    }
 
    
    console.log(user.usrename);
-
+   console.log(user.getUserDetails);    // [📍 Will print the whole function  ]
+   console.log(user.getUserDetails());  // [📍 Will print the line only in console log  ]
 
 
 
