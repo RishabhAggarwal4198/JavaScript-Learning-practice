@@ -138,17 +138,17 @@ promiseFour.then((user) => {
 
 
  // Creating "promise" 👇 
-    const promiseFivee = new Promise(function (resolve, reject){
-        setTimeout(function(){
-            let error = true;
-            if(!error){
-                resolve ({username: "JavaScript",
-                            password: "123"})
-            }else{
-                reject("!ERROR: JS went wrong")
-            }
-        },1000)
-    })
+    // const promiseFivee = new Promise(function (resolve, reject){
+    //     setTimeout(function(){
+    //         let error = true;
+    //         if(!error){
+    //             resolve ({username: "JavaScript",
+    //                         password: "123"})
+    //         }else{
+    //             reject("!ERROR: JS went wrong")
+    //         }
+    //     },1000)
+    // })
 
 
     // Consuming "promise" 👇 
@@ -179,13 +179,14 @@ promiseFour.then((user) => {
                   // 🔽🔽 (writing above function in ".then & .catch" format)
 
 
-    fetch ('https://jsonplaceholder.typicode.com/users')
+    fetch ('https://jsonplaceholder.typicode.com/user')
     .then((response) => {
         return response.json()
     })
-    .then((data) => {
+    .then((data) => {  
         console.log(data);
     })
     .catch((error) => console.log(error))    // [📍📍 Run to see the RESULT (will be same as the above method)]
+
 
 

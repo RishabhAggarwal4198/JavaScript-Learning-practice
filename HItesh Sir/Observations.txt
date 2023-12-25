@@ -142,6 +142,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 🔽🔽 PROJECT-4  Not Understood:- @3:13:19🔽🔽 
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 
 🔽🔽 "console.log"  Not Understood:-  @5:23:18 - @5:29:23 🔽🔽 
+🔽🔽 "console.log"  Not Understood:-  @06:21:01  - @   🔽🔽 
+
 
 + [ watch @48:11 ] 🍁 REDUCE method -   
   Explanation 🍁
