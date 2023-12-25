@@ -117,8 +117,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @7:47:36 ] 🍁🍁 DO-WHILE loop special case 🍁🍁
 
-+ [ watch @7:52:50 ]  🍁🍁 FOR-OF Loop 
-🍁🍁
++ [ watch @7:52:50 ]  🍁🍁 FOR-OF Loop 🍁🍁
 
 + [ watch @7:59:01 ] 🍁🍁 MAPS
 
@@ -134,11 +133,11 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
- 👇👇  💎💎 📍📍 ✅✅ ❌❌
+ 👇👇  💎💎 📍📍 ✅✅ ❌❌ 🔽🔽
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
-♦️♦️start watching from  { @5:01:50 }♦️♦️
+♦️♦️start watching from  { @6:18:47 }♦️♦️
 
 🔽🔽 PROJECT-4  Not Understood:- @3:13:19🔽🔽 
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 
@@ -173,6 +172,9 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @5:09:33 ] 🍁🍁AJAX-PROGRAMMING for   
   Good Asychronous programming 🍁🍁
+
++ [watch @6:18:54  ] 🍁🍁How it's working ? 🍁🍁
+
 
 
 
