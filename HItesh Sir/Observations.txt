@@ -133,11 +133,13 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
- 👇👇  💎💎 📍📍 ✅✅ ❌❌ 🔽🔽
+ 💎💎  👇👇  📍📍 ✅✅ ❌❌ 🔽🔽
+
+ // 💎💎      👇👇
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
-♦️♦️start watching from  { @6:18:47 }♦️♦️
+♦️♦️start watching from  { @7:04:03 }♦️♦️
 
 🔽🔽 PROJECT-4  Not Understood:- @3:13:19🔽🔽 
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 
@@ -177,6 +179,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @6:18:54  ] 🍁🍁How it's working ? 🍁🍁
 
++ [ watch @6:57:18 ] 🍁🍁IMPORTANT ( console.log - this in GOLBAL & FUNCTIONSCOPE )🍁🍁
 
 
 
