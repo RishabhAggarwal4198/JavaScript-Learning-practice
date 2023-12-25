@@ -39,7 +39,7 @@ for JAVASCRIPT :-
 
 + [ watch @52:05, @53:07 ] Original documentation of JAVASCRIPT is at :-   	   
  ➤   "https://tc39.es/ecma262/#sec-intro"
-	             &
+	             & 
  ➤   "https://developer.mozilla.org/en- 
        US/docs/Learn/JavaScript"
 
