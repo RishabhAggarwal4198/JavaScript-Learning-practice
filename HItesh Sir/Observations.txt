@@ -190,10 +190,11 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @7:58:25 ] 🍁🍁 very IMPORTANT (INHERITANCE) 🍁🍁
 
++ [ watch @8:02:33, @8:03:42 ] 🍁🍁 Execution Context 🍁🍁
 
++ [ watch @8:04:38 ] 🍁🍁 IMPORTANT interview question 🍁🍁
 
-
-
++ [ watch @8:11:23, @8:12:16  ] 🍁🍁 importance of  "THIS" 🍁🍁
 
 
 
