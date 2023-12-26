@@ -147,6 +147,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 🔽🔽 "console.log"  Not Understood:-  @5:23:18 - @5:29:23 🔽🔽 
 🔽🔽 "console.log"  Not Understood:-  @06:21:01  - @   🔽🔽 
 🔽🔽 PROTOTYPE 🔽🔽
+🔽🔽 unable to understand @7:34:46  🔽🔽
 
 + [ watch @48:11 ] 🍁 REDUCE method -   
   Explanation 🍁
