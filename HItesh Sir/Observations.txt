@@ -136,6 +136,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
  💎💎  👇👇  📍📍 ✅✅ ❌❌ 🔽🔽
 
  // 💎💎      👇👇
+//[📍📍 Answer is :-    ]
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
@@ -145,7 +146,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 
 🔽🔽 "console.log"  Not Understood:-  @5:23:18 - @5:29:23 🔽🔽 
 🔽🔽 "console.log"  Not Understood:-  @06:21:01  - @   🔽🔽 
-
+🔽🔽 PROTOTYPE 🔽🔽
 
 + [ watch @48:11 ] 🍁 REDUCE method -   
   Explanation 🍁
@@ -182,6 +183,15 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 + [ watch @6:57:18 ] 🍁🍁IMPORTANT ( console.log - this in GOLBAL & FUNCTIONSCOPE )🍁🍁
 
 + [ watch @7:15:56 ] 🍁🍁BEHAVIOUR of JS 🍁🍁
+
++ [ watch @7:27:33 ] 🍁🍁 injecting PROTOTYPES 🍁🍁
+
+
+
+
+
+
+
 
 
 
