@@ -218,7 +218,8 @@ Step-4) And we gets it inside the function
  //📍📍To check if CONSTRUCTOR is available as a property 👇👇
 
  console.log(user1.constructor);  // (📍📍 Answer is [Function: User] , so basically it tells hat it is the refrence of itself )
-
+ 
+ // [ 📍📍 Read at :- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof  ]
 
 
 
