@@ -135,8 +135,9 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
  💎💎  👇👇  📍📍 ✅✅ ❌❌ 🔽🔽
 
- // 💎💎      👇👇
+// 💎💎      👇👇
 //[📍📍 Answer is :-    ]
+// 🔽🔽
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
