@@ -181,6 +181,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @6:57:18 ] 🍁🍁IMPORTANT ( console.log - this in GOLBAL & FUNCTIONSCOPE )🍁🍁
 
++ [ watch @7:15:56 ] 🍁🍁BEHAVIOUR of JS 🍁🍁
+
 
 
 
