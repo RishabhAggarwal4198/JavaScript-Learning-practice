@@ -93,18 +93,116 @@
 
 
 
- // 💎💎 CONSTRUCTOR - FUNCTIONS 👇👇  [allows us to make different INSTANCES from one single OBJECT-LITERALS ]
+ // 💎💎 CONSTRUCTOR - FUNCTION 👇👇  [allows us to make different INSTANCES from one single OBJECT-LITERALS ]
 
    function User (username, loginCount, isLoggedIn) {
     this.username = username;
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn
 
-     return this
-   }
+    return this   // [📍📍 even if u don't give this "return" key word it will implicitly return the value]
+   
+}
 
    const userOne = User ("Rishabh", 12, true)
 
-   console.log(userOne);
+//    console.log(userOne);    
+   /* 📍📍 Answer will be :-
+                                <ref *1> Object [global] {
+                            global: [Circular *1],
+                            clearImmediate: [Function: clearImmediate],
+                            setImmediate: [Function: setImmediate] {
+                                [Symbol(nodejs.util.promisify.custom)]: [Getter]
+                            },
+                            clearInterval: [Function: clearInterval],
+                            clearTimeout: [Function: clearTimeout],
+                            setInterval: [Function: setInterval],
+                            setTimeout: [Function: setTimeout] {
+                                [Symbol(nodejs.util.promisify.custom)]: [Getter]
+                            },
+                            queueMicrotask: [Function: queueMicrotask],
+                            structuredClone: [Function: structuredClone],
+                            atob: [Getter/Setter],
+                            btoa: [Getter/Setter],
+                            performance: [Getter/Setter],
+                            navigator: [Getter],
+                            fetch: [Function: fetch],
+                            crypto: [Getter],
+                            username: 'Rishabh',
+                            loginCount: 12,
+                            isLoggedIn: true
+                            }
+
+                            💎Look @ the last 3 lines💎
+                            */
 
 
+const  userTwo = User("Java Script Series", 11, false)
+// console.log( userOne); 
+ /* 📍📍 Answer will be :-
+                        <ref *1> Object [global] {
+                        global: [Circular *1],
+                        clearImmediate: [Function: clearImmediate],
+                        setImmediate: [Function: setImmediate] {
+                            [Symbol(nodejs.util.promisify.custom)]: [Getter]
+                        },
+                        clearInterval: [Function: clearInterval],
+                        clearTimeout: [Function: clearTimeout],
+                        setInterval: [Function: setInterval],
+                        setTimeout: [Function: setTimeout] {
+                            [Symbol(nodejs.util.promisify.custom)]: [Getter]
+                        },
+                        queueMicrotask: [Function: queueMicrotask],
+                        structuredClone: [Function: structuredClone],
+                        atob: [Getter/Setter],
+                        btoa: [Getter/Setter],
+                        performance: [Getter/Setter],
+                        navigator: [Getter],
+                        fetch: [Function: fetch],
+                        crypto: [Getter],
+                        username: 'Rishabh',
+                        loginCount: 12,
+                        isLoggedIn: true
+                        }
+                        <ref *1> Object [global] {
+                        global: [Circular *1],
+                        clearImmediate: [Function: clearImmediate],
+                        setImmediate: [Function: setImmediate] {
+                            [Symbol(nodejs.util.promisify.custom)]: [Getter]
+                        },
+                        clearInterval: [Function: clearInterval],
+                        clearTimeout: [Function: clearTimeout],
+                        setInterval: [Function: setInterval],
+                        setTimeout: [Function: setTimeout] {
+                            [Symbol(nodejs.util.promisify.custom)]: [Getter]
+                        },
+                        queueMicrotask: [Function: queueMicrotask],
+                        structuredClone: [Function: structuredClone],
+                        atob: [Getter/Setter],
+                        btoa: [Getter/Setter],
+                        performance: [Getter/Setter],
+                        navigator: [Getter],
+                        fetch: [Function: fetch],
+                        crypto: [Getter],
+                        username: 'Java Script Series',
+                        loginCount: 11,
+                        isLoggedIn: false
+                        }
+
+                        💎Look @ the last 3 lines💎 [ ✅✅it overwrited the previous Values] & that's why "new" keyword is IMPORTANT
+ */
+
+
+                          //🔽🔽 (so by inserting "new" Keyword)
+
+
+const user1 = new User ("Ravi", 22, true )
+const user2 = new User ("Ramesh", 28 , false )
+console.log(user1);    // 📍📍 [ Answer is "User { username: 'Ravi', loginCount: 22, isLoggedIn: true }" without any kind of mess]
+
+/*✅✅some NOTES regarding new keyword:-
+Step-1) Whenever we gonna use the "new" keyword, an empty objects gets created (which is called instance)
+Step-2) A "constructor" function gets created bcoz of the "new" keyword (it packs all the arguements which gave to it in that & gives us back)
+Step-3) All the "arguments" which we gave to it gets injected in the this keyword
+Step-4) And we gets it inside the function
+*/
