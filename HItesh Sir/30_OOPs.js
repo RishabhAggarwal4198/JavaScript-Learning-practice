@@ -98,10 +98,14 @@
    function User (username, loginCount, isLoggedIn) {
     this.username = username;
     this.loginCount = loginCount;
-    this.isLoggedIn = isLoggedIn
+    this.isLoggedIn = isLoggedIn;
+
+    this.greeting = function () {
+        console.log(`Welcome ${this.username}`);
+    }
 
     return this   // [📍📍 even if u don't give this "return" key word it will implicitly return the value]
-   
+
 }
 
    const userOne = User ("Rishabh", 12, true)
@@ -198,7 +202,7 @@ const  userTwo = User("Java Script Series", 11, false)
 
 const user1 = new User ("Ravi", 22, true )
 const user2 = new User ("Ramesh", 28 , false )
-console.log(user1);    // 📍📍 [ Answer is "User { username: 'Ravi', loginCount: 22, isLoggedIn: true }" without any kind of mess]
+// console.log(user1);    // 📍📍 [ Answer is "User { username: 'Ravi', loginCount: 22, isLoggedIn: true }" without any kind of mess]
 
 /*✅✅some NOTES regarding new keyword:-
 Step-1) Whenever we gonna use the "new" keyword, an empty objects gets created (which is called instance)
@@ -206,3 +210,18 @@ Step-2) A "constructor" function gets created bcoz of the "new" keyword (it pack
 Step-3) All the "arguments" which we gave to it gets injected in the this keyword
 Step-4) And we gets it inside the function
 */
+
+
+
+
+
+ //📍📍To check if CONSTRUCTOR is available as a property 👇👇
+
+ console.log(user1.constructor);  // (📍📍 Answer is [Function: User] , so basically it tells hat it is the refrence of itself )
+
+
+
+
+
+
+
