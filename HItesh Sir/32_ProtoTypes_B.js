@@ -49,6 +49,10 @@ Array.prototype.HeyRishabh = function () {
 
 // 💎💎 INHERITANCE 👇👇
 
+const User = {
+    name: "Ramesh",
+    email: "ramesh@google.com"
+}
 
 const Teacher = {
     makeVideo: true
@@ -59,6 +63,46 @@ const TeachingSupport = {
     isAvailable: false
 }
 
-const TASupport = {
 
+//📍 OLD - SYNTAX 👇
+
+const TASupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport       //[📍📍 This is INHERITANCE ]
 }
+
+Teacher.__proto__ = User
+
+
+
+
+//📍 MODERN - SYNTAX 👇
+
+Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport" is gonna accces all the values of "Teacher"  ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 💎💎 Now SOLVING the vary fisrt PROBLEM 👇👇
+
+let anotherUserName = "Vignesh Ramasundaran            "
+
+String.prototype.trueLength = function () {
+    console.log(`${this}`);
+    // console.log(`${this.name}`);        // 📍📍it's an OBSOLETE property, so not got discussed that's why commented
+    console.log(`True length is: ${this.trim().length}`);
+}
+
+anotherUserName.trueLength(); 
+"Rishabh".trueLength();
+"MasalaDosa".trueLength();
