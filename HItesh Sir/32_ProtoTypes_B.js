@@ -103,6 +103,23 @@ String.prototype.trueLength = function () {
     console.log(`True length is: ${this.trim().length}`);
 }
 
-anotherUserName.trueLength(); 
-"Rishabh".trueLength();
-"MasalaDosa".trueLength();
+anotherUserName.trueLength(); /* 
+                              [📍📍 Answer is :-  "Vignesh Ramasundaran "           
+                                                   "True length is: 20"
+                             bcoz overhere "truLength():" was having only 
+                            the refrence of "anotherUserName" only & whose
+                            value is  equals to "Vignesh Ramasundaran            "  */
+
+
+
+"Rishabh".trueLength();  /* Similarly :- 
+                            [📍📍 Answer is :- "Rishabh"
+                                                "True length is: 7"
+                        */
+
+
+
+"MasalaDosa".trueLength(); /* Similarly :- 
+                             [📍📍 Answer is :- "MasalaDosa"
+                                                "True length is: 10"
+                             */
