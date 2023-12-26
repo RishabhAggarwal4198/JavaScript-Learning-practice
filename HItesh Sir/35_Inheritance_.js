@@ -43,3 +43,6 @@ console.log(chayii === newChayii);    //[📍📍 Answer is :-  "false"  ]
 console.log(chayii === Teacher);     //[📍📍 Answer is :-  "false"  ]
 
 console.log(chayii instanceof User);   //[📍📍 Answer is :-  "true"  ]
+
+
+
