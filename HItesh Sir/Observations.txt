@@ -196,8 +196,11 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch @8:11:23, @8:12:16  ] 🍁🍁 importance of  "THIS" 🍁🍁
 
-+ [ watch @8:11:23, @8:49:32  ] 🍁🍁 Best example/usecase  of BIND 🍁🍁
++ [ watch @8:49:32  ] 🍁🍁 Best example/usecase  of BIND 🍁🍁
 
++ [ watch  @8:51:52 ] 🍁💎🍁 V. V. Importnat questions for interview 🍁💎🍁
+
++ [ watch  @8:58:15] 🍁🍁 Chaning the value of "Math.PI" 🍁🍁
 
 
 
