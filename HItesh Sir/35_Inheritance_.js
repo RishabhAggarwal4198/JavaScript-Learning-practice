@@ -18,6 +18,7 @@ class Teacher extends User {
         this.password = password
     }
 
+    
     addCourse () {
         console.log(`A new course was added by ${this.username}`);
     }
@@ -36,7 +37,6 @@ const newChayii = new User("Rohan")
 
 // newChayii.logMe();  //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
 // newChayii.addCourse();   //[📍📍 Answer is :-  Error  ]
-
 
 
 console.log(chayii === newChayii);    //[📍📍 Answer is :-  "false"  ]
