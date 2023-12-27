@@ -34,14 +34,18 @@ const myNewObject = Object.create(null);
 //✅ Conventional  way of creating an OBJECT👇
 
 const  tea = {
-    name: 'ginger tea',
+    name: "ginger tea",
     price: 250,
-    isAvailable: true
+    isAvailable: true,
+
+    orderTea : function () {
+            console.log("tea is ready");
+    }
 }
 
 
-console.log(tea);                                            //[📍📍 Answer is :-  "{ name: 'ginger tea', price: 250, isAvailable: true }"  ] 
-console.log(Object.getOwnPropertyDescriptor(tea, "name"));
+// console.log(tea);                                            //[📍📍 Answer is :-  "{ name: 'ginger tea', price: 250, isAvailable: true }"  ] 
+// console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                             /*📍📍 Answer is :-  
                                                             " {
                                                                 value: 'ginger tea',
@@ -55,12 +59,12 @@ console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                             // 🔽🔽 (altering the properties like "writability" etc. )
 
 
-Object.defineProperty(tea, 'name', {
-    writable:false,
-    enumerable: false
-})
+// Object.defineProperty(tea, 'name', {
+//     writable:false,
+//     enumerable: false
+// })
 
-console.log(Object.getOwnPropertyDescriptor(tea, "name"));
+// console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                         /*📍📍 Answer is :-  
                                                         "{
                                                             value: 'ginger tea',
@@ -70,11 +74,40 @@ console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                             } "
                                                         */
 
-    
+
+
+// 💎💎Using "FOR-OF" loop   👇👇
                                                             
-for (const [key, value] of tea) {
-    
-}
+// for (const [key, value] of tea) {
+//     console.log(`${key} : ${value}`);      //[📍📍 Answer is :-  "TypeError: tea is not iterable"  ] 
+// }
+
+                 // 🔽🔽
 
 
+// for (const [key, value] of Object.entries(tea)) {
+// console.log(`${key} : ${value}`);     
+// }                                      
+                        /*📍📍 Answer is :-  
+                            "name : ginger tea
+                            price : 250
+                            isAvailable : true
+                            orderTea : function () {
+                            console.log("tea is ready");
+                            } "
+                        */
+
+
+                 // 🔽🔽
+
+
+for (const [key, value] of Object.entries(tea)) {
+if(typeof value !== 'function')
+console.log(`${key} : ${value}`);     
+}                                      
+                        /*📍📍 Answer is :-  
+                                "name : ginger tea
+                                price : 250
+                                isAvailable : true "
+                        */
 
