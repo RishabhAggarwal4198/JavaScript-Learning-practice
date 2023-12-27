@@ -7,11 +7,12 @@
 
 // ✅ But why i'm not able to change the value of "Math.PI" ? Whta's happening behind the scenes ?
 
-// 💎💎      👇👇
+//👇👇
 
 const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")         //[📍📍 "getOwnPropertyDescriptor" tells us about some hidden properties of an OBJECT ] 
 
-console.log(descriptor);  /*📍📍 Answer is :-  
+// console.log(descriptor);  
+                            /*📍📍 Answer is :-  
                             " {
                                 value: 3.141592653589793,
                                 writable: false,                      //[📍So, it can't  become  "true" at any cost, bcoz our JAVASCRIPT-ENGINE has made it so much hard coded in C++ that this value can't be changed ] 
@@ -19,4 +20,61 @@ console.log(descriptor);  /*📍📍 Answer is :-
                                 configurable: false
                                 } "  
                            */
+
+
+
+// 💎💎  understanding with the helpof an EXAMPLE 👇👇
+
+
+//✅ Alternate way of creating an OBJECT👇
+
+const myNewObject = Object.create(null);
+
+
+//✅ Conventional  way of creating an OBJECT👇
+
+const  tea = {
+    name: 'ginger tea',
+    price: 250,
+    isAvailable: true
+}
+
+
+console.log(tea);                                            //[📍📍 Answer is :-  "{ name: 'ginger tea', price: 250, isAvailable: true }"  ] 
+console.log(Object.getOwnPropertyDescriptor(tea, "name"));
+                                                            /*📍📍 Answer is :-  
+                                                            " {
+                                                                value: 'ginger tea',
+                                                                writable: true,
+                                                                enumerable: true,
+                                                                configurable: true
+                                                                } "  
+                                                        */
+
+
+                            // 🔽🔽 (altering the properties like "writability" etc. )
+
+
+Object.defineProperty(tea, 'name', {
+    writable:false,
+    enumerable: false
+})
+
+console.log(Object.getOwnPropertyDescriptor(tea, "name"));
+                                                        /*📍📍 Answer is :-  
+                                                        "{
+                                                            value: 'ginger tea',
+                                                            writable: false,
+                                                            enumerable: false,
+                                                            configurable: true
+                                                            } "
+                                                        */
+
+    
+                                                            
+for (const [key, value] of tea) {
+    
+}
+
+
 
