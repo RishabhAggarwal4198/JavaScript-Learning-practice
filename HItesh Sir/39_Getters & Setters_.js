@@ -5,16 +5,16 @@ class User {
     }
 
     get password () {
-        return this.password.toUpperCase()
+        return this._paSSword.toUpperCase()
     }
 
     set password(value) {
-        this.password = value.toUpperCase()
+        this._paSSword = value.toUpperCase()
     }
     
 }
 
 
-const Ramesh = new new User ("ramesh@gmail.com", "456")
-console.log(Ramesh.password);
+const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
+console.log(Ramesh.password);                              //  [📍📍 Answer is :- "ASDF_VBNM" ] 
 
