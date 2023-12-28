@@ -61,7 +61,7 @@ const  tea = {
 
 // Object.defineProperty(tea, 'name', {
 //     writable:false,
-//     enumerable: false
+//     enumerable : false
 // })
 
 // console.log(Object.getOwnPropertyDescriptor(tea, "name"));
@@ -101,14 +101,33 @@ const  tea = {
                  // 🔽🔽
 
 
-for (const [key, value] of Object.entries(tea)) {
+// for (const [key, value] of Object.entries(tea)) {
+// if(typeof value !== 'function')
+// console.log(`${key} : ${value}`);     
+// }                                      
+                        /*📍📍 Answer is :-  
+                                "price : 250    
+                                isAvailable : true "
+                        */
+
+
+                 // 🔽🔽
+
+
+Object.defineProperty(tea, 'name', {
+    writable:false,
+    enumerable : true
+})
+
+
+
+for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
 if(typeof value !== 'function')
 console.log(`${key} : ${value}`);     
 }                                      
                         /*📍📍 Answer is :-  
-                                "name : ginger tea
+                                "name : ginger tea    
                                 price : 250
                                 isAvailable : true "
                         */
 
-                                
