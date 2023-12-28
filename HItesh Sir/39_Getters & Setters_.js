@@ -11,8 +11,8 @@ class User {
     set password(value) {
         this._paSSword = value.toUpperCase()
     }
-    
 }
+
 
 
 const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
