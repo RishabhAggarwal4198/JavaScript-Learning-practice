@@ -115,10 +115,9 @@ const  tea = {
 
 
 Object.defineProperty(tea, 'name', {
-    writable:false,
+    // writable:false,
     enumerable : true
 })
-
 
 
 for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
@@ -130,4 +129,6 @@ console.log(`${key} : ${value}`);
                                 price : 250
                                 isAvailable : true "
                         */
+
+                                
 
