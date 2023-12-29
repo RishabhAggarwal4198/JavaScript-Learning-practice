@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures </title>
+</head>
+
+
+<body style="background-color: #212121;">
+    
+</body>
+
+
+
+
+<script>
+
+
+        // 💎💎LEXICAL - SCOPING 👇👇
+
+
+        // function init() {
+        //     let name = "Mozilla";
+        //     function displayName() {
+        //             console.log(name); 
+        //         }
+        //         displayName();
+        // }
+        // init(); 
+
+
+                    // 🔽🔽
+
+        // let georgie = "Sheldon's brother"
+        // function bead () {
+        //     let meeMaw = "Sheldon's Grandmother";
+        //     function bead2 () {
+        //         console.log(`Hello MewMaaw (${meeMaw}) & Georgie  (${georgie})`);
+        //     }
+        //     bead2();
+        // }
+
+        // bead();
+
+
+                // 🔽🔽
+
+
+        // function outer () {
+        //     let username = "Rishabh"
+        //     function inner () {
+        //         let secret = "my123";
+        //         console.log("inner", username);
+        //     }
+        //     function innerTwo () {
+                
+        //         console.log("innerTwo", username);
+        //     }
+        //     inner()
+        //     innerTwo()
+            
+        // }
+        // outer ()
+        // console.log("TOO OUTER", username); 
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        // 💎💎 CLOSURES  👇👇
+
+
+        function makeFunc() {
+            const name = "Mozilla";
+            function displayName() {
+                console.log(name);  
+            }
+            return displayName;
+        }
+
+        const myFunc = makeFunc();
+        myFunc();
+
+</script>
+
+
+
+
+
+
+<script>
+
+</script>
+
+
+</html>

@@ -204,6 +204,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch  @9:22:38, @9:37:08 ] 🍁🍁 Getter-Setter Important 🍁🍁
 
++ [ watch  @9:54:02, @9:58:24, @10:00:09 ] 🍁🍁 Lexical - Scope, Closure 🍁🍁
 
 
 
