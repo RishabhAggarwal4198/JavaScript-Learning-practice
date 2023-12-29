@@ -1,3 +1,29 @@
+// class User {
+//     constructor (email, password) {
+//         this.email = email;
+//         this.password = password;
+//     }
+
+//     get password () {
+//         return this._paSSword.toUpperCase()
+//     }
+
+//     set password(value) {
+//         this._paSSword = value.toUpperCase()
+//     }
+// }
+
+
+
+// const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
+// console.log(Ramesh.password);                              //  [📍📍 Answer is :- "ASDF_VBNM" ] 
+
+
+
+                                // 🔽🔽
+
+
+
 class User {
     constructor (email, password) {
         this.email = email;
@@ -5,16 +31,14 @@ class User {
     }
 
     get password () {
-        return this._paSSword.toUpperCase()
+        return `${this._paSSword}Rishabh`
     }
 
     set password(value) {
-        this._paSSword = value.toUpperCase()
+        this._paSSword = value
     }
 }
 
 
-
 const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
-console.log(Ramesh.password);                              //  [📍📍 Answer is :- "ASDF_VBNM" ] 
-
+console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
