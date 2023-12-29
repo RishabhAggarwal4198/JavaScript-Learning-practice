@@ -16,3 +16,4 @@ const tea =  Object.create(User)
 console.log(tea.email);                       //[📍📍 Answer is :- "HAREEESH@GMAIL.COM" ] 
 
 
+
