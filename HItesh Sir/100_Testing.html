@@ -80,19 +80,27 @@ const newVal = [...newHero,...newHero2];
 
 
 
-
-
-
-let obj = {
-    _value: 0,
-    
-    get value () {
-        console.log("Getting the value");
-        return _value;
+class Flight {
+    constructor (name) {
+        this._name = name 
     }
-};
 
-console.log(obj._value);
+    fly () {
+        alert("The plane is flying")
+    }
+    get name (){
+        return this._name
+    }
+    set name (newName){
+        this._name = newName
+    }
+}
+
+let a = new  Flight ("Felaaa")                 
+console.log(a.name);                           //[📍📍 Answer is :-  "Felaaa"  ] 
+// a.fly()
+
+
 
 
 
