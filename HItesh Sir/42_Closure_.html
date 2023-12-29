@@ -7,7 +7,7 @@
 </head>
 
 
-<body style="background-color: #212121;">
+<body style="background-color: #212121; ">
     <button id="orange"> Orange </button>
     <button id="green"> Green </button>
 </body>
@@ -107,11 +107,36 @@
     // })
 
 
-                        // 🔽🔽
+                        // 🔽🔽 ( OR )
 
-    document.getElementById("orange").onclick = function () {
-        document.body.style.backgroundColor = 'orange'
+    // document.getElementById("orange").onclick = function () {
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+
+    // document.getElementById("green").onclick = function () {
+    //     document.body.style.backgroundColor = 'lightgreen'
+    // }
+
+
+                        // 🔽🔽 ( What if there comes 500 buttons like the baove ?)
+
+
+    // ✅💎✅ Perfect Use case Scenario of CLOSURES & LEXICAL-SCOPING 👇
+
+    function clickHandler (color) {
+        //  document.body.style.background-color = `${color}`
+         return function () {
+            document.body.style.backgroundColor = `${color}`
+         }
     }
+
+    document.getElementById('orange').onclick = clickHandler (`orange`)
+    document.getElementById('green').onclick = clickHandler (`lightgreen`)
+   
+
+
+
+
 
     
 
