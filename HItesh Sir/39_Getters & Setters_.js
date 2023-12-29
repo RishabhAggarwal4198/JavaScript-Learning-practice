@@ -30,6 +30,14 @@ class User {
         this.password = password;
     }
 
+    get email () {
+        return this._email.toUpperCase()
+    }
+    set email(value){
+        this._email = value
+    }
+    
+
     get password () {
         return `${this._paSSword}Rishabh`
     }
@@ -42,3 +50,9 @@ class User {
 
 const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
 console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
+console.log(Ramesh.email);                                 //  [📍📍 Answer is :- "ramesh@gmail.com" ] 
+
+
+
+
+
