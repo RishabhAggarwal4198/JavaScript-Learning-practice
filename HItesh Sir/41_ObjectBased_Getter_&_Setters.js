@@ -1,5 +1,5 @@
 const User = {
-    _email : 'h@hc.com',
+    _email : 'hareeesh@gmail.com',
     _password : 'abc',
 
     get email () {
@@ -13,4 +13,6 @@ const User = {
 
 
 const tea =  Object.create(User)
-console.log(tea.email); 
+console.log(tea.email);                       //[📍📍 Answer is :- "HAREEESH@GMAIL.COM" ] 
+
+
