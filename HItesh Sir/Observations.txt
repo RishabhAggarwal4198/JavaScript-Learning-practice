@@ -202,6 +202,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [ watch  @8:58:15] 🍁🍁 Chaning the value of "Math.PI" 🍁🍁
 
++ [ watch  @9:22:38] 🍁🍁 Getter-Setter Important 🍁🍁
 
 
 
