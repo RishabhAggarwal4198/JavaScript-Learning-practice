@@ -122,11 +122,11 @@
    ➤  document.querySelector('#title')    [📍for selecing by "id" (Just like CSS selectors)] 
    ➤  document.querySelector('.heading')  [📍for selecing by "class" (Just like CSS selectors)] 
    ➤  document.querySelector('input[type="passowrd"]')  [📍 for selecting by "input types" (Just like CSS selectors)] 
-      
-   ➤  document.querySelector('p:first-child') 
+       
+   ➤  document.querySelector('p:first-child')      [📍for selecting the first paragrapgh of a div (which was his first child)] 
 
 
-   ➤  document.querySelector('ul')        [📍for selecing a list ] 
+   ➤  document.querySelector('ul')        [📍for selecing a complete list ] 
        const myul = document.querySelector('ul')
        myul.querySelector('li')
        const turnGreen = myul.querySelector('li')
@@ -137,7 +137,8 @@
    
 
 
-   ➤  const myH1 = document.querySelectorAll('h1')
+   ➤  document.querySelectorAll('h1')
+       const myH1 = document.querySelectorAll('h1')
        myH1[0].style.color = 'green' 
 
 
