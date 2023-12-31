@@ -150,6 +150,9 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 🔽🔽 PROTOTYPE 🔽🔽
 🔽🔽 unable to understand @7:34:46  🔽🔽
 
+
++ [ watch @45:31 ] 🍁 querySelectorAll vs querySelector DIFFERENCE  🍁
+
 + [ watch @48:11 ] 🍁 REDUCE method -   
   Explanation 🍁
 

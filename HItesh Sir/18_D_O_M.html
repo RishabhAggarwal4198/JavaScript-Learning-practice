@@ -56,7 +56,9 @@
         //                                 // 🔽🔽 (OR)
         // document.getElementById('title').innerHTML = " Hello Everyone"
 
-        </script> 
+       
+       
+       </script> 
 
         
         
@@ -145,7 +147,7 @@
 
    🔽🔽 Node- Lists👇👇
 
-   ➤  document.querySelectorAll('li')                    // 💎💎 "querySelectorAll" gonna return the "Node Lists" data type to us, so for using it we have to use operations like that on an ARRAY
+   ➤  document.querySelectorAll('li')                    // ✅💎✅ "querySelectorAll" gonna return the "Node List" data type to us, so for using it we have to use operations like that on an ARRAY
        const tempLiList = document.querySelectorAll('li')
        tempLiList[0].style.color = 'green'                //[📍📍So basically it looks like an ARRAY but not an ARRAY & many of the operations like ARRAY can be applied onto it as well ]   
 
@@ -162,10 +164,10 @@
 
       
 
-       ➤ document.getElementsByClassName('List-item')
+       ➤ document.getElementsByClassName('List-item')            // ✅💎✅ "getElementsByClassName" gonna return us "HTML Collection"
           const tempClassList = document.getElementsByClassName('List-item')
           tempClassList
-          Array.from(tempClassList)                 [📍converting from "tempList" to "ARRAY" ]
+          Array.from(tempClassList)                 [💎📍💎 converting from "tempList" to "ARRAY" (for applying "ForLoop" onto it )]
           const myConvertedArray = Array.from(tempClassList)  [📍storing "ARRAY" inside const Variable ]
 
           myConvertedArray.forEach(function (li){
