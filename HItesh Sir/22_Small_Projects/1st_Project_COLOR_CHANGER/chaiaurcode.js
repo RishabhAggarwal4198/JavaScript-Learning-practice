@@ -6,7 +6,7 @@ buttons.forEach(function (button){                          //[📍📍We got an
     // console.log(button); 
     button.addEventListener('click', function (e){
         console.log(e); 
-        console.log(e.target);                              //💎✅💎 "e.target" gonna print the whole targeted button (DOM element) that was clicked   
+        console.log(e.target);                              //💎💎✅💎💎 "e.target" gonna print the whole targeted button (DOM element) that was clicked   
         if(e.target.id === 'grey'){ 
             body.style.backgroundColor = e.target.id; 
         }   
