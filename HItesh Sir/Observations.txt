@@ -141,7 +141,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
-♦️♦️start watching from  { @54:03 }♦️♦️
+♦️♦️start watching from  { @1:37:37 }♦️♦️
 
 🔽🔽 PROJECT-4  Not Understood:- @3:13:19🔽🔽 
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 

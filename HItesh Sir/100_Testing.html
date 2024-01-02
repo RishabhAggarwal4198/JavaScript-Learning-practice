@@ -143,7 +143,7 @@ console.log(a.name);                           //[📍📍 Answer is :-  "Felaaa
 
 function  listzz (name) {
     const ele = document.createElement('li')
-    ele.innerHTML = `${name}`
+    ele.innerHTML = name
     document.querySelector('li').appendChild(ele)
 }
 
@@ -155,9 +155,13 @@ function  listzz (name) {
 
 function listzz2 (val) {
     const ele = document.createElement('li');
-    
-    ele.appendChild()
+    ele.appendChild(document.createTextNode(val))
 }
+
+listzz2("Vimal")
+
+
+
 
 
 

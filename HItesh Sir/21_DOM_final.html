@@ -23,41 +23,43 @@
             document.querySelector('.language'). appendChild(listz)
         }
 
-        addLanguage("python")      // 📍 "python"  will get added in the list
-        addLanguage("typeScript")  // 📍 "typeScript"  will get added in the list
-        addLanguage("Rust")        // 📍 "Rust"  will get added in the list
+        // addLanguage("python")      // 📍 "python"  will get added in the list
+        // addLanguage("typeScript")  // 📍 "typeScript"  will get added in the list
+        // addLanguage("Rust")        // 📍 "Rust"  will get added in the list
 
-                     //🔽🔽 OR (much more OPTIMIZED issue free & PROFESSIONAL way of writing above METHOD) 👇 [📍 in this approach we don't have to "TRAVERSE" the whole tree (like the above one) ]
+                     //🔽🔽 OR (much more ✅OPTIMIZED & ✅PROFESSIONAL way of writing above METHOD) 👇 [📍 in this approach we don't have to "TRAVERSE" the whole tree (like the above one) & this way of manipulating the innerHTML is appreciated in bigger companies rather than the above one ]
  
         function addOptiLanguage(langName){
-                const listz = document.createElement('li')
-                listz.appendChild(document.createTextNode(langName))
-                document.querySelector('.language').appendChild(listz)
+                const lista = document.createElement('li')
+                lista.appendChild(document.createTextNode(langName))
+                document.querySelector('.language').appendChild(lista)
         }
 
-        addOptiLanguage('Golang')  // 📍 "golang"  will get added in the list
-        addOptiLanguage('Rust')  // 📍 "Rust"  will get added in the list
+        addOptiLanguage("Golang")  // 📍 "golang"  will get added in the list
+        addOptiLanguage("Rust")  // 📍 "Rust"  will get added in the list
 
 
 
         //👇💎👇 EXAMPLE 1 - For Editing any VALUE (from the above one's)
 
-        const secondLang = document.querySelector("li:nth-child(2)")
-        // console.log(secondLang);          // [📍Answer will be "<li>python</li>"]
-        // secondLang.innerHTML = "Mojo"     // [ 📍refrain using it bcoz it's an "UN-OPTIMIZED" approach ]
-        const newLi = document.createElement('li')
-        newLi.textContent = "Mojo"
-        secondLang.replaceWith(newLi)
+        // const secondLang = document.querySelector("li:nth-child(2)")
+        // // console.log(secondLang);          // [📍Answer will be "<li>python</li>"]
+        // // secondLang.innerHTML = "Mojo"     // [ 📍Abstain using it bcoz it's an "UN-OPTIMIZED" approach ]
+        // const newLi = document.createElement('li')
+        // newLi.textContent = "Mojo"
+        // secondLang.replaceWith(newLi)
+
 
 
 
         //👇💎👇 EXAMPLE 2 - For Editing any VALUE (from the above one's)
 
-        const firstLang = document.querySelector("li:first-child")
-        firstLang.outerHTML = '<li>TypeScript</li>'
+        // const firstLang = document.querySelector("li:first-child")
+        // firstLang.outerHTML = '<li>TypeScript</li>'      //[📍📍 Answer is :- first value got changed to  "TypeScript"  ] 
 
 
 
+        
         //👇💎👇 For Removing any VALUE (from the above one's)
         const lastlang = document.querySelector('li:last-child')
         lastlang.remove()            // [ 📍"Rust" got removed from the list ]
