@@ -3,6 +3,8 @@ const clock = document.getElementById('clock')
 
 
 
+//💎 SYNTAX ➤ setInterval(function() {}, 1000)        //📍📍 Where "1000" = any value of time in milliseconds 
+
 setInterval(function(){
     let date = new Date();
     // console.log(date.toLocaleTimeString());
