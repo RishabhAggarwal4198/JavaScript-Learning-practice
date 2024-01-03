@@ -31,15 +31,15 @@ function validateGuess(guess){           // ✅💎✅ This function will simply
     } else if ( guess < 1){
         alert ('Please enter a number more than 1')
     } else if (guess > 100){
-        alert ('Please enter a number less than 100')
-    } else {
-        prevGuess.push(guess)
+        alert ('Please enter a number less than 100') 
+    } else { 
+        prevGuess.push(guess)           // 💎✅💎 To save the value into that "guess" ARRAY 
         if(numGuess === 11){  
             displayGuess(guess)
             displayMessage(`Game Over. Random number was ${randomNumber}`)
             endGame()
         } else {  
-            displayGuess(guess)
+            displayGuess(guess) 
             checkGuess(guess) 
         }
     }  
@@ -62,11 +62,11 @@ function checkGuess(guess) {                 // ✅💎✅ This function will ch
 
 
 function displayGuess(guess){                          // ✅💎✅ This function will CLEAN the value in the input (to take the next value), will update the "previous guess" Array & "Guesses Remaining" Array 
-    userInput.value = '';                              // [📍 Here the value inside the "userInput.value" got cleaned i.e. there is now no value in it ]
+    userInput.value = '';                              // [📍 Here the value inside the "userInput.value" got cleaned i.e. an EMPTY-VALUE gonna get assigned to it ]
     guessSlot.innerHTML += `${guess},   `;            // [📍 At this stage it's not updating the values in GUESS, istead its PUSHING those values into that ]
     numGuess++;
     remaining.innerHTML = `${11 - numGuess}`; 
-}
+} 
 
 
 
