@@ -13,19 +13,19 @@ const p = document.createElement('p')
 let prevGuess = []  
 let numGuess = 1;
 
-let playGame = true;
+let playGame = true;          // ✅💎✅ Whenever we gonna design such GAMES, most of the timw we have to declare any such variable like  "let playGame = true"
 
-if(playGame){
+if(playGame){  
     submit.addEventListener('click', function(e){
         e.preventDefault();
         const guess = parseInt(userInput.value);
         // console.log(guess);
-        validateGuess(guess);
+        validateGuess(guess);      //💎✅💎 Passed this value to the next function
     }); 
 } 
 
 
-function validateGuess(guess){
+function validateGuess(guess){           // ✅💎✅ This function will simply do VALIDATION that whether the value is between 1 & 100 or not ? & whether it's a value or not ?          
     if(isNaN(guess)){
         alert ('Please enter a valid number')
     } else if ( guess < 1){
@@ -47,7 +47,7 @@ function validateGuess(guess){
 
 
 
-function checkGuess(guess) {
+function checkGuess(guess) {                 // ✅💎✅ This function will check whether the inserted value is equal to "random.number" or not ??
     if(guess === randomNumber){
         displayMessage(`You guessed it right`)
         endGame()
@@ -61,7 +61,7 @@ function checkGuess(guess) {
 
 
 
-function displayGuess(guess){
+function displayGuess(guess){                          // ✅💎✅ This function will CLEAN the value in the input (to take the next value), will update the "previous guess" Array & "Guesses Remaining" Array 
     userInput.value = '';                              // [📍 Here the value inside the "userInput.value" got cleaned i.e. there is now no value in it ]
     guessSlot.innerHTML += `${guess},   `;            // [📍 At this stage it's not updating the values in GUESS, istead its PUSHING those values into that ]
     numGuess++;
@@ -70,9 +70,10 @@ function displayGuess(guess){
 
 
 
-function displayMessage(message){
+function displayMessage(message){                    // ✅💎✅ This function will pass the value of "const lowOrHi"
     lowOrHi.innerHTML = `<h2>${message}</h2>`
 }
+
 
 
 
