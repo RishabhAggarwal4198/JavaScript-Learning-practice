@@ -10,7 +10,7 @@ const startOver = document.querySelector('.resultParas')
 const p = document.createElement('p') 
 
 
-let prevGuess = []  
+// let prevGuess = []  
 let numGuess = 1;
 
 let playGame = true;          // ✅💎✅ Whenever we gonna design such GAMES, most of the timw we have to declare any such variable like  "let playGame = true"
@@ -33,7 +33,7 @@ function validateGuess(guess){           // ✅💎✅ This function will simply
     } else if (guess > 100){
         alert ('Please enter a number less than 100') 
     } else { 
-        prevGuess.push(guess)           // 💎✅💎 To save the value into that "guess" ARRAY 
+        // prevGuess.push(guess)           // 💎✅💎 To save the value into that "guess" ARRAY 
         if(numGuess === 11){  
             displayGuess(guess)
             displayMessage(`Game Over. Random number was ${randomNumber}`)
@@ -57,6 +57,7 @@ function checkGuess(guess) {                 // ✅💎✅ This function will ch
         displayMessage(`Number is TOOO High`)
     } 
 }
+
 
 
 
