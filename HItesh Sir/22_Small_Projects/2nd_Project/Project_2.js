@@ -16,16 +16,15 @@ form.addEventListener('submit', function(e) {
     }else if (weight === '' || weight < 0 || isNaN (weight) ){                 
         results.innerHTML = `Please give a valid weight ${weight}`;
     }else {
-        const bmi = (weight / ((height*height)/10000)).toFixed(2)
-        // show the result 
+        const bmi = (weight / ((height*height)/10000)).toFixed(2)       // 💎✅💎 "toFixed(2)"  That we want value a va
+        // show the result & proceed downward 🔻🔻
         if ( bmi < 18.6 ){
             results.innerHTML = `Your weight is ${bmi}, Your are under Weight`
         }else if ( bmi >= 18.6 && bmi <= 24.9 ){
             results.innerHTML = `Your weight is ${bmi}, Your  Weight is fine`
         } else {
             results.innerHTML = `Your weight is ${bmi}, Your are Overweight`
-        }
-        
+        }        
     }
     
 });
