@@ -47,6 +47,8 @@ function validateGuess(guess){           // ✅💎✅ This function will simply
 
 
 
+
+
 function checkGuess(guess) {                 // ✅💎✅ This function will check whether the inserted value is equal to "random.number" or not ??
     if(guess === randomNumber){
         displayMessage(`You guessed it right`)
