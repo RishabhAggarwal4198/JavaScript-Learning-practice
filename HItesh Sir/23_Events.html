@@ -43,28 +43,33 @@
 
     // document.getElementById('owl').addEventListener('click', function(){
     //     alert("owl clicked again")     //[📍📍We got an "ALERT" by the name of  "OWL CLICKED AGAIN"
-    // })
+    // }, false)
 
                                    // 🔽🔽
                   
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log(e);                 //[📍📍Now in console we got a lots of "PointerEvents" & when we further open that "PointerEvents" we gets a lot more of objects 
-    }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e);                 //[📍💎📍Now in console we got a lots of "PointerEvents" & when we further open that "PointerEvents" we gets a lot more of objects 
+    // }, false)
 
 
 
 
-    /* 📍Events which got generated in the console due to above "addEventListner" & we need to study them are :-
-      ➤ type, timestamp, defaultPrevented
+    /* 📍📍 Events which got generated in the console due to above "addEventListner" & we MUST know them are :-
+      ➤ type, timestamp, defaultPrevented          //[📍📍 "defaultPrevented" method stops the deafult Behavoiur of that Tag ]
       ➤ target, toElement, srcElement, currentTarget
       ➤ clientX, clientY, screenX, screenY
       ➤ altkey, ctrlkey, shiftkey, keycode
     */ 
+    
 
 
 
 
-    // 💎💎 CASE - 1 (BUBBLING)👇
+     
+    // 💎✅💎 EVENT - PROPAGATION 👇👇
+
+
+    // 💎💎 CASE - 1 (EVENT - BUBBLING)👇
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -73,9 +78,20 @@
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     // }, false);
-   
-    // [📍Just click the "owl" image & then see in the console....you would see "owl clicked" first & then "clicked inside the ul"
 
+                                        // 🔽🔽 (even after removing the "FALSE"  from last, we will see the same result 👇👇)
+
+        document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    });   
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+    });
+
+   
+    // [📍💎✅💎📍 So, Just when the "owl" image got clicked, just after that we could see in the console that "owl clicked" got printed  first & then "clicked inside the ul" got printed
+    // 💎💎💎💎 So this is called BUBBLING [ i.e. propagation of event from inside to outside (i.e. owl image >> li >> ul ) is definded as BUBBLING ]
 
 
     //👇 when u want to stop BUBBLING of the elemnts 
