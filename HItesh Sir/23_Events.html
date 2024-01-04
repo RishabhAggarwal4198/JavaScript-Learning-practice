@@ -177,18 +177,19 @@
 
                               // 🔽🔽
     
-    document.querySelector('#images').addEventListener('click', function(e){ 
-        console.log(e.target.parentNode); 
-        let removeIt = e.target.parentNode
-        removeIt.remove()         // [📍🍁📍  At this point due to this "remove()" method  we could now "remove" the image by just clicking  onto it on the HTML page]
-    })
+    // document.querySelector('#images').addEventListener('click', function(e){ 
+    //     console.log(e.target.parentNode); 
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()         // [📍🍁📍  At this point due to this "remove()" method  we could now "remove" the image by just clicking  onto it on the HTML page]
+    // })
 
                               // 🔽OR 🔽 (✅another way of doing the above thing) (watch @3:55:21 ) 
 
     // document.querySelector('#images').addEventListener('click', function(e){ 
     //     let removeIt = e.target.parentNode
-    //     removeIt.parentNode.removeChild(removeIt)      // [📍 Another Method of doing the above thing....  (Explanation @watch @33:55:21 ) ]
+    //     removeIt.parentNode.removeChild(removeIt)      // [📍🍁📍 Another Method of doing the above thing....  for (Explanation @watch @33:55:21 ) ( in "let removeIt = e.target.parentNode" we got "li" , but we are having the method as "removeChild()" so to apply that we have used we have to get the Parent of "removeIt" i.e. "ul",  so that's why we wrote it as "removeIt.parentNode.removeChild(removeIt)"  {bcoz "removeIt.parentNode" = "ul" & then remove which child of "ul" ? the one i.e. stored in "removeIt" = "li" hence we have  "removeIt.parentNode.removeChild(removeIt)" } ]
     // }) 
+
     /*
     💎 In the above code snippet in "Let removeIt" we targated & then stored 
     List tag (li) but when we targated  'removeIt' directly using 'removeChild' after 
