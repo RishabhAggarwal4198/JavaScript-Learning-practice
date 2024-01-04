@@ -171,24 +171,24 @@
     
                               // 🔽🔽
 
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.parentNode);   // [📍 At this point In "console.log" its basically showing the original PARENT-NODE (in which the image is present)]
-    })
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.parentNode);   // [📍 At this point In "console.log" its basically showing the original PARENT-NODE (in which the image is present i.e. <li> ... </li>)]
+    // })
 
                               // 🔽🔽
     
-    // document.querySelector('#images').addEventListener('click', function(e){ 
-    //     let removeIt = e.target.parentNode
-    //     removeIt.remove()         // [📍 At this point due to this METHOD we could actaully "remove" the images by clicking on it]
-    // })
+    document.querySelector('#images').addEventListener('click', function(e){ 
+        console.log(e.target.parentNode); 
+        let removeIt = e.target.parentNode
+        removeIt.remove()         // [📍🍁📍  At this point due to this "remove()" method  we could now "remove" the image by just clicking  onto it on the HTML page]
+    })
 
                               // 🔽OR 🔽 (✅another way of doing the above thing) (watch @3:55:21 ) 
 
     // document.querySelector('#images').addEventListener('click', function(e){ 
     //     let removeIt = e.target.parentNode
     //     removeIt.parentNode.removeChild(removeIt)      // [📍 Another Method of doing the above thing....  (Explanation @watch @33:55:21 ) ]
-    // })
-
+    // }) 
     /*
     💎 In the above code snippet in "Let removeIt" we targated & then stored 
     List tag (li) but when we targated  'removeIt' directly using 'removeChild' after 
