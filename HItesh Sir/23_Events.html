@@ -69,7 +69,7 @@
     // 💎✅💎 EVENT - PROPAGATION 👇👇
 
 
-    // 💎💎 CASE - 1 (EVENT - BUBBLING)👇
+    // 💎🍁💎 CASE - 1 (EVENT - BUBBLING)👇
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -91,7 +91,7 @@
 
    
     // [📍💎✅💎📍 So, Just when the "owl" image got clicked, just after that we could see in the console that "owl clicked" got printed  first & then "clicked inside the ul" got printed
-    // 💎💎💎💎 So this is called BUBBLING [ i.e. propagation of event from inside to outside (i.e. owl image >> li >> ul ) is definded as BUBBLING ]
+    // 💎💎💎💎 So this is called BUBBLING of EVENT [ i.e. propagation of event from inside to outside (i.e. owl image >> li >> ul ) or from BOTTOM to TOP is definded as BUBBLING ]
 
 
     //👇 when u want to stop BUBBLING of the elemnts 
@@ -105,7 +105,11 @@
 
 
 
-    // 💎💎 CASE - 2 (CAPTURING) 👇
+
+
+
+
+    // 💎🍁💎 CASE - 2 (CAPTURING) 👇 [in this "false" value @ the last got changed to "true" ]
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -115,8 +119,9 @@
     //     console.log("owl clicked");
     // }, true);
 
-
-    // [📍Just click the "owl" image & then see in the console....you would see  "clicked inside the ul" first  & then "owl clicked" 
+    
+    // [📍💎✅💎📍 So, Just when the "owl" image got clicked, just after that we could see in the console that "clicked inside the ul" got printed  first & then "owl got clicked" got printed
+    // 💎💎💎💎 So this is called CAPUTRING of EVENT [ i.e. propagation of event from outside to  inside (i.e. ul >> li >> owl image  ) or from TOP to BOTTOM is definded as CAPTURING ] 
  
    
 
