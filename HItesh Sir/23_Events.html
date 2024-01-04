@@ -159,24 +159,24 @@
 
     //💎💎💎💎  For making IMAGES disapper just by clicking 👇🍁👇
 
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e);    // [📍 At this point In "console.log" on clicking the images we are getting events]
-    }) 
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e);    // [📍 @this stage In "console.log" on clicking the images we are getting events]
+    // }) 
                                  
                               // 🔽🔽
 
     // document.querySelector('#images').addEventListener('click', function(e){
-    //     console.log(e.target);   // [📍 At this point In "console.log" its basically showing that from which TARGET this EVENT is occuring ]
+    //     console.log(e.target);   // [📍✅📍  @ this stage in "console.log" its basically showing that from which TARGET this EVENT is occuring (i.e. from which element of the DOM this event is occuring & that's why we have whole "TAG" of that element getting printed into our console ) ] 
     // })
-
+    
                               // 🔽🔽
 
-    // document.querySelector('#images').addEventListener('click', function(e){
-    //     console.log(e.target.parentNode);   // [📍 At this point In "console.log" its basically showing the original PARENT-NODE (in which the image is present)]
-    // })
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);   // [📍 At this point In "console.log" its basically showing the original PARENT-NODE (in which the image is present)]
+    })
 
                               // 🔽🔽
-
+    
     // document.querySelector('#images').addEventListener('click', function(e){ 
     //     let removeIt = e.target.parentNode
     //     removeIt.remove()         // [📍 At this point due to this METHOD we could actaully "remove" the images by clicking on it]
