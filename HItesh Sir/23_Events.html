@@ -104,7 +104,7 @@
     //     e.stopPropagation    // [💎✅💎 this property is used for stopping the BUBBLING of the event ]
     // }, false);
    
-   // [📍Just click the "owl" image now & then see in the console....you would only see "owl clicked"
+   // [📍Just click the "owl" image now & then you would only see "owl clicked" in the console.... [ i.e.  BUBBLING of the event is not happening & is not going to the Elements Above ]  
 
 
 
@@ -133,7 +133,9 @@
 
 
 
-     // 💎💎 REVENT DEFAULT 👇👇   
+    
+
+    // 💎🍁💎 PREVENT DEFAULT 👇👇  ( to track a DOM element & to change it's default behaviour )
 
     //  document.getElementById('google').addEventListener('click', function(e){
     //     e.preventDefault;        // [📍 To stop the BUBBLING ]
