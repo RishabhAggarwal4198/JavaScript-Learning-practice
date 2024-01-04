@@ -143,21 +143,25 @@
 
                                     // 🔽🔽 
 
-     document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault();        // [📍 Now by ENABLING this "e.preventDefault();" method, when we gonna cick on "Google" on the page it will only print "google clicked" in the console !! it won't get directed to the GOOGLE page in the nexttab as it is supposed to ]
-        // e.stopPropagation();     // [📍now by enabling this we are stopping the PROPAGATION of the event i.e. it's BUBBLING from inside to outside ]
-        console.log(("google clicked"));
-     }, false)  
+    //  document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();        // [📍✅📍  Now by ENABLING this "e.preventDefault();" method, when we gonna cick on "Google" on the page it will only print "google clicked" in the console !! it won't get directed to the GOOGLE page in the nexttab as it is supposed to ]
+    //     e.stopPropagation();     // [📍now by enabling this we are stopping the PROPAGATION of the event i.e. it's BUBBLING from inside to outside ]
+    //     console.log(("google clicked"));
+    //  }, false)  
 
 
 
 
 
-    //💎💎 For making IMAGES disapper just by clicking 👇👇
 
-    // document.querySelector('#images').addEventListener('click', function(e){
-    //     console.log(e);    // [📍 At this point In "console.log" on clicking the images we are getting events]
-    // })
+
+
+
+    //💎💎💎💎  For making IMAGES disapper just by clicking 👇🍁👇
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e);    // [📍 At this point In "console.log" on clicking the images we are getting events]
+    }) 
                                  
                               // 🔽🔽
 
