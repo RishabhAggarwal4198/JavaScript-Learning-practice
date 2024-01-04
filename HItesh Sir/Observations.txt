@@ -136,12 +136,13 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
  💎💎  👇👇  📍📍 ✅✅ ❌❌ 🔽🔽
 
 // 💎💎      👇👇
+// 💎✅💎 
 //[📍📍 Answer is :-  " "  ] 
 // 🔽🔽
 
 
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
-♦️♦️start watching from  { @1:37:37 }♦️♦️
+♦️♦️start watching from  { @3:07:53 }♦️♦️
 
 🔽🔽 PROJECT-4  Not Understood:- @3:13:19🔽🔽 
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 
@@ -164,7 +165,11 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @1:43:00, @1:43:49 ] 🍁🍁 REVISION 🍁🍁
 
++ [watch @2:21:12 ] 🍁🍁 IMPORTANT (difference in storing value INSIDE & OUTSIDE submit event function)🍁🍁
+
 + [watch @2:35:22 ] 🍁🍁 SET-INTERVAL function 🍁🍁
+
++ [watch @3:31:31  ] 🍁🍁 WHY to prefer "addEventListner" over "onclick" & inline "onclick" Events 🍁🍁
 
 + [watch @3:36:56 ] 🍁🍁 VERY-IMPORTANT interview questions 🍁🍁
  

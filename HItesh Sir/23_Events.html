@@ -20,24 +20,39 @@
    </div>
 </body>
 <script>
+
+    // 💎💎 ON CLICK - EVENTS  👇👇
+
     // document.getElementById('owl').onclick = function(){      
-    //     alert("owl clicked")                   //  [📍 Not the Correct Method to do, bcoz onlick event directly applied onto it can create problems with & also don't have that much properties ]
+    //     alert("owl clicked")                   //  [📍📍📍 Not the Correct Method to do, bcoz  if "onlick" event directly applied onto it can create problems & also u don't get that much properties & features while using "onclick" events as much u gets while using "addEventListner" ]
     // }
 
-
-    //attachEvent()
+    //attachEvent() 
 
     //jQuery - on 
 
 
 
+    // 💎✅💎 ADD - EVENT LISTNERS  👇👇
+
+    //Syntax 👇👇 
+    
+    // document.getElementById('owl').addEventListener('click', function () {}, false)
+
+
+
     // document.getElementById('owl').addEventListener('click', function(){
-    //     alert("owl clicked again")
+    //     alert("owl clicked again")     //[📍📍We got an "ALERT" by the name of  "OWL CLICKED AGAIN"
     // })
 
+                                   // 🔽🔽
+                  
     document.getElementById('owl').addEventListener('click', function(e){
-        console.log(e);
+        console.log(e);                 //[📍📍Now in console we got a lots of "PointerEvents" & when we further open that "PointerEvents" we gets a lot more of objects 
     }, false)
+
+
+
 
     /* 📍Events which got generated in the console due to above "addEventListner" & we need to study them are :-
       ➤ type, timestamp, defaultPrevented
@@ -150,15 +165,15 @@
                                // 🔽🔽
 
 
-        document.querySelector('#images').addEventListener
-        ('click', function(e){ 
-        console.log(e.target.tagName);
-            if(e.target.tagName === 'IMG')  {
-                console.log(e.target.id);
-                let removeIt = e.target.parentNode
-                removeIt.remove()
-            }
-    })
+    //     document.querySelector('#images').addEventListener
+    //     ('click', function(e){ 
+    //     console.log(e.target.tagName);
+    //         if(e.target.tagName === 'IMG')  {
+    //             console.log(e.target.id);
+    //             let removeIt = e.target.parentNode
+    //             removeIt.remove()
+    //         }
+    // })
 
   
 
