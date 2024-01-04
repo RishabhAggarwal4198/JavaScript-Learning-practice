@@ -87,16 +87,20 @@ function endGame () {
     p.classList.add('button');
     p.innerHTML = `<h2 id = "newGame"> Start new Game</h2>`;
     startOver.appendChild(p);
-    playGame = false;
+    playGame = false;                                // 💎✅💎 to make it "false" is the most important thing to end the game
     newGame();
 }
 
 
+
+// 💎✅💎 If we want to play a new game we have to RESET all of the following values  👇👇
+
+
 function newGame () {
-    const newGameButton = document.querySelector('#newGame')
-    newGameButton.addEventListener('click', function(e){
+        const newGameButton = document.querySelector('#newGame')
+        newGameButton.addEventListener('click', function(e){
         randomNumber = parseInt(Math.random() * 100 + 1);
-        prevGuess = []                            // [📍 Here the "previouGuess" varaible got RESET ]
+        // prevGuess = []                            // [📍 Here the "previouGuess" varaible got RESET ]
         numGuess = 1
         guessSlot.innerHTML = ''
         remaining.innerHTML =  `${11 - numGuess}`;
