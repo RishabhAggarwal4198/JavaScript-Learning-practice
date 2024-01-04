@@ -34,7 +34,7 @@ function validateGuess(guess){           // ✅💎✅ This function will simply
         alert ('Please enter a number less than 100') 
     } else { 
         // prevGuess.push(guess)           // 💎✅💎 To save the value into that "guess" ARRAY 
-        if(numGuess === 11){  
+        if(numGuess === 10){  
             displayGuess(guess)
             displayMessage(`Game Over. Random number was ${randomNumber}`)
             endGame()
@@ -104,11 +104,10 @@ function newGame () {
         numGuess = 1
         guessSlot.innerHTML = ''
         remaining.innerHTML =  `${11 - numGuess}`;
-        userInput.removeAttribute(`disabled`)
-        startOver.removeChild(p);
+        userInput.removeAttribute(`disabled`)       // 💎✅💎 remove "disabled" attribute from "UserInput"
+        startOver.removeChild(p);                   // 💎✅💎 remove these values which u inserted in the innerHTML of the paragraphs
         playGame = true;
-
-    })
+    }) 
    
 }
 
