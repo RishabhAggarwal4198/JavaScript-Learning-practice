@@ -15,7 +15,7 @@
             <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <!-- <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li> -->
-            <li><a style="color: aliceblue;"  id="google">Google</a></li>
+            <li><a style="color: aliceblue;" href="https://google.com" target="_blank" id="google">Google</a></li>
         </ul>
    </div>
 </body>
@@ -41,15 +41,15 @@
 
 
 
-    // document.getElementById('owl').addEventListener('click', function(){
-    //     alert("owl clicked again")     //[📍📍We got an "ALERT" by the name of  "OWL CLICKED AGAIN"
-    // }, false)
+    document.getElementById('owl').addEventListener('click', function(){
+        // alert("owl clicked again")     //[📍📍We got an "ALERT" by the name of  "OWL CLICKED AGAIN"
+    }, false)
 
-                                   // 🔽🔽
+                                //    🔽🔽
                   
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log(e);                 //[📍💎📍Now in console we got a lots of "PointerEvents" & when we further open that "PointerEvents" we gets a lot more of objects 
-    // }, false)
+    document.getElementById('owl').addEventListener('click', function(e){
+        // console.log(e);                 //[📍💎📍Now in console we got a lots of "PointerEvents" & when we further open that "PointerEvents" we gets a lot more of objects 
+    }, false)
 
 
 
@@ -71,22 +71,22 @@
 
     // 💎🍁💎 CASE - 1 (EVENT - BUBBLING)👇
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false);   // [📍 We could just not write FALSE at the last as well bcoz it gonna give the same result]
+    document.getElementById('images').addEventListener('click', function(e){
+        // console.log("clicked inside the ul");
+    }, false);   // [📍 We could just not write FALSE at the last as well bcoz it gonna give the same result]
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    // }, false);
+    document.getElementById('owl').addEventListener('click', function(e){
+        // console.log("owl clicked");
+    }, false);
 
                                         // 🔽🔽 (even after removing the "FALSE"  from last, we will see the same result 👇👇)
 
         document.getElementById('images').addEventListener('click', function(e){
-        console.log("clicked inside the ul");
+        // console.log("clicked inside the ul");
     });   
 
     document.getElementById('owl').addEventListener('click', function(e){
-        console.log("owl clicked");
+        // console.log("owl clicked");
     });
 
    
@@ -133,15 +133,21 @@
 
 
 
-    
+
 
     // 💎🍁💎 PREVENT DEFAULT 👇👇  ( to track a DOM element & to change it's default behaviour )
 
     //  document.getElementById('google').addEventListener('click', function(e){
-    //     e.preventDefault;        // [📍 To stop the BUBBLING ]
-    //     e.stopPropagation();     // [📍 To stop the PROPAGATION ]
     //     console.log(("google clicked"));
-    //  }, false)
+    //  }, false)  
+
+                                    // 🔽🔽 
+
+     document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault();        // [📍 Now by ENABLING this "e.preventDefault();" method, when we gonna cick on "Google" on the page it will only print "google clicked" in the console !! it won't get directed to the GOOGLE page in the nexttab as it is supposed to ]
+        // e.stopPropagation();     // [📍now by enabling this we are stopping the PROPAGATION of the event i.e. it's BUBBLING from inside to outside ]
+        console.log(("google clicked"));
+     }, false)  
 
 
 
