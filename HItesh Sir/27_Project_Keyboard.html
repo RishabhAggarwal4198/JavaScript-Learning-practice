@@ -21,8 +21,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        height: 100vh;
+        height: 100vh; 
       }
 
       .color {
@@ -30,7 +29,7 @@
         display: flex;
         flex-direction: row;
       }
-
+      
     </style>
 
   </head>
@@ -53,16 +52,15 @@
             </div>
         </div>
 
-
-
   </body>
+
 
 
   <script>
 
     const insert = document.getElementById('insert')
 
-    window.addEventListener('keydown', (e) => {
+    window.addEventListener('keydown', (e) => {        //💎✅💎  KEYDOWN:- This event occurs when the user presses down a key, even if the key pressed doesn't produce a character value. It fires when a key is pressed, and it fires again as the key is held down.       KEYPRESS:- This event occurs when the user presses a key that produces a character value, such as alphabetic, numeric, and punctuation keys. It fires only when a key that produces a character value is pressed down.
         insert.innerHTML = `
          <div class='color'>
             <table>
@@ -72,14 +70,19 @@
                 <th>Code</th> 
             </tr>
             <tr>
-                <td>${e.key === " '"?"Space": e.key} </td>        <!-- [📍 will show "Space"in the Code column if SPCAE key is pressed ] -->
+                <td>${e.key === " " ? "Space": e.key} </td>        <!-- [📍 ~~'e.key === " " ? "Space": e.key '~~  means if "e.key" value is " " (EMPTY)  then manually write "Space" in it's place otherwise give the value of "e.key" ] -->
                 <td>${e.keyCode} </td>  
                 <td>${e.code} </td>
+                
             </tr>
             </table> 
          </div>
         `
     })
+
+
+
+    
         
 
 </script>
