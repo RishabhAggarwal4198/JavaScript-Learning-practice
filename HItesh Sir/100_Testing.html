@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing </title>
+    
+
+
+
+    <style>
+
+        body{
+            height: 1000px;
+        }
+        
+        h2{
+            margin-top: 100px;
+            margin-bottom: 22px;
+        }
+
+
+        #startt,
+        #initiate {
+            margin-right:22px;
+        }
+
+
+        #color_App{
+            margin-top: 200px;
+        }
+
+
+        
+
+
+       
+
+
+    </style>
+
 </head>
 
 
@@ -29,6 +64,21 @@
 
      <h1>Hello Everyone</h1>
      <button id="stop">STOP</button>
+
+
+
+
+     <h2>JAVASCRIPT is a synchronous language</h2>
+     <button id="startt"> STARTT </button>
+     <button id="stopp"> STOPP </button> 
+
+
+
+
+
+     <h1 id="color_App" >Background Color Changing application</h1>
+     <button id="initiate" >INITIATE</button>
+     <button id="hangUpp"> HANG UP </button>
     
    
     
@@ -186,6 +236,106 @@ const change = function () {
 //     clearTimeout(timer);
 //     console.log("STOPPPED");
 // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const changge = function (vall) {
+//     document.querySelector('h2').innerHTML= "✅✅✅✅✅JAVASCRIPT✅✅✅✅✅"
+//     console.log(`Hello :- ${vall}`);
+// }
+
+
+// changge();
+
+// let intervalFxn;
+
+// document.querySelector('#startt').addEventListener('click', () => {
+//     intervalFxn = setInterval(changge, 1000, "Raman")
+// })
+
+// document.querySelector('#stopp').addEventListener('click', () => {
+//     clearInterval(intervalFxn);
+// })
+
+
+
+
+
+
+
+
+
+
+// 📍📍📍📍📍📍📍📍📍📍📍📍 COLOR-CHANGING-APP 📍📍📍📍📍📍📍📍📍📍📍📍
+
+
+//🔽Practice🔽
+
+// const trialVar =  Math.ceil(Math.random()*10+1) 
+// console.log(trialVar); 
+
+
+
+
+
+
+const colorGeneration = () =>{
+
+    const num = "123456789ABCDEF"
+    let colorValue = "#"
+    for (let i = 0; i < 6; i++) {
+
+        const mathMagic = parseInt(Math.random()*15)
+        // console.log(mathMagic);
+        colorValue += num[mathMagic] 
+    }
+
+    return colorValue;
+}
+
+// console.log(colorGeneration());
+
+let intervalFxn ;
+
+const whenInitiateButtonClicked = () => {
+    
+    const bgColorChange = () => {
+        document.body.style.backgroundColor = colorGeneration();
+    }
+    intervalFxn = setInterval(bgColorChange, 500)
+}
+ 
+
+document.querySelector('#initiate').addEventListener('click', whenInitiateButtonClicked) 
+
+
+const whenHangUpButtonClicked = () => {
+        clearInterval(intervalFxn);
+} 
+
+
+document.querySelector('#hangUpp').addEventListener('click', whenHangUpButtonClicked)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

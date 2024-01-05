@@ -54,7 +54,7 @@
             const hex = '0123456789ABCDEF';     // [📍 even though it's an String based variable but the values stored in it are in the form of ARRAY & it's indexes]
             let color = '#';
             for (let i = 0; i < 6; i++){
-                color += hex[Math.floor(Math.random()*16)];
+                color += hex[Math.floor(Math.random()*16)];      // 💎✅💎 by multiplying by "Math.random()" by 16 we will get value from  0 - 16 
             }
             return color;
         }; 
@@ -79,7 +79,7 @@
 
         const stopChangingColor = function () {
             clearInterval(intervalId);
-            intervalId = null;                                   // ✅✅
+            intervalId = null;                             // ✅✅ By  "intervalId = null;" we DEREFRENCED the value of variable "intervalId" (& also made code much more PROFESSIONAL)
         }
 
 
