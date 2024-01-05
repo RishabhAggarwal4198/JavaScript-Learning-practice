@@ -133,7 +133,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
- 💎💎  👇👇  📍📍 ✅✅ ❌❌ 🔽🔽
+ 💎💎  👇👇  📍📍 ✅✅ ❌❌ 🔽🔽 🍁🍁
 
 // 💎💎      👇👇
 // 💎✅💎 
@@ -141,8 +141,9 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 // 🔽🔽
 
 
+
 >>>> Javascript in 1 shot in Hindi part 2(By Hitesh Sir) 
-♦️♦️start watching from  { @3:07:53 }♦️♦️
+♦️♦️start watching from  { @4:07:05 }♦️♦️
 
 🔽🔽 PROJECT-4  Not Understood:- @3:13:19🔽🔽 
 🔽🔽 XMLHttpRequest in APIs Not Understood:-  @5:12:21 - @5:23:18 🔽🔽 
@@ -179,7 +180,9 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @4:05:46  ] 🍁🍁BLOCKING & NON-BLOCKING code 🍁🍁
 
-+ [watch @4:15:37  ] 🍁🍁~ IMPORTANT ~🍁🍁
++ [watch @4:10:56  ] 🍁🍁 WEB APIs (important) 🍁🍁
+
++ [watch @4:15:37, @4:17:01]  🍁🍁~ IMPORTANT (WEB APIs , Set-TimeOut ) ~🍁🍁
 
 + [watch @4:23:47  ] 🍁🍁important INTERVIEW question 🍁🍁
 
