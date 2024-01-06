@@ -221,7 +221,6 @@ consumePromiseFive();
                   // 🔽🔽 (writing above function in ".then & .catch" format)
 
 
-
     fetch ('https://api.github.com/users/hiteshchoudhary')
     .then((response) => {
         return response.json()
@@ -231,5 +230,5 @@ consumePromiseFive();
     })
     .catch((errorrr) => console.log(errorrr))    // [📍📍 Run to see the RESULT (will be same as the above method)]
 
-
+    
 

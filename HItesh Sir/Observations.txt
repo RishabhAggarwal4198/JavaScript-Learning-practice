@@ -198,11 +198,15 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 + [watch @5:52:43 ] 🍁🍁PROMISE - important 🍁🍁
 
-+ + [watch @5:58:34 ] 🍁🍁CHAINING in PROMISES 🍁🍁
++  [watch @5:58:34 ] 🍁🍁CHAINING in PROMISES 🍁🍁
 
 + [watch @6:18:54  ] 🍁🍁How it's working ? 🍁🍁
 
-+ [ watch @6:57:18 ] 🍁🍁IMPORTANT ( console.log - this in GOLBAL & FUNCTIONSCOPE )🍁🍁
++ [watch @6:28:26 ] 🍁🍁Promise IMPORTANT-INTERVIEW question (for SDE-2 Lvl) 🍁🍁
+
++ [watch @6:31:29, 6:33:20, 6:34:17 ] 🍁🍁how FETCH works ?? & JS engine 🍁🍁
+
++ [watch @6:57:18 ] 🍁🍁IMPORTANT ( console.log - this in GOLBAL & FUNCTIONSCOPE )🍁🍁
 
 + [ watch @7:15:56 ] 🍁🍁BEHAVIOUR of JS 🍁🍁
 
