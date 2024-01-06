@@ -116,34 +116,34 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is
 
 
 // Creating "promise" 👇 
-const promiseFour = new Promise (function (resolve, reject){
-    setTimeout(function(){
-        let error = false;
-        if(!error){
-            resolve ({username: "Rishabh",
-                     password: "123"})
-        }else{
-            reject("ERROR!: Something went wrong") 
-        } 
-    },1000)
-})
+// const promiseFour = new Promise (function (resolve, reject){
+//     setTimeout(function(){
+//         let error = false;
+//         if(!error){
+//             resolve ({username: "Rishabh",
+//                      password: "123"})
+//         }else{
+//             reject("ERROR!: Something went wrong") 
+//         } 
+//     },1000)
+// })
 
 
-// Consuming "promise" 👇 
+// // Consuming "promise" 👇 
 
-// promiseFour.then().catch()    // [📍 One-Way of doing thi (i.e. by using ".then()" i will get the value & if error occurs by using ".cathch()" i will have the  error value)]
+// // promiseFour.then().catch()    // [📍 One-Way of doing thi (i.e. by using ".then()" i will get the value & if error occurs by using ".cathch()" i will have the  error value)]
 
-promiseFour.then((userrrr) => {
-    console.log(userrrr);
-    return userrrr.username
-})
-.then((username) => {                 // [📍This is called CHAINING (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
-    console.log(username);              // 💎✅💎 & CHAINING is done when we want to exract data from a PROMISE using functions like "return" & also when making connectios of DATA-BASE 
-})
-.catch(function (errorrr){            // 💎✅💎 & in this CHAINING we also have to chain ".cath()" bcoz we are getting errors as well  
-    console.log(errorrr);
-})
-.finally(() => console.log("The promise is either resolved or rejected"))   // 💎✅💎 just to tell us that whatever we were planning to get from PROMISE ( "resolved" or "rejected") it got completed or not ?
+// promiseFour.then((userrrr) => {
+//     console.log(userrrr);
+//     return userrrr.username
+// })
+// .then((username) => {                 // [📍This is called CHAINING (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+//     console.log(username);              // 💎✅💎 & CHAINING is done when we want to exract data from a PROMISE using functions like "return" & also when making connectios of DATA-BASE 
+// })
+// .catch(function (errorrr){            // 💎✅💎 & in this CHAINING we also have to chain ".cath()" bcoz we are getting errors as well  
+//     console.log(errorrr);
+// })
+// .finally(() => console.log("The promise is either resolved or rejected"))   // 💎✅💎 just to tell us that whatever we were planning to get from PROMISE ( "resolved" or "rejected") it got completed or not ?
                                                                             // 💎✅💎 ".finally()" gonna get executed at every cost no matter what happens
 
 // [🍁✅🍁✅🍁 Answer is "{ username: 'Rishabh', password: '123' }" , "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
@@ -156,23 +156,23 @@ promiseFour.then((userrrr) => {
 
 // 💎💎 PROMISE - 5 👇👇
 
-// const promiseFive = new Promise(function (resolve, reject){
-//     setTimeout(function(){
-//         let error = true;
-//         if(!error){
-//             resolve ({username: "JavaScript",
-//                      password: "123"})
-//         }else{
-//             reject("!ERROR: JS went wrong")
-//         }
-//     },1000)
-// })
+const promiseFive = new Promise(function (resolve, reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve ({username: "JavaScript",
+                     password: "123"})
+        }else{
+            reject("!ERROR: JS went wrong")
+        }
+    },1000)
+})
 
-// async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
-//     const response = await promiseFive
-//     // console.log(response);
-// }
-// // consumePromiseFive();
+async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
+    const response = await promiseFive
+    // console.log(response);
+}
+// consumePromiseFive();
 
 
         // 🔽🔽  (OR) [for Handling error much more gracefully ]
