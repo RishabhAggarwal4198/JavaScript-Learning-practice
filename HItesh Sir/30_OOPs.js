@@ -3,7 +3,7 @@
 
 // ➤JavaScript and classes 
 
-// ➤ OOPs 
+// ➤ OOPs  :- in layman terms OOPs could be defined as what is the structure of writing the code ?
 
 /* ➤ Objects in JS :- 
    +  Collection of properties and methods
