@@ -4,12 +4,16 @@
     ✅https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
     */ 
 
+// 📍❌📍 Primitive & non Professional way of wrting FETCH statement 👇👇
+// fetch('https://something.com').then().catch().finally()
 
 
-// 💎💎 Creating a PROMISE 👇👇
+
+
+// 💎✅💎 Creating  PROMISE 👇👇
 
 const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in our daily world a PROMISE done by someone will only have two aspects 1) Either it will be completed 2) Or it will not get completed, So Similarly in JS also PROMISE have two aspects "resolve" & "rejected"]
-
+                                                               // 💎✅💎 As PROMISE is an instance (as per the documentation of MDN) so similarly to get an instance of it we use "new" keyword
     // Do an Async task (some of these things takes time ):-
     // + DB calls
     // + Cryptography
