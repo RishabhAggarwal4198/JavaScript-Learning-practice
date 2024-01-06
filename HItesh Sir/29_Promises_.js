@@ -136,8 +136,8 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is
 // promiseFour.then((userrrr) => {
 //     console.log(userrrr);
 //     return userrrr.username
-// })
-// .then((username) => {                 // [📍This is called CHAINING (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+// })                                      // [📍This is called CHAINING (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+// .then((username) => {                   // 💎✅💎  this ".then()"  is basically for handling the above "return"
 //     console.log(username);              // 💎✅💎 & CHAINING is done when we want to exract data from a PROMISE using functions like "return" & also when making connectios of DATA-BASE 
 // })
 // .catch(function (errorrr){            // 💎✅💎 & in this CHAINING we also have to chain ".cath()" bcoz we are getting errors as well  
@@ -156,29 +156,29 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is
 
 // 💎💎 PROMISE - 5 👇👇
 
-const promiseFive = new Promise(function (resolve, reject){
-    setTimeout(function(){
-        let error = true;
-        if(!error){
-            resolve ({username: "JavaScript",
-                     password: "123"})
-        }else{
-            reject("!ERROR: JS went wrong")
-        }
-    },1000)
-})
-
-async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
-    const response = await promiseFive
-    // console.log(response);
-}
-// consumePromiseFive();
+// const promiseFive = new Promise(function (resolve, reject){
+//     setTimeout(function(){
+//         let erorrr = true;
+//         if(!erorrr){                            // 💎✅💎 "!error" means  "error = false" 
+//             resolve ({username: "JavaScript",
+//                      password: "123"})
+//         }else{
+//             reject("!ERROR: JS went wrong")
+//         }
+//     },1000) 
+// })
+ 
+// async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
+//     const response = await promiseFive
+//     // console.log(response);
+// }
+// // consumePromiseFive(); 
 
 
         // 🔽🔽  (OR) [for Handling error much more gracefully ]
 
 
- // Creating "promise" 👇 
+//  Creating "promise" 👇 
     // const promiseFivee = new Promise(function (resolve, reject){
     //     setTimeout(function(){
     //         let error = true;
@@ -192,7 +192,7 @@ async function consumePromiseFive () {           // [📍📍 Async means "some 
     // })
 
 
-    // Consuming "promise" 👇 
+    // // Consuming "promise" 👇 
     // async function consumePromiseFive () {        // [📍📍 Async means "some response is about to come"]
     //     try {
     //         const response = await promiseFivee
@@ -205,7 +205,7 @@ async function consumePromiseFive () {           // [📍📍 Async means "some 
     // consumePromiseFive();      // [📍 Answer is "!ERROR: JS went wrong" bcpz " let error = true;"  in the line 143 ]
 
     // async function getAllUsers () {
-    //    try {
+    //    try { 
     //         const response = await fetch ('https://jsonplaceholder.typicode.com/users')
     //         const data = await response.json()
     //         console.log(data); 
@@ -214,20 +214,22 @@ async function consumePromiseFive () {           // [📍📍 Async means "some 
     //    }
     // }
 
-    // getAllUsers()     // [📍📍 Run to see the RESULT]
 
+    // getAllUsers()     // [📍📍 Run to see the RESULT]
+    
 
                   // 🔽🔽 (writing above function in ".then & .catch" format)
 
 
+                  
     fetch ('https://jsonplaceholder.typicode.com/userrrr')
     .then((response) => {
         return response.json()
     })
-    .then((data) => {  
+    .then((data) => {                         // 💎✅💎  this ".then()"  is basically for handling the above "return"
         console.log(data);
     })
-    .catch((error) => console.log(error))    // [📍📍 Run to see the RESULT (will be same as the above method)]
+    .catch((errorrr) => console.log(errorrr))    // [📍📍 Run to see the RESULT (will be same as the above method)]
 
 
 
