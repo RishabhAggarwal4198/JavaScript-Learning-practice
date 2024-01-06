@@ -53,7 +53,7 @@ new Promise(function(resolve, reject){      // 💎✅💎 It's not necessary to
 
 
 
-// 💎💎 PROMISE - 3 👇👇
+//💎✅💎✅💎✅💎  PROMISE - 3 👇👇 
 
 // Creating "promise" 👇 
 
@@ -67,8 +67,8 @@ const promiseThree = new Promise (function(resolve, reject){
 
 
 // Consuming "promise" 👇 
-promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" varaible is basically the value which we passed on inside the "resolve" above
-    console.log(userrrr);              // [📍 "{ username: 'Chai', email: 'code@example.com' }" got printed in console.log ]
+promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is basically the value which we passed on inside the "resolve" above
+    // console.log(userrrr);              // [📍 "{ username: 'Chai', email: 'code@example.com' }" got printed in console.log ]
 })
 
 
@@ -79,9 +79,9 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" varaible is
 
 
 
-// // 💎💎 PROMISE - 4 👇👇
+// 💎💎 PROMISE - 4 👇👇  [ using "reject" keyword ]
 
-// // Creating "promise" 👇 
+// Creating "promise" 👇 
 // const promiseFour = new Promise (function (resolve, reject){
 //     setTimeout(function(){
 //         let error = true;
@@ -89,16 +89,15 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" varaible is
 //             resolve ({username: "Rishabh",
 //                      password: "123"})
 //         }else{
-//             reject("!ERROR: Something went wrong")
-//         }
+//             reject("ERROR!: Something went wrong") 
+//         } 
 //     },1000)
 // })
 
 
-
 // // Consuming "promise" 👇 
 
-// // promiseFour.then().catch()    // [📍 One-Way of doing this]
+// // promiseFour.then().catch()    // [📍 One-Way of doing thi (i.e. by using ".then()" i will get the value & if error occurs by using ".cathch()" i will have the  error value)]
 
 // promiseFour.then((userrrr) => {
 //     console.log(userrrr);
@@ -109,8 +108,42 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" varaible is
 //     console.log(errorrr);
 // }).finally(() => console.log("The promise is either resolved or rejected"))
 
-// // [📍💎📍 Answer is "!ERROR: Something went wrong" & "The promise is either resolved or rejected"  bcoz "let error = true;" in line 79]
-// // [📍💎📍 Answer is "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
+// [📍💎📍 Answer is "!ERROR: Something went wrong" & "The promise is either resolved or rejected"  bcoz "let error = true;" in line 79]
+// [📍💎📍 Answer is "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
+
+
+                                    // 🔽🔽
+
+
+// Creating "promise" 👇 
+const promiseFour = new Promise (function (resolve, reject){
+    setTimeout(function(){
+        let error = false;
+        if(!error){
+            resolve ({username: "Rishabh",
+                     password: "123"})
+        }else{
+            reject("ERROR!: Something went wrong") 
+        } 
+    },1000)
+})
+
+
+// Consuming "promise" 👇 
+
+// promiseFour.then().catch()    // [📍 One-Way of doing thi (i.e. by using ".then()" i will get the value & if error occurs by using ".cathch()" i will have the  error value)]
+
+promiseFour.then((userrrr) => {
+    console.log(userrrr);
+    return userrrr.username
+}).then((username) => {                 // [📍This is called chaining (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+    console.log(username);
+}).catch(function (errorrr){
+    console.log(errorrr);
+}).finally(() => console.log("The promise is either resolved or rejected"))
+
+
+// [💎✅💎✅💎 Answer is "{ username: 'Rishabh', password: '123' }" , "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
 
 
 
