@@ -12,7 +12,7 @@
 
 // 💎✅💎 Creating  PROMISE 👇👇
 
-const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in our daily world a PROMISE done by someone will only have two aspects 1) Either it will be completed 2) Or it will not get completed, So Similarly in JS also PROMISE have two aspects "resolve" & "rejected"]
+const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in our daily world a PROMISE done by someone will only have two aspects 1) Either it will be completed 2) Or it will not get completed, So Similarly in JS also PROMISE have two aspects "resolve" & "reject"]
                                                                // 💎✅💎 As PROMISE is an instance (as per the documentation of MDN) so similarly to get an instance of it we use "new" keyword
     // Do an Async task (some of these things takes time ):-
     // + DB calls
@@ -21,17 +21,17 @@ const PromiseOne = new Promise (function(resolve, reject){     // [📍📍 in o
 
 
     setTimeout(function (e) {
-        // console.log('Async task is complete');    // [📍📍 "Async task is complete"  got printed after 1 minute]
-        resolve ();                               //[💎📍💎 "resolve()" is very important to be called to connect it to ".then" below]
+        // console.log('Async task is complete');    // [📍📍 "Async task is complete" will get printed after 1 minute in console ]
+        resolve ();                               //[💎📍💎 "resolve()" is very important to be called so as to connect with ".then" below]
     },1000)
     
 })
 
 
 
-// // 💎💎 Consuming a PROMISE 👇👇
+// 💎💎 Consuming a PROMISE 👇👇
     
-PromiseOne.then (function(){                 // [📍📍 ".then" is put over here as it is directly related to "resolve" ]
+PromiseOne.then (function(){                 // [📍📍 ".then" is put over here as it is directly connected to "resolve" ]
     // console.log("Promise in consumed");      // [📍📍 "Promise in consumed"  got printed after 1 minute]
 })
 
@@ -39,7 +39,7 @@ PromiseOne.then (function(){                 // [📍📍 ".then" is put over he
                         // 🔽🔽 (little short way of doing the above thing)
 
 
-new Promise(function(resolve, reject){
+new Promise(function(resolve, reject){      // 💎✅💎 It's not necessary to store a PROMISE inside a variable, it could declared like that also just by using "new" keyword before it
     setTimeout(function(){
         // console.log("Async task 2");
         resolve()
