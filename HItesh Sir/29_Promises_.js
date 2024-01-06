@@ -36,7 +36,7 @@ PromiseOne.then (function(){                 // [📍📍 ".then" is put over he
 })
 
 
-                        // 🔽🔽 (little short way of doing the above thing)
+                        // 🔽🔽 (little short way of doing the above thing (in just one part instead of doing in two parts like above ))
 
 
 new Promise(function(resolve, reject){      // 💎✅💎 It's not necessary to store a PROMISE inside a variable, it could declared like that also just by using "new" keyword before it
@@ -55,8 +55,8 @@ new Promise(function(resolve, reject){      // 💎✅💎 It's not necessary to
 
 // 💎💎 PROMISE - 3 👇👇
 
-
 // Creating "promise" 👇 
+
 const promiseThree = new Promise (function(resolve, reject){
     setTimeout(function(){
         resolve({
@@ -67,8 +67,8 @@ const promiseThree = new Promise (function(resolve, reject){
 
 
 // Consuming "promise" 👇 
-promiseThree.then(function(user){
-    console.log(user);              // [📍 "{ username: 'Chai', email: 'code@example.com' }" got printed in console.log ]
+promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" varaible is basically the value which we passed on inside the "resolve" above
+    console.log(userrrr);              // [📍 "{ username: 'Chai', email: 'code@example.com' }" got printed in console.log ]
 })
 
 
@@ -78,38 +78,39 @@ promiseThree.then(function(user){
 
 
 
-// 💎💎 PROMISE - 4 👇👇
 
-// Creating "promise" 👇 
-const promiseFour = new Promise (function (resolve, reject){
-    setTimeout(function(){
-        let error = true;
-        if(!error){
-            resolve ({username: "Rishabh",
-                     password: "123"})
-        }else{
-            reject("!ERROR: Something went wrong")
-        }
-    },1000)
-})
+// // 💎💎 PROMISE - 4 👇👇
+
+// // Creating "promise" 👇 
+// const promiseFour = new Promise (function (resolve, reject){
+//     setTimeout(function(){
+//         let error = true;
+//         if(!error){
+//             resolve ({username: "Rishabh",
+//                      password: "123"})
+//         }else{
+//             reject("!ERROR: Something went wrong")
+//         }
+//     },1000)
+// })
 
 
 
-// Consuming "promise" 👇 
+// // Consuming "promise" 👇 
 
-// promiseFour.then().catch()    // [📍 One-Way of doing this]
+// // promiseFour.then().catch()    // [📍 One-Way of doing this]
 
-promiseFour.then((user) => {
-    console.log(user);
-    return user.username
-}).then((username) => {                 // [📍This is called chaining (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
-    console.log(username);
-}).catch(function (errorrr){
-    console.log(errorrr);
-}).finally(() => console.log("The promise is either resolved or rejected"))
+// promiseFour.then((userrrr) => {
+//     console.log(userrrr);
+//     return userrrr.username
+// }).then((username) => {                 // [📍This is called chaining (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+//     console.log(username);
+// }).catch(function (errorrr){
+//     console.log(errorrr);
+// }).finally(() => console.log("The promise is either resolved or rejected"))
 
-// [📍💎📍 Answer is "!ERROR: Something went wrong" & "The promise is either resolved or rejected"  bcoz "let error = true;" in line 79]
-// [📍💎📍 Answer is "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
+// // [📍💎📍 Answer is "!ERROR: Something went wrong" & "The promise is either resolved or rejected"  bcoz "let error = true;" in line 79]
+// // [📍💎📍 Answer is "Rishabh" & "The promise is either resolved or rejected"  when "let error = false;" in line 79]
 
 
 
@@ -183,7 +184,7 @@ promiseFour.then((user) => {
                   // 🔽🔽 (writing above function in ".then & .catch" format)
 
 
-    fetch ('https://jsonplaceholder.typicode.com/user')
+    fetch ('https://jsonplaceholder.typicode.com/userrrr')
     .then((response) => {
         return response.json()
     })

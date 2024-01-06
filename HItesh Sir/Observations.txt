@@ -195,6 +195,8 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 + [watch @5:09:33 ] 🍁🍁AJAX-PROGRAMMING for   
   Good Asychronous programming 🍁🍁
 
++ [watch @5:52:43 ] 🍁🍁PROMISE - important 🍁🍁
+
 + [watch @6:18:54  ] 🍁🍁How it's working ? 🍁🍁
 
 + [ watch @6:57:18 ] 🍁🍁IMPORTANT ( console.log - this in GOLBAL & FUNCTIONSCOPE )🍁🍁
