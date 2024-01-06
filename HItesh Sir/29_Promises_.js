@@ -79,7 +79,7 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is
 
 
 
-// 💎💎 PROMISE - 4 👇👇  [ using "reject" keyword ]
+// 💎💎 PROMISE - 4 👇👇  [ using "reject" keyword ]  [💎✅💎 & actually the PERFECT way of doing this]
 
 // Creating "promise" 👇 
 // const promiseFour = new Promise (function (resolve, reject){
@@ -136,9 +136,9 @@ const promiseFour = new Promise (function (resolve, reject){
 promiseFour.then((userrrr) => {
     console.log(userrrr);
     return userrrr.username
-}).then((username) => {                 // [📍This is called chaining (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
-    console.log(username);
-}).catch(function (errorrr){
+}).then((username) => {                 // [📍This is called CHAINING (i.e. the value which we gonna receive from the ".then" above, only that value will enter this ".then" )]
+    console.log(username);              // 💎✅💎 & CHAINING is done when we want to exract data from a PROMISE using functions like "return" & also when making connectios of DATA-BASE 
+}).catch(function (errorrr){            // 💎✅💎 & in this CHAINING we also have to chain ".cath()" bcoz we are getting errors as well  
     console.log(errorrr);
 }).finally(() => console.log("The promise is either resolved or rejected"))
 
