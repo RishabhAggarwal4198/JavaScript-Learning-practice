@@ -152,7 +152,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 🔽🔽 PROTOTYPE 🔽🔽
 🔽🔽 unable to understand @7:34:46  🔽🔽
 🔽🔽 unable to understand @5:15:00 - 5:23:28 🔽🔽
-🔽🔽 ASYNC unable to understand @6:08:08  🔽🔽
+🔽🔽 PROMISES & ASYNC unable to understand @6:08:08 - 6:20:19  🔽🔽
 
 
  💎💎🍁💎💎JAVASCRIPT @5:31:24 💎💎🍁💎💎

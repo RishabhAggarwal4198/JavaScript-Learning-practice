@@ -156,23 +156,23 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is
 
 // 💎💎 PROMISE - 5 👇👇
 
-// const promiseFive = new Promise(function (resolve, reject){
-//     setTimeout(function(){
-//         let erorrr = true;
-//         if(!erorrr){                            // 💎✅💎 "!error" means  "error = false" 
-//             resolve ({username: "JavaScript",
-//                      password: "123"})
-//         }else{
-//             reject("!ERROR: JS went wrong")
-//         }
-//     },1000) 
-// })
+const promiseFive = new Promise(function (resolve, reject){
+    setTimeout(function(){
+        let erorrr = true;
+        if(!erorrr){                            // 💎✅💎 "!error" means  "error = false" 
+            resolve ({username: "JavaScript",
+                     password: "123"})
+        }else{
+            reject("!ERROR: JS went wrong")
+        }
+    },1000) 
+})
  
-// async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
-//     const response = await promiseFive
-//     // console.log(response);
-// }
-// // consumePromiseFive(); 
+async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
+    const response = await promiseFive
+    console.log(response);
+}
+consumePromiseFive(); 
 
 
         // 🔽🔽  (OR) [for Handling error much more gracefully ]
@@ -221,12 +221,12 @@ promiseThree.then(function(userrrr){   // 💎✅💎 This "userrrr" variable is
                   // 🔽🔽 (writing above function in ".then & .catch" format)
 
 
-                  
-    fetch ('https://jsonplaceholder.typicode.com/userrrr')
+
+    fetch ('https://api.github.com/users/hiteshchoudhary')
     .then((response) => {
         return response.json()
     })
-    .then((data) => {                         // 💎✅💎  this ".then()"  is basically for handling the above "return"
+    .then((data) => {                          // 💎✅💎  this ".then()"  is basically for handling the above "return"
         console.log(data);
     })
     .catch((errorrr) => console.log(errorrr))    // [📍📍 Run to see the RESULT (will be same as the above method)]
