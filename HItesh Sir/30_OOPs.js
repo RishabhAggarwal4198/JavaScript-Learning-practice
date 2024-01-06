@@ -3,31 +3,29 @@
 
 // ➤JavaScript and classes 
 
-// ➤ OOPs  :- in layman terms OOPs could be defined as what is the structure of writing the code ?
+// ➤💎✅💎 OOPs  :- in layman terms OOPs could be defined as what is the structure of writing the code ?
 
-/* ➤ Objects in JS :- 
-   +  Collection of properties and methods
-   + 
-   */ 
+//  ➤💎✅💎 Objects in JS :- it could be defined as the "collection of properties"
+  
 
-// Why to use OOPs
+// 💎💎 Why to use OOPs 👇👇
 
 
 
 /* ➤ Parts of OOPs :- 
    +  Object Literals
    +  Constructor Functions
-   + Prototypes 
-   + Classes
-   + Instances (new, this)
+   +  Prototypes 
+   +  Classes
+   +  Instances (new, this)
    */ 
 
 
 /* ➤ 4 keywords or $ pillars of OOPs :- 
-   +  ABSTRACTION - 📍 Abstraction means to hide the details, it basically hides all the details that are happening under the hood & gives u the abstracted form of it
-   +  ENCAPSULATION - 📍 As the name goes it basiclly Encapsulates or Wraps up the data
+   +  ABSTRACTION - 📍 Abstraction means to hide the details, it basically hides all the details that are happening under the hood & gives u the abstracted form of it  (watch @6:48:29)
+   +  ENCAPSULATION - 📍 As the name goes it basiclly Encapsulates or Wraps up the data  (watch @6:48:52)
    +  INHERITANCE
-   +  POLYMORPHISM - 📍 As the name goes 'POLY' means many & 'MORPHISM' means forms or roop, so it basically means "SO MANY FORMS"
+   +  POLYMORPHISM - 📍 As the name goes 'POLY' means many & 'MORPHISM' means forms or roop, so it basically means "SO MANY FORMS"  (watch @6:49:29)
    */ 
 
 
@@ -36,8 +34,7 @@
 
 
 
-
-
+   
     // 💎💎 OBJECT - LITERALS 👇👇
 
    const user = {
