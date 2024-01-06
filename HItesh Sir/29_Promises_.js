@@ -171,7 +171,7 @@ const promiseFive = new Promise(function (resolve, reject){
 async function consumePromiseFive () {           // [📍📍 Async means "some response is about to come"]         
     const response = await promiseFive
     console.log(response);
-}
+} 
 consumePromiseFive(); 
 
 
