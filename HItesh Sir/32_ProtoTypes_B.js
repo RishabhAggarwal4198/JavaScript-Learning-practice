@@ -107,8 +107,6 @@ Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport
 
 let anotherUserName = "Vignesh Ramasundaran            "
 
-let ginga = [1, 2, 3, 4]
-let gingarr = [5, 6, 7, 8]
 
 String.prototype.trueLength = function () {
     console.log(`${this}`);
@@ -118,13 +116,15 @@ String.prototype.trueLength = function () {
 
 let ringerrr =  "Hello BHARAT"
 
-ringerrr.trueLength();  /* 
+// ringerrr.trueLength();  
+                        /* 
                             [📍✅📍 Answer is :-  "Hello BHARAT"           
                                                    "True length is: 12"  
                         */  
-``
 
-anotherUserName.trueLength(); /* 
+
+// anotherUserName.trueLength(); 
+                              /* 
                               [📍✅📍 Answer is :-  "Vignesh Ramasundaran "           
                                                      "True length is: 20"
                              bcoz overhere "truLength():" was having only 
@@ -133,13 +133,21 @@ anotherUserName.trueLength(); /*
 
 
 
-"Rishabh".trueLength();  /* Similarly :- 
+// "Rishabh".trueLength();  
+                          /* Similarly :- 
                             [📍📍 Answer is :- "Rishabh"
                                                 "True length is: 7"
                         */
 
-                                                
-"MasalaDosa".trueLength(); /* Similarly :- 
+
+// "MasalaDosa".trueLength(); 
+                             /* Similarly :- 
                              [📍📍 Answer is :- "MasalaDosa"
                                                 "True length is: 10"
+                             */
+
+"SheldonCooper".trueLength(); 
+                             /* Similarly :- 
+                             [📍📍 Answer is :- "SheldonCooper"
+                                                "True length is: 13" 
                              */
