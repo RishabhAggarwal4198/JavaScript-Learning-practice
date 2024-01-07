@@ -23,6 +23,7 @@ let heroPower = {
 
 
 // 💎💎👇👇 Injecting a PROTOTYPE property directly to the higher authority i.e. OBJECT 👇👇
+// 💎✅💎 Manupulating the complete "GLOBAL-OBJECT" 👇👇
 
 Object.prototype.Rishabh = function() {
     console.log(`Rishabh is present in all objects`);
@@ -32,11 +33,14 @@ Object.prototype.Rishabh = function() {
 // heroPower.Rishabh()    //[ 📍📍 Answer is :- "Rishabh is present in all objects" ]
 // myHeros.Rishabh();     //[ 📍📍 Answer is :- "Rishabh is present in all objects" ]
 
+// 💎✅💎👆👆💎✅💎 So as we can see "Rishabh" became the "PROTOTYPE-PROPERTY" of the "GLOBAL-OBJECT"
+// [watch @7:45:56 ]
 
 
 
 
-// 💎💎 injecting a PROTOTYPE property directly to  ARRAY 👇👇
+
+// 💎✅💎  injecting a PROTOTYPE property directly to  ARRAY 👇👇
 
 Array.prototype.HeyRishabh = function () {
     console.log(`Rishabh says hello`);
