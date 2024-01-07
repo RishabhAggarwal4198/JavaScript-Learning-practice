@@ -95,11 +95,9 @@ Teacher.__proto__ = User
 
 
 
-//✅📍✅📍✅ MODERN - SYNTAX 👇👇  [@7:53:42] (modern Syntax of setting INHERITANCE from one element to another)
+//🍁✅📍✅📍✅🍁  MODERN - SYNTAX 👇👇  [@7:53:42] (modern Syntax of setting INHERITANCE from one element to another)
 
 Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport" is gonna accces all the values of "Teacher"  ]
-
-
 
 
 
