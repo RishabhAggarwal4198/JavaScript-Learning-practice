@@ -1,10 +1,13 @@
 let  myName = "Rishabh      ";
 let  iamLearning = "Javascript     ";
 
-// console.log(myName.trim().length);   //[📍📍 Answer is :- "7" (as expected), but inserting "trim()" is the most primitive way of doing that ]
+// console.log(myName.trim().length);   //[ 💎✅💎  Answer is :- "7" (as expected), but inserting "trim()" is the most backward & primitive way of doing that ]
+// 💎💎 But i want a property which could give be the true length of the string & could eliminate all the extra space from "myName" & "iamLearning"    👇👇
+// so for that proceed downwards 👇👇
 
 
-                 // 🔽🔽
+                 // 🔽🔽 
+
 
 let myHeros = ["thor", "spiderman"]
 
