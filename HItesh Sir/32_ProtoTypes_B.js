@@ -107,15 +107,26 @@ Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport
 
 let anotherUserName = "Vignesh Ramasundaran            "
 
+let ginga = [1, 2, 3, 4]
+let gingarr = [5, 6, 7, 8]
+
 String.prototype.trueLength = function () {
     console.log(`${this}`);
     // console.log(`${this.name}`);        // 📍📍it's an OBSOLETE property, so not got discussed that's why commented
     console.log(`True length is: ${this.trim().length}`);
-}
+}  
+
+let ringerrr =  "Hello BHARAT"
+
+ringerrr.trueLength();  /* 
+                            [📍✅📍 Answer is :-  "Hello BHARAT"           
+                                                   "True length is: 12"  
+                        */  
+``
 
 anotherUserName.trueLength(); /* 
-                              [📍📍 Answer is :-  "Vignesh Ramasundaran "           
-                                                   "True length is: 20"
+                              [📍✅📍 Answer is :-  "Vignesh Ramasundaran "           
+                                                     "True length is: 20"
                              bcoz overhere "truLength():" was having only 
                             the refrence of "anotherUserName" only & whose
                             value is  equals to "Vignesh Ramasundaran            "  */
@@ -127,8 +138,7 @@ anotherUserName.trueLength(); /*
                                                 "True length is: 7"
                         */
 
-
-
+                                                
 "MasalaDosa".trueLength(); /* Similarly :- 
                              [📍📍 Answer is :- "MasalaDosa"
                                                 "True length is: 10"
