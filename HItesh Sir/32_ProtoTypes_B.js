@@ -40,7 +40,7 @@ Object.prototype.Rishabh = function() {
 
 
 
-// 💎✅💎  injecting a PROTOTYPE property directly to  ARRAY 👇👇
+// 💎✅💎  If we inject a PROTOTYPE property  to "GLOBAL-ARRAY" will it be accessible by "GOBAL-OBJECT"  👇👇
 
 Array.prototype.HeyRishabh = function () {
     console.log(`Rishabh says hello`);
@@ -54,7 +54,7 @@ Array.prototype.HeyRishabh = function () {
 
 
 
-// 💎💎 INHERITANCE 👇👇
+// 💎✅💎  INHERITANCE 👇👇
 
 const User = {
     name: "Ramesh",
@@ -71,7 +71,7 @@ const TeachingSupport = {
 }
 
 
-//📍 OLD - SYNTAX 👇
+//📍💎📍 OLD - SYNTAX 👇
 
 const TASupport = {
     makeAssignment: 'JS assignment',
@@ -84,7 +84,7 @@ Teacher.__proto__ = User
 
 
 
-//📍 MODERN - SYNTAX 👇
+//✅📍✅📍✅ MODERN - SYNTAX 👇
 
 Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport" is gonna accces all the values of "Teacher"  ]
 
