@@ -202,12 +202,16 @@ const  userTwo = User("Java Script Series", 11, false)
  */
 
 
-                          //🔽🔽 (so by inserting "new" Keyword) [ the significance of "new" keyword ]
+                          //🔽🔽 (so by inserting "new" Keyword) [🍁🍁the significance of "new" keyword ]
 
 
-const user1 = new User ("Ravi", 22, true )
+const user1 = new User ("Ravi", 22, true )    // 💎✅💎 by inserting the "new" keyword we have said that just give us the NEW INSTANCE of the whole function 
 const user2 = new User ("Ramesh", 28 , false )
 // console.log(user1);    // 📍📍 [ Answer is "User { username: 'Ravi', loginCount: 22, isLoggedIn: true }" without any kind of mess]
+
+
+// 💎✅💎✅💎✅💎 by inserting "new" keyword we got much more clear code & also our values doesn't got overwrited
+
 
 /*✅✅some NOTES regarding new keyword:-
 Step-1) Whenever we gonna use the "new" keyword, an empty objects gets created (which is called instance)
