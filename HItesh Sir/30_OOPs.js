@@ -92,12 +92,16 @@
 
 
 
- // 💎💎 CONSTRUCTOR - FUNCTION 👇👇  [allows us to make different INSTANCES from one single OBJECT-LITERALS ]
 
-   function User (username, loginCount, isLoggedIn) {
-    this.username = username;
+
+ // 💎✅💎 CONSTRUCTOR - FUNCTION 👇👇  [allows us to make different INSTANCES from one single OBJECT-LITERALS ]
+
+
+   function User (username, loginCount, isLoggedIn, ageCheck ) {
+    this.username = username;            // 💎✅💎 the LEFT side one is the variable which  (we have declared), while the RIGHT side one the PARAMETER (declared with the function) which we are passing into it
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn;
+    this.aayuPramaan = ageCheck 
 
     this.greeting = function () {
         console.log(`Welcome ${this.username}`);
