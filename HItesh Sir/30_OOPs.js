@@ -66,9 +66,11 @@
     }
    }
 
-//    console.log(userr.getUserDetailss()); 
+//    console.log(userr.getUserDetailss());        //[📍📍 Answer is :-  "Give me the Login Count: 8"  ] 
 
+ 
                   //  🔽🔽 (console.logging just "this" word )
+
 
     const userrr = {
     username: "Rishabh",
@@ -80,8 +82,8 @@
     }
    }
 
-//    console.log(userrr.getUserDetailsss());  // [ 📍 Will print "{username: 'Rishabh', loginCount: 8, signedIn: true, getUserDetailsss: ƒ}" as result ]
-//    console.log(this);  // [📍 Printing it here it will give "{}" , BUT printing it in browser will give "Window {window: Window, self: Window, document: document, name: '', location: Location, …}" i.e. a GLOBAL OBJECT bcoz there hundred of things are happening ]
+//    console.log(userrr.getUserDetailsss());  // [ 📍 Will print "{username: 'Rishabh', loginCount: 8, signedIn: true, getUserDetailsss: ƒ}" as result ] (💎✅💎 i.e. will print complete OBJECT)
+//    console.log(this);  // [📍 Printing it here it will give "{}" (that means that right now there is nothing in Global Context), BUT printing it in browser will give "Window {window: Window, self: Window, document: document, name: '', location: Location, …}" i.e. a GLOBAL OBJECT bcoz there hundred of things are happening ]
 
    
 
