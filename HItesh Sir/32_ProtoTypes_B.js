@@ -15,9 +15,9 @@ let heroPower = {
     thor: "hammer",
     spiderman: "sling",
 
-    getSpiderPower: function () {
-        console.log(`Spidy power is ${this.spiderman}`);
-    }
+    getSpiderPower:  () =>  {
+        console.log(`Spidy power is ${this.spiderman}`);    // 💎✅💎 by inserting "this" the function getSpiderPower will get to know that we are talking about "spiderman" varaible in this context only
+    } 
 }
 
 
