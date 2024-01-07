@@ -18,7 +18,7 @@ class User {
 
 }
 
-const idenity = new User ("Ramanuj", "ramanuj@gmail.com", "4567")
+// const idenity = new User ("Ramanuj", "ramanuj@gmail.com", "4567")
 
 // console.log(idenity.encryptPassword());  // [📍📍 Answer is :-  "4567abe"  ]
 
@@ -26,25 +26,25 @@ const idenity = new User ("Ramanuj", "ramanuj@gmail.com", "4567")
 
 
 
+
+
 // 💎✅💎  behind the SCENE - FUNCTIONING of it 👇👇
 
-function User (username, email, password) {
+function UserGuyzz (username, email, password) {
     this.username = username;
     this.email = email;
     this.password = password;
 }
 
-
-User.prototype.encryptPassword = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "User" function 
+UserGuyzz.prototype.encryptPasswordddd = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "UserGuyzz" function 
     return `${this.password}abc`
 }
 
-User.prototype.changeUserName = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "User" function
+UserGuyzz.prototype.changeUserName = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "UserGuyzz" function
     return `${this.username.toUpperCase()}`
 }
 
+const tea = new UserGuyzz ("Shivam", "shivam@gmail.com", "123");
 
-// const tea = new User ("Shivam", "shivam@gmail.com", "123");
-
-// console.log(tea.encryptPassword());       // [📍📍 Answer is :-  "123abc"  ]
-// console.log(tea.changeUserName());        // [📍📍 Answer is :-  "SHIVAM"  ]
+console.log(tea.encryptPasswordddd());       // [📍📍 Answer is :-  "123abc"  ]
+console.log(tea.changeUserName());        // [📍📍 Answer is :-  "SHIVAM"  ]
