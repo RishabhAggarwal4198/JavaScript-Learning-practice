@@ -6,7 +6,7 @@ multiplyBy5.power = 2
 
 // console.log(multiplyBy5(5));          // [📍📍 Answer is :-  "25" ]
 // console.log(multiplyBy5.power);       // [📍📍 Answer is :-  "2" ]
-// console.log(multiplyBy5.prototype);   // [📍📍 Answer is :-  "{}" ]
+// console.log(multiplyBy5.prototype);   // [📍📍 Answer is :-  "{}" (an empty parenthesis) ]
 
 
 
@@ -17,13 +17,13 @@ function createUser(username, score){
 }
 
 
-createUser.prototype.increment = function(){
-    this.score++;
-}
+// createUser.prototype.increment = function(){
+//     this.score++;
+// }
 
-createUser.prototype.printMe = function () {
-    console.log(`score is ${this.score}`);
-}
+// createUser.prototype.printMe = function () {
+//     console.log(`score is ${this.score}`);
+// }
 
 
 // const chai = createUser("chai" , 25)
@@ -35,13 +35,13 @@ createUser.prototype.printMe = function () {
                         // 🔽🔽(after inserting the "new" keyword)
 
 
-const chai = new createUser("chai" , 25)
-                //[📍📍 Answer is :- "undefined" (bcoz there is no "new" keyword inserted) ]
-const tea =  new createUser("tea", 250)
-                //[📍📍 Answer is :- "undefined" ]
+// const chai = new createUser("chai" , 25)
+//                 //[📍📍 Answer is :- "undefined" (bcoz there is no "new" keyword inserted) ]
+// const tea =  new createUser("tea", 250)
+//                 //[📍📍 Answer is :- "undefined" ]
 
-chai.printMe();     
-tea.increment();
+// chai.printMe();     
+// tea.increment();
 
 
 
