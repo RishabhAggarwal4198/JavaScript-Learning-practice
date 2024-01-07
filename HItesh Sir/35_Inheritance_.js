@@ -1,3 +1,6 @@
+
+// 💎✅💎 BASIC - SYNTAX  👇👇
+
 class User {
     constructor (username) {
         this.username = username
@@ -10,6 +13,7 @@ class User {
 
 
 
+// 💎✅💎 Now suppose we are making any website like E-commerce or Shopping so we also have to make this "User" as ADMIN, TEACHER, STUDENT
 
 class Teacher extends User {
     constructor (username, email, password) {
