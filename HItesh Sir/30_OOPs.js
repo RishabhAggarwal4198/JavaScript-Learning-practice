@@ -103,8 +103,10 @@
     this.isLoggedIn = isLoggedIn;
     this.aayuPramaan = ageCheck 
 
+    // return this 
+
     this.greeting = function () {
-        console.log(`Welcome ${this.username}`);
+        console.log(`Welcome ${this.username}`); 
     }
 
     return this   // [📍📍 even if u don't give this "return" key word it will implicitly return the value]
@@ -135,10 +137,10 @@
                             navigator: [Getter],
                             fetch: [Function: fetch],
                             crypto: [Getter],
-                            username: 'Rishabh',
+                   💎✅💎  username: 'Rishabh',
                             loginCount: 12,
                             isLoggedIn: true
-                            }
+                            }                     💎✅💎 
 
                             💎Look @ the last 3 lines💎
                             */
@@ -191,16 +193,16 @@ const  userTwo = User("Java Script Series", 11, false)
                         navigator: [Getter],
                         fetch: [Function: fetch],
                         crypto: [Getter],
-                        username: 'Java Script Series',
+          💎✅💎      username: 'Java Script Series',
                         loginCount: 11,
-                        isLoggedIn: false
-                        }
+                        isLoggedIn: false   
+                        }                    💎✅💎  
 
-                        💎Look @ the last 3 lines💎 [ ✅✅it overwrited the previous Values] & that's why "new" keyword is IMPORTANT
+    🍁🍁💎🍁🍁Look @ the last 3 lines💎 [ ✅✅it overwrited the previous Values] & that's why "new" keyword is IMPORTANT
  */
 
 
-                          //🔽🔽 (so by inserting "new" Keyword)
+                          //🔽🔽 (so by inserting "new" Keyword) [ the significance of "new" keyword ]
 
 
 const user1 = new User ("Ravi", 22, true )
