@@ -20,7 +20,7 @@ function createUser(username, score){
 // 💎✅💎  Injecting our own PROTOTYPE-METHOD inside the Function above 👇👇
 
 createUser.prototype.increment = function(){
-    this.score++;            // 💎✅💎 easy way of remembring "this" is hindi word "jiss" (i.e. jissney bhi bulaya uske paas jaao) 
+   console.log( this.score+=2);            // 💎✅💎 easy way of remembring "this" is hindi word "jiss" (i.e. jissney bhi bulaya uske paas jaao) 
 }
 
 
@@ -41,10 +41,13 @@ createUser.prototype.printMe = function () {
 
 const chai = new createUser("chai" , 25)
 // chai.printMe();        //[📍📍 Answer is :- "Price is 25" ]
+// chai.increment();      //[📍📍 Answer is :- "27" ]
+
 
                
 const tea =  new createUser("tea", 250)
-// tea.increment();    //[📍📍 Answer is :- "undefined" ] 
+// tea.printMe();           //[📍📍 Answer is :- "Price is 250" ]
+// tea.increment();         //[📍📍 Answer is :- "252" ]
  
 
 
