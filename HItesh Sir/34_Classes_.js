@@ -34,6 +34,9 @@ function UserGuyzz (username, email, password) {
     this.username = username;
     this.email = email;
     this.password = password;
+    this.taskAlloted = function () {
+        console.log(`This function is for trial`);
+    }
 }
 
 UserGuyzz.prototype.encryptPasswordddd = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "UserGuyzz" function 
@@ -46,5 +49,7 @@ UserGuyzz.prototype.changeUserName = function () {       // 💎✅💎 injectin
 
 const tea = new UserGuyzz ("Shivam", "shivam@gmail.com", "123");
 
-console.log(tea.encryptPasswordddd());       // [📍📍 Answer is :-  "123abc"  ]
-console.log(tea.changeUserName());        // [📍📍 Answer is :-  "SHIVAM"  ]
+// console.log(tea.encryptPasswordddd());     // [📍📍 Answer is :-  "123abc"  ]
+// console.log(tea.changeUserName());        // [📍📍 Answer is :-  "SHIVAM"  ]
+// console.log(tea.email);                      // [📍📍 Answer is :-  "shivam@gmail.com"  ]
+// console.log(tea.taskAlloted());              // [📍📍 Answer is :-  "This function is for trial"  ]
