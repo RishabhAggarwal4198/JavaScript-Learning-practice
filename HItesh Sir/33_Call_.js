@@ -1,15 +1,20 @@
-function SetUsername (username) {
 
+// 💎✅💎  FIRST - FUNCTION  👇👇
+
+function SetUsername (username) {
+    // complex DB calls 
     this.username = username
 }
 
-function createUser (username, email, passoword){
-    SetUsername.call(this, username)
 
+// 💎✅💎  SECOND - FUNCTION  👇👇
+
+function createUser (username, email, passoword){
+    SetUsername.call(this, username)              // 💎✅💎 "SetUsername()" will only exectute the function but we also want to HOLD it's refrence that's why we have used "SetUsername.call "
     this.email = email;
     this.passoword= passoword
 }
 
-const chai = new createUser ("Ravi", "ravi@gmail.com", "123")
+const info = new createUser ("Ravi", "ravi@gmail.com", "123")
 
-console.log(chai);
+console.log(info);
