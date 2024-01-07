@@ -17,41 +17,43 @@ function createUser(username, score){
 }
 
 
-
-// 💎💎 Injecting our own PROTOTYPE-METHOD inside the Function above 👇👇
+// 💎✅💎  Injecting our own PROTOTYPE-METHOD inside the Function above 👇👇
 
 createUser.prototype.increment = function(){
-    this.score++;
+    this.score++;            // 💎✅💎 easy way of remembring "this" is hindi word "jiss" (i.e. jissney bhi bulaya uske paas jaao) 
 }
 
 
-// createUser.prototype.printMe = function () {
-//     console.log(`score is ${this.score}`);
-// } 
+createUser.prototype.printMe = function () {
+    console.log(`Price is ${this.score}`);
+} 
 
 
 // const chai = createUser("chai" , 25)
-// console.log(chai);                   //[📍📍 Answer is :- "undefined" (bcoz there is no "new" keyword inserted) ]
+// console.log(chai);                   // [📍❌📍 Answer is :- "undefined" (bcoz there is no "new" keyword inserted) ]
 // const tea = createUser("tea", 250)
-// console.log(tea);                   //[📍📍 Answer is :- "undefined" ]
+// console.log(tea);                   //[📍❌📍 Answer is :- "undefined" ]
 
 
                         // 🔽🔽(after inserting the "new" keyword)
 
 
-// const chai = new createUser("chai" , 25)
-//                 //[📍📍 Answer is :- "undefined" (bcoz there is no "new" keyword inserted) ]
-// const tea =  new createUser("tea", 250)
-//                 //[📍📍 Answer is :- "undefined" ]
 
-// chai.printMe();     
-// tea.increment();
+const chai = new createUser("chai" , 25)
+// chai.printMe();        //[📍📍 Answer is :- "Price is 25" ]
+
+               
+const tea =  new createUser("tea", 250)
+// tea.increment();    //[📍📍 Answer is :- "undefined" ] 
+ 
 
 
 
 /*
-
-💎 Here's what happens behind the scenes when the new keyword is used:- 
+ 
+  MUST watch @7:35:14
+ 
+ 💎✅💎✅💎 Here's what happens behind the scenes when the new keyword is used:- 
 
 ✅ A new object is created: The new keyword initiates the creation of a new JavaScript object.
 
