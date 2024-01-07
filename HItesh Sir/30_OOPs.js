@@ -103,13 +103,11 @@
     this.isLoggedIn = isLoggedIn;
     this.aayuPramaan = ageCheck 
 
-    // return this 
-
-    this.greeting = function () {
+    this.greeting = function () {        // 💎✅💎 Simiarly we could also declare a "METHOD" over here 
         console.log(`Welcome ${this.username}`); 
     }
 
-    return this   // [📍📍 even if u don't give this "return" key word it will implicitly return the value]
+    // return this   // [📍📍 even if u don't give this "return" key word it will implicitly return the value]
 
 }
 
@@ -207,7 +205,7 @@ const  userTwo = User("Java Script Series", 11, false)
 
 const user1 = new User ("Ravi", 22, true )    // 💎✅💎 by inserting the "new" keyword we have said that just give us the NEW INSTANCE of the whole function 
 const user2 = new User ("Ramesh", 28 , false )
-// console.log(user1);    // 📍📍 [ Answer is "User { username: 'Ravi', loginCount: 22, isLoggedIn: true }" without any kind of mess]
+console.log(user1);    // 📍📍 [ Answer is "User { username: 'Ravi', loginCount: 22, isLoggedIn: true }" without any kind of mess]
 
 
 // 💎✅💎✅💎✅💎 by inserting "new" keyword we got much more clear code & also our values doesn't got overwrited
