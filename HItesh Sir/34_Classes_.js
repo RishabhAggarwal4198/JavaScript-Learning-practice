@@ -1,24 +1,24 @@
 
-// 💎💎 BASIC - SYNTAX  👇👇
+// 💎✅💎  BASIC - SYNTAX  👇👇 
 
-// class User {
-//     constructor(username, email, password){
-//         this.username = username;
-//         this.email = email;
-//         this.password = password;
-//     }
+class User {
+    constructor(username, email, password){
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 
-//     encryptPassword () {
-//         return `${this.password}abe`
-//     }
+    encryptPassword () {
+        return `${this.password}abe`
+    }
 
-//     changeUserName () {
-//         return `${this.username.toUpperCase()}`
-//     }
+    changeUserName () {
+        return `${this.username.toUpperCase()}`
+    }
 
-// }
+}
 
-// const idenity = new User ("Ramanuj", "ramanuj@gmail.com", "4567")
+const idenity = new User ("Ramanuj", "ramanuj@gmail.com", "4567")
 
 // console.log(idenity.encryptPassword());  // [📍📍 Answer is :-  "4567abe"  ]
 
@@ -26,8 +26,7 @@
 
 
 
-
-// 💎💎 behind the SCENE - FUNCTIONING 👇👇
+// 💎✅💎  behind the SCENE - FUNCTIONING of it 👇👇
 
 function User (username, email, password) {
     this.username = username;
@@ -36,15 +35,16 @@ function User (username, email, password) {
 }
 
 
-User.prototype.encryptPassword = function () {
+User.prototype.encryptPassword = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "User" function 
     return `${this.password}abc`
 }
-User.prototype.changeUserName = function () {
+
+User.prototype.changeUserName = function () {       // 💎✅💎 injecting a "PROTOTYPE-PROPERTY" IN "User" function
     return `${this.username.toUpperCase()}`
 }
 
 
-const tea = new User ("Shivam", "shivam@gmail.com", "123");
+// const tea = new User ("Shivam", "shivam@gmail.com", "123");
 
 // console.log(tea.encryptPassword());       // [📍📍 Answer is :-  "123abc"  ]
 // console.log(tea.changeUserName());        // [📍📍 Answer is :-  "SHIVAM"  ]
