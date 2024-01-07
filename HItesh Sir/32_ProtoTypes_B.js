@@ -22,7 +22,7 @@ let heroPower = {
 
 
 
-// 💎💎 injecting a PROTOTYPE property directly to the higher authority i.e. OBJECT 👇👇
+// 💎💎👇👇 Injecting a PROTOTYPE property directly to the higher authority i.e. OBJECT 👇👇
 
 Object.prototype.Rishabh = function() {
     console.log(`Rishabh is present in all objects`);
