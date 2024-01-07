@@ -67,7 +67,8 @@ const Teacher = {
 
 
 const TeachingSupport = {
-    isAvailable: false
+    isAvailable: false ,
+    Experience : "5 Years"
 }
 
 
@@ -79,12 +80,22 @@ const TASupport = {
     __proto__: TeachingSupport       //[📍📍 This is INHERITANCE ]
 }
 
+
+// console.log(TASupport.isAvailable);   //[📍📍Answer is :-  "false"  ]
+// console.log(TASupport.Experience);    //[📍📍Answer is :-  "5 Years"  ]
+
+
+
 Teacher.__proto__ = User
 
+// console.log(`Teacher's name is '${Teacher.name}' & his E-mail id is '${Teacher.email}' `);   //[📍📍Answer is :- Teacher's name is 'Ramesh' & his E-mail id is 'ramesh@google.com'  ]  
 
 
 
-//✅📍✅📍✅ MODERN - SYNTAX 👇
+
+
+
+//✅📍✅📍✅ MODERN - SYNTAX 👇👇  [@7:53:42] (modern Syntax of setting INHERITANCE from one element to another)
 
 Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport" is gonna accces all the values of "Teacher"  ]
 
@@ -92,15 +103,7 @@ Object.setPrototypeOf(TeachingSupport, Teacher)    // [📍📍 "TeachingSupport
 
 
 
-
-
-
-
-
-
-
-
-// 💎💎 Now SOLVING the vary fisrt PROBLEM 👇👇
+// 💎💎 Now SOLVING the vrry fisrt PROBLEM 👇👇
 
 let anotherUserName = "Vignesh Ramasundaran            "
 
