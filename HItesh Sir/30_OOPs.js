@@ -108,7 +108,6 @@
     }
 
     // return this   // [📍📍 even if u don't give this "return" key word it will implicitly return the value]
-
 }
 
    const userOne = User ("Rishabh", 12, true)
@@ -222,7 +221,7 @@ Step-4) And we gets it inside the function
 
 
 
- //📍📍To check if CONSTRUCTOR is available as a property 👇👇
+ // 💎✅💎 To check if CONSTRUCTOR is available as a property 👇👇
 
  console.log(user1.constructor);  // (📍📍 Answer is [Function: User] , so basically it tells hat it is the refrence of itself )
  
