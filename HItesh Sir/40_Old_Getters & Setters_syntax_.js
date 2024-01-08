@@ -3,8 +3,8 @@ function User (email, password){
     this._password = password;
 
 
-    Object.defineProperty (this, 'email', {
-        
+    Object.defineProperty (this, 'email', {      // 💎✅💎 This "defineProperty"  is as same as the "getters & setters" property 
+       
         get: function () {
             return this._email.toUpperCase()
         },
