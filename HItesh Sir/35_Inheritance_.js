@@ -55,16 +55,22 @@ const chayii = new Teacher ("Rohan", "rohan@gmail.com", "123");
 
 
 
-// const newChayii = new User("Rohan")
 
-// // newChayii.logMe();  //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
-// // newChayii.addCourse();   //[📍📍 Answer is :-  Error  ]
+const newChayii = new User("Rameshh")
+
+newChayii.logMe();  //[📍📍 Answer is :-  "USERNAME is Rameshh"  ]
+// newChayii.addCourse();   //[📍📍 Answer is :-  Error is thrown  ]
 
 
 // console.log(chayii === newChayii);    //[📍📍 Answer is :-  "false"  ]
 // console.log(chayii === Teacher);     //[📍📍 Answer is :-  "false"  ]
 
 // console.log(chayii instanceof User);   //[📍📍 Answer is :-  "true"  ]
+
+
+
+
+
 
 
 
