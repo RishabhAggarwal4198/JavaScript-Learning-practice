@@ -10,22 +10,23 @@
 
 //👇👇
 
-const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")         //[💎✅💎  "getOwnPropertyDescriptor" tells us about some hidden properties of an OBJECT ] 
+const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")         //[@8:53:13] [💎✅💎  "getOwnPropertyDescriptor" tells us about some hidden properties of an OBJECT ] 
 
 // console.log(descriptor);  
                             /*📍📍 Answer is :-  
                             " {
                                 value: 3.141592653589793,
-                                writable: false,                      //[🍁💎🍁 So, it can't  become  "true" at any cost, bcoz our JAVASCRIPT-ENGINE has made it so much hard coded in C++ that this value can't be changed ] 
+                                writable: false,                      // [@8:57:45] [🍁💎🍁 So, it can't  become  "true" at any cost, bcoz our JAVASCRIPT-ENGINE has made it so much hard coded in C++ that this value can't be changed ] 
                                 enumerable: false,
                                 configurable: false
                                 } "  
                            */
 
-                                
+
 
 
 // 💎💎  understanding with the helpof an EXAMPLE 👇👇
+
 
 
 //✅ Alternate way of creating an OBJECT👇
@@ -46,7 +47,12 @@ const  tea = {
 }
 
 
-// console.log(tea);                                            //[📍📍 Answer is :-  "{ name: 'ginger tea', price: 250, isAvailable: true }"  ] 
+// console.log(tea);                                         //[📍📍 Answer is :-  "{ name: 'ginger tea', price: 250, isAvailable: true }"  ] 
+
+// console.log(Object.getOwnPropertyDescriptor(tea));            //[💎✅💎  Answer is :-  "undefined" (bcoz we haven't defined that of which property of "tea" we want description of) ] 
+
+                        // 🔽🔽 (so now by adding that we want description of "name" property of the const tea)
+
 // console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                             /*📍📍 Answer is :-  
                                                             " {
@@ -58,7 +64,7 @@ const  tea = {
                                                         */
 
 
-                            // 🔽🔽 (altering the properties like "writability" etc. )
+                            // 🔽🔽 (altering or changing the properties like "writability" etc. )
 
 
 // Object.defineProperty(tea, 'name', {
