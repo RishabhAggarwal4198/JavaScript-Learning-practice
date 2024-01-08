@@ -67,12 +67,12 @@ const  tea = {
                             // 🔽🔽 (altering or changing the properties like "writability" etc. )
 
 
-// Object.defineProperty(tea, 'name', {
-//     writable:false,
-//     enumerable : false
-// })
+Object.defineProperty(tea, 'name', {
+    writable:false,
+    enumerable : false
+})
 
-// console.log(Object.getOwnPropertyDescriptor(tea, "name"));
+console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                         /*📍📍 Answer is :-  
                                                         "{
                                                             value: 'ginger tea',
@@ -122,16 +122,16 @@ const  tea = {
                  // 🔽🔽
 
 
-Object.defineProperty(tea, 'name', {
-    // writable:false,
-    enumerable : true
-})
+// Object.defineProperty(tea, 'name', {
+//     // writable:false,
+//     enumerable : true
+// })
 
 
-for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
-if(typeof value !== 'function')
-console.log(`${key} : ${value}`);     
-}                                      
+// for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
+// if(typeof value !== 'function')
+// console.log(`${key} : ${value}`);     
+// }                                      
                         /*📍📍 Answer is :-  
                                 "name : ginger tea    
                                 price : 250
