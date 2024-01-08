@@ -75,7 +75,7 @@
 
         
         
-        // 💎✅💎 CLOSURES  👇👇
+        // 💎✅💎 CLOSURES  👇👇 [@10:00:07] (basically it means that when we return a complete function, then in that case only that function don't get returned ifact it's complete scope gets returned or it's LEXICAL scope gets returned)
 
 
         function makeFunc() {
@@ -86,8 +86,8 @@
             return displayName;    // ✅✅ here we just passed the REFRENCE of the "displayName" function, so it won'tget executed   👇👇
         }                          //💎💎IMPORTANT [@9:57:43 - 9:59:40]
 
-        const myFunc = makeFunc();  
-        myFunc();                   //[📍📍 Answer is :-  "Mozarelllla"  ] 
+        // const myFunc = makeFunc();  
+        // myFunc();                   //[📍📍 Answer is :-  "Mozarelllla"  ] 
 
 </script>  
 
@@ -95,15 +95,16 @@
 
 <script>
 
+    
+
     // document.querySelector('#orange').addEventListener('click', () =>{
     //     document.body.style.backgroundColor = 'orange';
+        
     // } )
-
 
     // document.querySelector('#green').addEventListener('click', () => {
     //     document.body.style.backgroundColor = 'green';
     // })
-
 
                         // 🔽🔽 ( OR )
 
@@ -119,7 +120,9 @@
                         // 🔽🔽 ( What if there comes 500 buttons like the baove ?)
 
 
-    // ✅💎✅ Perfect Use case Scenario of CLOSURES & LEXICAL-SCOPING 👇
+
+                        
+    // ✅🍁💎🍁✅👇👇 Perfect Use case Scenario of CLOSURES & LEXICAL-SCOPING 👇
 
     // function clickHandler (color) {
     //     //  document.body.style.background-color = `${color}`
