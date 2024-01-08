@@ -12,45 +12,19 @@
     
 </body>
 
-
-
+ 
 
 <script>
-
-    // class React {
-    //     constructor () {
-    //         this.library = "React"
-    //         this.server = "https://localhost:300"
-
-    //         // Requirement 
-    //         document
-    //             .querySelector('button')
-    //             .addEventListener('click', this.handleClick)
-
-    //     }
-        
-    //     handleClick () {
-    //         console.log("button clicked");
-    //         console.log(this);
-    //     }
-    // } 
-
-    // const app = new React () 
-    
-
-
-                        // 🔽🔽
-
 
     class React {
         constructor () {
             this.library = "React"
             this.server = "https://localhost:300"
 
-            // Requirement 
+            //A hypothetical Business Requirement :- Whenever this page is gonna load, it could create the OBJECT of REACT by itself
             document
                 .querySelector('button')
-                .addEventListener('click', this.handleClick.bind(this))      // [📍📍By using "bind" we got the access of each & every element of "bind" ] 
+                .addEventListener('click', this.handleClick)
 
         }
         
@@ -61,6 +35,30 @@
     } 
 
     const app = new React () 
+    
+
+                        // 🔽🔽
+
+
+    // class React {
+    //     constructor () {
+    //         this.library = "React"
+    //         this.server = "https://localhost:300"
+
+    //         // Requirement 
+    //         document
+    //             .querySelector('button')
+    //             .addEventListener('click', this.handleClick.bind(this))      // [📍📍By using "bind" we got the access of each & every element of "bind" ] 
+
+    //     }
+        
+    //     handleClick () {
+    //         console.log("button clicked");
+    //         console.log(this);
+    //     }
+    // } 
+
+    // const app = new React () 
 
 
 
