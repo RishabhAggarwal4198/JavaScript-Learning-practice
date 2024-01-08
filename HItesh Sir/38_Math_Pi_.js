@@ -67,12 +67,12 @@ const  tea = {
                             // 🔽🔽 (altering or changing the properties like "writability" etc. )
 
 
-Object.defineProperty(tea, 'name', {
-    writable:false,
-    enumerable : false
-})
+// Object.defineProperty(tea, 'name', {
+//     writable:false,
+//     enumerable : false
+// })
 
-console.log(Object.getOwnPropertyDescriptor(tea, "name"));
+// console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                         /*📍📍 Answer is :-  
                                                         "{
                                                             value: 'ginger tea',
@@ -85,12 +85,11 @@ console.log(Object.getOwnPropertyDescriptor(tea, "name"));
 
 // 💎💎TRying to use "FOR-OF" loop on the above OBJECT  👇👇
                                                             
-for (const [key, value] of tea) {
-    console.log(`${key} : ${value}`);      //[📍📍 Answer is :-  "TypeError: tea is not iterable"  ] 
-}
+// for (const [key, value] of tea) {
+//     console.log(`${key} : ${value}`);      //[📍📍 Answer is :-  "TypeError: tea is not iterable"  ] 
+// }
 
                  // 🔽🔽
-
 
 // for (const [key, value] of Object.entries(tea)) {
 // console.log(`${key} : ${value}`);     
@@ -104,17 +103,16 @@ for (const [key, value] of tea) {
                             } "
                         */
 
-
                  // 🔽🔽
-
-
-// for (const [key, value] of Object.entries(tea)) {
-// if(typeof value !== 'function')
-// console.log(`${key} : ${value}`);     
-// }                                      
-                        /*📍📍 Answer is :-  
-                                "price : 250    
-                                isAvailable : true "
+              
+for (const [key, value] of Object.entries(tea)) {
+if(typeof value !== 'function')
+console.log(`${key} : ${value}`);     
+}                                      
+                        /*📍💎📍 Answer is :-  
+                                  "name : ginger tea
+                                   price : 250    
+                                   isAvailable : true "
                         */
 
 
