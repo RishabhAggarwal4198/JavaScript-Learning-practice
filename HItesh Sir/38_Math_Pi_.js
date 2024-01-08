@@ -5,7 +5,7 @@
 
 
 
-// ✅ But why i'm not able to change the value of "Math.PI" ? Whta's happening behind the scenes ?
+//💎✅💎 But why we are not able to change the value of "Math.PI" ? Whta's happening behind the scenes ?
 
 //👇👇
 
