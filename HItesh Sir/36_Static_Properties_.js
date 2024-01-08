@@ -17,8 +17,9 @@ const Rishabhh = new User("Rishabhh")
 // console.log(Rishabhh.createId())    //[📍📍 Answer is :-  "an Error" ( bcoz of "static" keyword)  ]
 
 
+                                    // 🔽🔽
 
-
+                                    
 // 💎✅💎 👇👇Extending the PROTOTYPE properties of the CLASS "User"👇👇
 
 class Teacher extends User {

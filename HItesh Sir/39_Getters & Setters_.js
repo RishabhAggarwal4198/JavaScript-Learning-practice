@@ -1,22 +1,20 @@
 
-class User {
-    constructor(email, password) {
-        this.email = email;
-        this.password = password
-    }
-}
+// class Userrzzz {
+//     constructor(email, password) {
+//         this.email = email;
+//         this.password = password
+//     }
+// }
 
 
-const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
-console.log(Ramesh.password);                               //  [📍📍 Answer is :- "asdf_vbnm" ] 
-
-
-
+// const Ramesh = new Userrzzz  ("ramesh@gmail.com", "asdf_vbnm")
+// console.log(Ramesh.password);                               //  [📍📍 Answer is :- "asdf_vbnm" ] 
 
 
                                     // 🔽🔽
 
-
+// 💎✅💎 Now suppose i don't want to give someone access of "password", so for that purpose we have "GETTERS & SETTERS" 👇👇
+                                    
 // class User {
 //     constructor (email, password) {
 //         this.email = email;
