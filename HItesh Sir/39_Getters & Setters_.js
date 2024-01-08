@@ -48,15 +48,16 @@ class User {
     }
 
     get email () {
-        return this._email.toUpperCase()
+        return this._email.toUpperCase()   // 💎✅💎 Person who will access it will receive value in "CAPITAL-LETTERS"
     }
+
     set email(value){
-        this._email = value
+        this._email = value              // 💎✅💎 Original value will be saved as it is
     }
     
 
     get password () {
-        return `${this._paSSword}Rishabh`
+        return `${this._paSSword}Mogumbaaaa`
     }
 
     set password(value) {
@@ -66,7 +67,7 @@ class User {
 
 
 const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
-console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
+console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmMogumbaaaa" ] 
 console.log(Ramesh.email);                                 //  [📍📍 Answer is :- "RAMESH@GMAIL.COM" ] 
 
 
