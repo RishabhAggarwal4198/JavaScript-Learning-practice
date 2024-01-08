@@ -91,9 +91,9 @@ const  tea = {
 
                  // 🔽🔽
 
-for (const [key, value] of Object.entries(tea)) {
-console.log(`${key} : ${value}`);     
-}                                      
+// for (const [key, value] of Object.entries(tea)) {
+// console.log(`${key} : ${value}`);     
+// }                                      
                         /*📍📍 Answer is :-  
                             "name : ginger tea
                             price : 250
@@ -120,8 +120,8 @@ console.log(`${key} : ${value}`);
 
 
 // Object.defineProperty(tea, 'name', {
-//     // writable:false,
-//     enumerable : true
+//     writable:true,
+//     enumerable : false           // 💎✅💎 When we make value FALSE
 // })
 
 
@@ -130,9 +130,28 @@ console.log(`${key} : ${value}`);
 // console.log(`${key} : ${value}`);     
 // }                                      
                         /*📍📍 Answer is :-  
-                                "name : ginger tea    
-                                price : 250
-                                isAvailable : true "
+                                "price : 250
+                                 isAvailable : true "
+                        */                               // 🍁💎🍁 When we make value FALSE :- "name" value doesn't get printed
+
+
+                 // 🔽🔽 
+
+
+Object.defineProperty(tea, 'name', {
+    writable:true,
+    enumerable : true         // 💎✅💎 When we make value TRUE
+})
+
+
+for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
+if(typeof value !== 'function')
+console.log(`${key} : ${value}`);     
+}                                      
+                        /*📍📍 Answer is :-  
+                                "name : ginger tea    // 🍁💎🍁 When we make value TRUE :- "name" value got printed
+                                 price : 250
+                                 isAvailable : true "
                         */
 
                                 
