@@ -13,7 +13,9 @@
 
                                     // 🔽🔽
 
-// 💎✅💎 Now suppose i don't want to give someone access of "password", so for that purpose we have "GETTERS & SETTERS" 👇👇
+           
+                                    
+// 💎✅💎GETTERS & SETTERS (from pereventing someone accessing "password") 👇👇
                                     
 // class User {
 //     constructor (email, password) {
