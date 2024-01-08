@@ -83,8 +83,7 @@ console.log(Object.getOwnPropertyDescriptor(tea, "name"));
                                                         */
 
 
-
-// 💎💎Using "FOR-OF" loop   👇👇
+// 💎💎TRying to use "FOR-OF" loop on the object Above 👇👇
                                                             
 // for (const [key, value] of tea) {
 //     console.log(`${key} : ${value}`);      //[📍📍 Answer is :-  "TypeError: tea is not iterable"  ] 
