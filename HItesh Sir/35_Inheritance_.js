@@ -35,16 +35,22 @@ class Teacher extends Userrzz {                    // 💎🍁✅🍁💎 So in 
     passwordInfo(){
         console.log(`Password of the user is '${this.password}'`);
     }
+
+    drSturgis(){
+        console.log(`Hello !!  Dr. Sturgis wants your wants your mail Id & i.e. '${this.email}' `);
+    }
 }
 
 
 const chayii = new Teacher ("Rohan", "rohan@gmail.com", "123");
 
-chayii.addCourse()    //[📍📍 Answer is :-  "A new course was added by Rohan"  ]
-chayii.mailInfo()      //[📍📍 Answer is :-  "E-mail Id of the user is 'rohan@gmail.com'" ]
-chayii.passwordInfo()  //[📍📍 Answer is :-  "Password of the user is '123'" ]
+// chayii.addCourse()    //[📍📍 Answer is :-  "A new course was added by Rohan"  ]
+// chayii.mailInfo()      //[📍📍 Answer is :-  "E-mail Id of the user is 'rohan@gmail.com'" ]
+// chayii.passwordInfo()  //[📍📍 Answer is :-  "Password of the user is '123'" ]
 
-chayii.logMe();        //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
+// chayii.logMe();        //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
+
+// chayii.drSturgis()         //[📍📍 Answer is :-  "Hello !!  Dr. Sturgis wants your wants your mail Id & i.e. 'rohan@gmail.com' "  ]
 
 
 
