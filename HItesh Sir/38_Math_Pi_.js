@@ -5,22 +5,24 @@
 
 
 
+
 //💎✅💎 But why we are not able to change the value of "Math.PI" ? Whta's happening behind the scenes ?
 
 //👇👇
 
-const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")         //[📍📍 "getOwnPropertyDescriptor" tells us about some hidden properties of an OBJECT ] 
+const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")         //[💎✅💎  "getOwnPropertyDescriptor" tells us about some hidden properties of an OBJECT ] 
 
 // console.log(descriptor);  
                             /*📍📍 Answer is :-  
                             " {
                                 value: 3.141592653589793,
-                                writable: false,                      //[📍So, it can't  become  "true" at any cost, bcoz our JAVASCRIPT-ENGINE has made it so much hard coded in C++ that this value can't be changed ] 
+                                writable: false,                      //[🍁💎🍁 So, it can't  become  "true" at any cost, bcoz our JAVASCRIPT-ENGINE has made it so much hard coded in C++ that this value can't be changed ] 
                                 enumerable: false,
                                 configurable: false
                                 } "  
                            */
 
+                                
 
 
 // 💎💎  understanding with the helpof an EXAMPLE 👇👇
