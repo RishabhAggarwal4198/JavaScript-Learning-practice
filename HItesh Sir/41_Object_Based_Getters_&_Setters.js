@@ -12,9 +12,10 @@ const User = {
 }
 
 
-const tea =  Object.create(User)
+const tea =  Object.create(User)             // 💎✅💎 it is called FACTORY-FUNCTION (& in it we gave it "User" that on the basis of "User" create an Object & refer it to "tea" )
 console.log(tea.email);                       //[📍📍 Answer is :-  "HAREEESH@GMAIL.COM"  ] 
 
 
+                                              // 💎✅💎 watch [@9:37:04]
 
 

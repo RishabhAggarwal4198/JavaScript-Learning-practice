@@ -28,7 +28,7 @@ function User (email, password){
 
 const infoo = new User ("ramesh@gmail.com", "Ramesh Raghav")
 
-console.log(infoo.email);                                   //[📍📍 Answer is :-  "RAMESH@GMAIL.COM"  ] 
+console.log(infoo.email);                                //[📍📍 Answer is :-  "RAMESH@GMAIL.COM"  ] 
 
 
  

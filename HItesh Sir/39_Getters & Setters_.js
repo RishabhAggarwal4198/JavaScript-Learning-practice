@@ -15,7 +15,7 @@
 
            
                                     
-// 💎✅💎GETTERS & SETTERS (from pereventing someone accessing "password") 👇👇
+// 💎✅💎GETTERS & SETTERS (from pereventing someone accessing some value of our code like "password" in this case) 👇👇
                                     
 // class User {
 //     constructor (email, password) {            // 💎✅💎  bcoz "set" method below "constructor" is just passing the value to  "set"  but not SETTING any value
