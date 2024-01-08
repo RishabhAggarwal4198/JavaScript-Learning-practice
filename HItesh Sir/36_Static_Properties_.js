@@ -29,6 +29,9 @@ class Teacher extends User {
 }
 
 
+
 const iphone = new Teacher ("iphone", "iphone@gmail.com")
-console.log(iphone);               //[📍📍 Answer is :-  "Teacher { username: 'iphone', email: 'iphone@gmail.com' }"  ] 
-console.log(iphone.createId());      //[📍📍 Answer is :-  "an Error" ( bcoz of "static" keyword)  ]
+// console.log(iphone);                //[📍📍 Answer is :-  "Teacher { username: 'iphone', email: 'iphone@gmail.com' }"  ] 
+// iphone.logMe()                       //[📍📍 Answer is :-  "Username: iphone"  ] 
+console.log(iphone.createId());      //[💎✅💎  Answer is :-  "an Error" ( bcoz of "static" keyword added in the front of "createId()" ) ]
+
