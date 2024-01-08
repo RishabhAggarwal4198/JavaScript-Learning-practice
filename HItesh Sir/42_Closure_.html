@@ -18,17 +18,17 @@
 <script>
 
 
-        // 💎💎LEXICAL - SCOPING 👇👇
+        // 💎✅💎LEXICAL - SCOPING 👇👇
 
 
-        // function init() {
-        //     let name = "Mozilla";
-        //     function displayName() {
-        //             console.log(name); 
-        //         }
-        //         displayName();
-        // }
-        // init(); 
+        function init() {
+            let name = "Mozilla";
+            function displayName() {
+                    console.log(name); 
+                }
+                displayName();
+        }
+        init();                      //[📍📍 Answer is :-  "Mozilla"  ] 
 
 
                     // 🔽🔽
@@ -80,16 +80,16 @@
         // 💎💎 CLOSURES  👇👇
 
 
-        function makeFunc() {
-            const name = "Mozilla";
-            function displayName() {
-                console.log(name);  
-            }
-            return displayName;
-        }
+        // function makeFunc() {
+        //     const name = "Mozilla";
+        //     function displayName() {
+        //         console.log(name);  
+        //     }
+        //     return displayName;
+        // }
 
-        const myFunc = makeFunc();
-        myFunc();
+        // const myFunc = makeFunc();
+        // myFunc();
 
 </script>
 
@@ -123,15 +123,15 @@
 
     // ✅💎✅ Perfect Use case Scenario of CLOSURES & LEXICAL-SCOPING 👇
 
-    function clickHandler (color) {
-        //  document.body.style.background-color = `${color}`
-         return function () {
-            document.body.style.backgroundColor = `${color}`
-         }
-    }
+    // function clickHandler (color) {
+    //     //  document.body.style.background-color = `${color}`
+    //      return function () {
+    //         document.body.style.backgroundColor = `${color}`
+    //      }
+    // }
 
-    document.getElementById('orange').onclick = clickHandler (`orange`)
-    document.getElementById('green').onclick = clickHandler (`lightgreen`)
+    // document.getElementById('orange').onclick = clickHandler (`orange`)
+    // document.getElementById('green').onclick = clickHandler (`lightgreen`)
    
 
 
