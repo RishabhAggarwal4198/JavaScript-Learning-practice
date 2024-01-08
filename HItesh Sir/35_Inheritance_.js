@@ -56,7 +56,8 @@ const chayii = new Teacher ("Rohan", "rohan@gmail.com", "123");
 
 
 
-const newChayii = new User("Rameshh")
+
+const newChayii = new Userrzz("Rameshh")
 
 newChayii.logMe();  //[📍📍 Answer is :-  "USERNAME is Rameshh"  ]
 // newChayii.addCourse();   //[📍📍 Answer is :-  Error is thrown  ]
