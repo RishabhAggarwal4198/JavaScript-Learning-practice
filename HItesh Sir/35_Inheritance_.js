@@ -27,26 +27,31 @@ class Teacher extends Userrzz {                    // 💎🍁✅🍁💎 So in 
         console.log(`A new course was added by ${this.username}`);
     }
 
-
+    mailInfo(){
+        console.log(`E-maail Id of the user is ${this.email}`);
+    }
 }
+
 
 const chayii = new Teacher ("Rohan", "rohan@gmail.com", "123");
 
-// chayii.addCourse()   //[📍📍 Answer is :-  "A new course was added by Rohan"  ]
-// chayii.logMe();       //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
+chayii.addCourse()   //[📍📍 Answer is :-  "A new course was added by Rohan"  ]
+chayii.mailInfo()    //[📍📍 Answer is :-  "E-maail Id of the user is rohan@gmail.com" ]
+chayii.logMe();       //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
 
 
 
-const newChayii = new User("Rohan")
 
-// newChayii.logMe();  //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
-// newChayii.addCourse();   //[📍📍 Answer is :-  Error  ]
+// const newChayii = new User("Rohan")
+
+// // newChayii.logMe();  //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
+// // newChayii.addCourse();   //[📍📍 Answer is :-  Error  ]
 
 
-console.log(chayii === newChayii);    //[📍📍 Answer is :-  "false"  ]
-console.log(chayii === Teacher);     //[📍📍 Answer is :-  "false"  ]
+// console.log(chayii === newChayii);    //[📍📍 Answer is :-  "false"  ]
+// console.log(chayii === Teacher);     //[📍📍 Answer is :-  "false"  ]
 
-console.log(chayii instanceof User);   //[📍📍 Answer is :-  "true"  ]
+// console.log(chayii instanceof User);   //[📍📍 Answer is :-  "true"  ]
 
 
 
