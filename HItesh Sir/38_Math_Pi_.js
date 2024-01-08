@@ -91,9 +91,9 @@ const  tea = {
 
                  // 🔽🔽
 
-// for (const [key, value] of Object.entries(tea)) {
-// console.log(`${key} : ${value}`);     
-// }                                      
+for (const [key, value] of Object.entries(tea)) {
+console.log(`${key} : ${value}`);     
+}                                      
                         /*📍📍 Answer is :-  
                             "name : ginger tea
                             price : 250
@@ -103,16 +103,15 @@ const  tea = {
                             } "
                         */
 
-                 // 🔽🔽
+                 // 🔽🔽 [Adding CHECKS] (as we only wanted KEY-VALUE pair not the the FUNCTION stored in "orderTea" )
               
-for (const [key, value] of Object.entries(tea)) {
-if(typeof value !== 'function')
-console.log(`${key} : ${value}`);     
-}                                      
+// for (const [key, value] of Object.entries(tea)) {
+// if(typeof value !== 'function')
+// console.log(`${key} : ${value}`);     
+// }                                      
                         /*📍💎📍 Answer is :-  
-                                  "name : ginger tea
-                                   price : 250    
-                                   isAvailable : true "
+                                  "price : 250    
+                                  isAvailable : true "
                         */
 
 
