@@ -7,15 +7,19 @@ class User {
         console.log(`Username: ${this.username}`);
     }
 
-    static createId(){            // [📍📍 static keyword is added before a function to so that no one could access it from outside ]
+    static createId(){            // [💎✅💎 static keyword is added before a function to so that no one could access it from outside (i.e. to stop it's access ) ]
         return `123`
     }
 }
+
 
 const Rishabhh = new User("Rishabhh")
 // console.log(Rishabhh.createId())    //[📍📍 Answer is :-  "an Error" ( bcoz of "static" keyword)  ]
 
 
+
+
+// 💎✅💎 👇👇Extending the PROTOTYPE properties of the CLASS "User"👇👇
 
 class Teacher extends User {
     constructor (username, email) {
