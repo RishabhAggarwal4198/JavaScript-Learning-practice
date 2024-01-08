@@ -105,10 +105,10 @@ console.log(`${key} : ${value}`);
 
                  // 🔽🔽 [Adding CHECKS] (as we only wanted KEY-VALUE pair not the the FUNCTION stored in "orderTea" )
               
-for (const [key, value] of Object.entries(tea)) {
-if(typeof value !== 'function')     // 💎✅💎 [Applying IF check, so that no other value value gets printed other than the "KEY-VALUE" pair]
-console.log(`${key} : ${value}`);     
-}                                      
+// for (const [key, value] of Object.entries(tea)) {
+// if(typeof value !== 'function')     // 💎✅💎 [Applying IF check, so that no other value value gets printed other than the "KEY-VALUE" pair]
+// console.log(`${key} : ${value}`);     
+// }                                      
                         /*📍💎📍 Answer is :-  
                                   "name : ginger tea
                                    price : 250    
@@ -116,7 +116,7 @@ console.log(`${key} : ${value}`);
                         */
 
 
-                 // 🔽🔽
+                 // 🔽🔽 
 
 
 // Object.defineProperty(tea, 'name', {
