@@ -1,7 +1,7 @@
 
 // 💎✅💎 BASIC - SYNTAX  👇👇
 
-class User {
+class Userrzz {
     constructor (username) {
         this.username = username
     }
@@ -13,15 +13,15 @@ class User {
 
 
 
-// 💎✅💎 Now suppose we are making any website like E-commerce or Shopping so we also have to make this "User" as ADMIN, TEACHER, STUDENT
+// 💎✅💎 Now suppose we are making any website like E-commerce or Shopping so we also have to make this "Userrzz" as ADMIN, TEACHER, STUDENT
 
-class Teacher extends User {
+class Teacher extends Userrzz {                    // 💎🍁✅🍁💎 So in in functions previously as we used to use ".prototype" keyword to add any new "PROTOTYPE-property" to the function, Similarly in CLASSES here we have "extends" keyword to add or kind of extend the "PROTOTYPE" properties of that particular class
     constructor (username, email, password) {
-        super(username)                        //[📍📍Using "super(username)" here will directly contact to the name of the class written after "extedds" & will call it, which in this case is "extends User"  ]
+        super(username)                           //[💎🍁✅🍁💎Using "super(username)" here will directly contact to the name of the class written after "extedds" & will call it, which in this case is "extends User"  ] [@8:25:43]
         this.email = email
         this.password = password
     }
-
+    
     
     addCourse () {
         console.log(`A new course was added by ${this.username}`);
