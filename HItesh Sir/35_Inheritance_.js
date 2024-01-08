@@ -17,7 +17,7 @@ class Userrzz {
 
 class Teacher extends Userrzz {                    // 💎🍁✅🍁💎 So in in functions previously as we used to use ".prototype" keyword to add any new "PROTOTYPE-property" to the function, Similarly in CLASSES here we have "extends" keyword to add or kind of extend the "PROTOTYPE" properties of that particular class
     constructor (username, email, password) {
-        super(username)                           //[💎🍁✅🍁💎Using "super(username)" here will directly contact to the name of the class written after "extedds" & will call it, which in this case is "extends User"  ] [@8:25:43]
+        super(username)                           //[@8:25:43] [💎🍁✅🍁💎Using "super(username)" here will directly contact to the name of the class written after "extedds" & will call it, which in this case is "extends User"  ] 
         this.email = email
         this.password = password
     }
