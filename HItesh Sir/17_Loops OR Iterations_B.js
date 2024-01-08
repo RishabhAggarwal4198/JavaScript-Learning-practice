@@ -16,9 +16,9 @@ for (const num of arr) {
 
 
 
-// Applying on STRINGS 👇
+//💎 Applying on STRINGS 👇
 
-const greetings = "Hello world!"
+const greetings = "Hello World!"
 for (const greet of greetings ) {
     // console.log(`Each char is ${greet}`);   //📍 Print the statement to see the Answer
 }
