@@ -1,3 +1,22 @@
+
+class User {
+    constructor(email, password) {
+        this.email = email;
+        this.password = password
+    }
+}
+
+
+const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
+console.log(Ramesh.password);                               //  [📍📍 Answer is :- "asdf_vbnm" ] 
+
+
+
+
+
+                                    // 🔽🔽
+
+
 // class User {
 //     constructor (email, password) {
 //         this.email = email;
@@ -24,33 +43,33 @@
 
 
 
-class User {
-    constructor (email, password) {
-        this.email = email;
-        this.password = password;
-    }
+// class User {
+//     constructor (email, password) {
+//         this.email = email;
+//         this.password = password;
+//     }
 
-    get email () {
-        return this._email.toUpperCase()
-    }
-    set email(value){
-        this._email = value
-    }
+//     get email () {
+//         return this._email.toUpperCase()
+//     }
+//     set email(value){
+//         this._email = value
+//     }
     
 
-    get password () {
-        return `${this._paSSword}Rishabh`
-    }
+//     get password () {
+//         return `${this._paSSword}Rishabh`
+//     }
 
-    set password(value) {
-        this._paSSword = value
-    }
-}
+//     set password(value) {
+//         this._paSSword = value
+//     }
+// }
 
 
-const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
-console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
-console.log(Ramesh.email);                                 //  [📍📍 Answer is :- "ramesh@gmail.com" ] 
+// const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
+// console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
+// console.log(Ramesh.email);                                 //  [📍📍 Answer is :- "ramesh@gmail.com" ] 
 
 
 

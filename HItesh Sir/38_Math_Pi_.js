@@ -138,16 +138,16 @@ const  tea = {
                  // 🔽🔽 
 
 
-Object.defineProperty(tea, 'name', {
-    writable:true,
-    enumerable : true         // 💎✅💎 When we make value TRUE
-})
+// Object.defineProperty(tea, 'name', {
+//     writable:true,
+//     enumerable : true         // 💎✅💎 When we make value TRUE
+// })
 
 
-for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
-if(typeof value !== 'function')
-console.log(`${key} : ${value}`);     
-}                                      
+// for (const [key, value] of Object.entries(tea)) {     // [ 📍📍 Since "enumerable : true" so "name:ginger tea" is gonna get iterated or printed]
+// if(typeof value !== 'function')
+// console.log(`${key} : ${value}`);     
+// }                                      
                         /*📍📍 Answer is :-  
                                 "name : ginger tea    // 🍁💎🍁 When we make value TRUE :- "name" value got printed
                                  price : 250
