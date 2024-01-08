@@ -13,6 +13,7 @@ class Userrzz {
 
 
 
+
 // 💎✅💎 Now suppose we are making any website like E-commerce or Shopping so we also have to make this "Userrzz" as ADMIN, TEACHER, STUDENT
 
 class Teacher extends Userrzz {                    // 💎🍁✅🍁💎 So in in functions previously as we used to use ".prototype" keyword to add any new "PROTOTYPE-property" to the function, Similarly in CLASSES here we have "extends" keyword to add or kind of extend the "PROTOTYPE" properties of that particular class
@@ -28,16 +29,22 @@ class Teacher extends Userrzz {                    // 💎🍁✅🍁💎 So in 
     }
 
     mailInfo(){
-        console.log(`E-maail Id of the user is ${this.email}`);
+        console.log(`E-mail Id of the user is '${this.email}'`);
+    }
+
+    passwordInfo(){
+        console.log(`Password of the user is '${this.password}'`);
     }
 }
 
 
 const chayii = new Teacher ("Rohan", "rohan@gmail.com", "123");
 
-chayii.addCourse()   //[📍📍 Answer is :-  "A new course was added by Rohan"  ]
-chayii.mailInfo()    //[📍📍 Answer is :-  "E-maail Id of the user is rohan@gmail.com" ]
-chayii.logMe();       //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
+chayii.addCourse()    //[📍📍 Answer is :-  "A new course was added by Rohan"  ]
+chayii.mailInfo()      //[📍📍 Answer is :-  "E-mail Id of the user is 'rohan@gmail.com'" ]
+chayii.passwordInfo()  //[📍📍 Answer is :-  "Password of the user is '123'" ]
+
+chayii.logMe();        //[📍📍 Answer is :-  "USERNAME is Rohan"  ]
 
 
 
