@@ -17,27 +17,23 @@
                                     
 // 💎✅💎GETTERS & SETTERS (from pereventing someone accessing "password") 👇👇
                                     
-class User {
-    constructor (email, password) {
-        this.email = email;
-        this.password = password;
-    }
+// class User {
+//     constructor (email, password) {            // 💎✅💎  bcoz "set" method below "constructor" is just passing the value to  "set"  but not SETTING any value
+//         this.email = email;
+//         this.password = password;
+//     }
 
-    get password () {
-        return this._paSSword.toUpperCase()
-    }
+//     get password () {
+//         return this._paSSword.toUpperCase()
+//     }
 
-    set password(value) {
-        this._paSSword = value.toUpperCase()
-    }
-}
+//     set password(value) {
+//         this._paSSword = value.toUpperCase()   // 💎✅💎 Now "set" is setting the value instead of "constructor" that's why we declared a new variable called "._password"
+//     }                                          // 💎✅💎 the name of the varaible inside set need not to be the "._password" only..... it could have been anything
+// }
 
-
-
-
-
-const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
-console.log(Ramesh.password);                              //  [📍📍 Answer is :- "ASDF_VBNM" ] 
+// const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
+// console.log(Ramesh.password);                              //  [📍📍 Answer is :- "ASDF_VBNM" ] 
 
 
 
@@ -45,33 +41,33 @@ console.log(Ramesh.password);                              //  [📍📍 Answer 
 
 
 
-// class User {
-//     constructor (email, password) {
-//         this.email = email;
-//         this.password = password;
-//     }
+class User {
+    constructor (email, password) {
+        this.email = email;
+        this.password = password;
+    }
 
-//     get email () {
-//         return this._email.toUpperCase()
-//     }
-//     set email(value){
-//         this._email = value
-//     }
+    get email () {
+        return this._email.toUpperCase()
+    }
+    set email(value){
+        this._email = value
+    }
     
 
-//     get password () {
-//         return `${this._paSSword}Rishabh`
-//     }
+    get password () {
+        return `${this._paSSword}Rishabh`
+    }
 
-//     set password(value) {
-//         this._paSSword = value
-//     }
-// }
+    set password(value) {
+        this._paSSword = value
+    }
+}
 
 
-// const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
-// console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
-// console.log(Ramesh.email);                                 //  [📍📍 Answer is :- "ramesh@gmail.com" ] 
+const Ramesh = new User ("ramesh@gmail.com", "asdf_vbnm")
+console.log(Ramesh.password);                                 //  [📍📍 Answer is :- "asdf_vbnmRishabh" ] 
+console.log(Ramesh.email);                                 //  [📍📍 Answer is :- "RAMESH@GMAIL.COM" ] 
 
 
 
