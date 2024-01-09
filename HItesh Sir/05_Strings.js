@@ -109,12 +109,22 @@ const newStringOne = "    Rishabh    "
 
 
 
+// 💎✅💎 REPLACE 👇👇  (to REPLACE any value "x" with value "y" inside a URL)
 
 const url = "https://rishabh.com//risabh%20aggarwal.com"
 
-// console.log(url.replace('%20', '-'))       // 📍 Answer will be  "https://rishabh.com//risabh-aggarwal.com" [ will remove "20%" at insert "-" in place of it]
+// console.log(url.replace('%20', '-'))       // 📍📍 Answer will be  "https://rishabh.com//risabh-aggarwal.com" [ will remove "20%" at insert "-" in place of it]
 
-// console.log(url.includes('sundar'))      // 📍 Answer will be  "false" [Will tell if there would be any such word in the oroginal string]
+
+
+
+
+// 💎✅💎 INCLUDES 👇👇  (Will tell if there is such word INCLUDED in the oroginal  URL)
+
+const address = "https://ecma-international.org/publications-and-standards/standards/ecma-262/"
+
+// console.log(address.includes('sundar'))      // 📍📍 Answer will be  "false" 
+// console.log(address.includes('international'))      // 📍📍 Answer will be  "true" 
 
 
 
