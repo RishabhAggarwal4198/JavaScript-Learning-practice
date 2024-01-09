@@ -59,6 +59,7 @@ const gameName = new String ('Rishabhhhhh');   // [@2:12:06 ]
 
 
 
+// 💎✅💎 SUBSTRING 👇👇
 
 const newString = gameName.substring(0,5)     
 // console.log(newString);             // 📍 Answer is "Risha"  [the last value 5 is not included]
@@ -76,10 +77,30 @@ const newString1 = gameName.substring(1,5)
 
 
 
+// 💎✅💎 SLICE 👇👇
+
 const anotherString = gameName.slice(-11, 5);    // 📍📍💎📍📍 [MUST SEE] Run the program to see
-console.log(anotherString);                     //[📍📍 Answer is :-  "Risha" ]            
+// console.log(anotherString);                     //[📍📍 Answer is :-  "Risha" ]            
+
+                        // 🔽🔽
+
+const anotherString1 = gameName.slice(-10, 4);    // 📍📍💎📍📍 [MUST SEE] Run the program to see
+// console.log(anotherString1);                     //[📍📍 Answer is :-  "ish" ]            
+                        
+                        // 🔽🔽
+
+const anotherString2 = gameName.slice(-11, 10);    // 📍📍💎📍📍 [MUST SEE] Run the program to see
+// console.log(anotherString2);                     //[📍📍 Answer is :-  "Rishabhhhhh" ]            
+                        
 
 
+
+
+
+
+
+
+// 💎✅💎 TRIM 👇👇  (to remove the extra spaces from a STRING)
 
 const newStringOne = "    Rishabh    "
 // console.log(newStringOne);                   // 📍📍 answer will be '    Rishabh    '
