@@ -27,16 +27,16 @@
 
 
 
-console.log("Rishabh");
+// console.log("Rishabh");
 
 let name = "Rishabh"   // String Data Type
 let currentYear = 2023
 
-console.log(typeof name);    // 📍 Answer is "string"
-console.log(typeof currentYear);    // 📍 Answer is "number"
+// console.log(typeof name);    // 📍 Answer is "string"
+// console.log(typeof currentYear);    // 📍 Answer is "number"
 
-console.log(typeof null);    // 📍 Answer is "object" [so null is of "Object"  type]
-console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is a TYPE in itself]
+// console.log(typeof null);    // 📍 Answer is "object" [so null is of "Object"  type]
+// console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is a TYPE in itself]
 
 
 
@@ -60,10 +60,10 @@ let userEmail;
 const id = Symbol('123');
 const anotherId = Symbol('123');
 
-console.log(id === anotherId);        // 📍 Answer is "false"
+// console.log(id === anotherId);        // 📍 Answer is "false"
 
 const bigNumber = 348242494898598989859895n;  // "BigInt" data type
-console.log(typeof bigNumber);        //📍 Answer is "bigInt"
+// console.log(typeof bigNumber);        //📍 Answer is "bigInt"
 
 
 
@@ -72,7 +72,13 @@ console.log(typeof bigNumber);        //📍 Answer is "bigInt"
 
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "nagraj", "dogs"]
+const heros = ["shaktiman", "nagraj", "dogs"]   
+
+console.log(heros);
+console.log(typeof heros);          //[📍📍 Answer is :-  "object"  ] 
+
+
+
 
 
 let myObj = {
@@ -80,14 +86,18 @@ let myObj = {
     age: 22
 }
 
+console.log(myObj);
+console.log(typeof myObj);           //[📍📍 Answer is :-  "object"  ]
+
+
 
 const myFunction = function () {
 
-    
     console.log("Hello world")
 }
 
 console.log(typeof myFunction);             // 📍 Answer is "function"
+                                            // 💎✅💎 But since FUNCTION could also store valus so it's type is called as "OBJECT-FUNCTION"
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
