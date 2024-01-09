@@ -58,12 +58,27 @@ const gameName = new String ('Rishabhhhhh');   // [@2:12:06 ]
 
 
 
-const newString = gameName.substring(0,5)     // 📍 Answer is "Risha"  [the last value 5 is not icluded]
-// console.log(newString);   // result wont include the last digit number 
 
-const anotherString = gameName.slice(-10, 4);    // 📍📍📍📍 [MUST SEE] Run the program to see
-// console.log(anotherString); 
-// 
+
+const newString = gameName.substring(0,5)     
+// console.log(newString);             // 📍 Answer is "Risha"  [the last value 5 is not included]
+                                        // result wont include the last digit number 
+
+                              // 🔽🔽
+
+const newString1 = gameName.substring(1,5)     
+// console.log(newString1);             // 📍 Answer is "isha"  [the last value 5 is not included]
+                                        // result wont include the last digit number 
+
+
+
+
+
+
+
+const anotherString = gameName.slice(-11, 5);    // 📍📍💎📍📍 [MUST SEE] Run the program to see
+console.log(anotherString);                     //[📍📍 Answer is :-  "Risha" ]            
+
 
 
 const newStringOne = "    Rishabh    "
