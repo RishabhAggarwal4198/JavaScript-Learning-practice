@@ -74,8 +74,8 @@ const bigNumber = 348242494898598989859895n;  // "BigInt" data type
 
 const heros = ["shaktiman", "nagraj", "dogs"]   
 
-console.log(heros);
-console.log(typeof heros);          //[📍📍 Answer is :-  "object"  ] 
+// console.log(heros);
+// console.log(typeof heros);          //[📍📍 Answer is :-  "object"  ] 
 
 
 
@@ -86,30 +86,50 @@ let myObj = {
     age: 22
 }
 
-console.log(myObj);
-console.log(typeof myObj);           //[📍📍 Answer is :-  "object"  ]
+// console.log(myObj);
+// console.log(typeof myObj);           //[📍📍 Answer is :-  "object"  ]
 
 
 
 const myFunction = function () {
 
-    console.log("Hello world")
+    // console.log("Hello world")
 }
 
-console.log(typeof myFunction);             // 📍 Answer is "function"
+// console.log(typeof myFunction);             // 📍 Answer is "function"
                                             // 💎✅💎 But since FUNCTION could also store valus so it's type is called as "OBJECT-FUNCTION"
 
 
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// 💎✅💎 READING-ARTICLE 👇👇
+// https://262.ecma-international.org/5.1/#sec-11.4.3                                            
 
+
+
+
+
+// +++++++✅++++++✅++++++✅+++++MEMORY-TYPES++++++++✅+++++++++✅++++++++✅+++++++
+
+//  ➤  STACK - MEMORY [stores "Primitive" data types] [✅ we  gets the COPY of a variable stored in STACK-MEMORY]
+//  ➤  HEAP - MEMORY [stores "Non - Primitive" data types] [✅ we  gets the REFRENCE of a variable stored in STACK-MEMORY]
+//  [ Watch @2:00:09]
+
+
+
+//💎✅💎 STACK - MEMORY  EXAMPLE  👇👇
 
 let myYoutubename = "aggarwalrishabh4198@gmail.com";
 
 let anothername = myYoutubename
 anothername = "Delhi_Cannaught_Place"
 
-console.log(myYoutubename);
-console.log(anothername);
+console.log(myYoutubename);      //[📍📍 Answer is :-  "aggarwalrishabh4198@gmail.com"  ] 
+console.log(anothername);        //[📍📍 Answer is :-  "Delhi_Cannaught_Place"  ] 
+
+
+
+
+
+//💎✅💎 HEAP - MEMORY  EXAMPLE  👇👇
 
 
 let userOne = {
@@ -129,12 +149,13 @@ console.log(userOne.email);           // 📍 Answer is "rishabh@google.com"
 console.log(userTwo.email);           // 📍 Answer is "rishabh@google.com"
 
 
+
 let userThree = userTwo
 
 userThree.email = "aggarwalrishabh4198@gmail.com"
 
 console.log(userTwo.email);
-console.log(userThree.email);
+console.log(userThree.email); 
 
 
 
