@@ -135,8 +135,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 💎💎 👇👇📍📍✅✅ ❌❌ 🔽🔽 🍁🍁👆👆
 
-// 💎💎      👇👇
-// 💎✅💎 
+// 💎✅💎  👇👇
 //[📍📍 Answer is :-  " "  ] 
 // 🔽🔽
 
