@@ -1,10 +1,15 @@
-"use strict";   // treat all JS code as newer version
+"use strict";   // 💎✅💎 write it at the beginning of each JS file, so that the engine treats all JS code as newer version
 
 
-// alert(3 + 3) // It Won't work here bcoz we are not using Node.js
+// alert(3 + 3) // It Won't work here bcoz we are using Node.js here, not browser
 
 
-// 📍📍Code readibilty is the priority in any language 📍📍
+// 💎✅💎Code readibilty is the priority in any programming language 💎✅💎
+
+
+//🍁💎✅💎🍁 Original JAVASCRIPT documentation is found here :-  https://tc39.es/ecma262/
+
+
 
 // Range of "number" data type is somewhere upto      2 to the power 53
 
@@ -14,11 +19,11 @@
 
 //  boolean = true / false
 
-// null  ➤ it's an STAND-ALONE value, it means the "empty value" (not ZERO just simply "nothing")
+//🍁 null  ➤ it's an STAND-ALONE value, it means the "empty value" (not ZERO just simply "nothing")  [@57:18]
 
-// undefined  ➤ it means the value is not defined yet
+//🍁 undefined  ➤ it means the value is not defined yet
 
-// symbol ➤ used for defining UNIQUE COMPONENTS
+//🍁 symbol ➤ used for defining UNIQUE COMPONENTS
 
 
 
@@ -31,13 +36,14 @@ console.log(typeof name);    // 📍 Answer is "string"
 console.log(typeof currentYear);    // 📍 Answer is "number"
 
 console.log(typeof null);    // 📍 Answer is "object" [so null is of "Object"  type]
-console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is a type in itself]
+console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is a TYPE in itself]
 
 
 
 
 
-// Primitive Data Types [They are stored in STACK memory]
+
+// 💎✅💎 Primitive Data Types in JS [They are stored in STACK memory]
 
 //  7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -60,7 +66,7 @@ console.log(typeof bigNumber);        //📍 Answer is "bigInt"
 
 
 
-// Refrence (Non - Primitive) Types [They are stored in HEAP memory]
+//💎✅💎 Refrence (Non - Primitive) Data Types in JS [They are stored in HEAP memory]
 
 // Array, Objects, Functions
 
