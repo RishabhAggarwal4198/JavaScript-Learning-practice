@@ -108,17 +108,18 @@ let conversionNum4 = Number(num4)
 
 //💎✅💎 some important CONVERSIONs 👇👇
 
-console.log(2+2);
-console.log(2-2);
-console.log(2*2);
-console.log(2**3);      // 📍Gives the "square" i.e. 8
-console.log(4/2);       // 📍Gives the "quotient" i.e. 2
-console.log(2%2);       // 📍Gives the "remainder" i.e. 0
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);      // 📍Gives the "square" i.e. 8
+// console.log(4/2);       // 📍Gives the "quotient" i.e. 2
+// console.log(2%2);       // 📍Gives the "remainder" i.e. 0
 
 
 
 
-//  // CONCATENATION 👇👇
+// 💎✅💎 CONCATENATION 👇👇
+
 // let str1 = "Rishabh"
 // let str2 = " Aggarwal"
 
@@ -132,9 +133,19 @@ console.log(2%2);       // 📍Gives the "remainder" i.e. 0
 
 
 
+//🍁🍁🍁🍁 In coding READABILITY of the code is MUST 🍁🍁🍁🍁🍁🍁
 
 
-// // PRE-FIX & POST-FIX operators 👇👇
+
+
+
+// 🍁💎🍁 V. important watch [@1:19:56]
+
+
+
+
+
+// 💎✅💎 PRE-FIX & POST-FIX operators 👇👇
 
 // let gameCounter = 100;
 // gameCounter++ ;
@@ -147,6 +158,11 @@ console.log(2%2);       // 📍Gives the "remainder" i.e. 0
 
 // ++gameCounter;
 // console.log(gameCounter);     // 📍Gives the  "101"
+
+
+
+// Link to STUDY 👇👇
+// https://tc39.es/ecma262/multipage/abstract-operations.html
 
 
 
