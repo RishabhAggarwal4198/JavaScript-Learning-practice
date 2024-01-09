@@ -94,7 +94,9 @@ let conversionNum4 = Number(num4)
 
 
 
-// // ************************* Operations *****************************
+
+
+//💎✅💎 *******💎✅💎********OPERATIONS *********💎✅💎*********💎✅💎
 
 
 // let value = 3;
@@ -103,14 +105,15 @@ let conversionNum4 = Number(num4)
 // // console.log(negValue);        // 📍Answer is "-3"
 
 
-//  // some important CONVERSIONs 👇👇
 
-// // console.log(2+2);
-// // console.log(2-2);
-// // console.log(2*2);
-// // console.log(2**3);      // 📍Gives the "square" i.e. 8
-// // console.log(4/2);       // 📍Gives the "quotient" i.e. 2
-// // console.log(2%2);       // 📍Gives the "remainder" i.e. 0
+//💎✅💎 some important CONVERSIONs 👇👇
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**3);      // 📍Gives the "square" i.e. 8
+console.log(4/2);       // 📍Gives the "quotient" i.e. 2
+console.log(2%2);       // 📍Gives the "remainder" i.e. 0
 
 
 
