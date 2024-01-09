@@ -129,10 +129,13 @@ const address = "https://ecma-international.org/publications-and-standards/stand
 
 
 
+// 💎✅💎 SPLIT 👇👇 [@2:27:30] (Will tell if there is such word INCLUDED in the oroginal  URL)
 
-let value = "I went to a nice hill station."
+let value = "I went - to a - nice hill- station."
 
-// console.log(value.split('a'));
+console.log(value.split('-'));     //📍📍 Answer is :-  "[ 'I', 'went', 'to', 'a', 'nice', 'hill', 'station.' ]"  
+// console.log(value.split('a'));     //📍📍 Answer is :-  "[ 'I went to ', ' nice hill st', 'tion.' ]"      
+// console.log(value.split(/-/));     //📍📍 Answer is :-  "[ 'I went to a nice hill station.' ]" 
 
 
 
