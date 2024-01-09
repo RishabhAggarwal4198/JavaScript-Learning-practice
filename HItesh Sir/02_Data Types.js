@@ -41,7 +41,7 @@ console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is
 
 
 
-
+// 💎✅💎  How these DATA gets stored inside the Memory & How we could access these DATA on the basis that the whole DATA-TYPES are divided into two categories i.e. PRIMITIVES & NON-PRIMITIVES
 
 // 💎✅💎 Primitive Data Types in JS [They are stored in STACK memory]
 
