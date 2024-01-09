@@ -41,11 +41,13 @@ console.log(typeof undefined);    // 📍 Answer is "undefined" [so undefined is
 
 
 
-// 💎✅💎  How these DATA gets stored inside the Memory & How we could access these DATA on the basis that the whole DATA-TYPES are divided into two categories i.e. PRIMITIVES & NON-PRIMITIVES
 
-// 💎✅💎 Primitive Data Types in JS [They are stored in STACK memory]
+//  🍁💎✅💎 🍁  How the DATA gets stored inside the Memory & How we could access these DATA on the basis that the whole DATA-TYPES are divided into two categories i.e. PRIMITIVES & NON-PRIMITIVES
 
-//  7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
+
+// 💎✅ Primitive Data Types in JS [They are stored in STACK memory]
+
+//  7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt           [Symbol:- @1:42:23,  ]
 
 const value = "Hii Everyone";
 const socre = 100;
@@ -66,7 +68,7 @@ console.log(typeof bigNumber);        //📍 Answer is "bigInt"
 
 
 
-//💎✅💎 Refrence (Non - Primitive) Data Types in JS [They are stored in HEAP memory]
+//💎✅ Refrence (Non - Primitive) Data Types in JS [They are stored in HEAP memory]
 
 // Array, Objects, Functions
 
