@@ -41,11 +41,20 @@ let num3 = true
 let conversionNum3 = Number(num3)
 // console.log(conversionNum3);             //[📍📍 Answer is :-  "1"  ] 
 // console.log(typeof conversionNum3);      //[📍📍 Answer is :-  "number" ]  
+  
+                // 🔽🔽
+
+let num4 = 1
+// console.log(typeof num4);                 //[📍📍 Answer is :-  "number"  ]
+let conversionNum4 = Number(num4)
+// console.log(conversionNum4);             //[📍📍 Answer is :-  "1"  ] 
+// console.log(typeof conversionNum4);      //[📍📍 Answer is :-  "number" ]  
 
 
 
 
-// Some Conversion results👇
+//💎✅💎 Some Conversion results👇
+
 // "33" => 33
 // "33abc" => NaN
 // true => 1; flase => 0
