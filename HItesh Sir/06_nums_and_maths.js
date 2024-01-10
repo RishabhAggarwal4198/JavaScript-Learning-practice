@@ -23,13 +23,19 @@ const balance = new Number (100)
 
 
 
-// 💎✅💎  TO - PRECISION
-const otherNumber = 23.8966 
-// console.log(otherNumber.toPrecision(3));     // 📍 Answer is "23.9"  [3 precise values]
 
+
+// 💎✅💎  TO-PRECISION
+const otherNumber = 23.8966 
+console.log(typeof otherNumber);
+// console.log(otherNumber.toPrecision(2));     // 📍 Answer is "24"        [Upto 2 precise values]
+// console.log(otherNumber.toPrecision(4));     // 📍 Answer is "23.90"     [Upto 4 precise values]
+// console.log(otherNumber.toPrecision(7));     // 📍 Answer is "23.89660"  [Upto 7 precise values]
+
+                  // 🔽🔽 
 
 const otherNumber2 = 123.2966
-// console.log(otherNumber2.toPrecision(3));    // 📍 Answer is "123"  [3 precise values]
+console.log(otherNumber2.toPrecision(3));    // 📍 Answer is "123"  [3 precise values]
 
 
 const otherNumber3 = 1123.8966 
