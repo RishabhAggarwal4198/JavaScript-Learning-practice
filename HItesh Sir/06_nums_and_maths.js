@@ -1,23 +1,30 @@
 const score = 400;
 // console.log(score);          // 📍 Answer is "400"
 
+
+
+
+//💎✅💎defining in new NUMBER type object 👇👇
+
 const balance = new Number (100)
 // console.log(balance);       // 📍 Answer is "[Number: 100]"
 
-// Converting it to STRING
+                    // 🔽🔽 (Converting above to STRING👇)
 
-// console.log(balance.toString());  // Got converted to a STRING
+// console.log(balance.toString());  //[📍📍 Answer is :-  "100"  ] 
+                                     // Got converted to a STRING
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(4));       // 📍 Answer is "100.0000" [it gonna give us value upto 4 digits]
+                    // 🔽🔽 (now since it got converted STRING, it also got some additional properties👇)
+
+// console.log(balance.toString().length); //[📍📍 Answer is :-  "3"  ] 
+// console.log(balance.toFixed(4));        // 📍 Answer is "100.0000" [it gonna give us value upto 4 decimal digits]
+// console.log(balance.toFixed(10));        // 📍 Answer is "100.0000000000" [it gonna give us value upto 10 decimal digits]
+                                            //✅✅ Especially used in E-commerce websites & all   
 
 
 
-
-
-// Precision value
-
-const otherNumber = 23.8966
+// 💎✅💎  TO - PRECISION
+const otherNumber = 23.8966 
 // console.log(otherNumber.toPrecision(3));     // 📍 Answer is "23.9"  [3 precise values]
 
 
@@ -58,8 +65,8 @@ const hundreds = 100000000000
 
 // For getting the MINIMUM & MAXIMUM value (out of te given value) 👇
 
-console.log(Math.min(4, 3, 6, 8));   // 📍 Answer is "3"  
-console.log(Math.max(4, 3, 6, 8));   // 📍 Answer is "8"  
+// console.log(Math.min(4, 3, 6, 8));   // 📍 Answer is "3"  
+// console.log(Math.max(4, 3, 6, 8));   // 📍 Answer is "8"  
 
 
 
