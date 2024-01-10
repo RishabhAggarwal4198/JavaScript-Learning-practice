@@ -27,7 +27,7 @@ const balance = new Number (100)
 
 // 💎✅💎  TO-PRECISION
 const otherNumber = 23.8966 
-console.log(typeof otherNumber);
+// console.log(typeof otherNumber);
 // console.log(otherNumber.toPrecision(2));     // 📍 Answer is "24"        [Upto 2 precise values]
 // console.log(otherNumber.toPrecision(4));     // 📍 Answer is "23.90"     [Upto 4 precise values]
 // console.log(otherNumber.toPrecision(7));     // 📍 Answer is "23.89660"  [Upto 7 precise values]
@@ -51,28 +51,42 @@ const otherNumber4 = 1123.8966
 
 
 
-
-
 // 💎✅💎  TO-LOCAL STRING
-
 const hundreds = 100000000000
 // console.log(hundreds.toLocaleString('en-IN'));   // 📍 Answer is "1,00,00,00,00,000"  [commas as per INDIAN numeric system]
 // console.log(hundreds.toLocaleString('en-US'));   // 📍 Answer is "100,000,000,000"    [commas as per US numeric system]
+                                                    //✅✅ used for numbering as per Indian or International numeric System
 
 
 
-// +++++++++++++++++++ Maths +++++++++++++++++++
+// 💎✅💎NUMBER
+
+// Go in "console.log" & type  :-
+//✅ Number.MAX_SAFE_INTEGER    //[📍📍Answer is :- "9007199254740991" ] [✅ the maximum value which the function "Number" could store]
+//✅ Number.MIN_SAFE_INTEGER    //[📍📍Answer is :- "9007199254740991" ] [✅ the minimum value which the function "Number" could store]
+
+// 💎you could access many other properties by typing "Number" in console.log
 
 
 
-// console.log(Math);
+
+
+
+
+
+// 💎✅💎++++++++++💎✅💎+++++++++ MATHS +++++++++💎✅💎++++++++++💎✅💎
+
+
+// console.log(Math);               //[📍📍 Answer is :-  "Object [Math] {}"  ] 
 
 // console.log(Math.abs(-4));    // 📍Turns negative value into positive 
 
-// console.log(Math.round(4.4));  // 📍answer will be 4  [rounds off the value]
+// console.log(Math.round(4.4));  // 📍answer will be 4  [will rounds off the value]
+// console.log(Math.round(4.8));  // 📍answer will be 5  [will rounds off the value]
 
-// console.log(Math.ceil(4.2));   // 📍 Answer is "5"     [chooses the HIGHEST value]
-// console.log(Math.floor(4.9));  // 📍 Answer is "4"   [chooses the LOWEST value]
+
+// console.log(Math.ceil(4.2));   // ✅📍 Answer is "5"   [will choose the HIGHEST value]
+// console.log(Math.floor(4.9));  // ✅📍 Answer is "4"   [will choose the LOWEST value]
 
 
 
