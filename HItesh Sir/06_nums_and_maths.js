@@ -110,14 +110,16 @@ const hundreds = 100000000000
 
 
 
-//✅ When u want values between two NUMBERS only 👇 [ Bewlo syntax is just like above, but overhere we have replaced "10" with "(maxValue - minValue + 1)"  & "+1" with "minValue" ]
+//✅✅ When u want values between two NUMBERS only 👇 [ Bewlo syntax is just like above, but overhere we have replaced "10" with "(maxValue - minValue + 1)"  & "+1" with "minValue" ]
 
 const  minValue = 10;
 const maxValue = 20;
 
 // console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
+
                                         // 🔽🔽
+
 
 const  minValue0 = 90;
 const maxValue0 = 100;
