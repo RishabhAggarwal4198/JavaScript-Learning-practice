@@ -1,4 +1,5 @@
-//  Arrays
+
+//💎✅💎 Arrays   👇👇
 
 const myArr = [0, 1, 2, 3, 4, 5]
 // console.log(myArr[1]);   // 📍 Answer is "1"
@@ -12,11 +13,19 @@ const myHeros = ["Superman", "Batman", "Zoro"]
 const myArr2 = new Array (1, 2, 3, 4) 
 // console.log(myArr2[2]);   // 📍 Answer is "3"
 
+const myArr3 = [`A`, 3, "Raman", true, 40.5764, null]
+// console.log(myArr3[2]);   // 📍 Answer is "Raman"
+// console.log(myArr3[4]);   // 📍 Answer is "40.5764"
+// console.log(parseInt(myArr3[4]));   // 📍 Answer is "40"
+
+// ✅✅✅✅ Now go to BROWSER >> console >> declare an ARRAY to see How many types of PROTOTYPE properties an ARRAY have
 
 
 
 
-// Array Methods 👇 
+
+
+// 💎✅💎 ARRAY-METHODS 👇👇
 
 myArr.push(6);   //  📍 It is for PUSHING the given value into the originla array 
 // console.log(myArr); //📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6]"
