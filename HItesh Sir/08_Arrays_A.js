@@ -27,36 +27,56 @@ const myArr3 = [`A`, 3, "Raman", true, 40.5764, null]
 
 // 💎✅💎 ARRAY-METHODS 👇👇
 
-myArr.push(6);   //  📍 It is for PUSHING the given value into the originla array 
-// console.log(myArr); //📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6]"
-
+myArr.push(6);   //  ✅ It is for PUSHING the given value into the originla array 
+// console.log(myArr);  //📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6]"
+                              // 🔽🔽
 myArr.push(7); 
 // console.log(myArr); // 📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6, 7]"
 
 
-myArr.pop()     // 📍 for REMOVINg the last value of the originla Array
+
+
+
+
+
+myArr.pop()     // ✅ for REMOVING the last value of the original Array
 // console.log(myArr);   // 📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6 ]"
+myArr.pop()
+// console.log(myArr);   // 📍 Answer will be "[ 0, 1, 2, 3, 4, 5 ]"
 
 
-myArr.unshift(9);    // 📍 For ADDING a value on to the 0th position of the Array
+
+
+myArr.unshift(9);    // ✅ For ADDING a value from the 0th position of the Array
 // console.log(myArr);    // 📍  Answer is [ 9, 0, 1, 2, 3, 4, 5, 6]
 
 
-myArr.shift();      // 📍 For  REMOVING a value on to the 0th position of the Array
+
+
+myArr.shift();      // ✅ For  REMOVING a value from the  0th position of the Array
 // console.log(myArr);    // 📍  Answer is [ 0, 1, 2, 3, 4, 5, 6 ]
 myArr.shift(); 
 // console.log(myArr);    // 📍  Answer is [ 1, 2, 3, 4, 5 ]
 
 
+let val = myArr.includes(9);       // ✅ For knowing whether given value is in the original Array or not ?
+// console.log(val);                 // 📍 Answer is "false"
 
-// console.log(myArr.includes(9));    // 📍 For knowing whether given value is in the original Array or not ?
-// 📍 Answer is "false"
 
 
-// console.log(myArr.indexOf(4));    // 📍For knowing whether given value of INDEX is in the original Array or not ?
-// 📍 Answer is "3"     [it is talking its value from the last "myArr.shift()" operation]
-// console.log(myArr.indexOf(9));    // 📍For knowing whether given value of INDEX is in the original Array or not ?
-// 📍 Answer is "-1"  i.e. i don't know
+
+
+let val1 = myArr.indexOf(4);      // ✅For knowing whether given value of INDEX is in the original Array or not ?
+// console.log(val1);             // 📍 Answer is "3"     [✅it is talking its value from the last "myArr.shift()" operation]
+
+                                // 🔽🔽
+
+let val2 = myArr.indexOf(9);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
+// console.log(val2);            // 📍 Answer is "-1"  [i.e. i don't know]
+
+
+
+
 
 
 
@@ -77,7 +97,7 @@ const newArr = myArr.join()     // 📍adds all the elements of an array into ST
 
 // console.log("A ", myArr);  // 📍 Answer is "A  [ 1, 2, 3, 4, 5, 6 ]"
 
-const myn1 = myArr. slice(1, 3)  // 📍 returns the value of  the ARRAY of place 1 & 2 [3rd one is not icluded into it]
+const myn1 = myArr.slice(1, 3)  // 📍 returns the value of  the ARRAY of place 1 & 2 [3rd one is not icluded into it]
 
 // console.log(myn1);           // 📍 Answer is "[ 2, 3 ]"
 // console.log("B ", myArr);    // 📍 Answer is "B  [ 1, 2, 3, 4, 5, 6 ]"
