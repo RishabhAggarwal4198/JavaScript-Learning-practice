@@ -125,10 +125,10 @@ const  minValue0 = 90;
 const maxValue0 = 100;
 let mathhh = Math.random()
 
-console.log(mathhh);
-console.log(mathhh * (maxValue0 - minValue0 + 1));
-console.log((mathhh * (maxValue0 - minValue0 + 1)) + minValue0);
-console.log(Math.floor(mathhh * (maxValue0 - minValue0 + 1)) + minValue0);    // 📍 Run it to know how it works  [watch @2:52:05 ]
+// console.log(mathhh);
+// console.log(mathhh * (maxValue0 - minValue0 + 1));
+// console.log((mathhh * (maxValue0 - minValue0 + 1)) + minValue0);
+// console.log(Math.floor(mathhh * (maxValue0 - minValue0 + 1)) + minValue0);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
 
 
