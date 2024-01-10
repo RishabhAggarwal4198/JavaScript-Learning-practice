@@ -35,16 +35,25 @@ console.log(typeof otherNumber);
                   // 🔽🔽 
 
 const otherNumber2 = 123.2966
-console.log(otherNumber2.toPrecision(3));    // 📍 Answer is "123"  [3 precise values]
+// console.log(otherNumber2.toPrecision(3));    // 📍 Answer is "123"  [3 precise values]
 
+                  // 🔽🔽 
 
 const otherNumber3 = 1123.8966 
 // console.log(otherNumber3.toPrecision(3));    // 📍 Answer is "1.12e+3"  [3 precise values]
 
+                  // 🔽🔽 
 
 const otherNumber4 = 1123.8966 
 // console.log(otherNumber4.toPrecision(4));    // 📍 Answer is "1124"  [3 precise values]
 
+                  
+
+
+
+
+
+// 💎✅💎  TO-LOCAL STRING
 
 const hundreds = 100000000000
 // console.log(hundreds.toLocaleString('en-IN'));   // 📍 Answer is "1,00,00,00,00,000"  [commas as per INDIAN numeric system]
