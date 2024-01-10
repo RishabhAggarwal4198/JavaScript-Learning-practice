@@ -84,15 +84,11 @@ const hundreds = 100000000000
 // console.log(Math.round(4.4));  // 📍answer will be 4  [will rounds off the value]
 // console.log(Math.round(4.8));  // 📍answer will be 5  [will rounds off the value]
 
-
 // console.log(Math.ceil(4.2));   // ✅📍 Answer is "5"   [will choose the HIGHEST value]
 // console.log(Math.floor(4.9));  // ✅📍 Answer is "4"   [will choose the LOWEST value]
 
 
-
-
-
-// For getting the MINIMUM & MAXIMUM value (out of te given value) 👇
+//💎✅💎 For getting the MINIMUM & MAXIMUM value (out of te given values) 👇
 
 // console.log(Math.min(4, 3, 6, 8));   // 📍 Answer is "3"  
 // console.log(Math.max(4, 3, 6, 8));   // 📍 Answer is "8"  
@@ -101,36 +97,38 @@ const hundreds = 100000000000
 
 
 
-// MATH - RANDOM 👇 [Values will always come b/w  0 - 1 (mostly in decimals)]
+
+
+//💎✅💎 MATH - RANDOM 👇 [Values will always come b/w  0 - 1 (mostly in decimals)]
 
 // console.log(Math.random());  
-// So we do the following thing to it
+// So we can do the following thing to avoid the comming of "zero" value
 
 // console.log((Math.random()*10) + 1);   // 📍 [ We mutliplied "10" to avoid decimal value & as value could also come zero so to avoid that we added "1" to it ]
 
-// console.log(Math.floor(Math.random()*10) + 1);  // 📍 to round off the CURRENT value we could add "Math.floor"
+//📍console.log(Math.floor(Math.random()*10) + 1);  // 📍 to round off the CURRENT value we could add "Math.floor"
 
 
 
-
-// When u want values between two NUMBERS only 👇 
+//✅ When u want values between two NUMBERS only 👇 [ Bewlo syntax is just like above, but overhere we have replaced "10" with "(maxValue - minValue + 1)"  & "+1" with "minValue" ]
 
 const  minValue = 10;
 const maxValue = 20;
 
 // console.log(Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
+                                        // 🔽🔽
 
-const  minValue0 = 10;
-const maxValue0 = 20;
+const  minValue0 = 90;
+const maxValue0 = 100;
+let mathhh = Math.random()
 
-// console.log(Math.floor(Math.random() * (maxValue0 - minValue0 + 1)) + minValue0);    // 📍 Run it to know how it works  [watch @2:52:05 ]
+console.log(mathhh);
+console.log(mathhh * (maxValue0 - minValue0 + 1));
+console.log((mathhh * (maxValue0 - minValue0 + 1)) + minValue0);
+console.log(Math.floor(mathhh * (maxValue0 - minValue0 + 1)) + minValue0);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
 
-const  minValue1 = 10;
-const maxValue1 = 20;
-
-// console.log(Math.floor(Math.random() * (maxValue1 - minValue1 + 1)) + minValue1);    // 📍 Run it to know how it works  [watch @2:52:05 ]
 
 
  
