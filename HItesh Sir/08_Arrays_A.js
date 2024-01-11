@@ -80,13 +80,15 @@ let val2 = myArr.indexOf(9);     // ✅For knowing whether given value of INDEX 
 
 
 
-const newArr = myArr.join()     // [@3:25:00] 📍adds all the elements of an array into STRING
+const newArr = myArr.join()     // [@3:25:00] 📍converts all the elements of an array into STRING
 
 // console.log(myArr);     // 📍 Answer is "[ 1, 2, 3, 4, 5, 6 ]"
 // console.log(newArr);    //  📍 Answer is "1,2,3,4,5,6" (as it got JOINED & got converted to a STRING])
 // console.log(typeof newArr);   // 📍 Answer is "string"
 
-
+const myArr4 = [`A`, 3, "Raman", true, 40.5764, null, 'B', 5]
+let val4 = myArr4.join()
+console.log(val4);                // 📍 Answer is "A,3,Raman,true,40.5764,,B,5"
 
 
 
