@@ -80,7 +80,7 @@ let val2 = myArr.indexOf(9);     // ✅For knowing whether given value of INDEX 
 
 
 
-const newArr = myArr.join()     // 📍adds all the elements of an array into STRING
+const newArr = myArr.join()     // [@3:25:00] 📍adds all the elements of an array into STRING
 
 // console.log(myArr);     // 📍 Answer is "[ 1, 2, 3, 4, 5, 6 ]"
 // console.log(newArr);    //  📍 Answer is "1,2,3,4,5,6" (as it got JOINED & got converted to a STRING])
@@ -94,21 +94,22 @@ const newArr = myArr.join()     // 📍adds all the elements of an array into ST
 
 
 
-// 💎✅💎 SLICE 👇👇 
-
-// console.log("A ", myArr);  // 📍 Answer is "A  [ 1, 2, 3, 4, 5, 6 ]"
-
-const myn1 = myArr.slice(1, 3)  // 📍 returns the value of  the ARRAY of place 1 & 2 [3rd one is not icluded into it]
-
-// console.log(myn1);           // 📍 Answer is "[ 2, 3 ]"
-// console.log("B ", myArr);    // 📍 Answer is "B  [ 1, 2, 3, 4, 5, 6 ]"
 
 
+// 💎✅💎 SLICE 👇👇  [returns the value of  the ARRAY of place 1 & 2 [3rd one is not icluded into it]]
+
+console.log("A ", myArr);  // 📍 Answer is "A  [ 1, 2, 3, 4, 5, 6 ]"
+const myn1 = myArr.slice(1, 3)   
+console.log(myn1);           // 📍 Answer is "[ 2, 3 ]"
+console.log("B ", myArr);    // 📍 Answer is "B  [ 1, 2, 3, 4, 5, 6 ]"
 
 
 
-// 💎✅💎 SPLICE 👇👇 
-const myn2 = myArr. splice(1, 3)  // 📍return the value of  the ARRAY of place 1, 2 & 3 [and gonna DELETE that value from the original ARRAY]
+
+
+
+// 💎✅💎 SPLICE 👇👇  [return the value of  the ARRAY of place 1, 2 & 3 [and gonna DELETE that value from the original ARRAY]]
+const myn2 = myArr. splice(1, 3) 
 // console.log(myn2); // 📍 Answer is  "[ 2, 3, 4 ]"
 // console.log("C ", myArr ); //📍 Answer is  "C  [ 1, 5, 6 ]"  📍will DELETE those place values which are asked above in SPLICE
 
