@@ -69,9 +69,10 @@ const real_another_array1 =  another_array.flat(Infinity)   // ✅✅ it gonna c
 
 
 
+// [ 🍁🍁💎🍁💎🍁🍁 IMPORTANT - CASE for Interviews 🍁🍁💎🍁💎🍁🍁]  👇👇
+console.log(Array.from({name : "Rishabh"}));     // 📍  Answer is "[]" bcoz we havn't defined whether we have to make ARRAY from keys or values 
 
-// [ 💎🍁💎 IMPORTANT - CASE for Interviews 💎🍁💎]  👇👇
-// console.log(Array.from({name : "Rishabh"})); // 📍  Answer is "[]" bcoz we havn't defined whether we have to make ARRAY from keys or values 
+
 
 
 
