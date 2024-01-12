@@ -8,7 +8,6 @@
 // object literals
 
 
-
 // SYMBOL DATA - TYPE & only way to access it  👇👇
 
 const mySym = Symbol ("key1")
@@ -22,7 +21,9 @@ const JsUser0 = {
 
 
 
-// OBJECTs  👇👇
+
+
+//💎✅💎 OBJECTs  👇👇
 
 const mySym0 = Symbol("key1")   // SYMBOL element watch @3:54:00
 
@@ -38,12 +39,12 @@ const JsUser = {
 }
 
 
-// FIRST- WAY of accessing an OBJECT 👇👇
+// 💎✅💎 ONE- WAY of accessing an OBJECT 👇👇
 // console.log(JsUser.email);    // 📍  Answer is "aggarwalrishabh4198@gmail.com"
 
 
-// SECOND- WAY of accessing an OBJECT 👇👇
-// console.log(JsUser[email]);         // 📍  Answer is "ReferenceError: email is not defined" [ so we have to put email word in ""  i.e.  "email"]
+//💎✅💎 OTHER- WAYs of accessing an OBJECT 👇👇
+// console.log(JsUser[email]);         // ❌📍❌  Answer is "ReferenceError: email is not defined" [ bcoz behind the scenes email is getting processed as a STRING so we have to put email word in ""  i.e.  "email"]
 // console.log(JsUser["email"]);      // 📍  Answer is "aggarwalrishabh4198@gmail.com"
 // console.log(JsUser["full Name"]);  // 📍  Answer is "Rishabh Aggarwal"
 // console.log(JsUser[mySym0]);       // 📍  Answer is "mykey1"
