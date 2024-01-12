@@ -85,10 +85,10 @@ const newArr = myArr.join()     // [@3:25:00] 📍converts all the elements of a
 // console.log(myArr);     // 📍 Answer is "[ 1, 2, 3, 4, 5, 6 ]"
 // console.log(newArr);    //  📍 Answer is "1,2,3,4,5,6" (as it got JOINED & got converted to a STRING])
 // console.log(typeof newArr);   // 📍 Answer is "string"
-
+                        // 🔽🔽
 const myArr4 = [`A`, 3, "Raman", true, 40.5764, null, 'B', 5]
 let val4 = myArr4.join()
-console.log(val4);                // 📍 Answer is "A,3,Raman,true,40.5764,,B,5"
+// console.log(val4);                // 📍 Answer is "A,3,Raman,true,40.5764,,B,5"
 
 
 
@@ -97,13 +97,13 @@ console.log(val4);                // 📍 Answer is "A,3,Raman,true,40.5764,,B,5
 
 
 
+// 💎✅💎 SLICE 👇👇 ( arr.slice(a,d))  [returns the value of  the ARRAY of place a,b, c [ "d"th one is not included into it]]
 
-// 💎✅💎 SLICE 👇👇  [returns the value of  the ARRAY of place 1 & 2 [3rd one is not icluded into it]]
-
-console.log("A ", myArr);  // 📍 Answer is "A  [ 1, 2, 3, 4, 5, 6 ]"
-const myn1 = myArr.slice(1, 3)   
+const myArr5 = [0, 0.5, 1, 2, 3, 4, 5]
+console.log("A ", myArr5);  // 📍 Answer is "A  [0, 0.5, 1, 2, 3, 4, 5]"
+const myn1 = myArr5.slice(1, 4)  // 📍 Answer is "[ 0.5, 1, 2 ]" 
 console.log(myn1);           // 📍 Answer is "[ 2, 3 ]"
-console.log("B ", myArr);    // 📍 Answer is "B  [ 1, 2, 3, 4, 5, 6 ]"
+console.log("B ", myArr5);    // 📍 Answer is "B  [ 1, 2, 3, 4, 5, 6 ]"
 
 
 
