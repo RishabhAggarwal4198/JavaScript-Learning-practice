@@ -2,19 +2,32 @@ const marvel_heros = ["thor", "Ironman", "spiderman" ];
 
 const dc_heros = [ "superman", "flash", "batman"]
 
-// marvel_heros.push(dc_heros) // 📍 it not gonna merge both array but will push the whole ARRAY (dc_heros) to the last part of it
+// marvel_heros.push(dc_heros) // ❌📍❌ it not gonna merge both array but will push the whole ARRAY (dc_heros) to the last part of it
 // console.log(marvel_heros) //📍 Answer is "[ 'thor', 'Ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]"
 
-// console.log(marvel_heros[3] [2]) // 📍 Answer is "batman" [ As 3rd element is an array in itself so If we want to accces the 2nd value of the 3rd element we have to write like that only]
+// console.log(marvel_heros[3] [2]) // 📍❌Answer is "batman" [ As 3rd element is an array in itself so If we want to accces the 2nd value of the 3rd element we have to write like that only]
 
 
 
-// const allHeros = marvel_heros.concat(dc_heros); // 📍 it combines thw whole two ARRAYs at the last of an existing ARRAY properly [without pushing it onto the last part]
-// console.log(allHeros);   // 📍 (Answer is "[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]")
 
 
 
-//👇👇-+-+-+-SPREAD METHOD-+-+-+-[MORE PREFFERED METHOD FOR ADDING TWO "STRINGS"] (easier than "concat") 👇👇
+
+
+//💎✅💎CONCAT-METHOD 👇👇 [for merging two ARRAYs]
+
+// const allHeros = marvel_heros.concat(dc_heros); // ✅  it combines the whole two ARRAYs at the last of an existing ARRAY properly [without pushing it onto the last part]
+                                                   // ✅   This method returns a whole NEW ARRAY [after combining them]
+// console.log(allHeros);   // 📍 Answer is "[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]"
+
+
+
+
+
+
+
+
+//💎✅💎SPREAD METHOD 👇👇 [ much PREFFERED & easy method for merging two "STRINGS"] (easier than "concat") 👇👇
 
 const all_new_heros = [...dc_heros, ...marvel_heros]; // 📍 it ADDS multiple  ARRAYS  just by etering dots in front of them
 // console.log(all_new_heros);  // 📍 Answer is "[ 'superman', 'flash', 'batman', 'thor', 'Ironman', 'spiderman' ]"

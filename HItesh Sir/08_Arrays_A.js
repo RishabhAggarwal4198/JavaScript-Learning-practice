@@ -41,6 +41,8 @@ myArr.push(7);
 
 myArr.pop()     // ✅ for REMOVING the last value of the original Array
 // console.log(myArr);   // 📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6 ]"
+
+                                // 🔽🔽
 myArr.pop()
 // console.log(myArr);   // 📍 Answer will be "[ 0, 1, 2, 3, 4, 5 ]"
 
@@ -53,10 +55,25 @@ myArr.unshift(9);    // ✅ For ADDING a value from the 0th position of the Arra
 
 
 
+
+
+
+
+
 myArr.shift();      // ✅ For  REMOVING a value from the  0th position of the Array
 // console.log(myArr);    // 📍  Answer is [ 0, 1, 2, 3, 4, 5, 6 ]
+
+                                // 🔽🔽
 myArr.shift(); 
 // console.log(myArr);    // 📍  Answer is [ 1, 2, 3, 4, 5 ]
+
+
+
+
+
+
+
+
 
 
 let val = myArr.includes(9);       // ✅ For knowing whether given value is in the original Array or not ?
