@@ -25,12 +25,12 @@ const JsUser0 = {
 
 //💎✅💎 OBJECTs  👇👇
 
-const mySym0 = Symbol("key1")   // SYMBOL element watch @3:54:00
+const mySym0 = Symbol("key1")   //🍁🍁[Important INTERVIEW question on SYMBOL element watch @3:54:00]
 
 const JsUser = { 
     name:"Rishabh",
     "full Name" : "Rishabh Aggarwal",    // 📍 This value can't be accessed through dot(.) method
-    [mySym0] : "mykey1",
+    [mySym0] : "mykey1",        //🍁🍁[Important INTERVIEW question on SYMBOL element watch @3:54:00]
     age : 18,
     Location: "jaipur",
     email: "aggarwalrishabh4198@gmail.com",
@@ -39,26 +39,38 @@ const JsUser = {
 }
 
 
-// 💎✅💎 ONE- WAY of accessing an OBJECT 👇👇
+
+
+// 💎✅💎 FIRST - WAY of accessing an OBJECT 👇👇
 // console.log(JsUser.email);    // 📍  Answer is "aggarwalrishabh4198@gmail.com"
 
 
-//💎✅💎 OTHER- WAYs of accessing an OBJECT 👇👇
+
+//💎✅💎 SECOND - WAY of accessing an OBJECT 👇👇
 // console.log(JsUser[email]);         // ❌📍❌  Answer is "ReferenceError: email is not defined" [ bcoz behind the scenes email is getting processed as a STRING so we have to put email word in ""  i.e.  "email"]
 // console.log(JsUser["email"]);      // 📍  Answer is "aggarwalrishabh4198@gmail.com"
+// console.log(JsUser.full Name);     //  ❌📍❌  Can't be accessed bcoz of the gap b/w full & Name [so will show an error]
 // console.log(JsUser["full Name"]);  // 📍  Answer is "Rishabh Aggarwal"
+
+
 // console.log(JsUser[mySym0]);       // 📍  Answer is "mykey1"
 
 
 
-// To change or OVERWRITE any value  in OBJECTS 👇👇
+
+
+//💎✅💎 To change or OVERWRITE any value  in OBJECTS 👇👇
 JsUser.email = "rishabhChatGPT.com"
 // console.log(JsUser.email); // 📍 Answer is "rishabhChatGPT.com"
 
-// Now if we want to FREEZE the particular value so for that 👇
+
+
+//💎✅💎Now if we want to FREEZE the particular value inside a OBJECT [i.e. we don't want anyone to change it] 👇
 // Object.freeze(JsUser)  // 🍁🍁🍁🍁FREEZEING the values 🍁🍁🍁🍁
 JsUser.email = "rishabh_twitter.com"
 // console.log(JsUser.email); // 📍 Answer is still "rishabhChatGPT.com" {Bcoz we freezed it}
+
+
 
 
 
