@@ -61,12 +61,16 @@ const real_another_array1 =  another_array.flat(Infinity)   // ✅✅ it gonna c
 // console.log(Array.isArray("Rishabh"));  // 📍 Answer is "false"
 
 
-// TO SPREAD THE CURRENT STRING TO AN "ARRAY" 👇👇
+
+
+// /💎✅💎 TO CONVERT & SPREAD A STRING TO AN "ARRAY" 👇👇
 // console.log(Array.from("Rishabh")); // 📍 Answer is "['R', 'i', 's','h', 'a', 'b','h']"
 
 
 
-// [ 📍📍 IMPORTANT - CASE for Interviews 📍📍]  👇👇
+
+
+// [ 💎🍁💎 IMPORTANT - CASE for Interviews 💎🍁💎]  👇👇
 // console.log(Array.from({name : "Rishabh"})); // 📍  Answer is "[]" bcoz we havn't defined whether we have to make ARRAY from keys or values 
 
 
