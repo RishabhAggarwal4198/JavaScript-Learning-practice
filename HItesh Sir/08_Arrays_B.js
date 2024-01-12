@@ -12,8 +12,6 @@ const dc_heros = [ "superman", "flash", "batman"]
 
 
 
-
-
 //💎✅💎CONCAT-METHOD 👇👇 [for merging two ARRAYs]
 
 // const allHeros = marvel_heros.concat(dc_heros); // ✅  it combines the whole two ARRAYs at the last of an existing ARRAY properly [without pushing it onto the last part]
@@ -25,17 +23,24 @@ const dc_heros = [ "superman", "flash", "batman"]
 
 
 
-
-
 //💎✅💎SPREAD METHOD 👇👇 [ much PREFFERED & easy method for merging two "STRINGS"] (easier than "concat") 👇👇
 
 const all_new_heros = [...dc_heros, ...marvel_heros]; // 📍 it ADDS multiple  ARRAYS  just by etering dots in front of them
 // console.log(all_new_heros);  // 📍 Answer is "[ 'superman', 'flash', 'batman', 'thor', 'Ironman', 'spiderman' ]"
 
+                                               // 🔽🔽 [We could also merge more than 2 ARRAYs using "SPREAD" method] 
+
+let colorss = ["red", "green", "blue", "orange", "yellow"] 
+const all_new_heros_1 = [...dc_heros, ...marvel_heros,...colorss]; // 📍 it ADDS multiple  ARRAYS  just by etering dots in front of them
+// console.log(all_new_heros_1);  // 📍 Answer is "[ 'superman', 'flash', 'batman', 'thor', 'Ironman', 'spiderman', 'red', 'green',  'blue', 'orange',  'yellow']"                                             
 
 
 
-// TO SPREAD an ARRAY INSIDE AN ARRAY 👇👇
+
+
+
+
+//💎✅💎FLAT-METHOD 👇👇 [for making an exceptional case of an ARRAY (ARRAY INSIDE AN ARRAY) completely merged & flat]
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]  
 
