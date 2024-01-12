@@ -52,8 +52,8 @@ const JsUser = {
 // console.log(JsUser.full Name);     //  ❌📍❌  Can't be accessed bcoz of the gap b/w full & Name [so will show an error]
 // console.log(JsUser["full Name"]);  // 📍  Answer is "Rishabh Aggarwal"
 
-
 // console.log(JsUser[mySym0]);       // 📍  Answer is "mykey1"
+
 
 
 
@@ -75,20 +75,21 @@ JsUser.email = "rishabh_twitter.com"
 
 
 
-
  
 JsUser.greeting = function() {
-    // console.log("Hello JS user");
+    console.log("Hello JS user");
 }
 
-// console.log(JsUser.greeting);  //  📍 Answer is "[Function (anonymous)]" [bcoz at this stage function not got executed, we only got its refrence back ]
+// console.log(JsUser.greeting);  //  ✅ Answer is "[Function (anonymous)]" [bcoz at this stage function not got executed, we only got its return back ]
 // console.log(JsUser.greeting());  //  📍 Answer is "Hello JS user"
 
+                                        // 🔽🔽 (using "this" keyword )
 
 JsUser.greetingTwo = function() {
-    // console.log(`Hello JS user, ${this.name}`);   //📍THIS keyword  //📍When we have to refrence the same object we use the keyword "this" & then we could access all it's poperties
+    console.log(`Hello JS user, ${this.name}`);   //🍁✅🍁THIS keyword [ ✅When we have to refrence the same object we use the keyword "this" & then we could access all it's poperties ]
 }
 
+// console.log(JsUser.greeting());     // 📍 Answer is "Hello JS user"
 // console.log(JsUser.greetingTwo());  // 📍 Answer is "Hello JS user, Rishabh"
 
 
