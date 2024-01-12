@@ -34,7 +34,7 @@ let colorss = ["red", "green", "blue", "orange", "yellow"]
 const all_new_heros_1 = [...dc_heros, ...marvel_heros,...colorss]; // 📍 it ADDS multiple  ARRAYS  just by etering dots in front of them
 // console.log(all_new_heros_1);  // 📍 Answer is "[ 'superman', 'flash', 'batman', 'thor', 'Ironman', 'spiderman', 'red', 'green',  'blue', 'orange',  'yellow']"                                             
 
-
+ 
 
 
 
@@ -44,8 +44,8 @@ const all_new_heros_1 = [...dc_heros, ...marvel_heros,...colorss]; // 📍 it AD
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]  
 
-const real_another_array =  another_array.flat(Infinity)   // 📍 it gonna combined or spread  the whole ARRAY evenly 
-// console.log(real_another_array);  // 📍 Answer is " [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]"
+const real_another_array =  another_array.flat(Infinity)   // ✅✅ it gonna combined or spread  the whole ARRAY evenly 
+// console.log(real_another_array);                        // ✅✅ Answer is " [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]"
 
 const real_another_array2 =  another_array.flat(1)   // 📍 Here "1" represents the depth upto which we have to solve that
 // console.log(real_another_array2);  // 📍 Answer is " [ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]"
@@ -84,3 +84,5 @@ let combined = Array.of(score1, score2, score3);  // 📍 It gonna convert all t
  + Array.of
 
   📍 📍 📍 📍 📍 📍 */ 
+
+
