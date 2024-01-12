@@ -68,20 +68,20 @@ const real_another_array1 =  another_array.flat(Infinity)   // ✅✅ it gonna c
 
 
 
-
 // [ 🍁🍁💎🍁💎🍁🍁 IMPORTANT - CASE for Interviews 🍁🍁💎🍁💎🍁🍁]  👇👇
-console.log(Array.from({name : "Rishabh"}));     // 📍  Answer is "[]" bcoz we havn't defined whether we have to make ARRAY from keys or values 
+// console.log(Array.from({name : "Rishabh"}));     // 📍  Answer is "[]" bcoz we havn't defined whether we have to make ARRAY from keys or values 
 
 
 
 
-
+//💎✅💎 OFF - ARRAY 👇👇
 let score1 = 100
 let score2 = 200
 let score3 = 300
 
-let combined = Array.of(score1, score2, score3);  // 📍 It gonna convert all three VARIABLES into one ARRAY
+let combined = Array.of(score1, score2, score3);  //✅✅ It gonna convert all three VARIABLES into one ARRAY
 // console.log(combined);   // 📍 Answer is "[ 100, 200, 300 ]"
+
 
 
 

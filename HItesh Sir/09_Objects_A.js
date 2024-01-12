@@ -1,6 +1,7 @@
-// 📍 There are two ways of declaring an OBJECT one is like a "LITERAL" & "CONSTRUCTOR"
-// When we declare like LITERALS than "singleton " is not formed
-// When we declare like CONSTRUCTOR than "singleton " is formed
+// ✅✅ There are two ways of declaring an OBJECT one is like a "LITERAL" & "CONSTRUCTOR"
+// 🍁When we declare like LITERALS than "singleton " is not formed
+// 🍁When we declare like CONSTRUCTOR than "singleton " is formed
+
 
 // Object.create [it is the method which is called through CONSTRUCTOR method]
 
