@@ -97,23 +97,25 @@ let val4 = myArr4.join()
 
 
 
-// 💎✅💎 SLICE 👇👇 ( arr.slice(a,d))  [returns the value of  the ARRAY of place a,b, c [ "d"th one is not included into it]]
+// 💎✅💎 SLICE 👇👇 [ myArr.slice(a,d)] [🍁returns the value of  the ARRAY of place a,b, c [ "d"th one is not included into it]]
 
 const myArr5 = [0, 0.5, 1, 2, 3, 4, 5]
-console.log("A ", myArr5);  // 📍 Answer is "A  [0, 0.5, 1, 2, 3, 4, 5]"
-const myn1 = myArr5.slice(1, 4)  // 📍 Answer is "[ 0.5, 1, 2 ]" 
-console.log(myn1);           // 📍 Answer is "[ 2, 3 ]"
-console.log("B ", myArr5);    // 📍 Answer is "B  [ 1, 2, 3, 4, 5, 6 ]"
+// console.log("A ", myArr5);  // 📍 Answer is "A  [0, 0.5, 1, 2, 3, 4, 5]"
+const myn1 = myArr5.slice(1, 4) 
+// console.log(myn1);           // 📍 Answer is "[ 0.5, 1, 2 ]"
+// console.log("B ", myArr5);    // 📍 Answer is "B  [0, 0.5, 1, 2, 3, 4, 5]"
 
 
 
 
 
 
-// 💎✅💎 SPLICE 👇👇  [return the value of  the ARRAY of place 1, 2 & 3 [and gonna DELETE that value from the original ARRAY]]
-const myn2 = myArr. splice(1, 3) 
-// console.log(myn2); // 📍 Answer is  "[ 2, 3, 4 ]"
-// console.log("C ", myArr ); //📍 Answer is  "C  [ 1, 5, 6 ]"  📍will DELETE those place values which are asked above in SPLICE
+
+// 💎✅💎 SPLICE 👇👇  [ myArr.slice(a,d)] [🍁returns the value of  the ARRAY of place a,b,c & d [ every array value is included into it]]
+const myArr6 = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+const myn2 = myArr6. splice(1, 4) 
+console.log(myn2); // 📍 Answer is  "[ 8, 7, 6, 5 ]"
+console.log("C ", myArr6 ); //📍 Answer is  "C  [ 9, 4, 3, 2, 1 ]"  ✅✅✅ will DELETE all those place values from the above ARRAY which are asked above in SPLICE & prints all left over values
 
 
 
