@@ -42,16 +42,22 @@ const all_new_heros_1 = [...dc_heros, ...marvel_heros,...colorss]; // 📍 it AD
 
 //💎✅💎FLAT-METHOD 👇👇 [for making an exceptional case of an ARRAY (ARRAY INSIDE AN ARRAY) completely merged & flat]
 
-const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]  
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]], "Raman", "Shyam"]  
 
-const real_another_array =  another_array.flat(Infinity)   // ✅✅ it gonna combined or spread  the whole ARRAY evenly 
-// console.log(real_another_array);                        // ✅✅ Answer is " [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]"
+const real_another_array = another_array.flat(1)         // ✅✅ it gonna spread the whole ARRAY upto a degree of 1 bracket deep [Here "1" represents the depth upto which we have to solve that]
+// console.log(real_another_array);                         // 📍 Answer is " [1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5],'Raman','Shyam']"
 
-const real_another_array2 =  another_array.flat(1)   // 📍 Here "1" represents the depth upto which we have to solve that
-// console.log(real_another_array2);  // 📍 Answer is " [ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]"
+                                                    // 🔽🔽
+
+const real_another_array1 =  another_array.flat(Infinity)   // ✅✅ it gonna combine or spread  the whole ARRAY evenly upto the level of INFINITE deep [i.e. each & every level]
+// console.log(real_another_array1);                        // 📍 Answer is " [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5,'Raman','Shyam']"
+
+
+
+
 
  
-// ASKING IF THE GIVEN VALUE IS ARRAY 👇👇
+//💎✅💎  ASKING IF THE GIVEN VALUE IS ARRAY 👇👇
 // console.log(Array.isArray("Rishabh"));  // 📍 Answer is "false"
 
 
