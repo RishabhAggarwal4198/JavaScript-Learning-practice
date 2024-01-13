@@ -32,6 +32,7 @@ is called GLOBAL- SCOPE
 
 
 
+
 //💎✅💎 NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇
 
 function one() {
