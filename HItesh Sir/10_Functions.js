@@ -124,28 +124,37 @@ function loginUserMessage (username) {
 
 
     //💎✅💎 [REST-OPERATOR] FUNCTION  EXAMPLE-4  👇👇 [mostly used in E-COMMERCE (shopping cart) apps]
-    // (🍁🍁🍁🍁 "REST-OPERATORS" basically allows us to add MULTIPLE values in a FUNCTION at the same time)
-    
+    // (🍁🍁🍁🍁 "REST-OPERATORS"🍁🍁🍁🍁 basically allows us to add MULTIPLE values in a FUNCTION at the same time)
 
-    function calculateCarPrice (...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
-        return num1
+
+    function calculateCarPrice (...num1) {     //✅✅ Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
+        return num1                            // [although REST-OPERATOR is similar to SPREAD-OPERATOR in application by three dots (...) but it's totally different from it] 
     }
 
     // console.log(calculateCarPrice(200, 400, 500, 2000));   // 📍Answer is "[ 200, 400, 500, 2000 ]"   { we received an ARRAY }
+    // console.log(calculateCarPrice(200, 400, 500, 2000, 5000, 10000));   // 📍Answer is "[ 200, 400, 500, 2000, 5000, 10000 ]"   { we received an ARRAY }
+   
 
 
-    //📍👇📍INTERVIEW Questions Case 📍👇📍
+
+
+    //🍁💎✅💎🍁INTERVIEW Questions Case 📍👇👇📍
 
     function calculateCarPrice2 (val1, val2, ...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
         return num1
     }
 
-    // console.log(calculateCarPrice2(200, 400, 500, 2000));  // 📍Answer is "[ 500, 2000 ]"
+    console.log(calculateCarPrice2(200, 400, 500, 2000));  // 📍Answer is "[ 500, 2000 ]"
+                                                           //✅✅ Bcoz
 
 
 
 
-    // How to pass an OBJECT inside a FUNCTION 👇👇
+
+
+
+
+    // 💎✅💎 How to pass an OBJECT inside a FUNCTION 👇👇
 
     const user = {
         username: "Rishabh",
