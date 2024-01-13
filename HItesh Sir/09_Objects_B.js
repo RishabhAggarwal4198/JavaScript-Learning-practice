@@ -45,20 +45,27 @@ const obj4 = {5: "a", 6: "b"}
 
 
 
-// 💎✅💎 ASSIGN-METHOD 👇👇 [more INDUSTRIALLY used way of MERGING the OBJECTS]
+
+
+
+
+// 💎✅💎 ASSIGN-METHOD 👇👇 [one way of MERGING the OBJECTS]
 
 const obj3 = Object.assign({}, obj1, obj2, obj4)  // ✅✅ Although results are same as that of the  UPPER-ONE but this Syntax to be followed with "{}" for perfect results [in this "{}" acts as the target & rest "obj1, obj2, obj4" as source ]
 // console.log(obj3);   // 📍 Answer is "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }}"
 
 
 
-// 💎✅💎 SPREAD-METHOD 👇👇 [another way of MERGING the OBJECTS]
+
+
+// 💎🍁✅🍁💎 SPREAD-METHOD 👇👇 [ more INDUSTRIAL way of way of MERGING the OBJECTS]
 
 const obj5 = { ...obj1, ...obj2, ...obj4}
 // console.log(obj5);  // 📍 Answer is  "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }"
 
 
-// When value comes from DATA-BASE 👇👇
+
+//💎✅💎 When value comes from DATA-BASE in the form on an ARRAY-OF-OBJECTS 👇👇
 const users = [
     {
         id: 1,
@@ -81,6 +88,7 @@ const users = [
         email: "r@gmail.com"
     },
 ]
+
 
 
 let output = users[2].id
