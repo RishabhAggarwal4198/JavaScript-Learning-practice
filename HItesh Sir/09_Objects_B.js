@@ -133,7 +133,7 @@ for (let i = 0; i < users.length; i++) {
 
 
  
-//💎✅💎 DE-STRUCTURING of an ARRAY 👇👇  // [@4:25:17]
+//🍁💎✅💎🍁 DE-STRUCTURING of an ARRAY 👇👇  // [@4:25:17]
 
 const course = {
     coursename: "JS Course",
@@ -153,4 +153,17 @@ const {courseInstructor : instructor} = course // 📍  If "CourseInstructor" is
 
 
 
+
+
+
+
+
+//🍁💎✅💎🍁JSON format👇👇  
+
+
+//💎✅💎 Basic-Syntax 
+
+// {
+//   name:"hitesh",
+// }
 
