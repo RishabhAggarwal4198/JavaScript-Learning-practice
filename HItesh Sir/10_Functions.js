@@ -27,6 +27,20 @@ function sayMyName () {
 
 function addTwoNumbers (number1, number2) {
      
+   console.log(number1+number2);
+
+}; 
+
+const result_A = addTwoNumbers(3, 4); 
+console.log(`Result is : ${result_A}`);    // [📍📍 Answer is :- "Result is : undefined" ]
+                                           // ✅✅ above statement is "undefined" bcoz we haven't described any "return" value in the function "addTwoNumbers"
+
+
+                         // 🔽🔽
+
+
+function addTwoNumbers_0 (number1, number2) {
+     
     // let result = number1 + number2
     // return result
                 // 🔽🔽 (OR)
@@ -34,16 +48,18 @@ function addTwoNumbers (number1, number2) {
 
 }; 
 
-const result = addTwoNumbers(3, 4);
-// console.log(`The result is : ${result}`);   // 📍 Answer is  "The result is : 7"
+// const result_B = addTwoNumbers_0(3, 4);
+// console.log(`The result_B is : ${result_B}`);   // 📍 Answer is  "The result_B is : 7"
+// console.log(result_B);
 
 
 
-// EXAMPLE- FUNCTION -2b  👇👇
+
+//💎✅💎FUNCTION 👇👇 EXAMPLE-2b  [watch 'RETURN' @4:48:59]
 
 function addTwoNumbers0 (number1, number2) {
      return number1**number2
-     console.log("Rishabh Aggarwal"); // 📍 After return nothing is going to get printed
+     console.log("Rishabh Aggarwal"); // ✅ After return nothing is going to get printed
 }; 
 
 const result0 = addTwoNumbers0 (3, 4);
@@ -53,7 +69,9 @@ const result0 = addTwoNumbers0 (3, 4);
 
 
 
-// EXAMPLE- FUNCTION -3  👇👇
+
+
+//💎✅💎FUNCTION 👇👇 EXAMPLE-3
 
 function loginUserMessage (username) {
     return `${username} just logged in`
