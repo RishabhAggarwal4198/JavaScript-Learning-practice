@@ -144,8 +144,9 @@ function loginUserMessage (username) {
         return num1
     }
 
-    console.log(calculateCarPrice2(200, 400, 500, 2000));  // 📍Answer is "[ 500, 2000 ]"
-                                                           //✅✅ Bcoz
+    // console.log(calculateCarPrice2(200, 400, 500, 2000));  // 📍Answer is "[ 500, 2000 ]"
+                                                           //✅✅ above answer is Bcoz "200" got consumed by "val1" &  "400" got consumed by "val2", So, hence "[ 500, 2000 ]"
+
 
 
 
@@ -156,46 +157,56 @@ function loginUserMessage (username) {
 
     // 💎✅💎 How to pass an OBJECT inside a FUNCTION 👇👇
 
+    function handleObject(anyObject) {
+        console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    } 
+
     const user = {
         username: "Rishabh",
         price: 199
     }
 
-    function handleObject(anyObject) {
-        console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
-    }
-
     // handleObject(user);  // 📍Answer is "Username is Rishabh and price is 199"
  
-
-
-
+                 // 🔽🔽
 
     // If we turned PRICE to PRICES 👇👇
+
+    function handleObject0(anyObject) {
+        console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    }
 
     const user2 = {
         username: "Rishabh",
         prices: 199
     }
 
-    function handleObject0(anyObject) {
-        console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
-    }
-
     // handleObject0(user2)  // 📍Answer is "Username is Rishabh and price is undefined [ bcoz "price" got changed to "prices"]
 
 
-    //📍We could also directly pass the OBJECT only 👇👇 [We inserted whole "user" block into it]
-
-    // handleObject({ 
-    //         username: "Rishabh",
-    //         price: 399
-    // })                           // 📍Answer is "Username is Rishabh and price is 399"
 
 
 
 
-    //📍We could also directly pass ARRAY into it 👇👇 
+
+
+
+
+    //💎✅💎directly passing OBJECT inside the FUNCTION 👇👇 [We inserted whole "user" block into it]
+
+    handleObject({ 
+            username: "Ramann",
+            price: 399
+    })                           // 📍Answer is "Username is Ramann and price is 399"
+
+
+
+
+
+
+
+    
+    //💎✅💎We could also directly pass ARRAY into it 👇👇 
 
     const myNewArray = [ 200, 400, 100, 600]
 
