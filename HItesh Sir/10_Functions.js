@@ -79,13 +79,14 @@ function loginUserMessage (username) {
 
 //   loginUserMessage("Rishabh");               // 📍 Nothing will get printed bcoz we havn't said instructed the function to PRINT something
 //   console.log( loginUserMessage("Rishabh"));   // 📍 Answer will be "Rishabh just logged in"
-//   console.log( loginUserMessage(""));       // ✅[only Empty String passed]✅ Answer will be "just logged in" [bcoz passed string argument is empty]
-//   console.log( loginUserMessage());         // ✅[Absolutely no value passed]✅ Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
-    
+//   console.log( loginUserMessage(""));       // ✅[ONLY EMPTY STRING PASSED]✅ Answer will be "just logged in" [bcoz passed string argument is empty]
 
 
+//   console.log( loginUserMessage());         // 🍁✅[ABSOLUTELY NO VALUE PASSED]✅🍁 Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
 
-// 📍👇📍 For preventing the above "undefined just logged in" case we use IF - ELSE statement 👇
+// 🔽🔽 Answer to above is given below 👇👇 🔽🔽
+
+// 💎✅💎 For preventing the above "undefined just logged in" case we use IF - ELSE statement 👇
 
   function loginUserMessage2 (username2) {   
         if (!username2) {     //  here  "!username2" [not -username2] is exactly  same as using "username2 === undefined" 
@@ -93,6 +94,7 @@ function loginUserMessage (username) {
             return   // ud=sing return as a "full-stop" here
         } 
     }
+
 
     // console.log(loginUserMessage2());      // 📍 Answer is  "Please enter a username"
 
