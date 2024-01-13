@@ -115,7 +115,6 @@ for (let i = 0; i < users.length; i++) {
 // console.log(Object.values(tinderUser));  // 📍 Answer is  "[ '123abc', 'Rishabh', false ]"     [Answer which we gets is in the form of ARRAY]
 
 
-
 //💎✅💎ENTRIES-METHOD 👇👇 (makes a Key-value pair an ARRAY)
 // console.log(Object.entries(tinderUser));  // 📍 Answer is  "[ [ 'id', '123abc' ], [ 'name', 'Rishabh' ], [ 'isLoggedIn', false ] ]"
 
@@ -123,8 +122,7 @@ for (let i = 0; i < users.length; i++) {
 
 
 
-
-// FOR -ASKING whether the OBJECT have a particular property or not ?👇👇
+//💎✅💎 ASKING the OBJECT that whether it have a particular kind of property or not ?👇👇
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //  📍 Answer is  "true"
 // console.log(tinderUser.hasOwnProperty('isLoggedOff'));  //  📍 Answer is  "false"
 
