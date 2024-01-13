@@ -2,18 +2,20 @@
 // 💎✅💎  PROBLEM with "var" type variable 👇👇
 
 var c = 300
+let b = 50
 
 if (true) {
     let a = 10
     const b = 20
     var c =20
     d = 40
+    // console.log(`Inner 'b' value is :- ${b}`);      // 📍 Answer is :-  "Inner 'b' value is :- 20"  
 }
 
 // console.log(a);    // 📍Answer will not be printed bcoz "a" is not accesible outside scope
-// console.log(b);    // 📍Answer will not be printed bcoz "b" is not accesible outside scope
-// console.log(c);    // 📍 🚩🚩{Problem with VAR}🚩🚩 Answer will not be "30" [which should not be, as variable "var c" is definded in a SCOPE]
-// console.log(d);    // 📍 🚩🚩{this kind of variable is also a problem}🚩🚩 Answer will not be "40" [which should not be, as this variable is definded in an SCOPE]
+// console.log(b);    // 📍 Answer is :-  "50"  
+// console.log(c);      // 📍 🚩🚩{Problem with VAR}🚩🚩 Answer will not be "30" [which should not be, as variable "var c" is definded in a SCOPE]
+// console.log(d);      // 📍 🚩🚩{this kind of variable is also a problem}🚩🚩 Answer will not be "40" [which should not be, as this variable is definded in an SCOPE]
 
 
 /* 🚩✅🚩NOTE🚩✅🚩 Anything written inside a Scope is 
@@ -25,7 +27,12 @@ is called GLOBAL- SCOPE
 
 
 
-// NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇
+
+
+
+
+
+//💎✅💎 NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇
 
 function one() {
     const username = "Rishabh"
