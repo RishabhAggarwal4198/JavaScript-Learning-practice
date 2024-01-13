@@ -107,6 +107,7 @@ for (let i = 0; i < users.length; i++) {
 
 
 
+
 //🍁🍁💎✅💎🍁🍁  For EXTRACTING - KEYS 👇👇
 // console.log(Object.keys(tinderUser));  // 📍 Answer is  "[ 'id', 'name', 'isLoggedIn' ]"       [Answer which we gets is in the form of ARRAY]
 
@@ -122,6 +123,7 @@ for (let i = 0; i < users.length; i++) {
 
 
 
+
 //💎✅💎 ASKING the OBJECT that whether it have a particular kind of property or not ?👇👇
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //  📍 Answer is  "true"
 // console.log(tinderUser.hasOwnProperty('isLoggedOff'));  //  📍 Answer is  "false"
@@ -130,7 +132,8 @@ for (let i = 0; i < users.length; i++) {
 
 
 
-// DE - STRUCTURING 👇👇
+
+//💎✅💎 DE-STRUCTURING of an ARRAY 👇👇
 
 const course = {
     coursename: "JS Course",
