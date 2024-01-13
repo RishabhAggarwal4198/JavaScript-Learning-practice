@@ -1,5 +1,5 @@
 
-// PROBLEM with "var" type variable 👇👇
+// 💎✅💎  PROBLEM with "var" type variable 👇👇
 
 var c = 300
 
@@ -15,7 +15,8 @@ if (true) {
 // console.log(c);    // 📍 🚩🚩{Problem with VAR}🚩🚩 Answer will not be "30" [which should not be, as variable "var c" is definded in a SCOPE]
 // console.log(d);    // 📍 🚩🚩{this kind of variable is also a problem}🚩🚩 Answer will not be "40" [which should not be, as this variable is definded in an SCOPE]
 
-/*  🚩🚩NOTE🚩🚩 Anything written inside a Scope is 
+
+/* 🚩✅🚩NOTE🚩✅🚩 Anything written inside a Scope is 
 called BLOCK - SCOPE & anything written outside of a scope 
 is called GLOBAL- SCOPE
 + Whatever we write in GLOBAL-SCOPE that value is accessible inside the BLOCK-SCOPE
