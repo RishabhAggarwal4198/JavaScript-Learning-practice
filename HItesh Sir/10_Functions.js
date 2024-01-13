@@ -170,7 +170,7 @@ function loginUserMessage (username) {
  
                  // 🔽🔽
 
-    // If we turned PRICE to PRICES 👇👇
+    //✅✅ If we turned PRICE to PRICES 👇👇
 
     function handleObject0(anyObject) {
         console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
@@ -191,7 +191,6 @@ function loginUserMessage (username) {
 
 
 
-
     //💎✅💎directly passing OBJECT inside the FUNCTION 👇👇 [We inserted whole "user" block into it]
 
     handleObject({ 
@@ -203,10 +202,7 @@ function loginUserMessage (username) {
 
 
 
-
-
-    
-    //💎✅💎We could also directly pass ARRAY into it 👇👇 
+    //💎✅💎We could also directly pass ARRAY into the OBJECT 👇👇 
 
     const myNewArray = [ 200, 400, 100, 600]
 
@@ -215,7 +211,7 @@ function loginUserMessage (username) {
     }
 
 //    console.log( returnSecondValue(myNewArray));   //📍Answer is "400"
-//                         // OR
+//                         //🔽🔽 OR
 //    console.log( returnSecondValue([ 200, 400, 100, 600]));  //📍Answer is "400"        
    
 
