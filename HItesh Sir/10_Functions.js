@@ -79,8 +79,8 @@ function loginUserMessage (username) {
 
 //   loginUserMessage("Rishabh");               // 📍 Nothing will get printed bcoz we havn't said instructed the function to PRINT something
 //   console.log( loginUserMessage("Rishabh"));   // 📍 Answer will be "Rishabh just logged in"
-//   console.log( loginUserMessage(""));       // ✅[No value passed] Answer will be "just logged in" [bcoz passed string argument is empty]
-//   console.log( loginUserMessage());         // 📍 Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
+//   console.log( loginUserMessage(""));       // ✅[only Empty String passed]✅ Answer will be "just logged in" [bcoz passed string argument is empty]
+//   console.log( loginUserMessage());         // ✅[Absolutely no value passed]✅ Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
     
 
 
