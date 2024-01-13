@@ -132,8 +132,8 @@ for (let i = 0; i < users.length; i++) {
 
 
 
-
-//💎✅💎 DE-STRUCTURING of an ARRAY 👇👇
+ 
+//💎✅💎 DE-STRUCTURING of an ARRAY 👇👇  // [@4:25:17]
 
 const course = {
     coursename: "JS Course",
@@ -141,15 +141,14 @@ const course = {
     courseInstructor: "Rishabhhhh"
 }
 
-
-
-const {courseInstructor } = course  
+  
+const {courseInstructor } = course   
 // console.log(courseInstructor);     // 📍 Answer is  "Rishabhhhh"
 
                                   // 🔽🔽 [OR]
 
 const {courseInstructor : instructor} = course // 📍  If "CourseInstructor" is a big name so we could also name it just "instructor"
-// console.log(instructor);  // 📍 Answer is  "Rishabh"
+// console.log(instructor);  // 📍 Answer is  "Rishabhhhh"
 
 
 
