@@ -138,11 +138,16 @@ for (let i = 0; i < users.length; i++) {
 const course = {
     coursename: "JS Course",
     price: "999",
-    courseInstructor: "Rishabh"
+    courseInstructor: "Rishabhhhh"
 }
 
 
-// const {courseInstructor } = course  // 📍
+
+const {courseInstructor } = course  
+// console.log(courseInstructor);     // 📍 Answer is  "Rishabhhhh"
+
+                                  // 🔽🔽 [OR]
+
 const {courseInstructor : instructor} = course // 📍  If "CourseInstructor" is a big name so we could also name it just "instructor"
 // console.log(instructor);  // 📍 Answer is  "Rishabh"
 
