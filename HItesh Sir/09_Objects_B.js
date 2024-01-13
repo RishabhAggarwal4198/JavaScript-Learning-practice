@@ -3,7 +3,7 @@ const tinderUser0 = new Object () // 📍 its an "SINGLETON-OBJECT" 📍
 const tinderUser = {}  // 📍 its an "NON-SINGLETON-OBJECT" 📍
 
 
-// to add more values in an existing object 👇👇
+//💎✅💎to add more values in an existing object 👇👇
 
 tinderUser.id = "123abc"
 tinderUser.name = "Rishabh"
@@ -12,7 +12,7 @@ tinderUser.isLoggedIn = false
 
 
 
-//Object inside an OBJECT 👇👇
+//💎✅💎Nesting inside an OBJECT 👇👇
 
 const regularUser =  {
     email: "some@gmail.com",
@@ -27,22 +27,33 @@ const regularUser =  {
 // console.log(regularUser.fullname);    // 📍 Answer is  "{ userfullname: { firstname: 'Rishabh', lastname: 'Aggarwal' } }"
 
 // console.log(regularUser.fullname.userfullname.lastname);   // 📍 Answer is  "Aggarwal"
+                                                         
+                                                            // ✅✅    
+
+// console.log(regularUser.fullname?.userfullname.lastname);   // ✅✅ Extra SYNTAX ( Like 'fullname'?) which we use in place of LOOPS
 
 
 
 
 
 
-const obj1 = {1: "a", 2: "b"}
+const obj1 = {1: "a", 2: "b"} 
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
-// const obj3 = Object.assign( obj1, obj2)  // 📍 Answer is  "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }"
-const obj3 = Object.assign({}, obj1, obj2)  // 📍 Although results are same as that of the  UPPER-ONE but this Syntax to be followed with "{}" for perfect results [in this "{}" acts as the target & rest "obj1, obj2" as source ]
-// console.log(obj3);   // 📍 Answer is "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }"
+// const obj3 = Object.assign( obj1, obj2)  // 📍 [❌❌ Wrong method of MERGING the OBJECTS] Answer is  "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }"
 
 
-//👇👇 SPREAD-OPERATOR  [ above statement syntax mostly used in the ACTUAL- WORLD ]👇👇
+
+// 💎✅💎 ASSIGN-METHOD 👇👇 [more INDUSTRIALLY used way of MERGING the OBJECTS]
+
+const obj3 = Object.assign({}, obj1, obj2, obj4)  // ✅✅ Although results are same as that of the  UPPER-ONE but this Syntax to be followed with "{}" for perfect results [in this "{}" acts as the target & rest "obj1, obj2, obj4" as source ]
+// console.log(obj3);   // 📍 Answer is "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }}"
+
+
+
+// 💎✅💎 SPREAD-METHOD 👇👇 [another way of MERGING the OBJECTS]
+
 const obj5 = { ...obj1, ...obj2, ...obj4}
 // console.log(obj5);  // 📍 Answer is  "{ '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }"
 
