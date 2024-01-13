@@ -31,9 +31,9 @@ function addTwoNumbers (number1, number2) {
 
 }; 
 
-const result_A = addTwoNumbers(3, 4); 
-console.log(`Result is : ${result_A}`);    // [📍📍 Answer is :- "Result is : undefined" ]
-                                           // ✅✅ above statement is "undefined" bcoz we haven't described any "return" value in the function "addTwoNumbers"
+// const result_A = addTwoNumbers(3, 4); 
+// console.log(`Result is : ${result_A}`);    // [📍📍 Answer is :- "Result is : undefined" ]
+                                           // 🍁✅RETURN✅🍁 above statement is "undefined" bcoz we haven't described any "return" value in the function "addTwoNumbers"
 
 
                          // 🔽🔽
@@ -45,12 +45,12 @@ function addTwoNumbers_0 (number1, number2) {
     // return result
                 // 🔽🔽 (OR)
     return number1 + number2;
-
 }; 
 
-// const result_B = addTwoNumbers_0(3, 4);
+const result_B = addTwoNumbers_0(3, 4);
 // console.log(`The result_B is : ${result_B}`);   // 📍 Answer is  "The result_B is : 7"
-// console.log(result_B);
+// console.log(result_B);                          // 📍 Answer is  "7"
+
 
 
 
@@ -79,7 +79,7 @@ function loginUserMessage (username) {
 
 //   loginUserMessage("Rishabh");               // 📍 Nothing will get printed bcoz we havn't said instructed the function to PRINT something
 //   console.log( loginUserMessage("Rishabh"));   // 📍 Answer will be "Rishabh just logged in"
-//   console.log( loginUserMessage(""));       // 📍 Answer will be "just logged in" [bcoz passed string argument is empty]
+//   console.log( loginUserMessage(""));       // ✅[No value passed] Answer will be "just logged in" [bcoz passed string argument is empty]
 //   console.log( loginUserMessage());         // 📍 Answer will be "undefined just logged in" [bcoz nothing is passed as arguement]
     
 
