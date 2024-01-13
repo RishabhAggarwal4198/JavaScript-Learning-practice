@@ -102,12 +102,12 @@ function loginUserMessage (username) {
                              // 🔽🔽 
 
 
-  function loginUserMessage3 (username3 = "ANYTHING") {      // ✅✅ [ Or to avoid "!username2" condition we could do one thing in place of "username2" we could use "username2 = 'ANYTHING'" (as adefault value to get printed)]
+  function loginUserMessage3 (username3 = "ANYTHING") {       // ✅✅ [ Or to avoid "!username2" condition we could do one thing in place of "username2" we could use "username2 = 'ANYTHING'" (as adefault value to get printed)]
         if (!username3) {                                     // ✅✅ here  "!username3" [not -username3] is exactly  same as using "username3 === undefined" 
             console.log("Please enter a username");
             return                                            // ✅✅using "return" as a "full-stop" here [i.e. no value after it gets executed]
         } 
-        return `${username3} just logged in`
+        return `${username3} just logged in`                  // ✅✅Now this will get printed [bcoz of the "username3" will never get a "No" value]
     }
 
     // console.log(loginUserMessage3());      // 📍 Answer is  "ANYTHING just logged in"
@@ -119,7 +119,9 @@ function loginUserMessage (username) {
 
 
 
-    //💎✅💎 [REST-OPERATORS]  EXAMPLE- FUNCTION -4  👇👇
+
+
+    //💎✅💎 [REST-OPERATORS] FUNCTION  EXAMPLE-4  👇👇 [mostly used in E-COMMERCE (shopping cart) apps]
 
     function calculateCarPrice (...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
         return num1
@@ -127,7 +129,7 @@ function loginUserMessage (username) {
 
     // console.log(calculateCarPrice(200, 400, 500, 2000));   // 📍Answer is "[ 200, 400, 500, 2000 ]"   { we received an ARRAY }
 
-
+    
     //📍👇📍INTERVIEW Questions Case 📍👇📍
 
     function calculateCarPrice2 (val1, val2, ...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
