@@ -121,7 +121,11 @@ function loginUserMessage (username) {
 
 
 
-    //💎✅💎 [REST-OPERATORS] FUNCTION  EXAMPLE-4  👇👇 [mostly used in E-COMMERCE (shopping cart) apps]
+
+
+    //💎✅💎 [REST-OPERATOR] FUNCTION  EXAMPLE-4  👇👇 [mostly used in E-COMMERCE (shopping cart) apps]
+    // (🍁🍁🍁🍁 "REST-OPERATORS" basically allows us to add MULTIPLE values in a FUNCTION at the same time)
+    
 
     function calculateCarPrice (...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
         return num1
@@ -129,7 +133,7 @@ function loginUserMessage (username) {
 
     // console.log(calculateCarPrice(200, 400, 500, 2000));   // 📍Answer is "[ 200, 400, 500, 2000 ]"   { we received an ARRAY }
 
-    
+
     //📍👇📍INTERVIEW Questions Case 📍👇📍
 
     function calculateCarPrice2 (val1, val2, ...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
