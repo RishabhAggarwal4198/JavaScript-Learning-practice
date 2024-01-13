@@ -91,14 +91,27 @@ function loginUserMessage (username) {
   function loginUserMessage2 (username2) {   
         if (!username2) {                       // ✅✅ here  "!username2" [not -username2] is exactly  same as using "username2 === undefined" 
             console.log("Please enter a username");
-            return                              // ✅✅ud=sing return as a "full-stop" here
+            return                              // ✅✅using "return" as a "full-stop" here [i.e. no value after it gets executed]
+        } 
+        return `${username2} just logged in`    // ✅✅Nothing will get printed after the above return
+    }
+
+    // console.log(loginUserMessage2());      // 📍 Answer is  "Please enter a username"
+  
+
+                             // 🔽🔽 
+
+
+  function loginUserMessage3 (username3 = "ANYTHING") {      // ✅✅ [ Or to avoid "!username2" condition we could do one thing in place of "username2" we could use "username2 = 'ANYTHING'" (as adefault value to get printed)]
+        if (!username3) {                                     // ✅✅ here  "!username3" [not -username3] is exactly  same as using "username3 === undefined" 
+            console.log("Please enter a username");
+            return                                            // ✅✅using "return" as a "full-stop" here [i.e. no value after it gets executed]
         } 
     }
 
+    // console.log(loginUserMessage3());      // 📍 Answer is  "Please enter a username"
 
-    // console.log(loginUserMessage2());      // 📍 Answer is  "Please enter a username"
 
-    // 📍 Or to avoid "!username2" condition we could do one thing in place of "username2" we could use "username2 = 'ANYTHING'"
 
 
 
