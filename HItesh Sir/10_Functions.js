@@ -107,9 +107,10 @@ function loginUserMessage (username) {
             console.log("Please enter a username");
             return                                            // ✅✅using "return" as a "full-stop" here [i.e. no value after it gets executed]
         } 
+        return `${username3} just logged in`
     }
 
-    // console.log(loginUserMessage3());      // 📍 Answer is  "Please enter a username"
+    // console.log(loginUserMessage3());      // 📍 Answer is  "ANYTHING just logged in"
 
 
 
@@ -118,7 +119,7 @@ function loginUserMessage (username) {
 
 
 
-    // [REST-OPERATORS]  EXAMPLE- FUNCTION -4  👇👇
+    //💎✅💎 [REST-OPERATORS]  EXAMPLE- FUNCTION -4  👇👇
 
     function calculateCarPrice (...num1) {  // Three dots (...) for FLEXIBILITY that more than one arguments can be passed into the fucntion
         return num1
