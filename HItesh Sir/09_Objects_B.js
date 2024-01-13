@@ -106,17 +106,20 @@ for (let i = 0; i < users.length; i++) {
 
 
 
-//💎✅💎 For EXTRACTING - KEYS 👇👇
+
+//🍁🍁💎✅💎🍁🍁  For EXTRACTING - KEYS 👇👇
 // console.log(Object.keys(tinderUser));  // 📍 Answer is  "[ 'id', 'name', 'isLoggedIn' ]"       [Answer which we gets is in the form of ARRAY]
 
 
-
-
-//💎✅💎For EXTRACTING - VALUES 👇👇
+//🍁🍁💎✅💎🍁🍁 For EXTRACTING - VALUES 👇👇
 // console.log(Object.values(tinderUser));  // 📍 Answer is  "[ '123abc', 'Rishabh', false ]"     [Answer which we gets is in the form of ARRAY]
 
-// ENTRIES (makes a Key-value pair an ARRAY) 👇👇
+
+
+//💎✅💎ENTRIES-METHOD 👇👇 (makes a Key-value pair an ARRAY)
 // console.log(Object.entries(tinderUser));  // 📍 Answer is  "[ [ 'id', '123abc' ], [ 'name', 'Rishabh' ], [ 'isLoggedIn', false ] ]"
+
+
 
 
 
