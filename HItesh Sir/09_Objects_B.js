@@ -69,23 +69,23 @@ const obj5 = { ...obj1, ...obj2, ...obj4}
 const users = [
     {
         id: 1,
-        email: "r@gmail.com"
+        email: "First@gmail.com"
     },
     {
         id: 2,
-        email: "r@gmail.com"
+        email: "Second@gmail.com"
     },
     {
         id: 3,
-        email: "r@gmail.com"
+        email: "Third@gmail.com"
     },
     {
         id: 4,
-        email: "r@gmail.com"
+        email: "Fourth@gmail.com"
     },
     {
         id: 4,
-        email: "r@gmail.com"
+        email: "Fifth@gmail.com"
     },
 ]
 
@@ -94,12 +94,25 @@ const users = [
 let output = users[2].id
 // console.log(output);  // 📍 Answer is  "3"
 
+                    // 🔽🔽 (OR by applying LOOP)
+
+for (let i = 0; i < users.length; i++) {
+    // console.log(`Hello!! This person's id is '${users[i].id}' & his Email id is '${users[i].email}' `);
+}
+
+
+
 // console.log(tinderUser);  // 📍 Answer is  "{ id: '123abc', name: 'Rishabh', isLoggedIn: false }"
 
-// For EXTRACTING - KEYS 👇👇
+
+
+//💎✅💎 For EXTRACTING - KEYS 👇👇
 // console.log(Object.keys(tinderUser));  // 📍 Answer is  "[ 'id', 'name', 'isLoggedIn' ]"       [Answer which we gets is in the form of ARRAY]
 
-// For EXTRACTING - VALUES 👇👇
+
+
+
+//💎✅💎For EXTRACTING - VALUES 👇👇
 // console.log(Object.values(tinderUser));  // 📍 Answer is  "[ '123abc', 'Rishabh', false ]"     [Answer which we gets is in the form of ARRAY]
 
 // ENTRIES (makes a Key-value pair an ARRAY) 👇👇
@@ -127,7 +140,7 @@ const course = {
 
 // const {courseInstructor } = course  // 📍
 const {courseInstructor : instructor} = course // 📍  If "CourseInstructor" is a big name so we could also name it just "instructor"
-console.log(instructor);  // 📍 Answer is  "Rishabh"
+// console.log(instructor);  // 📍 Answer is  "Rishabh"
 
 
 
