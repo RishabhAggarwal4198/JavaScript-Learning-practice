@@ -1,6 +1,7 @@
 
 
-// EXAMPLE- FUNCTION -1  👇👇
+
+//💎✅💎FUNCTION 👇👇 EXAMPLE-1  
 
 function sayMyName () {
     console.log("R");
@@ -12,20 +13,29 @@ function sayMyName () {
     console.log("H");
 }
 
-// sayMyName();   //  📍 Answer is  "R  I  S  H  A  B  H" 
+// sayMyName      //✅✅[must watch @4:38:48] This is function's REFRENCE (i.e. function is present at that place)
+// sayMyName();   //✅✅ This is function's EXECUTION
+
+// sayMyName();     //[📍📍 Answer is :-  "R I S H A B H"  ] 
 
 
 
 
 
-// EXAMPLE- FUNCTION -2a  👇👇
+
+//💎✅💎FUNCTION 👇👇 EXAMPLE-2a
 
 function addTwoNumbers (number1, number2) {
-     return number1 + number2;
+     
+    // let result = number1 + number2
+    // return result
+                // 🔽🔽 (OR)
+    return number1 + number2;
+
 }; 
 
 const result = addTwoNumbers(3, 4);
-// console.log(result);   // 📍 Answer is  "7"
+// console.log(`The result is : ${result}`);   // 📍 Answer is  "The result is : 7"
 
 
 
