@@ -57,3 +57,7 @@ function game() {
        defined that sometime due to the pollution from Golbal scope so for removing the 
        variables or declarations from global scope we use IIFE
 */
+
+
+
+
