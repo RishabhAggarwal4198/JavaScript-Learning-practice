@@ -53,24 +53,24 @@ function one() {
 
     // one()  // 📍No answer will print bcoz function "one()" is only having "two()" to execute
 
-      
+
 
 
 
     
 
-   //💎✅💎 SCOPE in "IF - ELSE" statements 👇👇
+//💎✅💎  "IF - ELSE" statements also follows SCOPE rules 👇👇
 
 
 if (true) {
     const username = "Rishabh"
     if(username === "Rishabh") {
         const website = " youtube"
-        // console.log(username+website);  // 📍Answer will be "Rishabh youtube"
+        // console.log(username+website);    // 📍Answer will be "Rishabh youtube"
     }
-    // console.log(website);   // 📍Answer will be ERROR bcoz "variable website" is limited to above SCOPE
+    // console.log(website);     // ❌📍❌Answer will be ERROR bcoz "const website" is not accessible outside of the above SCOPE
 }
-// console.log(username);   // 📍Answer will be ERROR bcoz "variable username" is limited to above SCOPE
+// console.log(username);     // ❌📍❌ Answer will be ERROR bcoz "const username" is not accessible outside of it's  SCOPE
 
 
 
@@ -80,27 +80,33 @@ if (true) {
 
 
 
-//📍📍+++++++ HOISTING ++++++ 👇👇
+
+//💎✅💎🍁🍁🍁🍁 HOISTING 🍁🍁🍁🍁💎✅💎 👇👇
 
 
-// 📍Method - 1 [of declaring a function] 👇
+//✅✅METHOD - 1 [of declaring a function] 👇
 
-// console.log(addone(5));      // 📍📍📍Answer will be "6" [bcoz below it we have just declared a simple function]
+// console.log(addone(5));      // 📍📍📍Answer will be "6" [bcoz below it we have just declared a simple function (& not holded it inside a function)]
 
 function addone (num) {
     return num + 1
 }
 
 
+ 
 
 
-// 📍Method - 2 [of declaring a function] 👇
+// ✅✅METHOD - 2 [of declaring a function] 👇
 
-// console.log(addTwo(5))        // 📍Answer will be "ERROR"  [bcoz below it, we have not only declared that function but we have also holded it inside a "VARIABLE"]
+// console.log(addTwo(5))        // ❌📍❌ Answer will be "ERROR"  [bcoz below it, we have not only declared that function but we have also holded it inside a "VARIABLE"]
 
 const addTwo = function (num) {
     return num + 2
 }
+
+// console.log(addTwo(5));
+ 
+
 
 
 
@@ -111,7 +117,7 @@ function addThree (num) {
     return finalOutput;
 }
 
-addThree(5)         // 📍Answer will be "6"  
+// addThree(5)         // 📍Answer will be "6"  
 
 
 

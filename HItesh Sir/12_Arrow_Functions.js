@@ -4,6 +4,7 @@ const user = {
     price: 99,
 
     welcomeMessage: function() {
+        
             // console.log(`${this.username}, welcome to website`);  // 📍Answer is "Rishabh, welcome to website"
 
             // console.log(this);   //  📍Answer is :- 
@@ -16,6 +17,7 @@ const user = {
     }
 }
 
+ 
 // user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
 
 // user.username = "sam Altman"

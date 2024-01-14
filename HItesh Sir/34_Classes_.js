@@ -15,8 +15,8 @@ class User {
     changeUserName () {
         return `${this.username.toUpperCase()}`
     }
-
 }
+
 
 // const idenity = new User ("Ramanuj", "ramanuj@gmail.com", "4567")
 
