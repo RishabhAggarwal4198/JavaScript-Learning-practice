@@ -33,7 +33,7 @@ user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
 
 
 //🍁🍁 👇👇
-console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect came empty bcoz]
+// console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect came empty bcoz]
 
 
 
@@ -47,7 +47,7 @@ console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect 
 
 
 
-// 💎✅💎"this" keyword 👇👇
+// 💎✅💎"this" keyword (with "NORMAL-FUNCTION" )👇👇
 
 function play () {
     console.log(this);
@@ -70,50 +70,73 @@ const play2 = function () {
 
 
 
-// 💎✅💎 ARROW-FUNCTION (prerequisites) 👇👇 [@ 5:42:00]
+// 💎✅💎 "this" keyword (with "ARROW-FUNCTION" ) 👇👇 [@ 5:42:00]
 
 const play3 =  () =>  {
     let username = "Rishabh"
-    console.log(this);
+    console.log(this.username);
 }
 
 // play3() // 📍 Answer is "undefined" [when "console.log(this.username)"]
 
-//  play3() // 📍 Answer is "{}" [when "console.log(this)"]
+                    // 🔽🔽
 
-
-
-// ARROW-FUNCTION >> basic Syntax 👇
-const addTwo = (num1, num2) => {
-    return num1 + num2                              // 💎 Is called EXPLICIT - RETURN
+const play4 =  () =>  {
+    let username = "Rishabh"
+    console.log(this);
 }
+
+// play4() // 📍 Answer is "{}" [when "console.log(this)"]
+  
+
+
+
+
+
+
+
+
+
+
+
+//💎✅💎 ARROW-FUNCTION (basic Syntax) 👇👇
+
+
+const addTwo = (num1, num2) => {
+    return num1 + num2                              // ✅✅ Is called EXPLICIT - RETURN 
+}                                                   // ✅✅(i.e. we need to write "return" keyword, bcoz our function is wrapped in CURLY braces & is in more than 1 line)
+
 // console.log(addTwo(3,4));                       // 📍 Answer is "7" 
 
-
-                   // OR (another way of writing same function)
+                   //🔽🔽 OR (another way of writing same function)
 
 // implicit- return Syntax 👇
-const addTwo2 = (num1, num2) =>  (num1 + num2)      // 💎 Is called IMPLICIT - RETURN
+const addTwo2 = (num1, num2) =>  (num1 + num2)      // ✅✅ Is called IMPLICIT - RETURN (i.e. no need to write "return" keyword, bcoz our function is not wrapped in CURLY braces & is in just 1 line)
 
 // console.log(addTwo2(3,4));                      // 📍 Answer is "7" 
 
+                    //🔽🔽 OR (another way of writing same IMPLICIT function)
 
-                    // OR
-
-const addTwo3 = (num1, num2) =>  num1 + num2         // 💎 Is also called IMPLICIT - RETURN
+const addTwo3 = (num1, num2) => num1 + num2      
 
 // console.log(addTwo2(3,4));                        // 📍 Answer is "7" 
 
 
 /*  🚩🚩NOTE(for above)🚩🚩 
-✅ If we Gona use "{}"  CURLY brackets around  "num1 + num2" then use of "return" keyword before it is must
-✅ If we Gona use "()" parenthesis around  "num1 + num2" then use of "return" keyword before it is not
+✅✅ If we Gona use "()" parenthesis around  "num1 + num2" then use of "return" keyword before it is not
+✅✅ If we Gona use "{}"  CURLY brackets around  "num1 + num2" then use of "return" keyword before it is must
 */
 
 
 
 
 
+
+// 💎✅💎 REACT- syntax👇👇
+
+const addTwo4 = (num1, num2) => ({username: "Raghavvv"})
+
+//✅✅ in the above sentence  "{username: "Raghavvv"}"  is an OBJECT stored in the parenthesis "()" of  const addTwo4
 
 
 
