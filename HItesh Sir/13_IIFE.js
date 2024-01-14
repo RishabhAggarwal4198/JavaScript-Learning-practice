@@ -50,10 +50,10 @@ function game() {
 
 
 /*  🚩🚩NOTE(for above)🚩🚩 
-✅  in this ()() [first parathesis "()" is where we gonna write the definition 
-    of the function & the second parathesis "()" is its "execution call"]
+✅✅  in this ()() [first parathesis "()" is where we gonna write the definition 
+       of the function & the second parathesis "()" is its "execution call"]
 
-✅  IIFEs are not only defined as fuction which immediatley gets executed but also
-     defined that sometime due to the pollution from Golbal scope so for removing the 
-     variables or declarations from global scope we use IIFE
+✅✅  IIFEs are not only defined as fuction which immediatley gets executed but also
+       defined that sometime due to the pollution from Golbal scope so for removing the 
+       variables or declarations from global scope we use IIFE
 */
