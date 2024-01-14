@@ -4,10 +4,10 @@ const user = {
     price: 99,
 
     welcomeMessage: function() {
-        
-            // console.log(`${this.username}, welcome to website`);  // 📍Answer is "Rishabh, welcome to website"
 
-            // console.log(this);   //  📍Answer is :- 
+            // console.log(`${this.username}, welcome to website`);  // 📍Answer is "Rishabh, welcome to website"
+                                                                     //✅✅ "this" keyword is used to refer the current context
+            // console.log(this);   // ✅📍Answer is :- 
                                     // {
                                     //     username: 'Rishabh',
                                     //     price: 99,
@@ -18,10 +18,19 @@ const user = {
 }
 
  
+
+
+// user.welcomeMessage       // 📍Answer is NOTHING HAPPENED
+
 // user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
 
+
+
+//✅ IF SOMEONEONE 👇(changed the context like below)
 // user.username = "sam Altman"
 // user.welcomeMessage()    // 📍Answer is  "sam Altman, welcome to website"
+
+
 
 // console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect came empty bcoz]
 
