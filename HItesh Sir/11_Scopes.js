@@ -35,11 +35,11 @@ is called GLOBAL- SCOPE
 
 
 
-//💎✅💎 NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇
+//💎✅💎 NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇 [@5:20:57]
 
 function one() {
     const username = "Rishabh"
-
+ 
     function two () {
         const website = "youtube"
         console.log(username);
@@ -47,18 +47,19 @@ function one() {
 
     // console.log(website);   // 📍Answer will not be "error" bcoz it won't get executed as variable "website" is inside the above scope
                                 // ✅ it will show "Error" at this point only, so the "two()" will never get executed
-
+    
     // two()
 }
 
     // one()  // 📍No answer will print bcoz function "one()" is only having "two()" to execute
 
+      
 
 
 
     
 
-//📍 SCOPE EXAMPLE WITH "IF - ELSE" STATEMENTS 👇👇
+   //💎✅💎 SCOPE in "IF - ELSE" statements 👇👇
 
 
 if (true) {
