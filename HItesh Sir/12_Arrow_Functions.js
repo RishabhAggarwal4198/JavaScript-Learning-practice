@@ -132,12 +132,21 @@ const addTwo3 = (num1, num2) => num1 + num2
 
 
 
-// 💎✅💎 REACT- syntax👇👇
+// 💎✅💎 syntax for writing function in REACT👇👇
 
 const addTwo4 = (num1, num2) => ({username: "Raghavvv"})
 
 //✅✅ in the above sentence  "{username: "Raghavvv"}"  is an OBJECT stored in the parenthesis "()" of  const addTwo4
 
+
+
+
+// 💎 EXTRA - syntaxes 👇
+
+const myArray = [2, 5, 3, 7, 8]
+
+// myArray.forEach(function() { } )
+// myArray.forEach(() => {})
 
 
 
