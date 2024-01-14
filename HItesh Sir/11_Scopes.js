@@ -34,6 +34,7 @@ is called GLOBAL- SCOPE
 
 
 
+
 //💎✅💎 NESTED-SCOPE [SCOPE EXAMPLE WITH "FUNCTION inside a FUNCTION"] 👇👇
 
 function one() {
@@ -45,6 +46,7 @@ function one() {
     }
 
     // console.log(website);   // 📍Answer will not be "error" bcoz it won't get executed as variable "website" is inside the above scope
+                                // ✅ it will show "Error" at this point only, so the "two()" will never get executed
 
     // two()
 }
