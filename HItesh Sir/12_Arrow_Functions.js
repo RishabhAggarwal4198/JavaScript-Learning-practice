@@ -32,26 +32,31 @@ user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
 
 
 
-// console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect came empty bcoz]
+//🍁🍁 👇👇
+console.log(this);    // 📍Answer is "{}"  [it came "{}" i.e. current contect came empty bcoz]
+
+
+
+
+// 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+// In BROWSER the biggest "global object" is "Window" object (& that's why we are able to capture all events of "WINDOW" like "click", "form-submit" etc.)
+// 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
 
 
 
 
 
 
-
-// ARROW-FUNCTION (preliminary) 👇👇
+// 💎✅💎"this" keyword 👇👇
 
 function play () {
     console.log(this);
 }
  
-// play()            // 📍There will be lots of values in the "Answer" [run it to see that]
+// play()              // ✅✅✅There will be lots of values in the "Answer" [run it to see that]
+// console.log(this);  // 📍Answer is  "{}"
 
-
-      // 🔽
-      // 🔽
-
+      // 🔽🔽
 
 const play2 = function () {
     let username = "Rishabh"
@@ -63,7 +68,8 @@ const play2 = function () {
 
 
 
-//💎💎 ARROW-FUNCTION (prerequisites) 👇👇 [@ 5:42:00]
+
+// 💎✅💎 ARROW-FUNCTION (prerequisites) 👇👇 [@ 5:42:00]
 
 const play3 =  () =>  {
     let username = "Rishabh"
