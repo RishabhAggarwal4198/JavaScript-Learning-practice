@@ -22,7 +22,7 @@ const user = {
 
 // user.welcomeMessage       // 📍Answer is NOTHING HAPPENED
 
-// user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
+user.welcomeMessage()    // 📍Answer is "Rishabh, welcome to website"
 
 
 
