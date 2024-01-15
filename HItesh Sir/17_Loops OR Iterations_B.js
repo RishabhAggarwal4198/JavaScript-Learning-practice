@@ -220,7 +220,7 @@ for (const key1 in map1) {
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 coding.forEach(function (valll){
-    console.log(valll);                         // 📍📍 Answer is :-                                                                    
+    // console.log(valll);                      // 📍📍 Answer is :-                                                                    
 })                                              // js
                                                 // ruby
                                                 // java
@@ -228,30 +228,53 @@ coding.forEach(function (valll){
                                                 // cpp
 
 
-             // OR (🔽 by using arrow function)
+
+             // OR (🔽🔽 by using arrow function)
+
 
 coding.forEach((valll) => {
-    // console.log(valll);                       // 📍 RUN statement for result
-})
+    // console.log(valll);                      // 📍📍 Answer is :-
+})                                              // js
+                                                // ruby
+                                                // java
+                                                // python
+                                                // cpp
 
-            // OR (🔽 defining the function first & then passing in FOR-EACH loop)
+
+            // OR (🔽🔽 passing a FUNCTION as an arguement inside the FOR-EACH loop of an ARRAY)
 
 
 function printMe(valll) {
-    // console.log(valll);
+    console.log(valll);
 }
+ 
+// coding.forEach(printMe)                      // 📍📍 Answer is :-
+                                                // js
+                                                // ruby
+                                                // java
+                                                // python
+                                                // cpp
 
-// coding.forEach(printMe)                     // 📍 RUN statement for result
 
-
-
-
+                // 🔽🔽 (✅FOR-EACH has access to more than one parameters)
 
 
 
 coding.forEach((itemmm, indexxxx, arrrr) => {
-    // console.log(itemmm, indexxxx, arrrr);           // ✅📍✅ RUN statement for result
-})
+    // console.log(itemmm, indexxxx, arrrr);       // 📍📍 Answer is :-
+})                                                 // js 0 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+                                                   // ruby 1 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+                                                   // java 2 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+                                                   // python 3 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+                                                   // cpp 4 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+
+
+
+
+
+
+
+
 
 
 
