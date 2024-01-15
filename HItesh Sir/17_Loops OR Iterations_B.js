@@ -278,9 +278,7 @@ coding.forEach((itemmm, indexxxx, arrrr) => {
 
 
 
-
-
-//✅💎✅ accessing OBJECTS inside an ARRAY (very common & 📍IMPORTANT📍)   [watch @8:21:14]
+//✅💎✅ accessing OBJECT values saved inside an ARRAY (very common scenario & 📍IMPORTANT📍)   [watch @8:21:14]
 
 const myCoding = [
     {
