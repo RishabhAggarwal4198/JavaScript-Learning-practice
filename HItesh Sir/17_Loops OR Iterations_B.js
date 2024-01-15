@@ -131,8 +131,8 @@ const myObject1 = {
         swift: 'swift by apple'
 }
 
-for (const key in myObject1) {
-    console.log(`${key} shortcut is for ${myObject1[key]}`);   // 📍 Answer is :-
+for (const keee in myObject1) {
+    // console.log(`${keee} shortcut is for ${myObject1[keee]}`);   // 📍 Answer is :-
  }                                                              //   js shortcut is for javascript
                                                                 //   cpp shortcut is for C++
                                                                 //   rb shortcut is for ruby
@@ -143,13 +143,28 @@ for (const key in myObject1) {
 
 
 
+                                                                
+ // 🍁🍁🍁🍁🍁 Very Very Important statement @8:07:47 🍁🍁🍁🍁🍁                                                             
+ // ARRAYS are also a kind of object but are having default KEYS in numbers starting from 0,1,2,3,4.....
+ // while in an OBJECT we could put the KEY of our choice (but still their INDEX value is same based on 0,1,2,3,4.... )
+ // 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+
+
+
+
+
+ 
 //💎✅💎 FOR-IN loop for printing an ARRAY 👇   [watch @8:07:14]
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key0 in programming) {
-    // console.log(key0);
-    // console.log(programming[key0]);
+    // console.log(key0);                          // [📍📍 Answer is :-  "0 1 2 3 4"  ] 
+                                                   //✅ Gave us back the KEYS i.e. in case of an ARRAY, the INDEX-NUMBER is the key (i.e. 0: "js", 1: "rb", 2:"py", 3:"java", 4:"cpp" )
+                                   
+    console.log(programming[key0]);                // [📍📍 Answer is :-  "js rb  py java cpp"  ]
+                                                   //✅ Gave us back the KEYS i.e. in case of an ARRAY, the INDEX-NUMBER is the key (i.e. 0: "js", 1: "rb", 2:"py", 3:"java", 4:"cpp" )
+
     // console.log(`${key0} shortcut is for ${programming[key0]}`);     // 📍 RUN statement for result
 }
 
