@@ -56,7 +56,7 @@ for (let i = 0; i <= 10; i++) {
 // 💎💎 EXAMPLE - 3 👇  [implementing FOR-LOOP inside FOR-LOOP]   [watch @7:27:58]
 
 for (let i = 0; i <= 10; i++) {
-    // console.log(`Outer loop value: ${i}`);
+    // console.log(`Outer loop value: ${i}`);                                        // 📍Run the loop for answer
     for (let j = 0; j <= 10; j++){
         // console.log(`Inner loop value is ${j} and Outer loop value is ${i}`);    // 📍Run the loop for answer
     }                                                
@@ -64,11 +64,12 @@ for (let i = 0; i <= 10; i++) {
 
                     // 🔽🔽 (Mathematical Calculation)
                 
+
 for (let i = 0; i <= 10; i++) {
-    // console.log(`Outer loop value: ${i}`);
+    // console.log(`Outer loop value: ${i}`);         // 📍Run the loop for answer
     for (let j = 0; j <= 10; j++){
         //  console.log(i + '*' + 'j' + '=' + i*j);
-                        // OR
+                    // 🔽OR (much easier syntax)
         //  console.log(`${i} * ${j} = ${i*j}`);        // 📍Run the loop for answer
     }                                               
 }
@@ -76,17 +77,16 @@ for (let i = 0; i <= 10; i++) {
  
 
 
+ 
 
-
-
-//💎 EXAMPLE - 5 👇
+//💎💎 EXAMPLE - 4 👇 [implementing FOR-LOOP on an ARRAY]   
 
 let myArray = ["flash", "batman", "superman"]
-// console.log(myArray.length);          // 📍Answer is "3" 
+console.log(myArray.length);          // 📍Answer is "3" 
 
-for (let index = 0; index <= myArray.length; index++) {
+for (let index = 0; index < myArray.length; index++) {    //✅✅[we have used "index" lesser then "myArray.length" bcoz a LOOP always iterates on the INDEX-VALUE ]
     const element = myArray[index];
-    // console.log(element);
+    console.log(element);
 }
 
 
