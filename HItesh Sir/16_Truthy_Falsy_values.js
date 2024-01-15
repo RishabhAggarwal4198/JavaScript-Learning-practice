@@ -1,14 +1,24 @@
+
+
+// 💎✅💎THRUTHY & FALSY values  👇👇
+//It is basically the "values" to which Computer itself intreprets as TRUTH or FALSE values
+ 
+
+
+// 💎✅💎EXAMPLE (Truthy & Falsy values) 👇👇
+
+
 // const userEmail = "rishabh@aggarwal"   // [watch @ 6:53:08]  
 
 // if (userEmail) {
 //     console.log("Gpt user email");
 // } else {
-//     console.log("Don't have user email");
-// }                                          // 📍📍 Answer is "Gpt user email" [So this is called TRUTHY-VALUE where there was a value inside const & sytem automatically assumed it to be true]
+//     console.log("Don't have user email");  // 📍📍 Answer is "Gpt user email" 
+// }                                          // ✅✅ [So this is called TRUTHY-VALUE where there was a value inside const & computer automatically assumed it to be true]
 
-            // OR 🔽
+            // OR 🔽🔽
 
-// const userEmail0 = ""  
+// const userEmail0 = ""         //💎 (Empty String)
 
 // if (userEmail0) {
 //     console.log("Gpt user email");
@@ -16,9 +26,9 @@
 //     console.log("Don't have user email");
 // }                                           // 📍📍 Answer is "Don't have user email"  [So this is called FALSY-VALUE where an "" an empty STRING automatically got assumed by system as a FALSE value ]
 
-            // OR 🔽
+            // OR 🔽🔽
 
-// const userEmail0 = []    
+// const userEmail0 = []         //💎 (Empty Array)
 
 // if (userEmail0) {
 //     console.log("Gpt user email");
@@ -28,7 +38,12 @@
 
 
 
-//💎💎 WAY TO CHECK an "empty-ARRAY"  👇👇
+
+
+
+
+
+//💎✅💎 WAY TO CHECK an "empty-ARRAY"  👇👇
 
 // const userEmail1 = []
 // if (userEmail1.length === 0) {
@@ -36,6 +51,8 @@
 // }else {
 //     console.log("Array is NOT empty");
 // }                                               // 📍📍 Answer is  "Array is empty"
+
+
 
 
 
@@ -53,17 +70,15 @@
 
 
 
-//💎💎 FALSY - VALUES 👇👇
-
+//🍁💎🍁💎🍁 FALSY - VALUES 👇👇
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
 
    
 
 
-//💎💎 TRUTHY - VALUES 👇👇
-
-// "0", "False", " ", [], {}, function(){}           // 📍📍 Where "function(){}" is an empty function
-
+//🍁💎🍁💎🍁 TRUTHY - VALUES 👇👇 [watch @6:57:16]
+// "0", "False", " ", [], {}, function(){}              // ✅✅ Whatever is wrapped inside a " " it becomes a STRING value & that's how "0", "False", " " are TRUTHY-VALUES
+                                                        // ✅✅ Where "function(){}" is an empty function
 
 
 
