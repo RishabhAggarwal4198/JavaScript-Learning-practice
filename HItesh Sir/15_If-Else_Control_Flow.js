@@ -135,6 +135,7 @@ const balance = 1000;
 
 
 
+
 //💎✅💎 NESTING in IF- ELSE statements 👇👇
 
 
@@ -161,10 +162,31 @@ else  {
 }     
 
 
-
         // 🔽🔽🔽🔽
 
 
+// EXAMPLE  (NESTING in IF- ELSE ) 👇👇
+
+let cocoon = 25
+
+if (cocoon <= 10 ){
+    console.log(`Value of coco is ${cocoon} & is vey very lesser than 40`);
+} 
+else if (cocoon <= 20) {
+    console.log(`Value of coco is ${cocoon} & is vey lesser than 40`);
+} 
+else if (cocoon <= 30) {
+    console.log(`Value of coco is ${cocoon} & is a little lesser than 40`);
+} 
+else if (cocoon <= 40) {
+    console.log(`Value of coco is ${cocoon} & is exactly 40`);
+} 
+else  {
+    console.log(`Value of coco is ${cocoon} & is greater than 40`);
+}
+
+
+        // 🔽🔽🔽🔽
 
 
 //💎✅💎 USE OF "&&" SIGN 👇👇 [all conditions must be tru in case of '&&']
@@ -226,13 +248,12 @@ const loggedInFromEmail = true
 
 //💎✅💎✅💎 "SWITCH"  STATEMENTS 👇👇 (Shorter way of writing multiple IF - ELSE)
 
-//  Basic - Syntax 👇
+
+// ✅Basic - Syntax 👇
     
 //   switch (key) {
 //         case value:
-            
 //             break;
-
 //         default:
 //             break;
 //     }
@@ -242,7 +263,9 @@ const loggedInFromEmail = true
 
 
 
-  // EXAMPLE - 1 👇
+
+
+  //🍁SWITCH-CASE (EXAMPLE - 1 )👇
 
     const month = 3;
 
@@ -265,15 +288,16 @@ const loggedInFromEmail = true
     
         default:
             // console.log("No Match found");
-            break;
-    }           //  📍 Answer is "month is March"  
+            break;           //  📍 Answer is "month is March"  
+    }           
+
 
 
 
 
 
     
-    // EXAMPLE - 2 (In Case of value like "STRING") 👇
+    // /🍁SWITCH-CASE (EXAMPLE - 2 )👇 (In Case of "STRING" based input value) 
 
     // const month = "July";
 
@@ -309,3 +333,5 @@ const loggedInFromEmail = true
 
 */
         
+
+
