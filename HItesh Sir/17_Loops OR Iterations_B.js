@@ -15,12 +15,10 @@ for (const num of arr) {
     // console.log(num);                   //📍 Answer is "1 2 3 4 5"
 }
 
-
-
-
-//💎 Applying FOR-OF LOOP on STRINGS 👇
+        // 🔽🔽 [Applying FOR-OF LOOP on a STRING ]
 
 const greetings = "Hello World!"
+
 for (const greet of greetings ) {
     // console.log(`Each char is ${greet}`);   //📍 Print the statement to see the Answer
 }
@@ -31,23 +29,78 @@ for (const greet of greetings ) {
 
 
 
-// 💎📍💎 MAPS  [ MAPs is an object which holdes the KEY-VALUE pair ]   [watch @7:56:49]
 
-// 💎 Example-1
+
+
+
+
+// 💎✅💎 MAPS 👇👇 [ MAPs is an object which saves the unique KEY-VALUE pair ]   
+                      // ✅ By unique we means that the values are no "re-Writable" ]
+                      // [✅watch @7:56:49]
+
+// 💎 Example-1👇
+
 const map = new Map()
-map.set('IN', "India")
+map.set('IN' , "India")
 map.set('USA', "United States of America")
-map.set('Fr', "france")
-// console.log(map);
+map.set( 'Fr', "france")
 
-// 📍 Applying "FOR-OF" Loop MAP 
-for(const [key, value] of map) {
-    // console.log(key, ':-', value);   // 📍 RUN statement for result
-}
+// console.log(map);    //📍Answer is :-  
+                        // Map(3) {
+                        //     'IN' => 'India',
+                        //     'USA' => 'United States of America',
+                        //     'Fr' => 'france'
+                        // }
+
+
+        // 🔽🔽 (trying to re-write the value of 'IN')
+
+
+const map0 = new Map()
+map0.set('IN' , "India")
+map0.set('USA', "United States of America")
+map0.set( 'Fr', "france")
+map0.set('IN', "Bharat" )      // ✅ [inserting new value of 'IN]
+
+// console.log(map0);          //📍Answer is :-  
+                            // Map(3) {
+                            //     'IN' => 'Bharat',
+                            //     'USA' => 'United States of America',
+                            //     'Fr' => 'france'
+                            // } 
+                            //  [✅No 're-writing' happened (bcoz it saves UNIQUE-VALUE only)]
 
 
 
-// 💎 Example-2  [tryig to apply MAP on OBJECTs]
+
+
+// 💎💎 Applying "FOR-OF" Loop on MAP 👇
+
+for(const key of map) {
+    // console.log(key);   // 📍 Answer is :- 
+}                          // [ 'IN', 'India' ]
+                           // [ 'USA', 'United States of America' ]
+                           // [ 'Fr', 'france' ]
+                           
+                           // ❌ We got an ARRAY, 
+                           // But we wanted to have separates values, So👇
+           
+           // 🔽🔽
+            
+
+for(const [key, val] of map) {
+    // console.log(key, ':-', val);    // 📍 Answer is :- 
+}                                      // IN :- India
+                                       // USA :- United States of America
+                                       // Fr :- france
+
+
+
+
+
+
+
+// 💎💎 Example-2 👇 [tryig to apply MAP on OBJECTs]
 
 const myObject = {
     'game1' : 'NFS',
@@ -55,10 +108,12 @@ const myObject = {
 }
 
 // for(const [key, value] of myObject) {
-//     console.log(key, ':-', value);     
-// }                                        // 📍This SYNTAX-STRUCTURE not working over here
-
+//     console.log(key, ':-', value);        // Answer is "Error"
+// }                                        // ✅This SYNTAX-STRUCTURE not working over here
+                                            // ✅ So basically we can't iterate an OBJECT through MAP using this FOR-OF loop syntax
 // ❌--❌--❌--❌--❌--❌--❌--❌--❌
+
+
 
 
 
