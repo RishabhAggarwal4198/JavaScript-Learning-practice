@@ -1,4 +1,4 @@
-// 💎✅💎 FOR-OF  LOOP  👇👇
+
 
 //✅ its very common to put or store STRINGS in ARRAYS like [" ", " ", " "]
 //✅  Similarly it is also common to put or store OBJECTS in ARRAYS [{ }, { }, { }]
@@ -7,9 +7,10 @@
 
 
 
-// 💎📍💎  FOR-OF Loop
+// 💎✅💎 FOR-OF LOOP  👇👇
 
 const arr = [1, 2, 3, 4, 5 ]
+
 for (const num of arr) {
     // console.log(num);                   //📍 Answer is "1 2 3 4 5"
 }
@@ -17,7 +18,7 @@ for (const num of arr) {
 
 
 
-//💎 Applying on STRINGS 👇
+//💎 Applying FOR-OF LOOP on STRINGS 👇
 
 const greetings = "Hello World!"
 for (const greet of greetings ) {
