@@ -32,7 +32,7 @@ for JAVASCRIPT :-
 
 
 >>>> Javascript in 1 shot in Hindi | part 1 (By Hitesh Sir)
-♦️♦️start watching from  { @5:18:02  }♦️♦️
+♦️♦️start watching from  { @6:14:15  }♦️♦️
 
 + [ watch @50:47 ] CODE readibility is the priority
 
@@ -136,6 +136,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 💎💎 👇👇📍📍✅✅ ❌❌ 🔽🔽 🍁🍁👆👆
 
 // 💎✅💎  👇👇
+// 🍁🔽🔽  👇👇
 //[📍📍 Answer is :-  " "  ] 
 // 🔽🔽
 

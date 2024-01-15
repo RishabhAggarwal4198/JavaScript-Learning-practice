@@ -23,3 +23,10 @@
 //  (J.E.C) JavaScript Execution Context 
 
 
+
+
+
+//💎✅💎 CALL STACK 👇👇  Watch[@6:14:33 - @6:21:28 ]
+
+
+//✅✅LIFO concept :- Last In First Out
