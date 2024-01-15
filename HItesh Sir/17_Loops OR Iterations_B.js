@@ -165,19 +165,20 @@ for (const key0 in programming) {
     // console.log(programming[key0]);                // [📍📍 Answer is :-  "js rb  py java cpp"  ]
                                                    //✅ Gave us back the KEYS i.e. in case of an ARRAY, the INDEX-NUMBER is the key (i.e. 0: "js", 1: "rb", 2:"py", 3:"java", 4:"cpp" )
 
-    console.log(`${key0} shortcut is for ${programming[key0]}`);     // 📍📍 Answer is :- 
- }                                                                   // 0 shortcut is for js
-                                                                    // 1 shortcut is for rb
-                                                                    // 2 shortcut is for py
-                                                                    // 3 shortcut is for java
-                                                                    // 4 shortcut is for cpp
+    // console.log(`${key0} shortcut is for ${programming[key0]}`);    // 📍📍 Answer is :- 
+ }                                                                    // 0 shortcut is for js
+                                                                      // 1 shortcut is for rb
+                                                                      // 2 shortcut is for py
+                                                                      // 3 shortcut is for java
+                                                                      // 4 shortcut is for cpp
 
 
 
 
 
 
-//💎📍💎printing MAP using FOR-IN loop
+
+//💎✅💎printing MAP using FOR-IN loop👇
 
 const map1 = new Map()
 map.set('IN', "India")
@@ -185,8 +186,9 @@ map.set('USA', "United States of America")
 map.set('Fr', "france")
 
 for (const key1 in map1) {
-//    console.log(key1);
-}                                      // ❌❌❌❌Nothing will get printed  [bcoz this map is not Iterable], so FOR-IN loop can't be applied to MAP
+//    console.log(key1);      // ❌❌❌❌Nothing will get printed  [bcoz this map is not Iterable], 
+}                             //so FOR-IN loop can't be applied to MAP
+                                   
 
 
 
@@ -199,13 +201,32 @@ for (const key1 in map1) {
 
 
 
-// 💎💎 FOR-EACH LOOP 👇👇   [ watch @8:11:28 & @8:14:35 ]
+
+// 💎✅💎 FOR-EACH LOOP 👇👇 [watch @8:11:28 & @8:14:35]  
+                             // [✅ FOR-EACH loop is by default injected into ARRAYs prototype properties]
+
+
+// 💎 basic Syntax 👇
+
+// array.forEach( function (el) {
+//     console.log(al);
+// });
+                
+
+
+
+//💎💎Example - 1 👇👇
 
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 coding.forEach(function (valll){
-    // console.log(valll);                          // 📍 RUN statement for result
-})
+    console.log(valll);                         // 📍📍 Answer is :-                                                                    
+})                                              // js
+                                                // ruby
+                                                // java
+                                                // python
+                                                // cpp
+
 
              // OR (🔽 by using arrow function)
 
