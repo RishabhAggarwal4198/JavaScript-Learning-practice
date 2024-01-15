@@ -109,13 +109,24 @@ if (score > 100) {
 
 const balance = 1000;
 
-//  📍 Instead of using {} we could also directly do this 👇 [But try to do this for one liner "console.log" only ]
-// if (balance2 > 500) console.log("tested ");
+//✅✅ Instead of using {} we could also directly do this 👇 [But try to do this for one liner "console.log" only ]
+// if (balance > 500) console.log("tested ");     //🍁✅✅🍁 It is called an IMPLICIT-SCOPE (i.e. it is limited upto only one line)
 
-                           //OR
+                           //🔽🔽 OR
 
-//  📍 We can add more "console.log" statements as well by using comma (,) but writing like this 👇 is very UNPROFESSIONAL
-// if (balance2 > 500) console.log("tested "), console.log("tested 2");  // ❌❌❌❌ Dont do this PROFESSIONALLY
+//✅✅ We can add more "console.log" statements as well by using comma (,) but writing like this 👇 is very UNPROFESSIONAL
+// if (balance > 500) console.log("tested "), console.log("tested 2");  // ❌❌❌❌ Dont do this PROFESSIONALLY (very immature & WRONG way of writing code)
+
+                           //🔽🔽 OR
+
+//✅✅ We can add more "console.log" statements as well by using comma (,) but writing like this 👇 is very UNPROFESSIONAL
+// if (balance > 500) console.log("tested"), 
+// console.log("tested 2");                     // ❌❌❌❌ Dont do this PROFESSIONALLY (very  immature & WRONG way of writing code)
+
+
+
+
+
 
 
 
