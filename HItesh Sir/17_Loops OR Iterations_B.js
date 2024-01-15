@@ -313,9 +313,37 @@ const coding2 = ["apple", "oranges", "bananas", "pineapples"]
 
 const values = coding2.forEach( (item) => {
     console.log(item);
+   
+})
+console.log(values);        // 📍📍 Answer is :-     
+                            // javascript
+                            // Java
+                            // Python
+                            // apple
+                            // oranges
+                            // bananas
+                            // pineapples
+                            // undefined   //✅  "undefined"  
+                                           //✅ So may be we have to manually "return" value from it ??
+
+         // 🔽🔽
+
+const coding3 = ["apple", "oranges", "bananas", "pineapples"]
+
+const values3 = coding3.forEach( (item) => {
+    console.log(item);
     return item
 })
-// console.log(values);          //📍 Answer is "undefined" [so conclusion is that FOR-EACH LOOP don't returns any value]
+console.log(values3);       // 📍📍 Answer is :-     
+                            // javascript
+                            // Java
+                            // Python
+                            // apple
+                            // oranges
+                            // bananas
+                            // pineapples
+                            // undefined   //✅ Still "undefined" that  means that FOR-EACH LOOP don't returns any value by itself
+                                        
 
 
 
@@ -324,19 +352,23 @@ const values = coding2.forEach( (item) => {
 
 
 
-// 💎💎 FILTER - OPERATION 👇👇 [it returns the value unlike FOR-EACH LOOP]
+
+
+
+
+//  💎✅💎 FILTER - OPERATION 👇👇 [✅ it RETURNS the value (unlike FOR-EACH LOOP)]
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-const newNums = myNums.filter( (ankk) =>  ankk > 4 )    // [we want all "ankk" values which are greater than 4]
-// console.log(newNums);          //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
+const newNums = myNums.filter( (ankk) =>  ankk > 4 )    //✅ we want all "ankk" values which are greater than 4 (AS WE HAVE TO PROVIDe condition IN "FILTER-OPERATION") [@8:29:21]
+// console.log(newNums);                      //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
 
                         //OR🔽🔽 
 
 const newNums0 = myNums.filter( (ankk) =>  {
-    return ankk > 4               // We have to use "return" as we have used "{}"
-})
-// console.log(newNums);          //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
+    return ankk > 4                                  //✅ We have to use "return" as we have used "{}" (i.e. started a scope)
+})                                                   //🍁✅🍁 NOTE:-  If we defines the FILTER-condition in an SCOPE "{}" then we have to use "return" keyword, if we define the FILTER-condition in a single line, then we NO-NEED to use any "return" keyword (it will itself return it) 
+// console.log(newNums);                      //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
 
 
                         //OR🔽🔽 (little lengthy Way)
