@@ -296,8 +296,6 @@ const myCoding = [
 ]
   
 
-
-
 // 💎💎 Applying FOR-EACH loop 👇👇
 
 myCoding.forEach( (item) => {
@@ -308,15 +306,15 @@ myCoding.forEach( (item) => {
 
 
 
-  
+
 //💎💎 To check whether FOR-EACH LOOP returns any value or not ?  👇👇
 
-// const coding2 = ["apple", "oranges", "bananas", "pineapples"]
+const coding2 = ["apple", "oranges", "bananas", "pineapples"]
 
-// const values = coding2.forEach( (item) => {
-//     console.log(item);
-//     return item
-// })
+const values = coding2.forEach( (item) => {
+    console.log(item);
+    return item
+})
 // console.log(values);          //📍 Answer is "undefined" [so conclusion is that FOR-EACH LOOP don't returns any value]
 
 
