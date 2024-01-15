@@ -105,6 +105,7 @@ if (score > 100) {
 
 
 
+
 // 💎✅💎 SHORT-HAND NOTATION 👇👇
 
 const balance = 1000;
@@ -131,36 +132,37 @@ const balance = 1000;
 
 
 
-// IF- ELSE  STATEMENTS 👇👇
-
-
-// const balance2 = 900
-
-
-// if (balance2 < 400 ) {
-//     console.log("Balance less than 400");
-// } 
-// else if (balance2 < 500) {
-//     console.log("Balance less than 500");
-// }
-// else if (balance2 < 600) {
-//     console.log("Balance less than 600");
-// }
-// else if (balance2 < 700) {
-//     console.log("Balance less than 700");
-// }
-// else if (balance2 < 800) {
-//     console.log("Balance less than 800");
-// }
-// else  {
-//     console.log("Balance is less than 900 ");
-// }      //  📍 Answer is  "Balance is less than 900" 
 
 
 
+//💎✅💎 NESTING in IF- ELSE statements 👇👇
+
+
+const balance2 = 900
+
+
+if (balance2 < 400 ) {
+    console.log("Balance less than 400");
+} 
+else if (balance2 < 500) {
+    console.log("Balance less than 500");
+}
+else if (balance2 < 600) {
+    console.log("Balance less than 600");
+}
+else if (balance2 < 700) {
+    console.log("Balance less than 700");
+}
+else if (balance2 < 800) {
+    console.log("Balance less than 800");
+}
+else  {
+    // console.log("Balance is less than 1000 but more than 800");   //  📍 Answer is  "Balance is less than 1000" 
+}     
 
 
 
+        // 🔽🔽🔽🔽
 
 
 const isUserLoggedIn = true
@@ -169,17 +171,23 @@ const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
 
-// USE OF "&&" SIGN 👇👇 [all conditions must be true]
+//💎✅💎 USE OF "&&" SIGN 👇👇 [all conditions must be tru in case of '&&']
 
 // if (isUserLoggedIn && debitCard) {
-//         console.log("Allow to buy course");
-// }         //  📍 Answer is  "Allow to buy course" [bcoz all condition are true]
+//         console.log("Allow to buy course");     //  📍 Answer is  "Allow to buy course" [bcoz all condition are true]
+// }       
 
-                    // OR
+                    // 🔽🔽 
 
 // if (isUserLoggedIn && debitCard && 2==3) {
-//         console.log("Allow to buy course");
-// }          //  📍 Nothing got printed [2 != 3]
+//         console.log("Allow to buy course");     //  📍 Nothing got printed  as "2 != 3"
+// }        
+
+                    // 🔽🔽 
+
+// if (isUserLoggedIn && debitCard && 2==2) {
+//         console.log("Allow to buy course");     //  📍 Answer is  "Allow to buy course"
+// }        
 
 
 
