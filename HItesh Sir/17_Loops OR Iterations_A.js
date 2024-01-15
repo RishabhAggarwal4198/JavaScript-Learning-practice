@@ -1,6 +1,11 @@
-// 💎💎 FOR - LOOP 👇👇
 
-// Syntax 👇
+// 💎✅💎LOOPs💎✅💎 (also called ITERATIONS)
+
+
+
+// 💎✅💎 FOR - LOOP 👇👇
+
+// basic- Syntax 👇
 
 // for (let index = 0; index < array.length; index++) {
 //     const element = array[index]; 
@@ -8,29 +13,30 @@
 
 
 
-
-//💎EXAMPLE - 1 👇
+//💎💎EXAMPLE - 1  (for - Loop) 👇    [✅how it gets executed watch @7:19:44]
 
 // for (let index = 0; index <= 10; index++) {
 //     const element = index;
-//     console.log(element);                         // 📍 Answer is  "0 1 2 3 4 5 6 7 8 9 10"
-    
+//     console.log(element);                         // 📍 Answer is  "0 1 2 3 4 5 6 7 8 9 10" 
 // }
 
+          // 🔽🔽
 
 // for (let i = 0; i <= 10; i++) {
 //     const element = i;
 //     console.log(element);                        // 📍 Answer is  "0 1 2 3 4 5 6 7 8 9 10"
 // }
 
-// console.log(element);                            // 📍 Answer is  "ReferenceError: element is not defined"  [bcoz variable element is defined uptill above scope only]
+// console.log(element);                            // 📍 Answer is  "ReferenceError: element is not defined"  
+                                                    // ✅✅ bcoz variable element is defined uptill above scope only]
 
 
 
 
 
 
-//💎 EXAMPLE - 2 👇 [implementing IF-ELSE inside FOR-LOOP]
+
+//💎💎 EXAMPLE - 2 (for - Loop)👇 [implementing IF-ELSE inside FOR-LOOP]
 
 for (let i = 0; i <= 10; i++) {
     const element = i;
@@ -38,7 +44,7 @@ for (let i = 0; i <= 10; i++) {
         // console.log("5 is the best number");
     }
 
-    // console.log(element);                          // 📍 Answer is  "0 1 2 3 4 5 is the best number 5 6 7 8 9 10"
+    // console.log(element);                      // 📍 Answer is  "0 1 2 3 4 5 is the best number 5 6 7 8 9 10"
 }
 
 
@@ -47,20 +53,17 @@ for (let i = 0; i <= 10; i++) {
 
 
 
-
-// 💎 EXAMPLE - 3 👇  [implementing FOR-LOOP inside FOR-LOOP]   [watch @7:27:58]
+// 💎💎 EXAMPLE - 3 👇  [implementing FOR-LOOP inside FOR-LOOP]   [watch @7:27:58]
 
 for (let i = 0; i <= 10; i++) {
     // console.log(`Outer loop value: ${i}`);
     for (let j = 0; j <= 10; j++){
-        // console.log(`Inner loop value ${j} and inner loop ${i}`);
-    }                                                // 📍Run the loop for answer
-}
+        // console.log(`Inner loop value is ${j} and Outer loop value is ${i}`);    // 📍Run the loop for answer
+    }                                                
+}       
 
-
-
-//💎 EXAMPLE - 4 👇
-
+                    // 🔽🔽 (Mathematical Calculation)
+                
 for (let i = 0; i <= 10; i++) {
     // console.log(`Outer loop value: ${i}`);
     for (let j = 0; j <= 10; j++){
