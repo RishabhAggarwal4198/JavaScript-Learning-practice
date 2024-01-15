@@ -192,17 +192,23 @@ const loggedInFromEmail = true
 
 
 
-// USE OF "||" SIGN👇👇 [only one condition needs to be true]
+
+
+
+
+
+
+//💎✅💎  USE OF "||" SIGN 👇👇 [only one condition needs to be true in case of '||']
 
 // if (loggedInFromGoogle ||  loggedInFromEmail) {
-//     console.log("User logged in");
-// }             //  📍 Answer is "User logged in" [bcoz one condition  "loggedInFromEmail" is true]
+//     console.log("User logged in");           //  📍 Answer is "User logged in" [bcoz one condition  "loggedInFromEmail" is true]
+// }            
 
-                     // OR
+                     // 🔽🔽  
 
 // if (loggedInFromGoogle ||  loggedInFromEmail || 2==3 ) {
-// console.log("User logged in");
-// }             //  📍 Answer is still "User logged in"  [bcoz one of the three mentioned condition  "loggedInFromEmail" is true ]
+// console.log("User logged in");               //  📍 Answer is still "User logged in"  [bcoz one of the three mentioned condition  "loggedInFromEmail" is true ]
+// }            
 
 
 
