@@ -165,13 +165,12 @@ else  {
         // 🔽🔽🔽🔽
 
 
-const isUserLoggedIn = true
-const debitCard = true
-const loggedInFromGoogle = false
-const loggedInFromEmail = true
 
 
 //💎✅💎 USE OF "&&" SIGN 👇👇 [all conditions must be tru in case of '&&']
+
+const isUserLoggedIn = true
+const debitCard = true
 
 // if (isUserLoggedIn && debitCard) {
 //         console.log("Allow to buy course");     //  📍 Answer is  "Allow to buy course" [bcoz all condition are true]
@@ -200,6 +199,9 @@ const loggedInFromEmail = true
 
 //💎✅💎  USE OF "||" SIGN 👇👇 [only one condition needs to be true in case of '||']
 
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
 // if (loggedInFromGoogle ||  loggedInFromEmail) {
 //     console.log("User logged in");           //  📍 Answer is "User logged in" [bcoz one condition  "loggedInFromEmail" is true]
 // }            
@@ -215,12 +217,16 @@ const loggedInFromEmail = true
 
 
 
+
   
 
 
-// "SWITCH"  STATEMENTS (Shorter way of writing multiple IF - ELSE)👇👇
 
-  // Basic - Syntax 👇
+
+
+//💎✅💎✅💎 "SWITCH"  STATEMENTS 👇👇 (Shorter way of writing multiple IF - ELSE)
+
+//  Basic - Syntax 👇
     
 //   switch (key) {
 //         case value:
@@ -235,7 +241,8 @@ const loggedInFromEmail = true
 
 
 
-    // EXAMPLE - 1 👇
+
+  // EXAMPLE - 1 👇
 
     const month = 3;
 
