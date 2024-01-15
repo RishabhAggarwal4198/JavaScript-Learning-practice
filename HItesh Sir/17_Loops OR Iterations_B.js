@@ -278,7 +278,7 @@ coding.forEach((itemmm, indexxxx, arrrr) => {
 
 
 
-//✅💎✅ accessing OBJECT values saved inside an ARRAY (very common scenario & 📍IMPORTANT📍)   [watch @8:21:14]
+//✅💎✅💎✅ accessing OBJECT values inside an ARRAY (very common scenario & 📍IMPORTANT📍)   [watch @8:21:14]
 
 const myCoding = [
     {
@@ -296,8 +296,12 @@ const myCoding = [
 ]
   
 
+
+
+// 💎💎 Applying FOR-EACH loop 👇👇
+
 myCoding.forEach( (item) => {
-    // console.log(item.languageName);      // 📍 Answer is "javascript  Java  Python"
+    console.log(item.languageName);      // 📍 Answer is "javascript  Java  Python"
 })
 
 
