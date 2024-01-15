@@ -98,8 +98,6 @@ for(const [key, val] of map) {
 
 
 
-
-
 // 💎💎 Example-2 👇 [tryig to apply MAP on OBJECTs]
 
 const myObject = {
@@ -121,7 +119,10 @@ const myObject = {
 
 
 
-//💎📍💎 printing OBJECT using FOR-IN loop
+ 
+
+
+//💎✅💎 FOR-IN loop for printing an OBJECT  👇
 
 const myObject1 = {
         js: 'javascript',
@@ -131,16 +132,18 @@ const myObject1 = {
 }
 
 for (const key in myObject1) {
-    // console.log(`${key} shortcut is for ${myObject1[key]}`);   // 📍 RUN statement for result
-}
+    console.log(`${key} shortcut is for ${myObject1[key]}`);   // 📍 Answer is :-
+ }                                                              //   js shortcut is for javascript
+                                                                //   cpp shortcut is for C++
+                                                                //   rb shortcut is for ruby
+                                                                //  swift shortcut is for swift by apple
 
 
 
 
 
 
-
-//💎📍💎printing ARRAY using FOR-IN loop   [watch @8:07:14]
+//💎✅💎 FOR-IN loop for printing an ARRAY 👇   [watch @8:07:14]
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
