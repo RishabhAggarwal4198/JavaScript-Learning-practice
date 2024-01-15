@@ -1,49 +1,111 @@
-// CONDITION Operators:-
+
+//💎✅💎CONTROL-FLOW 💎✅💎 (or LOGIC FLOW)
+/* This means that at all the code should run on the conditional basis,
+   i.e. at one time, only one part of code should run
+*/
+
+
+
+
+
+
+
+
+// 💎✅💎 CONDITION Operators 👇👇
 // <, >, <=, >=, ==, !=, ===, !==
 
+// console.log(2 != "2");     //📍 Answer is "false"
+// console.log(2 == "2");     //📍 Answer is "true"
 
-// BASIC-syntax  👇👇 
+// console.log(2 !== "2");    //📍 Answer is "true"
+// console.log(2 === "2");    //📍 Answer is "false"
 
-if(true) {      // if "true" only then gonna executed, if "false" nothing is going to get executed
+// console.log(3 != 2);       //📍 Answer is "true"
+
+
+
+
+
+
+
+
+
+//💎✅💎 BASIC-syntax  👇👇 
+
+if(true) {      //✅if "true" only then this code gonna execute
 
 }
 
+   // 🔽🔽
+
+if(false) {     //✅if "false" then the code from line 25 - 27 will not get executed
+
+}
+
+
+
+
+
+
+
+
+
+//✅✅ EXAMPLE -1  👇👇
 
 // const isUserLoggedIn = true;
 const temperature = 41;
 
 
-if(temperature === 41) {       // 📍 in place of "temperature < 50"
+if(temperature < 50) {
+    // console.log(`Temperature is "${temperature}" & is less than 50`);    // 📍 Answer is "Temperature is "41" & is less than 50"
+}
+// console.log(`Temperature is "${temperature}" & is greater than 50`);      // 📍 Answer is "Temperature is "41" & is greater than 50"
+
+               // 🔽🔽
+
+if(temperature === 41) {       // ✅ in place of "temperature < 50"
 //     console.log("Temperature is less than 50 Degrees");
 } else {
-//     console.log("Temperature is greater than 50 Degrees");
-}     // 📍 Answer will be "Temperature is less than 50 Degrees"
+//     console.log("Temperature is greater than 50 Degrees");    // 📍 Answer will be "Temperature is less than 50 Degrees"
+}    
 
-
+             // 🔽🔽
 
 if(temperature === 40) {       
-//     console.log("Temperature is less than 50 Degrees");
+    // console.log("Temperature is less than 50 Degrees");      // 📍Nothing will get executed
 }else {
-//     console.log("Temperature is greater than 50 Degrees");
-}     // 📍 Answer will be "Temperature is greater than 50 Degrees"
+    // console.log("Temperature is greater than 50 Degrees");        // 📍 Answer will be "Temperature is greater than 50 Degrees"
+}  
 
 
 
+
+
+
+
+
+
+
+
+//✅✅ EXAMPLE - 2  👇👇
 
 const score = 200
 
 if (score > 100) {
     let power = "power to fly"
-    // console.log(`User power: ${power}`);
-}                                        //  📍 Answer will be "TUser power: power to fly"
+    // console.log(`User power: ${power}`);    //  📍 Answer will be "TUser power: power to fly"
+}                                       
 
-// console.log(`User power: ${power}`);     //  📍 Answer will be "ERROR" [bcoz variable "power" can't be accessed out of its scope]
-
-
+// console.log(`User power: ${power}`);     //  ✅ Answer will be "ERROR" [bcoz variable "power" can't be accessed out of its scope]
 
 
 
-// SHORT-HAND NOTATION 👇👇
+
+
+
+
+
+// 💎✅💎 SHORT-HAND NOTATION 👇👇
 
 const balance = 1000;
 
@@ -154,23 +216,23 @@ const loggedInFromEmail = true
 
     switch (month) {
         case 1:
-            console.log("month is January");
+            // console.log("month is January");
             break;
 
         case 2:
-            console.log("month is February");
+            // console.log("month is February");
             break;
 
         case 3:
-            console.log("month is March");
+            // console.log("month is March");
             break;
     
         case 4:
-            console.log("month is April");
+            // console.log("month is April");
             break;
     
         default:
-            console.log("No Match found");
+            // console.log("No Match found");
             break;
     }           //  📍 Answer is "month is March"  
 
