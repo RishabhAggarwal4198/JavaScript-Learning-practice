@@ -55,14 +55,17 @@
 
 
 
+
 //💎✅💎 WAY TO CHECK an "empty-ARRAY"  👇👇
 
 // const userEmail1 = []
+
 // if (userEmail1.length === 0) {
 //     console.log("Array is empty");
 // }else {
-//     console.log("Array is NOT empty");
-// }                                               // 📍📍 Answer is  "Array is empty"
+//     console.log("Array is NOT empty");           // 📍📍 Answer is  "Array is empty"
+// }                                             
+
 
 
 
@@ -72,32 +75,20 @@
 //💎✅💎 WAY TO CHECK an "empty-OBJECT"  👇👇
 
 // const emptyObj = {}
-// if (Object.keys(emptyObj).length === 0) {
+// if (Object.keys(emptyObj).length === 0) {       //✅✅ "(Object.keys(emptyObj)" gonna give us an ARRAY that's why we have used ".length" property on it
 //     console.log("Object is empty");    
 // }else {
-//     console.log("Object is NOT empty");
-// }                                               // 📍📍 Answer is  "Object is empty"
+//     console.log("Object is NOT empty");         // 📍📍 Answer is  "Object is empty"
+// }                                             
     
     
     
     
     
-    
-    
 
 
 
-
-
-
-
-
-
-
-
-
-
-// EXAMPLE - 1 👇👇
+//💎✅💎 EXAMPLE - 1 👇👇
 
 const userEmail2 = []
 
@@ -113,7 +104,8 @@ const userEmail2 = []
 
 
 
-// EXAMPLE - 2 👇👇
+
+//💎✅💎 EXAMPLE - 2 👇👇
 
 // const emptyObj = {}
 
@@ -126,7 +118,8 @@ const userEmail2 = []
 
 
 
-// INTERVIEW - QUESTIONS 👇👇  // 💎📍💎 V. IMPORTANT  [@7:01:57]
+
+//🍁🍁💎🍁🍁 INTERVIEW - QUESTIONS 👇👇  // 💎📍💎 V. IMPORTANT  [@7:01:57]
 
 // console.log(false == 0);    //  📍 Answer is  "true"
 
@@ -140,7 +133,8 @@ const userEmail2 = []
 
 
 
-// 💎💎 NULLISH COALESCING OPERATOR (??) : null defined 👇👇  [@ 7:04:00 ]
+
+// 💎✅💎 NULLISH COALESCING OPERATOR (??) : null defined 👇👇  [@ 7:04:00 ]
 
 /* ✅ what this operator basically does is the safety check of the "null" value i.e.
        sometime it might happen that when we could recive a value from other source
@@ -150,6 +144,7 @@ const userEmail2 = []
        value automatically gets assigned in such unfavourable conditions 
  */
 
+        
 let val1 =  5 ?? 10
 // console.log(val1);     //  📍 Answer is  "5"
 
@@ -160,22 +155,34 @@ let val3 = undefined ?? 15
 // console.log(val3);     //  📍 Answer is  "15"
 
 let val4 = null ?? 10 ?? 20
-// console.log(val4);     //  📍 Answer is  "10"  [the first numerical value from left got assigned]
+// console.log(val4);     //  📍 Answer is  "10"  [✅✅the first numerical value from left got assigned]
 
 
 
 
 
 
-//💎💎 TERNIARY OPERATORS 👇👇  [✅ It's basically a kind of One-Liner "IF-ELSE" statement]
+
+
+
+
+
+//💎✅💎 TERNIARY OPERATORS 👇👇  [✅ It's basically a kind of One-Liner "IF-ELSE" statement]
 
 // condition ? true : false
 
 // Example 👇
 
-const iceTeaPrice = 100 
-iceTeaPrice <= 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");
-// 📍 Answer is  "Price is more than 80"
+const iceTeaPrice = 100
+
+iceTeaPrice <= 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");     // 📍 Answer is  "Price is more than 80"
+
+iceTeaPrice == 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");     // 📍 Answer is  "Price is more than 80"
+
+iceTeaPrice === 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");     // 📍 Answer is  "Price is more than 80"
+
+iceTeaPrice !== 80 ?  console.log("Price is less than 80 "): console.log("Price is more than 80");     // 📍 Answer is  "Price is less than 80"   [✅ although this statement is wrong as value of "iceTeaPrice = 100" ]
+
 
 
 
