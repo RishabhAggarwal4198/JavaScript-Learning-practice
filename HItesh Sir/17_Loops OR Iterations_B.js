@@ -371,10 +371,10 @@ const newNums0 = myNums.filter( (ankk) =>  {
 // console.log(newNums);                      //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
 
 
-                        //OR🔽🔽 (little lengthy Way)
+                        //OR🔽🔽 [a little lengthy Way (by using FOR-EACH loop)]
 
 
-//📍📍 by using FOR-EACH (in above condition in place of FILTER operation) [watch @8:33:08]
+//💎💎 by using FOR-EACH (in above condition in place of FILTER operation) [watch @8:33:08]
 
 const myNums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
