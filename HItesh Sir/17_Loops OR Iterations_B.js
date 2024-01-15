@@ -153,7 +153,7 @@ for (const keee in myObject1) {
 
 
 
- 
+
 //💎✅💎 FOR-IN loop for printing an ARRAY 👇   [watch @8:07:14]
 
 const programming = ["js", "rb", "py", "java", "cpp"]
@@ -162,11 +162,15 @@ for (const key0 in programming) {
     // console.log(key0);                          // [📍📍 Answer is :-  "0 1 2 3 4"  ] 
                                                    //✅ Gave us back the KEYS i.e. in case of an ARRAY, the INDEX-NUMBER is the key (i.e. 0: "js", 1: "rb", 2:"py", 3:"java", 4:"cpp" )
                                    
-    console.log(programming[key0]);                // [📍📍 Answer is :-  "js rb  py java cpp"  ]
+    // console.log(programming[key0]);                // [📍📍 Answer is :-  "js rb  py java cpp"  ]
                                                    //✅ Gave us back the KEYS i.e. in case of an ARRAY, the INDEX-NUMBER is the key (i.e. 0: "js", 1: "rb", 2:"py", 3:"java", 4:"cpp" )
 
-    // console.log(`${key0} shortcut is for ${programming[key0]}`);     // 📍 RUN statement for result
-}
+    console.log(`${key0} shortcut is for ${programming[key0]}`);     // 📍📍 Answer is :- 
+ }                                                                   // 0 shortcut is for js
+                                                                    // 1 shortcut is for rb
+                                                                    // 2 shortcut is for py
+                                                                    // 3 shortcut is for java
+                                                                    // 4 shortcut is for cpp
 
 
 
