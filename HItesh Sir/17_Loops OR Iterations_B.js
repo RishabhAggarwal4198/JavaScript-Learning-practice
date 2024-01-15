@@ -1,7 +1,8 @@
-//  FOR-OF  LOOP   
+// 💎✅💎 FOR-OF  LOOP  👇👇
 
-// its very common to put or store STRINGS in ARRAYS like [" ", " ", " "]
-//  Similarly it is also common to put or store OBJECTS in ARRAYS [{ }, { }, { }]
+//✅ its very common to put or store STRINGS in ARRAYS like [" ", " ", " "]
+//✅  Similarly it is also common to put or store OBJECTS in ARRAYS [{ }, { }, { }]
+
 
 
 
