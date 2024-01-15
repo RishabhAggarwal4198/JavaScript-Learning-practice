@@ -41,6 +41,18 @@
 
 
 
+//🍁💎🍁💎🍁 FALSY - VALUES 👇👇
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
+
+
+
+//🍁💎🍁💎🍁 TRUTHY - VALUES 👇👇 [watch @6:57:16]
+// "0", "False", " ", [], {}, function(){}              // ✅✅ Whatever is wrapped inside a " " it becomes a STRING value & that's how "0", "False", " " are TRUTHY-VALUES
+// ✅✅ Where "function(){}" is an empty function
+
+
+
+
 
 
 //💎✅💎 WAY TO CHECK an "empty-ARRAY"  👇👇
@@ -57,28 +69,28 @@
 
 
 
-//💎💎 WAY TO CHECK an "empty-OBJECT"  👇👇
+//💎✅💎 WAY TO CHECK an "empty-OBJECT"  👇👇
 
 // const emptyObj = {}
 // if (Object.keys(emptyObj).length === 0) {
-//     console.log("Object is empty");
+//     console.log("Object is empty");    
 // }else {
 //     console.log("Object is NOT empty");
 // }                                               // 📍📍 Answer is  "Object is empty"
+    
+    
+    
+    
+    
+    
+    
 
 
 
 
 
-//🍁💎🍁💎🍁 FALSY - VALUES 👇👇
-// false, 0, -0, BigInt 0n, "", null, undefined, NaN
-
-   
 
 
-//🍁💎🍁💎🍁 TRUTHY - VALUES 👇👇 [watch @6:57:16]
-// "0", "False", " ", [], {}, function(){}              // ✅✅ Whatever is wrapped inside a " " it becomes a STRING value & that's how "0", "False", " " are TRUTHY-VALUES
-                                                        // ✅✅ Where "function(){}" is an empty function
 
 
 
