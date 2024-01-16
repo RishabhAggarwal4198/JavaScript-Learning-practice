@@ -12,7 +12,12 @@ const newNums = myNumers.map( (num) => {return num + 10})
 
 
 
-// 💎✅💎 CHAINING 👇👇 (applying MAP more than once & then applying FILTER on it)
+
+
+
+
+
+// 💎✅💎 CHAINING 👇👇 (applying *MAP*  more than once & then applying FILTER on it)
 
 const myNumers0 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -35,14 +40,14 @@ const newNums0 = myNumers0
 //💎✅💎 REDUCE- METHOD👇👇   [watch @8:49:39] [also read on MDN website]
 
 
-const myNums1 = [1,2,3]
+const myNums1 = [1, 2, 3] 
 
 const myTotal = myNums1. reduce (function (acc, currntVal){
-    console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // 📍 [Run the code to know the Output or watch @8:55:37 ]  This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
-    return acc + currntVal
-},0)                                 // 📍"0" here means you have to start from 0
+    // console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // ✅ [Run the code to know the Output or watch @8:55:37 ]  This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
+    // return acc + currntVal
+},0)                                     // ✅"0" here means you have to start from 0
 
-// console.log(myTotal);             // 📍Answer is "6"
+// console.log(myTotal);                // 📍Answer is "6"
 
 
                         // 🔽🔽
