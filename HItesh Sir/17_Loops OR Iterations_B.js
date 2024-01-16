@@ -314,10 +314,7 @@ const coding2 = ["apple", "oranges", "bananas", "pineapples"]
 const values = coding2.forEach( (item) => {
     // console.log(item);
 })
-// console.log(values);        // 📍📍 Answer is :-     
-                            // javascript
-                            // Java
-                            // Python
+// console.log(values);     // 📍📍 Answer is :-     
                             // apple
                             // oranges
                             // bananas
@@ -330,13 +327,10 @@ const values = coding2.forEach( (item) => {
 const coding3 = ["apple", "oranges", "bananas", "pineapples"]
 
 const values3 = coding3.forEach( (item) => {
-    // console.log(item);
+    console.log(item);
     return item
 })
 // console.log(values3);       // 📍📍 Answer is :-     
-                            // javascript
-                            // Java
-                            // Python
                             // apple
                             // oranges
                             // bananas
@@ -473,7 +467,7 @@ const userBooks2 = books.filter( (bukk) => { return bukk.publish >= 1995 })    /
 const userBooks3 = books.filter ( (bk) => {
     return bk.publish >= 2000  ||  bk.genre === "History"
 })
-console.log(userBooks3);                                 // 📍 Answer is :- 
+// console.log(userBooks3);                                 // 📍 Answer is :- 
                                                             // "[
                                                             //     {
                                                             //       title: 'Book Seven',
@@ -490,7 +484,7 @@ console.log(userBooks3);                                 // 📍 Answer is :-
 const userBooks4 = books.filter ( (bk) => {
     return bk.publish >= 2000  ||  bk.genre === "History"
 })
-console.log(userBooks4);                                // 📍 Answer is :- 
+// console.log(userBooks4);                                // 📍 Answer is :- 
                                                         // [
                                                         //     {
                                                         //       title: 'Book Three',

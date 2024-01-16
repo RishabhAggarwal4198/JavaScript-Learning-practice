@@ -1,5 +1,10 @@
 const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    // [watch @8:42:00]
 
+
+
+
+//📍✅📍CONDITION:- We want to add '10' to each of the values in the ARRAY above 👇
+
 const newNums = myNumers.map( (num) => {return num + 10})
 // console.log(newNums);                   //📍 Answer is "[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
 
@@ -7,7 +12,7 @@ const newNums = myNumers.map( (num) => {return num + 10})
 
 
 
-// 💎💎 CHAINING 👇👇 (applying MAP more than once)
+// 💎✅💎 CHAINING 👇👇 (applying MAP more than once & then applying FILTER on it)
 
 const myNumers0 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
