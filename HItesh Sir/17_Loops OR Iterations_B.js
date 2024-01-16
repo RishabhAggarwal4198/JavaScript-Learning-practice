@@ -299,7 +299,7 @@ const myCoding = [
 // 💎💎 Applying FOR-EACH loop 👇👇
 
 myCoding.forEach( (item) => {
-    console.log(item.languageName);      // 📍 Answer is "javascript  Java  Python"
+    // console.log(item.languageName);      // 📍 Answer is "javascript  Java  Python"
 })
 
 
@@ -312,10 +312,9 @@ myCoding.forEach( (item) => {
 const coding2 = ["apple", "oranges", "bananas", "pineapples"]
 
 const values = coding2.forEach( (item) => {
-    console.log(item);
-   
+    // console.log(item);
 })
-console.log(values);        // 📍📍 Answer is :-     
+// console.log(values);        // 📍📍 Answer is :-     
                             // javascript
                             // Java
                             // Python
@@ -331,10 +330,10 @@ console.log(values);        // 📍📍 Answer is :-
 const coding3 = ["apple", "oranges", "bananas", "pineapples"]
 
 const values3 = coding3.forEach( (item) => {
-    console.log(item);
+    // console.log(item);
     return item
 })
-console.log(values3);       // 📍📍 Answer is :-     
+// console.log(values3);       // 📍📍 Answer is :-     
                             // javascript
                             // Java
                             // Python
@@ -417,15 +416,64 @@ const books = [
 
 
 
-const userBooks1 = books.filter( (bk) => bk.genre === 'History')
-// console.log(userBooks1);                                // 📍 RUN statement for result
+const userBooks1 = books.filter( (bukk) => bukk.genre === 'History')
+// console.log(userBooks1);                             // 📍 Answer is :
+                                                        // [
+                                                        //     {
+                                                        //       title: 'Book Three',
+                                                        //       genre: 'History',
+                                                        //       publish: 1999,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Seven',
+                                                        //       genre: 'History',
+                                                        //       publish: 2007,
+                                                        //       edition: 2004
+                                                        //     }
+                                                        //   ]
+
 
                         // 🔽🔽 
 
-const userBooks2 = books.filter ( (bk) => {
+
+const userBooks2 = books.filter( (bukk) => { return bukk.publish >= 1995 })    // ✅ Have to use 'return' keyword bcoze we have opened a SCOPE { }  over here   
+// console.log(userBooks2);                                // 📍 Answer is :
+                                                        // [
+                                                        //     {
+                                                        //       title: 'Book Three',
+                                                        //       genre: 'History',
+                                                        //       publish: 1999,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Five',
+                                                        //       genre: 'Science',
+                                                        //       publish: 2009,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Seven',
+                                                        //       genre: 'History',
+                                                        //       publish: 2007,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Eight',
+                                                        //       genre: 'Science',
+                                                        //       publish: 2011,
+                                                        //       edition: 2004
+                                                        //     }
+                                                        //   ]
+  
+
+                        // 🔽🔽 
+
+
+const userBooks3 = books.filter ( (bk) => {
     return bk.publish >= 2000 &&  bk.genre === "History"
 })
-// console.log(userBooks2);                                    // 📍 Answer is :- 
+// console.log(userBooks3);                                 // 📍 Answer is :- 
                                                             // "[
                                                             //     {
                                                             //       title: 'Book Seven',
