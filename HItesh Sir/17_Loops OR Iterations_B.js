@@ -367,11 +367,11 @@ const newNums = myNums.filter( (ankk) =>  ankk > 4 )    //✅ we want all "ankk"
 
 const newNums0 = myNums.filter( (ankk) =>  {
     return ankk > 4                                  //✅ We have to use "return" as we have used "{}" (i.e. started a scope)
-})                                                   //🍁✅🍁 NOTE:-  If we defines the FILTER-condition in an SCOPE "{}" then we have to use "return" keyword, if we define the FILTER-condition in a single line, then we NO-NEED to use any "return" keyword (it will itself return it) 
+})                                                   //🍁🍁✅🍁🍁 NOTE:-  If we defines the FILTER-condition in an SCOPE "{}" then we have to use "return" keyword, if we define the FILTER-condition in a single line, then we NO-NEED to use any "return" keyword (it will itself return it) 
 // console.log(newNums);                      //📍 Answer is "[ 5, 6, 7, 8, 9, 10 ]"
 
 
-                        //OR🔽🔽 [a little lengthy Way (by using FOR-EACH loop)]
+                        //OR🔽🔽 [🍁a little lengthy Way (by using FOR-EACH loop)]
 
 
 //💎💎 by using FOR-EACH (in above condition in place of FILTER operation) [watch @8:33:08]
@@ -391,7 +391,8 @@ myNums2.forEach ((num) => {
 
 
 
-//📍💎📍FILTER Operation examples 👇 (for better understanding)  [watch @8:34:45]
+
+//💎✅💎 FILTER-OPERATION Examples 👇👇 (for better understanding)  [watch @8:34:45]
 
 const books = [
     {title: 'Book One', genre: 'Fiction', publish : 1981, 
