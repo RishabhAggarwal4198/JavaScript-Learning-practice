@@ -40,14 +40,21 @@ const newNums0 = myNumers0
 //💎✅💎 REDUCE- METHOD👇👇   [watch @8:49:39] [also read on MDN website]
 
 
-const myNums1 = [1, 2, 3] 
+const myNums1 = [1, 2, 3, 4] 
 
-const myTotal = myNums1. reduce (function (acc, currntVal){
-    // console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // ✅ [Run the code to know the Output or watch @8:55:37 ]  This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
-    // return acc + currntVal
+const myTotal = myNums1. reduce (function (acc, currntVal){     // ✅ Here parameter "acc" is the value "0" (provided at the last of  ".reduce" method) & parameter "currntVal" holds the value stored at the respective index of the ARRAY
+    console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // ✅ This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
+                                                                // 📍 Answer is :- 
+                                                                // acc: 0 and currntVal: 1
+                                                                // acc: 1 and currntVal: 2
+                                                                // acc: 3 and currntVal: 3
+                                                                // acc: 6 and currntVal: 4
+                                                                 // ✅ [watch @8:55:27 (to know that how above thing worked)]
+
+    return acc + currntVal                                     
 },0)                                     // ✅"0" here means you have to start from 0
 
-// console.log(myTotal);                // 📍Answer is "6"
+console.log(myTotal);                // 📍Answer is "10"
 
 
                         // 🔽🔽
