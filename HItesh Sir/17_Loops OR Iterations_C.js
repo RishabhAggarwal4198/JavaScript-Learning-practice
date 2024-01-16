@@ -60,7 +60,7 @@ console.log(myTotal);                // 📍Answer is "10"
                         // 🔽🔽
 
 
-// 📍💎📍writing above function in  ARROW-FUNCTION 👇 (short-code)
+// 💎✅💎 above FUNCTION in  ARROW-FUNCTION 👇 (much more SHORT-CODE)
 
 const myTotal_1 = myNums1.reduce((acc, curr) => acc + curr, 0)
 
