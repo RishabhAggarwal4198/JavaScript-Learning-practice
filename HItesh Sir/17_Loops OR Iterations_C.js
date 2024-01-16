@@ -17,11 +17,11 @@ const newNums = myNumers.map( (num) => {return num + 10})
 const myNumers0 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const newNums0 = myNumers0
-                        .map((num) => num*10)      //📍 at this stage values will be [10, 20, 30, 40, .......]
-                        .map((num) => num + 1 )     //📍at this stage values will be [11, 21, 31, 41, .......]
+                        .map((num) => num*10)       //✅  at this stage values will be [10, 20, 30, 40, .......] [@8:48:32 ]
+                        .map((num) => num + 1 )     //✅  at this stage values will be [11, 21, 31, 41, .......]
                         .filter ( (num) => num >= 40) 
 
-// console.log(newNums0);                          //📍 Answer is "[ 41, 51,  61, 71, 81, 91, 101]"
+// console.log(newNums0);                           //📍   Answer is "[ 41, 51,  61, 71, 81, 91, 101]"
 
 
 
@@ -30,7 +30,9 @@ const newNums0 = myNumers0
 
 
 
-//💎💎 REDUCE- METHOD👇👇   [watch @8:49:39] [also read on MDN website]
+
+
+//💎✅💎 REDUCE- METHOD👇👇   [watch @8:49:39] [also read on MDN website]
 
 
 const myNums1 = [1,2,3]
