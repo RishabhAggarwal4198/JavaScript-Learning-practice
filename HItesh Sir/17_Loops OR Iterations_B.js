@@ -468,12 +468,12 @@ const userBooks2 = books.filter( (bukk) => { return bukk.publish >= 1995 })    /
   
 
                         // 🔽🔽 
-
+ 
 
 const userBooks3 = books.filter ( (bk) => {
-    return bk.publish >= 2000 &&  bk.genre === "History"
+    return bk.publish >= 2000  ||  bk.genre === "History"
 })
-// console.log(userBooks3);                                 // 📍 Answer is :- 
+console.log(userBooks3);                                 // 📍 Answer is :- 
                                                             // "[
                                                             //     {
                                                             //       title: 'Book Seven',
@@ -482,5 +482,40 @@ const userBooks3 = books.filter ( (bk) => {
                                                             //       edition: 2004
                                                             //     }
                                                             //   ]"
+  
+
+                        // 🔽🔽 (✅changing '&&' to '||' )
+ 
+
+const userBooks4 = books.filter ( (bk) => {
+    return bk.publish >= 2000  ||  bk.genre === "History"
+})
+console.log(userBooks4);                                // 📍 Answer is :- 
+                                                        // [
+                                                        //     {
+                                                        //       title: 'Book Three',
+                                                        //       genre: 'History',
+                                                        //       publish: 1999,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Five',
+                                                        //       genre: 'Science',
+                                                        //       publish: 2009,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Seven',
+                                                        //       genre: 'History',
+                                                        //       publish: 2007,
+                                                        //       edition: 2004
+                                                        //     },
+                                                        //     {
+                                                        //       title: 'Book Eight',
+                                                        //       genre: 'Science',
+                                                        //       publish: 2011,
+                                                        //       edition: 2004
+                                                        //     }
+                                                        //   ]
 
 
