@@ -43,7 +43,7 @@ const newNums0 = myNumers0
 const myNums1 = [1, 2, 3, 4] 
 
 const myTotal = myNums1. reduce (function (acc, currntVal){     // ✅ Here parameter "acc" is the value "0" (provided at the last of  ".reduce" method) & parameter "currntVal" holds the value stored at the respective index of the ARRAY
-    console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // ✅ This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
+    // console.log(`acc: ${acc} and currntVal: ${currntVal}`);     // ✅ This "console.log" is done to know that what's actually entering inside "acc"  &  "currentVal"
                                                                 // 📍 Answer is :- 
                                                                 // acc: 0 and currntVal: 1
                                                                 // acc: 1 and currntVal: 2
@@ -54,14 +54,16 @@ const myTotal = myNums1. reduce (function (acc, currntVal){     // ✅ Here para
     return acc + currntVal                                     
 },0)                                     // ✅"0" here means you have to start from 0
 
-console.log(myTotal);                // 📍Answer is "10"
+// console.log(myTotal);                // 📍Answer is "10"
 
 
                         // 🔽🔽
 
 
-// 💎✅💎 above FUNCTION in  ARROW-FUNCTION 👇 (much more SHORT-CODE)
+// 💎✅💎 above FUNCTION in  ARROW-FUNCTION 👇 (much more SHORT-CODE & SMART-CODE)
 
+// const myTotal_1 = myNums1.reduce((acc, curr) => (acc + curr), 0)
+                            // 🔽 (OR)
 const myTotal_1 = myNums1.reduce((acc, curr) => acc + curr, 0)
 
 // console.log(myTotal_1);           //📍Answer is "6"   [watch @8:55:37 to know how it worked]
@@ -70,8 +72,7 @@ const myTotal_1 = myNums1.reduce((acc, curr) => acc + curr, 0)
 
 
 
-
-//💎💎 example 👇
+//💎💎 Example 👇
 
 const shoppingCart = [
     {
@@ -92,6 +93,16 @@ const shoppingCart = [
     }
 ]
 
-const priceToPay = shoppingCart.reduce ((acc, item) => acc + item.price, 0);
 
-// console.log(priceToPay);              //📍Answer is "22996"
+
+//📍TASK:- We want to add each price in the above array 👇
+
+const priceToPay = shoppingCart.reduce ((acc, arrItem) => acc + arrItem.price, 0);
+
+// console.log(priceToPay);                              //📍Answer is "22996"
+
+
+
+const itemKaNaam = shoppingCart.reduce((inn, arr) => inn + " @@@ " + arr.itemName, '' )  // ✅ ' ' at the last (so that nothing gets printed at it's place)
+
+// console.log(itemKaNaam);                                 //📍Answer is " @@@ js course @@@ py course @@@ mobile dev course @@@  data science course"
