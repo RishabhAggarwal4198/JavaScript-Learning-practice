@@ -4,5 +4,8 @@ body{
 
 #div_1{
     position: fixed;
+    top: 0;
+    
+    
     height: 40px;
 }
