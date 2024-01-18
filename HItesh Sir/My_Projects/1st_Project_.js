@@ -1,3 +1,3 @@
 document.querySelector('#Home').addEventListener('click', function () {
-    document.
+    document.querySelector('#doc').style. backgroundColor="Red"
 })
