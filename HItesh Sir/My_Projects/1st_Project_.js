@@ -11,4 +11,6 @@ document.querySelector('#Insert').addEventListener('click', function(){
     document.querySelector('#doc').style.height="500px"
     document.querySelector('#doc').style.width="300px"
     document.querySelector('#doc').style.backgroundColor="Pink"
+    document.querySelector
+
 })
