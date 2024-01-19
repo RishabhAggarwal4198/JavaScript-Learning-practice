@@ -9,10 +9,30 @@
 
     <body>
 
-        <div>
-            <div>
-                <input type="number" id="Font-size" min="1" max="100" onchange="f1(this)">
+        <div id = 'ToolBar'>
+            <div id="UpperHalf">
+                <input type="text" placeholder="FileName" value="Untitled">
+
+                <select>
+                    <option value = "" selected="" hidden="" disabled=""> File </option>
+                    <option value="new"> New File </option>
+                    <option value="txt"> Save as Text </option>
+                    <option value="pdf"> Save as Pdf </option>
+                </select>
+                
+                <select>
+                    <option value = "" selected="" hidden="" disabled=""> Format </option>
+                    <option value="h1">Heading 1</option>
+                    <option value="h2">Heading 2</option>
+                    <option value="h3">Heading 3</option>
+                    <option value="h4">Heading 4</option>
+                    <option value="h5">Heading 5</option>
+                    <option value="h6">Heading 6</option>
+                    <option value="h7">Heading 7</option>
+                </select>
             </div>
+
+
             
         </div>
 

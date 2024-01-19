@@ -1,7 +1,21 @@
 body{
     background-color: #212121;
-    
+    color: #fff; 
 }
+
+
+#ToolBar{
+    height: 40px;
+    background-color: #D4AF37;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+
 
 
 
