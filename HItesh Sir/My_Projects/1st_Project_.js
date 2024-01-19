@@ -20,13 +20,6 @@ document.querySelector('#Insert').addEventListener('click', function(){
 
 
 
-let myArr2 = ["Emily", "Sylvie", "Mindy", "Antonie", "Gabriel" ]
 
-let newArr2 = myArr2.map((vall) => {
-    let nm = vall + ` French`;
-    return nm
-})
-
-console.log(newArr2);
 
 
