@@ -14,3 +14,19 @@ document.querySelector('#Insert').addEventListener('click', function(){
     document.querySelector('h1').innerHTML = "Hello Everyone This is my First SelfMade Project"
 
 })
+
+
+
+
+
+
+let myArr2 = ["Emily", "Sylvie", "Mindy", "Antonie", "Gabriel" ]
+
+let newArr2 = myArr2.map((vall) => {
+    let nm = vall + ` French`;
+    return nm
+})
+
+console.log(newArr2);
+
+
