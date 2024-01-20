@@ -13,7 +13,18 @@ function addLink () {
 }
 
 
-const content = 
+const content = document.getElementById('content');
+
+content.addEventListener('mouseenter', function (){
+        const a = content.querySelectorAll('a')
+        // console.log(a);
+        a.forEach(item => {
+        item.addEventListener('mouseenter', function (){
+                        content.setAttribute('contenditable' , false);
+                        item.target
+                })
+        })
+})
 
 
 
