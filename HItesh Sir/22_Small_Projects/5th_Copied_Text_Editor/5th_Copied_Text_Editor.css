@@ -19,6 +19,10 @@ body{
 }
 
 
+li {
+    margin-left: 14px;
+}
+
 
 /* #input_1{
         width: 80px;  
