@@ -21,7 +21,12 @@ content.addEventListener('mouseenter', function (){
         a.forEach(item => {
         item.addEventListener('mouseenter', function (){
                         content.setAttribute('contenditable' , false);
-                        item.target
+                        item.target = '_blank';
+                })
+                
+        item.addEventListener('mouseleave', function (){
+                        content.setAttribute('contenditable' , true);
+                        item.target = '_blank';
                 })
         })
 })
