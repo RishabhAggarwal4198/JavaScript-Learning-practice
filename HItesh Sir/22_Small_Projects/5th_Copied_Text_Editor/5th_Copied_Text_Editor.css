@@ -157,8 +157,12 @@ a{
 #content {
   padding: 16px;
   outline:none;
+}
 
 
+#show-code{
+  padding: 16px;
+  outline: none;
 }
 
 

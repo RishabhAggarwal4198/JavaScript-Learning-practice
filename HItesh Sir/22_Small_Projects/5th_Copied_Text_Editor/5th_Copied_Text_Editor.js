@@ -23,7 +23,7 @@ content.addEventListener('mouseenter', function (){
                         content.setAttribute('contenditable' , false);
                         item.target = '_blank';
                 })
-                
+
         item.addEventListener('mouseleave', function (){
                         content.setAttribute('contenditable' , true);
                         item.target = '_blank';
@@ -32,4 +32,12 @@ content.addEventListener('mouseenter', function (){
 })
 
 
+
+const showCode = document.getElementById('show-code');
+const active = false;
+
+
+showCode.addEventListener('click', function (){
+        showCode.dataset.active = !active;
+})
 
