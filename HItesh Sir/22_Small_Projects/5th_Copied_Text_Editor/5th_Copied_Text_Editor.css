@@ -1,18 +1,27 @@
 body{
     background-color: #212121;
     color: #fff; 
+    font-family:Oswald;
 }
 
 
 #ToolBar{
-    height: 40px;
+    height: 80px;
     background-color: #D4AF37;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     display: flex;
-    align-items: center;
+    align-items:center;
+}
+
+
+
+#input_1{
+  width: 80px;  
+  border-radius: 6px;
+  border: none;
 }
 
 
