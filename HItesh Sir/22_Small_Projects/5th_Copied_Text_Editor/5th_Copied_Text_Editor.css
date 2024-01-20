@@ -1,31 +1,86 @@
 body{
     background-color: #212121;
-    color: #fff; 
+    /* color: #fff;  */
     font-family:Oswald;
 }
 
 
-#ToolBar{
-    height: 80px;
+
+/* #input_1{
+        width: 80px;  
+        border-radius: 6px;
+        border: none;
+}
+ */
+
+
+#container{
+    /* height: 80px;
     background-color: #D4AF37;
     position: fixed;
     left: 0;
     top: 0;
-    right: 0;
-    display: flex;
-    align-items:center;
+    right: 0; 
+     display: flex;
+    align-items:center; */
+    max-width: 991px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;         /* ❓❓❓ */
 }
 
 
 
-#input_1{
-  width: 80px;  
-  border-radius: 6px;
-  border: none;
+#toolbar {
+        padding: 16px;
+        background: #eee;
+}
+
+#toolbar #head {
+        display: flex;
+        grid-gap: 10px;
+        margin-bottom: 16px;
+}
+
+#toolbar #head > input {         /* ❓❓❓ */
+        max-width: 100px;
+        padding: 6px 10px;
+        border-radius: 6px;
+        border: 2px solid #ddd;
+}
+
+#toolbar #head select {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* #toolbar #head  input[type='color'] {
+
+} */
+
+#toolbar #head #color {
+   background: #fff;
+   border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+#toolbar #head #color input {
+   border: none;
 }
 
 
 
-
-
+#toolbar #head #color input::-moz-color-swatch {
+       width: 20px;
+       height: 20px;
+       border:20px
+}
 
