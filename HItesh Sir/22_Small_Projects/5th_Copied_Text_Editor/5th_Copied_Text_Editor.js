@@ -7,6 +7,13 @@ function formatDoc ( cmd, value=null) {
         } 
 }
 
+function addLink () {
+        const url = prompt('Insert url');
+        formatDoc('createdLink', url);
+}
+
+
+const content = 
 
 
 

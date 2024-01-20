@@ -23,6 +23,11 @@ li {
     margin-left: 14px;
 }
 
+a{
+    cursor: pointer;
+}
+
+
 
 /* #input_1{
         width: 80px;  
