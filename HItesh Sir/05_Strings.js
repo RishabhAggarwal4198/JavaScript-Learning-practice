@@ -133,10 +133,35 @@ const address = "https://ecma-international.org/publications-and-standards/stand
 
 let value = "I went - to a - nice hill- station."
 
-console.log(value.split('-'));     //📍📍 Answer is :-  "[ 'I', 'went', 'to', 'a', 'nice', 'hill', 'station.' ]"  
+// console.log(value.split('-'));     //📍📍 Answer is :-  "[ 'I', 'went', 'to', 'a', 'nice', 'hill', 'station.' ]"  
 // console.log(value.split('a'));     //📍📍 Answer is :-  "[ 'I went to ', ' nice hill st', 'tion.' ]"      
 // console.log(value.split(/-/));     //📍📍 Answer is :-  "[ 'I went to a nice hill station.' ]" 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍🌍
+
+//💎✅💎 INDEXING in STRINGS
+
+let  val = 'HELLO ROGER'
+
+console.log(val[1]);                 //[📍📍 Answer is :-  "E"  ] 
+console.log(val[4]);                 //[📍📍 Answer is :-  "O"  ] 
+console.log(val[8]);                 //[📍📍 Answer is :-  "G"  ] 
+console.log(val[5]);                 //[📍📍 Answer is :-  nothing ]  (bcoz position 6 is a blank space)
 
 
 

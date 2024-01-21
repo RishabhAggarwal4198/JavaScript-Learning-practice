@@ -11,3 +11,7 @@ function summation (n){
 
 console.log(summation (4));
 
+
+
+
+
