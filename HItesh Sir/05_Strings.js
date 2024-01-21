@@ -163,7 +163,7 @@ console.log(val[4]);                 //[📍📍 Answer is :-  "O"  ]
 console.log(val[8]);                 //[📍📍 Answer is :-  "G"  ] 
 console.log(val[5]);                 //[📍📍 Answer is :-  nothing ]  (bcoz position 6 is a blank space)
 
-
+console.log(val.length);             //[📍📍 Answer is :-  "11"  ] 
 
 
 
