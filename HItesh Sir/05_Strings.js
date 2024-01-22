@@ -156,14 +156,15 @@ let value = "I went - to a - nice hill- station."
 
 //💎✅💎 INDEXING in STRINGS
 
+
 let  val = 'HELLO ROGER'
 
-console.log(val[1]);                 //[📍📍 Answer is :-  "E"  ] 
-console.log(val[4]);                 //[📍📍 Answer is :-  "O"  ] 
-console.log(val[8]);                 //[📍📍 Answer is :-  "G"  ] 
-console.log(val[5]);                 //[📍📍 Answer is :-  nothing ]  (bcoz position 6 is a blank space)
+// console.log(val[1]);                 //[📍📍 Answer is :-  "E"  ] 
+// console.log(val[4]);                 //[📍📍 Answer is :-  "O"  ] 
+// console.log(val[8]);                 //[📍📍 Answer is :-  "G"  ] 
+// console.log(val[5]);                 //[📍📍 Answer is :-  nothing ]  (bcoz position 6 is a blank space)
 
-console.log(val.length);             //[📍📍 Answer is :-  "11"  ] 
+// console.log(val.length);             //[📍📍 Answer is :-  "11"  ] 
 
 
 
