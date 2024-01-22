@@ -82,6 +82,18 @@
 
      <h3></h3>
     
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+
+
+     <button id="Strng" >String Check</button>
+
+     <h1 id="StringH1"></h1>
+
    
     
 </body>
@@ -701,11 +713,33 @@ else {
 
 
 
-let numm = "Arizona"
+    let numm = "Arizona"
 
-if(( numm[0] === 'a' )||( numm[0] === 'A')) {
-    // console.log(`It's a good String`);              //[📍📍 Answer is :-  "It's a good String"  ] 
-}
+    // if((numm[0] === 'a' || numm[0] === 'A') && numm.length > 3) {
+    //     // console.log(`It's a good String`);              //[📍📍 Answer is :-  "It's a good String"  ] 
+    // }else{
+    //     // console.log(`It's not a good String`); 
+    // }
+
+
+
+
+
+
+
+    let rerarr= 'Sankhyaa';
+
+    document.getElementById('Strng').addEventListener('click', (rerarr) => {
+      
+     this.mehtt = rerarr;        //💎💎 Just removing this will give an ERROR
+
+    if((mehtt[0] === 'a' || mehtt[0] === 'A') && mehtt.length > 3) {
+        document.getElementById('StringH1').innerHTML=`It's a good String`
+    }else{
+        document.getElementById('StringH1').innerHTML=`It's not a good String`
+    }
+
+}) 
 
 
 
