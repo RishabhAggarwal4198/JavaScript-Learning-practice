@@ -74,7 +74,7 @@ myArr.pop()
 
 
 
-myArr.unshift(9);    // ✅ For ADDING a value from the 0th position of the Array
+myArr.unshift(9);    // ✅ For ADDING a value on the 0th position of the Array
 // console.log(myArr);    // 📍  Answer is [ 9, 0, 1, 2, 3, 4, 5, 6]
 
 
@@ -94,6 +94,13 @@ let removed = followers.shift()
 // console.log(followers);      //[📍📍 Answer is :- "[ 'b', 'c', 'd' ]"
 console.log(removed);           //[📍📍 Answer is :- "a"
 
+
+
+
+
+// EXERCISE 👇
+
+let months = ["January", "July", "March", "August" ]
 
 
 
