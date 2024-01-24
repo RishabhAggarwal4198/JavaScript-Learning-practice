@@ -38,10 +38,13 @@ let newArrey = []
 
 
 
-
 let fruits = ['Banana', 'Grapes', 'PineApple', 'Orange']
+// console.log(fruits.length);               //[📍📍 Answer is :- "4"  ] 
 fruits[1] = 'Pear'
-console.log(fruits);                      //[📍📍 Answer is :-  "[ 'Banana', 'Pear', 'PineApple', 'Orange' ]"  ] 
+fruits [6] = 'Peach'
+// console.log(fruits);                      //[📍📍 Answer is :-  "[ 'Banana', 'Pear', 'PineApple', 'Orange', <2 empty items>, 'Peach' ]"  ] 
+// console.log(fruits.length);               //[📍📍 Answer is :-  "7"  ] 
+
 
 //🍀🍀🍀🍀
 
@@ -56,8 +59,6 @@ myArr.push(6);   //  ✅ It is for PUSHING the given value into the originla arr
                               // 🔽🔽
 myArr.push(7); 
 // console.log(myArr); // 📍 Answer will be "[ 0, 1, 2, 3, 4, 5, 6, 7]"
-
-
 
 
 
@@ -79,17 +80,20 @@ myArr.unshift(9);    // ✅ For ADDING a value from the 0th position of the Arra
 
 
 
-
-
-
-
-
-myArr.shift();      // ✅ For  REMOVING a value from the  0th position of the Array
-// console.log(myArr);    // 📍  Answer is [ 0, 1, 2, 3, 4, 5, 6 ]
+myArr.shift();      // ✅ For  REMOVING a value from the  0th position of the Array & also returns the removed 'VALUE'
+// console.log(myArr);          // 📍  Answer is [ 0, 1, 2, 3, 4, 5, 6 ]
 
                                 // 🔽🔽
 myArr.shift(); 
-// console.log(myArr);    // 📍  Answer is [ 1, 2, 3, 4, 5 ]
+// console.log(myArr);          // 📍  Answer is [ 1, 2, 3, 4, 5 ]
+
+                               // 🔽🔽
+
+let followers = ['a','b' ,'c','d']
+let removed = followers.shift()  
+// console.log(followers);      //[📍📍 Answer is :- "[ 'b', 'c', 'd' ]"
+// console.log(followers);      //[📍📍 Answer is :- "[ 'b', 'c', 'd' ]"
+
 
 
 
