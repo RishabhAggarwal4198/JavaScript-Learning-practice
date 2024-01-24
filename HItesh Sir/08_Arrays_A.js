@@ -111,6 +111,8 @@ let months = ["January", "July", "March", "August" ]
 
 
 
+
+
 let val = myArr.includes(9);       // ✅ For knowing whether given value is in the original Array or not ?
 // console.log(val);                 // 📍 Answer is "false"
 
