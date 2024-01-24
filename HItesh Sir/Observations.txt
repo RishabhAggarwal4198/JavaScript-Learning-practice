@@ -261,7 +261,25 @@ asdF$8$Vbnm
 
 
 
+The array argument is useful if you want to access another element in the array, especially when you don't have an existing variable that refers to the array. The following example first uses filter() to extract the positive values and then uses forEach() to log its neighbors.
+
+
+
 
 tandem
 
+
+
+
++ The DRAVIDIAN language divide problem
++ The SANATAN-MONEY helps SANATANI app
++ App Against UNTOUCHABILITY & ALL
+
+
+
+
+
+
+
+>> Bhagwan gaya kahan tha jo wapas aaaya hai ?
 
