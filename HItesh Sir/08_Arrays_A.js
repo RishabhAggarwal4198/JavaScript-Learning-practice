@@ -22,7 +22,6 @@ const myArr3 = [`A`, 3, "Raman", true, 40.5764, null]
 
 
 
-
 //🍀🍀🍀🍀
 
 let myArrz = [`Ramesh`, `Suresh`, `Prathmesh`, `Yogesh`] 
@@ -32,14 +31,17 @@ let myArrz = [`Ramesh`, `Suresh`, `Prathmesh`, `Yogesh`]
 // console.log(myArrz[2].length);        //[📍📍 Answer is :- "9" ]  
 
 
-
-
 //EMPTY ARRAY
-
 let newArrey = []
-console.log(newArrey.length);    //[📍📍 Answer is :-  "0"  ] 
+// console.log(newArrey.length);           //[📍📍 Answer is :-  "0"  ] 
+// console.log([1, 2, 3, 4, 5].length);    //[📍📍 Answer is :-  "5"  ] 
 
 
+
+
+let fruits = ['Banana', 'Grapes', 'PineApple', 'Orange']
+fruits[1] = 'Pear'
+console.log(fruits);                      //[📍📍 Answer is :-  "[ 'Banana', 'Pear', 'PineApple', 'Orange' ]"  ] 
 
 //🍀🍀🍀🍀
 
