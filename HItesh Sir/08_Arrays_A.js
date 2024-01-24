@@ -21,6 +21,12 @@ const myArr3 = [`A`, 3, "Raman", true, 40.5764, null]
 // ✅✅✅✅ Now go to BROWSER >> console >> declare an ARRAY to see How many types of PROTOTYPE properties an ARRAY have
 
 
+let myArrz = [`Ramesh`, `Suresh`, `Prathmesh`, `Yogesh`] 
+
+// console.log(myArrz[2]);           	 //[📍📍 Answer is :- "Prathmesh" ] 
+// console.log(myArrz[2][z]);        	 //[📍📍 Answer is :- "t" ]   //🍁 zrd digit of "Prathmesh"
+// console.log(myArrz[2].length);        //[📍📍 Answer is :- "9" ]  
+
 
 
 
