@@ -92,7 +92,7 @@ myArr.shift();
 let followers = ['a','b' ,'c','d']
 let removed = followers.shift()  
 // console.log(followers);      //[📍📍 Answer is :- "[ 'b', 'c', 'd' ]"
-// console.log(followers);      //[📍📍 Answer is :- "[ 'b', 'c', 'd' ]"
+console.log(removed);           //[📍📍 Answer is :- "a"
 
 
 
