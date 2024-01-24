@@ -92,15 +92,19 @@ myArr.shift();
 let followers = ['a','b' ,'c','d']
 let removed = followers.shift()  
 // console.log(followers);      //[📍📍 Answer is :- "[ 'b', 'c', 'd' ]"
-console.log(removed);           //[📍📍 Answer is :- "a"
-
+// console.log(removed);           //[📍📍 Answer is :- "a"
 
 
 
 
 // EXERCISE 👇
 
-let months = ["January", "July", "March", "August" ]
+let months = ["January", "July", "August" ]
+months.shift()
+// console.log(months);        //📍📍 Answer is :-  "['July', 'August']"  
+
+months.unshift("January", "March", "April", "June")
+// console.log(months);       //📍📍 Answer is :-  "[ 'January', 'March', 'April', 'June', 'July', 'August' ]"  
 
 
 
