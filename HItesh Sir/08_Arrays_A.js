@@ -97,7 +97,8 @@ let removed = followers.shift()
 
 
 
-// EXERCISE 👇
+
+// EXERCISE 👇👇
 
 let months = ["January", "July", "August" ]
 months.shift()
