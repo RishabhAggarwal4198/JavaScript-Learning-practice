@@ -103,9 +103,20 @@ const sorted1 = Arrrey.sort();
 
 
 
+//💎✅💎 NESTED-ARRAY👇👇 
+
+let nums = [ [1,2], [3,4], [4,5]]
+
+// console.log(nums.length);       //📍📍 Answer is :-  "3"  
+// console.log(nums[2][0]);        //📍📍 Answer is :-  "4"  
 
 
-dddd
+
+
+
+
+
+
 // EXERCISE 
 
 let lang = ['C', 'C++', 'JavaScript', 'Python', 'Java', 'Car']
@@ -119,11 +130,15 @@ lang.reverse()
 //👇if want to know the INDEX OF "JavaScript" after revesong is again👇
 
 let vall = lang.reverse().indexOf(`JavaScript`)
-console.log(vall);           //📍📍 Answer is :-  "2"  
+// console.log(vall);           //📍📍 Answer is :-  "2"  
+
+
 
 
 
 //🍀🍀🍀🍀
+
+
 
 
 
