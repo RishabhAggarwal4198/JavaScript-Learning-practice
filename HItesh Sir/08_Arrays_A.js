@@ -218,13 +218,12 @@ const myn1 = myArr5.slice(1, 4)
 
 
 
-
-
 // 💎✅💎 SPLICE 👇👇  [ myArr.slice(a,d)] [🍁returns the value of  the ARRAY of place a,b,c & d [ every array value is included into it]]
+
 const myArr6 = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 const myn2 = myArr6. splice(1, 4) 
 // console.log(myn2); // 📍 Answer is  "[ 8, 7, 6, 5 ]"
-// console.log("C ", myArr6 ); //📍 Answer is  "C  [ 9, 4, 3, 2, 1 ]"  ✅✅✅ will DELETE all those place values from the above ARRAY which are asked above in SPLICE & prints all left over values
+// console.log("C ", myArr6 ); //📍 Answer is  "C  [ 9, 4, 3, 2, 1 ]"  ✅✅✅ will DELETE all those place values from the original ARRAY which are asked above in SPLICE & prints all left over values
 
 
 
