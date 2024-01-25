@@ -177,7 +177,7 @@ let score2 = 11;
 do{
     // console.log(`Score is ${score2}`);   // 📍 Answer is "Score is 11" [bcoz in this case "console.log" got printed first but "condition" got checked later on]
     score2++
-} while (score2 <= 10) 
+} while (score2 <= 10)  
 
 
 
