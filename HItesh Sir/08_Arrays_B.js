@@ -98,6 +98,31 @@ let Arrrey = ['99', '55', '100', '44', '33', '11' ]
 const sorted1 = Arrrey.sort();
 // console.log(sorted1);        // 📍📍 Answer is :-[ '100', '11', '33', '44', '55', '99' ]
 
+
+
+
+
+
+
+// EXERCISE 
+
+let lang = ['C', 'C++', 'JavaScript', 'Python', 'Java', 'Car']
+lang.push(`Sql`)
+// console.log(lang);        //📍📍 Answer is :-  "[ 'C', 'C++', 'JavaScript', 'Python', 'Java', 'Car', 'Sql' ]"  
+
+lang.reverse()
+// console.log(lang);           //📍📍 Answer is :-  "[ 'Sql', 'Car', 'Java', 'Python', 'JavaScript', 'C++', 'C' ]"  
+
+
+//👇if want to know the INDEX OF "JavaScript" after revesong is again👇
+
+let vall = lang.reverse().indexOf(`JavaScript`)
+console.log(vall);           //📍📍 Answer is :-  "2"  
+
+
+
+
+
 //🍀🍀🍀🍀
 
 
