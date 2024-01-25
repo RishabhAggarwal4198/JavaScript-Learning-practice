@@ -159,10 +159,28 @@ const newArr = myArr.join()     // [@3:25:00] ✅📍converts all the elements o
 // console.log(myArr);     // 📍 Answer is "[ 1, 2, 3, 4, 5, 6 ]"
 // console.log(newArr);    //  📍 Answer is "1,2,3,4,5,6" (as it got JOINED & got converted to a STRING])
 // console.log(typeof newArr);   // 📍 Answer is "string"
+
                         // 🔽🔽
+
 const myArr4 = [`A`, 3, "Raman", true, 40.5764, null, 'B', 5]
 let val4 = myArr4.join()
 // console.log(val4);                // 📍 Answer is "A,3,Raman,true,40.5764,,B,5"
+
+
+
+
+
+//🍀🍀🍀🍀
+
+//💎✅💎 REVERSE 👇👇        // ✅Reverses the WHOLE-ARRAY
+
+let newArrr1 = ['yellow', 'green', 'red']
+let valu = newArrr1.reverse()
+// console.log(valu);               //📍Answer is :- [ 'red', 'green', 'yellow' ]
+// console.log(newArrr1);           //📍Answer is :- [ 'red', 'green', 'yellow' ] 
+				   // (✅ Reverses the whole original ARRAY)
+//🍀🍀🍀🍀
+
 
 
 
@@ -178,6 +196,16 @@ const myArr5 = [0, 0.5, 1, 2, 3, 4, 5]
 const myn1 = myArr5.slice(1, 4) 
 // console.log(myn1);           // 📍 Answer is "[ 0.5, 1, 2 ]"
 // console.log("B ", myArr5);    // 📍 Answer is "B  [0, 0.5, 1, 2, 3, 4, 5]"
+
+				// 🔽🔽
+
+let newArrr2 = ['Pink', 'Sky-Blue', 'Black', 'Purple']
+let mynn2 = newArrr2.slice();    // 📍 Answer is "[ 'Pink', 'Sky-Blue', 'Black', 'Purple' ]"
+// console.log(mynn2);
+
+let mynn3 = newArrr2.slice(2)     // (✅ Will give the value from 2nd index onwards)
+// console.log(mynn3);               //📍 Answer is :- [ 'Black', 'Purple' ]
+
 
 
 
@@ -196,17 +224,6 @@ const myn2 = myArr6. splice(1, 4)
 
 
 
-//🍀🍀🍀🍀
-
-//💎✅💎 REVERSE 👇👇        // ✅Reverses the WHOLE-ARRAY
-
-let newArrr1 = ['yellow', 'green', 'red']
-let valu = newArrr1.reverse()
-// console.log(valu);               //📍Answer is :- [ 'red', 'green', 'yellow' ]
-console.log(newArrr1);             //📍Answer is :- [ 'red', 'green', 'yellow' ] (✅ Reverses the whole ARRAY)
-
-//🍀🍀🍀🍀
 
 
 
-// let newArrr2 = ['Pink', 'Sky-Blue', 'Black', 'Purple']
