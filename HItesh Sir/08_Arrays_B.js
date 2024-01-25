@@ -11,7 +11,6 @@ const dc_heros = [ "superman", "flash", "batman"]
 
 
 
-
 //💎✅💎CONCAT-METHOD 👇👇 [for merging two ARRAYs]
 
 const allHeros = marvel_heros.concat(dc_heros); // ✅  it combines the whole two ARRAYs at the last of an existing ARRAY properly [without pushing it onto the last part]
@@ -81,6 +80,20 @@ let score3 = 300
 
 let combined = Array.of(score1, score2, score3);  //✅✅ It gonna convert all three VARIABLES into one ARRAY
 // console.log(combined);   // 📍 Answer is "[ 100, 200, 300 ]"
+
+
+
+
+
+//🍀🍀🍀🍀
+
+//💎✅💎SORT-METHOD 👇👇 [for arranging the ARRAY in alphabetical order]
+
+const sorted = marvel_heros.sort()
+// console.log(sorted);           //[📍📍 Answer is :-  "[ 'Ironman', 'spiderman', 'thor' ]"  
+
+
+//🍀🍀🍀🍀
 
 
 
