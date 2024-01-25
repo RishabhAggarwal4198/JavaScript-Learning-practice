@@ -221,14 +221,23 @@ const myn1 = myArr5.slice(1, 4)
 const myArr6 = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 const mynn1 = myArr6.splice(4)    // (✅ Will give the value from 4th index onwards) [serving the purpose of SLICE method overhere]
-// console.log(mynn1);    
-
+// console.log(mynn1);               //[📍📍 Answer is :-  "[ 5, 4, 3, 2, 1 ]"   
 
 //  ✅✅ SPLICE modifies the original ARRAY while SLICE does not
 
 const myn2 = myArr6. splice(1, 4) 
 // console.log(myn2);                // 📍 Answer is  "[ 8, 7, 6 ]"
 // console.log("C ", myArr6 );    //📍 Answer is  "C  [ 9 ]"   ✅✅✅ will DELETE all those place values from the original ARRAY which are asked above in SPLICE & prints all left over values
+
+				   // 🔽🔽
+
+const myArr7 = ['Red', 'Brown', 'Green', 'Black']
+
+myArr7.splice(0, 0, 'Pink', 'Black', 'Orange')    // (✅ if we want To push values like "'Pink', 'Black', 'Orange'"  on the 0th position & don't want to delete any value )
+
+console.log(myArr7);            //📍 Answer is :- ['Pink',   'Black', 'Orange', 'Red', 'Brown',  'Green', 'Black' ]
+      
+
 
 
 
