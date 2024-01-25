@@ -122,6 +122,15 @@ let val = myArrey.includes(9);       // ✅ For knowing whether given value is i
 
 			          // 🔽🔽
 
+let val0 = myArrey.includes(19);       // ✅ For knowing whether given value is in the original Array or not ?
+// console.log(val0);                 // 📍 Answer is "false"
+
+			          
+
+
+
+
+
 let val2 = myArrey.indexOf(4);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
 // console.log(val2);              // 📍 Answer is "-1"  [i.e. false OR i don't know]
 
@@ -134,6 +143,7 @@ let val3 = myArrey.indexOf(12);     // ✅For knowing whether given value of IND
 
 let vall4 = myArrey.indexOf('XUV');     // ✅For knowing whether given value of INDEX is in the original Array or not ?
 // console.log(vall4);                  // 📍 Answer is "-1"  [i.e. false OR i don't know bcoz 'xuv' were in the 'small-case' in the ARRAY not in CAPITALS ]
+
 
 
 
