@@ -244,7 +244,7 @@ myArr8.splice(2, 0, 'toyota', 'xuv','bmw')    // (✅ if we want To push values 
 				   // 🔽🔽
 
 const myArr9 = [ 'Stone', 'Paper', 'Scissor', 'Eraser', 'Pen', 'Pencil']
-myArr9.splice(2, 2, 'Diamond', 'Rubies', 'Pearls')    // (✅ if we want To push values like "'toyota', 'xuv','bmw'"  on the 2nd position & don't want to delete any value )
+myArr9.splice(2, 2, 'Diamond', 'Rubies', 'Pearls')    // (✅ if we want To push values like " 'Diamond', 'Rubies', 'Pearls'"  on the 2nd position & don't want to delete any value )
 console.log(myArr9);            //📍 Answer is :- ['Orange', 'Red', 'toyota', 'xuv', 'bmw', 'Brown', 'Green' ]
       
 
