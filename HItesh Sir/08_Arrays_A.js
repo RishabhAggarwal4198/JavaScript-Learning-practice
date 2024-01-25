@@ -246,8 +246,7 @@ myArr8.splice(2, 0, 'toyota', 'xuv','bmw')    // (✅ if we want To push values 
 const myArr9 = [ 'Stone', 'Paper', 'Scissor', 'Eraser', 'Pen', 'Pencil']
 myArr9.splice(2, 3, 'Diamond', 'Rubies', 'Pearls')    // (✅ if we want To push values like " 'Diamond', 'Rubies', 'Pearls'"  on the 2nd position & want to delete 3 values starting from the 2nd value of the ARRAY)
 // console.log(myArr9);            //📍 Answer is :- [ 'Stone', 'Paper', 'Diamond', 'Rubies', 'Pearls', 'Pencil' ]
-      
-      
+         
 				   // 🔽🔽
 
 const myArr10 = ['Gold', 'Silevr', 'Iron', 'Zinc', 'Lithium', 'Sulphate', 'Boron']

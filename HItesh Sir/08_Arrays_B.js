@@ -92,6 +92,11 @@ let combined = Array.of(score1, score2, score3);  //✅✅ It gonna convert all 
 const sorted = marvel_heros.sort()
 // console.log(sorted);           //[📍📍 Answer is :-  "[ 'Ironman', 'spiderman', 'thor' ]"  
 
+				 // 🔽🔽 [❌❌But it dosn't works on sorting 'NUMBERS' ]
+
+let Arrrey = ['99', '55', '100', '44', '33', '11' ]
+const sorted1 = Arrrey.sort();
+// console.log(sorted1);        // 📍📍 Answer is :-[ '100', '11', '33', '44', '55', '99' ]
 
 //🍀🍀🍀🍀
 
