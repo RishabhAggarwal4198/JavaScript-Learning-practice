@@ -191,13 +191,6 @@ let valu = newArrr1.reverse()
 
 // 💎✅💎 SLICE 👇👇 [ myArr.slice(a,d)] [🍁returns the value of  the ARRAY of place a,b, c [ "d"th one is not included into it]]
 
-const myArr5 = [0, 0.5, 1, 2, 3, 4, 5]
-// console.log("A ", myArr5);  // 📍 Answer is "A  [0, 0.5, 1, 2, 3, 4, 5]"
-const myn1 = myArr5.slice(1, 4) 
-// console.log(myn1);           // 📍 Answer is "[ 0.5, 1, 2 ]"
-// console.log("B ", myArr5);    // 📍 Answer is "B  [0, 0.5, 1, 2, 3, 4, 5]"
-
-				// 🔽🔽
 
 let newArrr2 = ['Pink', 'Sky-Blue', 'Black', 'Purple']
 let mynn2 = newArrr2.slice();    // 📍 Answer is "[ 'Pink', 'Sky-Blue', 'Black', 'Purple' ]"
@@ -205,6 +198,20 @@ let mynn2 = newArrr2.slice();    // 📍 Answer is "[ 'Pink', 'Sky-Blue', 'Black
 
 let mynn3 = newArrr2.slice(2)     // (✅ Will give the value from 2nd index onwards)
 // console.log(mynn3);               //📍 Answer is :- [ 'Black', 'Purple' ]
+
+let mynn4 = newArrr2.slice(-3)     // (✅ Will give the 3 values from Last)
+// console.log(mynn4);               //📍 Answer is :- [ 'Sky-Blue', 'Black', 'Purple' ]
+				
+			// 🔽🔽
+
+const myArr5 = [0, 0.5, 1, 2, 3, 4, 5]
+// console.log("A ", myArr5);  // 📍 Answer is "A  [0, 0.5, 1, 2, 3, 4, 5]"
+const myn1 = myArr5.slice(1, 4) 
+// console.log(myn1);           // 📍 Answer is "[ 0.5, 1, 2 ]"
+// console.log("B ", myArr5);    // 📍 Answer is "B  [0, 0.5, 1, 2, 3, 4, 5]"
+
+
+
 
 
 
