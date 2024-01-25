@@ -97,6 +97,7 @@ let removed = followers.shift()
 
 
 
+//🍀🍀🍀🍀
 
 // EXERCISE 👇👇
 
@@ -107,7 +108,7 @@ months.shift()
 months.unshift("January", "March", "April", "June")
 // console.log(months);       //📍📍 Answer is :-  "[ 'January', 'March', 'April', 'June', 'July', 'August' ]"  
 
-
+//🍀🍀🍀🍀
 
 
 
