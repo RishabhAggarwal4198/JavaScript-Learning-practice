@@ -114,6 +114,7 @@ months.unshift("January", "March", "April", "June")
 
 
 
+// INCLUDES
 
 let myArrey = [ 3, 6, 9, 12, 15, 18, 'xuv', 'qwer']
 
@@ -130,6 +131,8 @@ let val0 = myArrey.includes(19);       // ✅ For knowing whether given value is
 
 
 
+
+// INDEXOF
 
 let val2 = myArrey.indexOf(4);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
 // console.log(val2);              // 📍 Answer is "-1"  [i.e. false OR i don't know]
@@ -149,10 +152,9 @@ let vall4 = myArrey.indexOf('XUV');     // ✅For knowing whether given value of
 
 
 
+// JOIN
 
-
-
-const newArr = myArr.join()     // [@3:25:00] 📍converts all the elements of an array into STRING
+const newArr = myArr.join()     // [@3:25:00] ✅📍converts all the elements of an array into STRING
 
 // console.log(myArr);     // 📍 Answer is "[ 1, 2, 3, 4, 5, 6 ]"
 // console.log(newArr);    //  📍 Answer is "1,2,3,4,5,6" (as it got JOINED & got converted to a STRING])
@@ -186,10 +188,25 @@ const myn1 = myArr5.slice(1, 4)
 // 💎✅💎 SPLICE 👇👇  [ myArr.slice(a,d)] [🍁returns the value of  the ARRAY of place a,b,c & d [ every array value is included into it]]
 const myArr6 = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 const myn2 = myArr6. splice(1, 4) 
-console.log(myn2); // 📍 Answer is  "[ 8, 7, 6, 5 ]"
-console.log("C ", myArr6 ); //📍 Answer is  "C  [ 9, 4, 3, 2, 1 ]"  ✅✅✅ will DELETE all those place values from the above ARRAY which are asked above in SPLICE & prints all left over values
+// console.log(myn2); // 📍 Answer is  "[ 8, 7, 6, 5 ]"
+// console.log("C ", myArr6 ); //📍 Answer is  "C  [ 9, 4, 3, 2, 1 ]"  ✅✅✅ will DELETE all those place values from the above ARRAY which are asked above in SPLICE & prints all left over values
 
 
 
 
 
+
+//🍀🍀🍀🍀
+
+//💎✅💎 REVERSE 👇👇        // ✅Reverses the WHOLE-ARRAY
+
+let newArrr1 = ['yellow', 'green', 'red']
+let valu = newArrr1.reverse()
+// console.log(valu);               //📍Answer is :- [ 'red', 'green', 'yellow' ]
+console.log(newArrr1);             //📍Answer is :- [ 'red', 'green', 'yellow' ] (✅ Reverses the whole ARRAY)
+
+//🍀🍀🍀🍀
+
+
+
+// let newArrr2 = ['Pink', 'Sky-Blue', 'Black', 'Purple']

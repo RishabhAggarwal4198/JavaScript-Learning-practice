@@ -14,7 +14,7 @@ const dc_heros = [ "superman", "flash", "batman"]
 
 //💎✅💎CONCAT-METHOD 👇👇 [for merging two ARRAYs]
 
-// const allHeros = marvel_heros.concat(dc_heros); // ✅  it combines the whole two ARRAYs at the last of an existing ARRAY properly [without pushing it onto the last part]
+const allHeros = marvel_heros.concat(dc_heros); // ✅  it combines the whole two ARRAYs at the last of an existing ARRAY properly [without pushing it onto the last part]
                                                    // ✅   This method returns a whole NEW ARRAY [after combining them]
 // console.log(allHeros);   // 📍 Answer is "[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]"
 
