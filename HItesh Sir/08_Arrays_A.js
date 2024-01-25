@@ -115,7 +115,7 @@ months.unshift("January", "March", "April", "June")
 
 
 
-let myArrey = [ 3, 6, 9, 12, 15, 18]
+let myArrey = [ 3, 6, 9, 12, 15, 18, 'xuv', 'qwer']
 
 let val = myArrey.includes(9);       // ✅ For knowing whether given value is in the original Array or not ?
 // console.log(val);                 // 📍 Answer is "true"
@@ -128,7 +128,13 @@ let val2 = myArrey.indexOf(4);     // ✅For knowing whether given value of INDE
 			          // 🔽🔽
 
 let val3 = myArrey.indexOf(12);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
-console.log(val3);              // 📍 Answer is "3" 
+// console.log(val3);              // 📍 Answer is "3" 
+
+			          // 🔽🔽
+
+let vall4 = myArrey.indexOf('XUV');     // ✅For knowing whether given value of INDEX is in the original Array or not ?
+// console.log(vall4);                  // 📍 Answer is "-1"  [i.e. false OR i don't know bcoz 'xuv' were in the 'small-case' in the ARRAY not in CAPITALS ]
+
 
 
 
