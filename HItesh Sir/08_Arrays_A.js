@@ -173,14 +173,14 @@ let val4 = myArr4.join()
 //🍀🍀🍀🍀
 
 
-//💎✅💎 REVERSE 👇👇        // ✅Reverses the WHOLE-ARRAY
+//💎✅💎 REVERSE 👇👇           // ✅Reverses the WHOLE-ARRAY
 
 let newArrr1 = ['yellow', 'green', 'red']
 let valu = newArrr1.reverse()
 // console.log(valu);               //📍Answer is :- [ 'red', 'green', 'yellow' ]
 // console.log(newArrr1);           //📍Answer is :- [ 'red', 'green', 'yellow' ] 
 				   // (✅ Reverses the whole original ARRAY)
-				   
+
 //🍀🍀🍀🍀
 
 

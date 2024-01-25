@@ -104,6 +104,8 @@ const sorted1 = Arrrey.sort();
 
 
 
+
+dddd
 // EXERCISE 
 
 let lang = ['C', 'C++', 'JavaScript', 'Python', 'Java', 'Car']
@@ -118,8 +120,6 @@ lang.reverse()
 
 let vall = lang.reverse().indexOf(`JavaScript`)
 console.log(vall);           //📍📍 Answer is :-  "2"  
-
-
 
 
 
