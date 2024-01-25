@@ -232,10 +232,20 @@ const myn2 = myArr6. splice(1, 4)
 				   // 🔽🔽
 
 const myArr7 = ['Red', 'Brown', 'Green', 'Black']
-
 myArr7.splice(0, 0, 'Pink', 'Black', 'Orange')    // (✅ if we want To push values like "'Pink', 'Black', 'Orange'"  on the 0th position & don't want to delete any value )
+// console.log(myArr7);            //📍 Answer is :- ['Pink',   'Black', 'Orange', 'Red', 'Brown',  'Green', 'Black' ]
 
-console.log(myArr7);            //📍 Answer is :- ['Pink',   'Black', 'Orange', 'Red', 'Brown',  'Green', 'Black' ]
+				   // 🔽🔽
+
+const myArr8 = [ 'Orange', 'Red', 'Brown', 'Green' ]
+myArr8.splice(2, 0, 'toyota', 'xuv','bmw')    // (✅ if we want To push values like "'toyota', 'xuv','bmw'"  on the 2nd position & don't want to delete any value )
+// console.log(myArr8);            //📍 Answer is :- ['Orange', 'Red', 'toyota', 'xuv', 'bmw', 'Brown', 'Green' ]
+      
+				   // 🔽🔽
+
+const myArr9 = [ 'Stone', 'Paper', 'Scissor', 'Eraser', 'Pen', 'Pencil']
+myArr9.splice(2, 2, 'Diamond', 'Rubies', 'Pearls')    // (✅ if we want To push values like "'toyota', 'xuv','bmw'"  on the 2nd position & don't want to delete any value )
+console.log(myArr9);            //📍 Answer is :- ['Orange', 'Red', 'toyota', 'xuv', 'bmw', 'Brown', 'Green' ]
       
 
 
