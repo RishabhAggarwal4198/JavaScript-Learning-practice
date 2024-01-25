@@ -123,7 +123,12 @@ let val = myArrey.includes(9);       // ✅ For knowing whether given value is i
 			          // 🔽🔽
 
 let val2 = myArrey.indexOf(4);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
-// console.log(val2);            // 📍 Answer is "-1"  [i.e. false OR i don't know]
+// console.log(val2);              // 📍 Answer is "-1"  [i.e. false OR i don't know]
+
+			          // 🔽🔽
+
+let val3 = myArrey.indexOf(12);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
+console.log(val3);              // 📍 Answer is "3" 
 
 
 
