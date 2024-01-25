@@ -108,30 +108,21 @@ months.shift()
 months.unshift("January", "March", "April", "June")
 // console.log(months);       //📍📍 Answer is :-  "[ 'January', 'March', 'April', 'June', 'July', 'August' ]"  
 
+
 //🍀🍀🍀🍀
 
 
 
 
 
+let myArrey = [ 3, 6, 9, 12, 15, 18]
 
+let val = myArrey.includes(9);       // ✅ For knowing whether given value is in the original Array or not ?
+// console.log(val);                 // 📍 Answer is "true"
 
+			          // 🔽🔽
 
-
-
-let val = myArr.includes(9);       // ✅ For knowing whether given value is in the original Array or not ?
-// console.log(val);                 // 📍 Answer is "false"
-
-
-
-
-
-let val1 = myArr.indexOf(4);      // ✅For knowing whether given value of INDEX is in the original Array or not ?
-// console.log(val1);             // 📍 Answer is "3"     [✅it is talking its value from the last "myArr.shift()" operation]
-
-                                // 🔽🔽
-
-let val2 = myArr.indexOf(9);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
+let val2 = myArrey.indexOf(4);     // ✅For knowing whether given value of INDEX is in the original Array or not ?
 // console.log(val2);            // 📍 Answer is "-1"  [i.e. false OR i don't know]
 
 
