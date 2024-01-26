@@ -15,6 +15,11 @@ for (let i = 0; i <= 5; i++){
 	// console.log(`The value is : ${i}`);
 }
 
+		 // 🔽🔽
+
+for ( let i = 5; i >= 0; i-- ){
+	// console.log(`The Value is: ${i}`); /
+}
 
 
 //💎💎EXAMPLE - 1  (for - Loop) 👇    [✅how it gets executed watch @7:19:44]
