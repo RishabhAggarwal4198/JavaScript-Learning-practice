@@ -12,15 +12,29 @@
 
 
 for (let i = 0; i <= 5; i++){
-	// console.log(`The value is : ${i}`);
-}
+	// console.log(`The value is : ${i}`);    //📍📍 Answer is :-  " "  
+}						 // The value is : 0
+						 // The value is : 1
+						 // The value is : 2
+						 // The value is : 3
+						 // The value is : 4
+						 // The value is : 5
 
 		 // 🔽🔽
 
 for ( let i = 5; i >= 0; i-- ){
-	// console.log(`The Value is: ${i}`); /
-}
+	// console.log(`The Value is: ${i}`);      //📍📍 Answer is :-  " "  
+}						 // The value is : 5
+						 // The value is : 4
+						 // The value is : 3
+						 // The value is : 2
+						 // The value is : 1
+						 // The value is : 0
 
+
+
+
+						 
 
 //💎💎EXAMPLE - 1  (for - Loop) 👇    [✅how it gets executed watch @7:19:44]
 
