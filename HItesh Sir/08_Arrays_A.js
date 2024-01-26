@@ -258,8 +258,8 @@ myArr10.splice(1, 4, 'Brass', 'Copper' , 'Lithium')    // (✅ if we want To pus
 				   // 🔽🔽
 
 const myArr11 = ['Mango', 'Grapes', 'PineApple', 'Kiwi']
-myArr11.splice(1, 4, 'Brass', 'Copper' , 'Lithium')    // (✅ if we want To push values like "'Brass', 'Copper' , 'Lithium'"  on the 1st position & want to delete 4 values starting from the 1st value of the ARRAY)
-// console.log(myArr11);            //📍 Answer is :- [ 'Gold', 'Brass', 'Copper', 'Lithium', 'Sulphate', 'Boron' ]
+myArr11.splice(2, 3, 'Pear', 'Apple', 'Guava')    // (✅ if we want To push values like "'Pear', 'Apple', 'Guava'"  on the 2st position & want to delete 3 values starting from the 1st value of the ARRAY)
+// console.log(myArr11);            //📍 Answer is :-[ 'Mango', 'Grapes', 'Pear', 'Apple', 'Guava' ]
       
 
 
