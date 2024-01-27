@@ -11,6 +11,8 @@
 // }
 
 
+// 🍀🍀🍀🍀🍀🍀🍀🍀
+
 for (let i = 0; i <= 5; i++){
 	// console.log(`The value is : ${i}`);    //📍📍 Answer is :-  " "  
 }						 // The value is : 0
@@ -63,12 +65,27 @@ for ( let i = 2 ; i <= 10; i +=  2 ){
 						 // The Value is: 6
 						 // The Value is: 8
 						 // The Value is: 10
+						
+
+		 // 🔽🔽
+
+for ( let i = 5 ; i <= 50; i +=  5 ){
+	for (let j = 1; j <=10; j++) {
+	}
+	console.log(` 5 X ${j} = ${i}`);    //📍📍 Run the Loop to see the answer  
+}						
 						 
  
 
 
 
+// 🍀🍀🍀🍀🍀🍀🍀🍀
 
+
+
+
+		
+						 
 
 //💎💎EXAMPLE - 1  (for - Loop) 👇    [✅how it gets executed watch @7:19:44]
 
