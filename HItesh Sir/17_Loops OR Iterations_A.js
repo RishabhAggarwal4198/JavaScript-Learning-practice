@@ -31,10 +31,20 @@ for ( let i = 5; i >= 0; i-- ){
 						 // The value is : 1
 						 // The value is : 0
 
+		 // 🔽🔽
+
+for ( let i = 10 ; i >= 1; i = i-3 ){
+	// console.log(`The Value is: ${i}`);      //📍📍 Answer is :-  " "  
+}						 // The value is : 10
+						 // The value is : 7
+						 // The value is : 4
+						 // The value is : 1
+						
+ 
 
 
 
-						 
+
 
 //💎💎EXAMPLE - 1  (for - Loop) 👇    [✅how it gets executed watch @7:19:44]
 
