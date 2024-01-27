@@ -53,6 +53,17 @@ for ( let i = 15 ; i >= 1; i = i-2 ){
 						 // The Value is: 3
 						 // The Value is: 1
 						
+
+		 // 🔽🔽
+
+for ( let i = 2 ; i <= 10; i +=  2 ){
+	// console.log(`The Value is: ${i}`);    //📍📍 Answer is :-  " "  
+}						 // The Value is: 2
+						 // The Value is: 4
+						 // The Value is: 6
+						 // The Value is: 8
+						 // The Value is: 10
+						 
  
 
 
