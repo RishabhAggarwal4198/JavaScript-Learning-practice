@@ -67,16 +67,16 @@ for ( let i = 2 ; i <= 10; i +=  2 ){
 						 // The Value is: 10
 						
 
-		 // 🔽🔽
+		 // 🔽🔽 
 
-for ( let i = 5 ; i <= 50; i +=  5 ){
-	for (let j = 1; j <=10; j++) {
-	}
-	console.log(` 5 X ${j} = ${i}`);    //📍📍 Run the Loop to see the answer  
-}						
+let n = prompt("write your Number")
+n = parseInt(n)
+
+for (let i=n; i<=n*10; i=i+n){
+	// console.log(i);
+}
 						 
  
-
 
 
 // 🍀🍀🍀🍀🍀🍀🍀🍀
