@@ -75,7 +75,17 @@ for ( let i = 2 ; i <= 10; i +=  2 ){
 // for (let i=n; i<=n*10; i=i+n){
 	// console.log(i);
 // }
-						 
+
+
+
+//💎💎NESTED-LOOPS👇
+
+for (let i=1; i<=3; i++){
+	// console.log(`Outer Loop ${i}`);
+	for(let j=1; j<=3; j++){
+		// console.log(j);
+	}
+}
  
 
 
@@ -239,7 +249,7 @@ while (arr < myArray.length) {
 
 let score1 = 1;
 do{
-    console.log(`Score is ${score1}`);          
+//     console.log(`Score is ${score1}`);          
     score1++
 } while (score1 <= 10)                      // 📍 run the LOOP to see the result
 
