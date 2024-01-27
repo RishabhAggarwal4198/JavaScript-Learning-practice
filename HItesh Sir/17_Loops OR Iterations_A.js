@@ -69,12 +69,12 @@ for ( let i = 2 ; i <= 10; i +=  2 ){
 
 		 // 🔽🔽 
 
-let n = prompt("write your Number")
-n = parseInt(n)
+// let n = prompt("write your Number")
+// n = parseInt(n)
 
-for (let i=n; i<=n*10; i=i+n){
+// for (let i=n; i<=n*10; i=i+n){
 	// console.log(i);
-}
+// }
 						 
  
 
