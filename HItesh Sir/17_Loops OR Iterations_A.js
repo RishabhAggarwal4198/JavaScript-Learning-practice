@@ -40,6 +40,19 @@ for ( let i = 10 ; i >= 1; i = i-3 ){
 						 // The value is : 4
 						 // The value is : 1
 						
+
+		 // 🔽🔽
+
+for ( let i = 15 ; i >= 1; i = i-2 ){
+	// console.log(`The Value is: ${i}`);      //📍📍 Answer is :-  " "  
+}						 // The Value is: 15
+						 // The Value is: 13
+						 // The Value is: 9
+						 // The Value is: 7
+						 // The Value is: 5
+						 // The Value is: 3
+						 // The Value is: 1
+						
  
 
 
