@@ -241,12 +241,12 @@ while (arr < myArray.length) {
 }
 
 
-
 // 🍀🍀🍀🍀🍀🍀🍀🍀
 
 const favMovie = 'avatar';
 
 let guess = prompt("guess my favourite movie")
+
 
 while((guess != favMovie) && (guess != "quit")){
 	guess = prompt('wrong guess. please try again');
@@ -256,8 +256,40 @@ if(guess == favMovie){
 	console.log("congrats!");
 }
 
+	 // 🔽🔽
+
+while(guess != favMovie){
+	if(guess != "quit"){
+		console.log("you quit");
+		break;
+	}
+	guess = prompt('wrong guess. please try again');
+}
+
+if(guess == favMovie){
+	console.log("congrats!");
+}
+
+
+
+//BREAK
+
+let i = 1;
+
+while( i <= 5){
+    if(i == 3){
+	break
+    }	
+    console.log(i);
+    i++;
+}
+
+console.log('We used break at 3');
+
 
 // 🍀🍀🍀🍀🍀🍀🍀🍀
+
+
 
 
 
