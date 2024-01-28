@@ -241,50 +241,61 @@ while (arr < myArray.length) {
 }
 
 
+
 // 🍀🍀🍀🍀🍀🍀🍀🍀
 
-const favMovie = 'avatar';
+// const favMovie = 'avatar';
 
-let guess = prompt("guess my favourite movie")
+// let guess = prompt("guess my favourite movie")
 
 
-while((guess != favMovie) && (guess != "quit")){
-	guess = prompt('wrong guess. please try again');
-}
+// while((guess != favMovie) && (guess != "quit")){
+// 	guess = prompt('wrong guess. please try again');
+// }
 
-if(guess == favMovie){
-	console.log("congrats!");
-}
+// if(guess == favMovie){
+// 	console.log("congrats!");
+// }
 
 	 // 🔽🔽
 
-while(guess != favMovie){
-	if(guess != "quit"){
-		console.log("you quit");
-		break;
-	}
-	guess = prompt('wrong guess. please try again');
-}
+// while(guess != favMovie){
+// 	if(guess != "quit"){
+// 		console.log("you quit");
+// 		break;
+// 	}
+// 	guess = prompt('wrong guess. please try again');
+// }
 
-if(guess == favMovie){
-	console.log("congrats!");
-}
+// if(guess == favMovie){
+// 	console.log("congrats!");
+// }
 
 
 
 //💎✅💎 BREAK
 
-let i = 1;
+// let i = 1;
 
-while( i <= 5){
-    if(i == 3){
-	break;
-    }	
-    console.log(i);
-    i++;
+// while( i <= 5){
+//     if(i == 3){
+// 	break;
+//     }	
+//     console.log(i);
+//     i++;
+// }
+
+// console.log('We used break at 3');
+
+
+
+//💎✅💎 LOOPs in ARRAYs
+
+let fruits = [`Mango`, `Apple`, `Banana`, `Litchi`, `Orange`]
+
+for(let i = 0; i < fruits.length; i++){
+   console.log(fruits[i]);
 }
-
-console.log('We used break at 3');
 
 
 // 🍀🍀🍀🍀🍀🍀🍀🍀
