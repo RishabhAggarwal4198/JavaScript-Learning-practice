@@ -272,13 +272,13 @@ if(guess == favMovie){
 
 
 
-//BREAK
+//💎✅💎 BREAK
 
 let i = 1;
 
 while( i <= 5){
     if(i == 3){
-	break
+	break;
     }	
     console.log(i);
     i++;
