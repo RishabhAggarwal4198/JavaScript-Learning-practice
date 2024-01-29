@@ -345,16 +345,35 @@ for( let i = 0; i < student.length; i++){
 
 
 
-							
 
-//💎✅💎 LOOPs in ARRAYs
+
+//💎✅💎 LOOPs in ARRAYs  [When we want to access every 'Single' element of an ARRAY & STRING ]
 
 let fruitz = [`Mango`, `Apple`, `Banana`, `Litchi`, `Orange`]
 
-for (fruit of fruitz) {
-	console.log(fruit);
-}
+for ( froot of fruitz) {
+	// console.log(froot);  //📍📍 Answer is :- 
+}                               // Mango
+				// Apple
+				// Banana
+				// Litchi
+				// Orange
 
+
+
+for(char of "apnacollege"){
+	// console.log(char);   //📍📍 Answer is :-    
+}       	                // a
+				// p
+				// n
+				// a
+				// c
+				// o
+				// l
+				// l
+				// e
+				// g
+				// e
 
 
 
