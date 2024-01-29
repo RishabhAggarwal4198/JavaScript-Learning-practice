@@ -50,6 +50,8 @@ const twPost = {
      tags: ['@knowldge', '@delta' ]
 }
 
+// console.log(twPost.content);      //📍📍 Answer is :-  "This is my #firstPost"  
+
 // 🍀🍀🍀🍀🍀🍀🍀🍀
 
 
