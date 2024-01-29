@@ -11,7 +11,7 @@
     <style>
 
         body{
-            height: 10000px;
+            height: 4000px;
         }
         
         h2{
@@ -864,12 +864,18 @@ function fives () {
 fives() 
 
 // console.log(Arri);
+let g;
 
 function finalVal () {
 	for(let i = 1; i <= 10; i++){
-   	return `5 X ${i} = ${Arri[i]}`
+   	 g = `5 X ${i} = ${Arri[i]}`
+   	console.log(g);
+    } 
+   return g;
 }
-}
+
+finalVal()
+// console.log(finalVal());
 
 
 document.querySelector('#table').addEventListener('click', () => {
