@@ -242,6 +242,10 @@ while (arr < myArray.length) {
 
 
 
+
+
+
+
 // 🍀🍀🍀🍀🍀🍀🍀🍀
 
 // const favMovie = 'avatar';
@@ -306,7 +310,7 @@ for(let i = fruits.length-1; i >= 0; i-- ){
 		// 🔽🔽
 
 
-//💎✅💎 Nested LOOPs in Nested ARRAYs
+//💎 Nested LOOPs in Nested ARRAYs
 
 let heros = [['ironman', 'spiderman', 'thor'], ['superman', 'wonder woman','flash']];
 
@@ -321,9 +325,9 @@ for (let i = 0; i <heros.length; i++){
 let student = [ [`Keshav`, 95], [`Raman`, 80], [`Aastha`, 55] ]
 
 for( let i = 0; i < student.length; i++){
-	console.log(student[i]);
+	// console.log(student[i]);
 	for(let j = 0; j < student[i].length; j++  ){
-	// console.log(student[i][j]);                     //📍📍 Answer is :-  
+	// console.log(student[i][j]);                  //📍📍 Answer is :-  
 	}						// Keshav
 }							// 95
 							// [ 'Raman', 80 ]
@@ -335,6 +339,21 @@ for( let i = 0; i < student.length; i++){
 
 
 
+
+
+
+
+
+
+							
+
+//💎✅💎 LOOPs in ARRAYs
+
+let fruitz = [`Mango`, `Apple`, `Banana`, `Litchi`, `Orange`]
+
+for (fruit of fruitz) {
+	console.log(fruit);
+}
 
 
 
