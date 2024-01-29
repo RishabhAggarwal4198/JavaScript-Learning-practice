@@ -35,8 +35,22 @@ const JsUser = {
     Location: "jaipur",
     email: "aggarwalrishabh4198@gmail.com",
     isLoggedIn: false,
-    LastLoginDays: ["Monday", "Saturday"]
+    LastLoginDays: ["Monday", "Saturday"],
 }
+
+
+
+// 🍀🍀🍀🍀🍀🍀🍀🍀
+
+const twPost = {
+     username: "@rishabhaggarwal",
+     content: `This is my #firstPost`,
+     Likes : 150,
+     reposts: 5,
+     tags: ['@knowldge', '@delta' ]
+}
+
+// 🍀🍀🍀🍀🍀🍀🍀🍀
 
 
 
