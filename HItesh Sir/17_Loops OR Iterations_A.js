@@ -380,13 +380,9 @@ let vegetables = [ ['Potato', 'Onion', 'Garlic','Yam'], ['Beans', 'Spinach', 'Pe
 
 for( listzz of vegetables){
     for(vall of listzz){
-	console.log(vall); 
+	// console.log(vall); 
     }
 }
-
-
-
-
 
 
 
