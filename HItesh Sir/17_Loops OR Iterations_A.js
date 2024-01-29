@@ -347,7 +347,7 @@ for( let i = 0; i < student.length; i++){
 
 
 
-//💎✅💎 LOOPs in ARRAYs  [When we want to access every 'Single' element of an ARRAY & STRING ]
+//💎✅💎 FOR of LOOP  [When we want to access every 'Single' element of an ARRAY & STRING ]
 
 let fruitz = [`Mango`, `Apple`, `Banana`, `Litchi`, `Orange`]
 
@@ -374,6 +374,17 @@ for(char of "apnacollege"){
 				// e
 				// g
 				// e
+
+
+let vegetables = [ ['Potato', 'Onion', 'Garlic','Yam'], ['Beans', 'Spinach', 'Peas', 'Fenugreek']]
+
+for( listzz of vegetables){
+    for(vall of listzz){
+	console.log(vall); 
+    }
+}
+
+
 
 
 
