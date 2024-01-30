@@ -23,6 +23,7 @@ function sayMyName () {
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
+
 function printInfo (name, age) {
 	console.log(`${name}'s Age is ${age}`);
 }
@@ -41,6 +42,25 @@ function calcAvg (a, b, c) {
 // calcAvg(3,5,7)             //📍📍 Answer is :-  The Average of 3, 5, 7 is = 7.5
 // calcAvg(5, 8, 9)           //📍📍 Answer is :-  The Average of 5, 8, 9 is = 11
 
+		// 🔽🔽
+
+function printTable (n) {
+	for(let i =n; i <= n*10; i += n ) {
+		console.log(i);
+	}
+}
+
+// printTable(2)                //📍📍 Answer is :- 
+				// 2
+				// 4
+				// 6
+				// 8
+				// 10
+				// 12
+				// 14
+				// 16
+				// 18
+				// 20
 
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
