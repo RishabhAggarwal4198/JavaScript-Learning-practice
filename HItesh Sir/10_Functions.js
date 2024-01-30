@@ -368,8 +368,6 @@ function oddEvenFactory (reqq){
 
     if(reqq%2 == 0  ){
         console.log(`${reqq} is an EVEN number`);
-    } else if (reqq == 0){
-        console.log(` You entered ${reqq} `);
     } else {
         console.log(`${reqq} is an ODD number`);
     }
@@ -378,6 +376,8 @@ function oddEvenFactory (reqq){
 // oddEvenFactory(5)           //📍📍 Answer is :-  5 is an ODD number
 // oddEvenFactory(90)          //📍📍 Answer is :-  90 is an EVEN number
 
+let yy = 0;
+// oddEvenFactory(yy)            //📍📍 Answer is :-  0 is an EVEN number
 
 
 
