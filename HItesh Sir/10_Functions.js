@@ -274,10 +274,10 @@ function loginUserMessage (username) {
 
     //💎✅💎directly passing OBJECT inside the FUNCTION 👇👇 [We inserted whole "user" block into it]
 
-    handleObject({ 
-            username: "Ramann",
-            price: 399
-    })                           // 📍Answer is "Username is Ramann and price is 399"
+    // handleObject({ 
+    //         username: "Ramann",
+    //         price: 399
+    // })                           // 📍Answer is "Username is Ramann and price is 399"
 
 
 
@@ -362,10 +362,24 @@ let odd = function (n){
 // odd(33)         //📍📍 Answer is :-  true
 
 
-		// 🔽🔽
+		// 🔽🔽 ( in place of the above code)
+
+function oddEvenFactory (reqq){
+
+    if(reqq%2 == 0  ){
+        console.log(`${reqq} is an EVEN number`);
+    } else if (reqq == 0){
+        console.log(` You entered ${reqq} `);
+    } else {
+        console.log(`${reqq} is an ODD number`);
+    }
+}
+
+// oddEvenFactory(5)           //📍📍 Answer is :-  5 is an ODD number
+// oddEvenFactory(90)          //📍📍 Answer is :-  90 is an EVEN number
+
 
 
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
-    
