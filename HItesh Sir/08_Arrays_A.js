@@ -22,7 +22,7 @@ const myArr3 = [`A`, 3, "Raman", true, 40.5764, null]
 
 
 
-//🍀🍀🍀🍀
+//🍀🍀🍀🍀🍀🍀🍀🍀
 
 let myArrz = [`Ramesh`, `Suresh`, `Prathmesh`, `Yogesh`] 
 
@@ -46,7 +46,7 @@ fruits [6] = 'Peach'
 // console.log(fruits.length);               //[📍📍 Answer is :-  "7"  ] 
 
 
-//🍀🍀🍀🍀
+//🍀🍀🍀🍀🍀🍀🍀🍀
 
 
 
