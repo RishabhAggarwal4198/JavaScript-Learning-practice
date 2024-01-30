@@ -126,7 +126,26 @@ const info = [
 // console.log(info[2].Rank);        //📍📍 Answer is :-  740  
 
 
+
+
+
+
+//💎✅💎 MATH - OBJECT 👇👇
+
+console.log(Math.PI);                //📍📍 Answer is :- 3.141592653589793  
+
+
+
+
+
+
+
 // 🍀🍀🍀🍀🍀🍀🍀🍀
+
+
+
+
+
 
 
 
