@@ -343,6 +343,26 @@ let greet = function () {
 								// Namaste
 								// Namaste
 
+
+// FUNCTION which detects the EVEN & ODD Number 👇
+
+let even = function (z) {
+     console.log((z%2 == 0));
+}
+
+// even(33)         //📍📍 Answer is :-  false
+// even(28)         //📍📍 Answer is :-  true
+
+
+
+let odd = function (n){
+	console.log(!(n%2 == 0));
+}
+
+
+// odd(18)         //📍📍 Answer is :-  false
+// odd(33)         //📍📍 Answer is :-  true
+
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
     
