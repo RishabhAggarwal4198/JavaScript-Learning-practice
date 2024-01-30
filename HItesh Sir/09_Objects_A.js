@@ -164,17 +164,38 @@ let num5 = Math.random()     //✅ Give the numerical value from "0 - 1" (in whi
 // console.log(num5);
 
 
+
+
+
 //For generating RANDOM numbers in a RANGE (of suppose 1 - 33) 👇
 
-let random = Math.floor(Math.random()*3) + 1;
+let random = Math.floor(Math.random()*33) + 1;
 // console.log(random);     //📍📍 Run it for the Answer
 
 		        // 🔽🔽
 
 //For generating RANDOM numbers in a RANGE (of suppose 21 - 25) 👇
-
 let random0 = Math.floor(Math.random()*5) + 21
 // console.log(random0);
+
+		        // 🔽🔽
+
+//For generating RANDOM numbers in a RANGE (of suppose 41 - 57) 👇
+let random1 = Math.floor(Math.random()*17) + 41
+// console.log(random1);
+
+		        // 🔽🔽
+
+//For generating RANDOM numbers in a RANGE (of suppose 55 - 99 ) 👇
+let random2 = Math.floor(Math.random()*45) + 55
+// console.log(random2);
+
+
+//✅✅ for getting the VALUE like above in a range :-
+// 1) Minus the LOWER-RANGE from UPPER-RANGE & then add 1 to it
+// 2) & then multiply it to "Math.random()"
+// 3) then apply  'Math.floor()' to the 'Math.random()' & add the LOWER-RANGE to it
+
 
 
 // 🍀🍀🍀🍀🍀🍀🍀🍀
