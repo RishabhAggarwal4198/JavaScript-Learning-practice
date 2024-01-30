@@ -29,6 +29,7 @@ function printInfo (name, age) {
 
 // printInfo('Ramesh', 22)       //📍📍 Answer is :-  Ramesh's Age is 22
 // printInfo('Aastha', 28)       //📍📍 Answer is :- Aastha's Age is 28
+// printInfo('Karan')           //📍📍 Answer is :-  Karan's Age is undefined  [✅ Bcoz we havn't passed the second Arguement]
 
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
