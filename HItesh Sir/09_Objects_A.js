@@ -166,7 +166,6 @@ let num5 = Math.random()     //✅ Give the numerical value from "0 - 1" (in whi
 
 
 
-
 //For generating RANDOM numbers in a RANGE (of suppose 1 - 33) 👇
 
 let random = Math.floor(Math.random()*33) + 1;
@@ -195,6 +194,7 @@ let random2 = Math.floor(Math.random()*45) + 55
 // 1) Minus the LOWER-RANGE from UPPER-RANGE & then add 1 to it
 // 2) & then multiply it to "Math.random()"
 // 3) then apply  'Math.floor()' to the 'Math.random()' & add the LOWER-RANGE to it
+
 
 
 
