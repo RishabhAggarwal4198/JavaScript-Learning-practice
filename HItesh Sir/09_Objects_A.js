@@ -52,6 +52,51 @@ const twPost = {
 
 // console.log(twPost.content);      //📍📍 Answer is :-  "This is my #firstPost"  
 
+
+//Changing value
+twPost.Likes = 220
+// console.log(twPost.Likes);         //📍📍 Answer is :-  220
+
+
+// Adding New Value
+twPost.Followers = 1000
+// console.log(twPost);         //📍📍 Answer is :- 
+				//      {
+				// 	username: '@rishabhaggarwal',
+				// 	content: 'This is my #firstPost',
+				// 	Likes: 220,
+				// 	reposts: 5,
+				// 	tags: [ '@knowldge', '@delta' ],
+				// 	Followers: 1000
+				//       }
+	
+				
+//✅ NESTED - OBJECTs  👇👇
+
+const PersonlaInfo = {
+	Raman :{
+	    Age: '29',
+	    Rank: 540,
+	    Graduate: true
+	},
+
+	Aastha: {
+	    Age: '40',
+	    Rank: 640,
+	    Graduate: true
+	},
+
+	Ramesh: {
+	    Age: '39',
+	    Rank: 740,
+	    Graduate: false
+	},
+
+}
+
+// console.log(PersonlaInfo.Aastha.Rank);       //📍📍 Answer is :-  640 
+
+
 // 🍀🍀🍀🍀🍀🍀🍀🍀
 
 
