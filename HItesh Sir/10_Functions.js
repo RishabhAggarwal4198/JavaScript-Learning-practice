@@ -63,6 +63,36 @@ function printTable (n) {
 				// 20
 
 
+		// 🔽🔽
+
+function sum (a, b) {
+      return a + b;
+}
+
+let s1 = sum(sum(3,5), 7)
+// console.log(ss);       //📍📍 Answer is :-  15 
+
+let s2 = sum(sum(6, 5), 9)
+// console.log(s2);          //📍📍 Answer is :-  20
+
+
+	     // 🔽🔽
+
+let str = [' Hello', ' Hi', ' Bye', ' Bye' , ' !']
+
+function concat (arr){
+	let result = "";
+
+	for(let i=0; i < arr.length; i++ ){
+		result += arr[i]
+	}
+
+	console.log(result);
+	return result
+}
+
+// concat(str)           //📍📍 Answer is :-   Hello Hi Bye Bye !
+
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
 
