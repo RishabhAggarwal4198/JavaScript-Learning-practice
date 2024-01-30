@@ -31,6 +31,17 @@ function printInfo (name, age) {
 // printInfo('Aastha', 28)       //📍📍 Answer is :- Aastha's Age is 28
 // printInfo('Karan')           //📍📍 Answer is :-  Karan's Age is undefined  [✅ Bcoz we havn't passed the second Arguement]
 
+		// 🔽🔽
+
+function calcAvg (a, b, c) {
+   let avg = (a+b+c)/2
+   console.log(`The Average of ${a}, ${b}, ${c} is = ${avg}`);
+}
+
+// calcAvg(3,5,7)             //📍📍 Answer is :-  The Average of 3, 5, 7 is = 7.5
+// calcAvg(5, 8, 9)           //📍📍 Answer is :-  The Average of 5, 8, 9 is = 11
+
+
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
