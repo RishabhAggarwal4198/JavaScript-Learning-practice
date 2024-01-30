@@ -131,11 +131,24 @@ const addTwo3 = (num1, num2) => num1 + num2
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
+
+                      //🔽🔽 OR (another way of writing same IMPLICIT function)
+
+const addTwo3_2 =( num1, num2 ) =>  (
+    num1**num2
+)     
+                    
+// console.log(addTwo3_2(3, 6));                      // 📍 Answer is "729" 
+
+
                      //🔽🔽 OR (when we have only SINGLE parameter to pass in the FUNCTION)
+
 
 const addTwo3_3 = num1 =>  (num1**num1)     
 
 // console.log(addTwo3_3(3));                      // 📍 Answer is "27" 
+
+
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
