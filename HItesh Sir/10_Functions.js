@@ -384,7 +384,7 @@ let yy = 0;
 
 
 
-// 💎✅💎 METHODS 👇👇
+// 💎✅💎 METHODS 👇👇 [a FUNCTION defined inside an OBJECT is called METHOD]
 
 const calculateIt = {
     num: 55,
@@ -413,6 +413,32 @@ const calculateIt = {
 
 //✅✅NOTE✅✅ 
 // In the same way "Math.PI", "Math.random" etc. is also an predefined OBJECT in JS having "Math" as its name &  "PI"  &  "random" as its methods
+
+
+
+
+
+// 💎✅💎 SHORT-HAND Method 👇👇 [of defining a METHOD in an OBJECT]
+
+const data = {
+
+    add(a,b){
+        console.log(a+b);
+        return a+b;
+    },
+
+    sub :(a,b) => {
+        console.log(a-b);
+        return a-b;
+    },
+    nul(a,b){
+        console.log(a*b);
+        return a*b
+    }
+}
+
+// data.sub(5,9)        //📍📍 Answer is :-  -4
+// data.nul(7,4)        //📍📍 Answer is :-  28
 
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
