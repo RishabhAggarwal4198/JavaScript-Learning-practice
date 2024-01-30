@@ -262,3 +262,119 @@ JsUser.greetingTwo = function() {
 
 
 
+
+
+
+
+
+
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
+
+
+// 💎✅💎 METHODS 👇👇 [a FUNCTION defined inside an OBJECT is called METHOD]
+
+const calculateIt = {
+	num: 55,
+    
+	add: function(a,b){
+	    console.log(a+b);
+	    return a+b;
+	    
+	},
+    
+	sub: function(a,b){
+	    console.log(a-b);
+	    return a-b;
+	},
+    
+	nul: function(a,b){
+	    console.log(a*b);
+	    return a*b
+	}
+    }
+    
+    
+    // calculateIt.sub(4,5)          //📍📍 Answer is :-  -1
+    // calculateIt.nul(5,8)          //📍📍 Answer is :-  40
+    
+    
+    //✅✅NOTE✅✅ 
+    // In the same way "Math.PI", "Math.random" etc. is also an predefined OBJECT in JS having "Math" as its name &  "PI"  &  "random" as its methods
+    
+    
+    
+    
+    
+    // 💎✅💎 SHORT-HAND Method 👇👇 [of defining a METHOD in an OBJECT]
+    
+    const data = {
+    
+	add(a,b){
+	    console.log(a+b);
+	    return a+b;
+	},
+    
+	sub :(a,b) => {
+	    console.log(a-b);
+	    return a-b;
+	},
+	nul(a,b){
+	    console.log(a*b);
+	    return a*b
+	}
+    }
+    
+    // data.sub(5,9)        //📍📍 Answer is :-  -4
+    // data.nul(7,4)        //📍📍 Answer is :-  28
+
+
+
+
+
+
+ // 💎✅💎 THIS keyword 👇👇
+
+
+ const student = {
+	name: "Rishabh",
+	age: 26,
+	eng: 85,
+	math: 95,
+	phy: 45,
+	getAvg() {
+		let avg = (eng + math + phy) / 3
+		console.log(avg); 
+	}
+ }
+
+//  student.getAvg()                //📍📍 Answer is :-  ERROR
+				 //✅✅ bcoz we havn't used  "THIS" keyword 
+
+
+ 		// 🔽🔽
+
+
+
+
+const student1 = {
+	name: "Rishabh",
+	age: 26,
+	eng: 85,
+	math: 95,
+	phy: 45,
+	getAvg() {
+		let avg = (this.eng + this.math + this.phy) / 3
+		console.log(avg); 
+	}
+}
+
+	student1.getAvg()                //📍📍 Answer is :-  75
+					
+		
+						 
+
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
