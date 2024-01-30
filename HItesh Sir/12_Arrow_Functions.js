@@ -103,7 +103,7 @@ const play4 =  () =>  {
 
 
 const addTwo = (num1, num2) => {
-    return num1 + num2                              // ✅✅ Is called EXPLICIT - RETURN 
+    return num1 + num2                              // ✅✅ Is called EXPLICIT - FUNCTION
 }                                                   // ✅✅(i.e. we need to write "return" keyword, bcoz our function is wrapped in CURLY braces & is in more than 1 line)
 
 // console.log(addTwo(3,4));                       // 📍 Answer is "7" 
@@ -111,7 +111,7 @@ const addTwo = (num1, num2) => {
                    //🔽🔽 OR (another way of writing same function)
 
 // implicit- return Syntax 👇
-const addTwo2 = (num1, num2) =>  (num1 + num2)      // ✅✅ Is called IMPLICIT - RETURN (i.e. no need to write "return" keyword, bcoz our function is not wrapped in CURLY braces & is in just 1 line)
+const addTwo2 = (num1, num2) =>  (num1 + num2)      // ✅✅ Is called IMPLICIT - FUNCTION (i.e. no need to write "return" keyword, bcoz our function is not wrapped in CURLY braces & is in just 1 line)
 
 // console.log(addTwo2(3,4));                      // 📍 Answer is "7" 
 
@@ -126,6 +126,20 @@ const addTwo3 = (num1, num2) => num1 + num2
 ✅✅ If we Gona use "()" parenthesis around  "num1 + num2" then use of "return" keyword before it is not
 ✅✅ If we Gona use "{}"  CURLY brackets around  "num1 + num2" then use of "return" keyword before it is must
 */
+
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
+
+                     //🔽🔽 OR (when we have only SINGLE parameter to pass in the FUNCTION)
+
+const addTwo3_3 = num1 =>  (num1**num1)     
+
+// console.log(addTwo3_3(3));                      // 📍 Answer is "27" 
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
+
+
 
 
 
@@ -147,6 +161,8 @@ const myArray = [2, 5, 3, 7, 8]
 
 // myArray.forEach(function() { } )
 // myArray.forEach(() => {})
+
+
 
 
 
