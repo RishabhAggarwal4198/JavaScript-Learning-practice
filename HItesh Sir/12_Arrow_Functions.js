@@ -129,6 +129,7 @@ const addTwo3 = (num1, num2) => num1 + num2
 
 
 
+
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
 
@@ -149,8 +150,8 @@ const addTwo3_3 = num1 =>  (num1**num1)
 // console.log(addTwo3_3(3));                      // 📍 Answer is "27" 
 
 
-
 //🍀🍀🍀🍀🍀🍀🍀🍀
+
 
 
 
