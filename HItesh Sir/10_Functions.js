@@ -354,14 +354,17 @@ let even = function (z) {
 // even(28)         //📍📍 Answer is :-  true
 
 
-
 let odd = function (n){
 	console.log(!(n%2 == 0));
 }
 
-
 // odd(18)         //📍📍 Answer is :-  false
 // odd(33)         //📍📍 Answer is :-  true
+
+
+		// 🔽🔽
+
+
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
