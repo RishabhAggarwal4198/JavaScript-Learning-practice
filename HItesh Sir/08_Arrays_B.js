@@ -85,7 +85,9 @@ let combined = Array.of(score1, score2, score3);  //✅✅ It gonna convert all 
 
 
 
-//🍀🍀🍀🍀
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀
 
 //💎✅💎SORT-METHOD 👇👇 [for arranging the ARRAY in alphabetical order]
 
@@ -137,7 +139,8 @@ let vall = lang.reverse().indexOf(`JavaScript`)
 
 
 
-//🍀🍀🍀🍀
+//🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀
+
 
 
 

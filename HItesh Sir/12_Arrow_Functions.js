@@ -185,6 +185,8 @@ const myArray = [2, 5, 3, 7, 8]
 
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
+
+
 // 💎✅💎 SET-INTERVAL👇👇 [two times use(once to execute) & second to stop it]
 
 let id = setInterval( ()=>{
@@ -197,8 +199,6 @@ console.log(`"SetInterval Stopped"`);             //📍📍 Answer is :- RUN to
 clearInterval(id);         
 
 }, 10000)
-
-
 
 
 
