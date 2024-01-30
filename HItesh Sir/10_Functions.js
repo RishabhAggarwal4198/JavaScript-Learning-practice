@@ -381,5 +381,39 @@ let yy = 0;
 
 
 
+
+
+
+// 💎✅💎 METHODS 👇👇
+
+const calculateIt = {
+    num: 55,
+
+    add: function(a,b){
+        console.log(a+b);
+        return a+b;
+        
+    },
+
+    sub: function(a,b){
+        console.log(a-b);
+        return a-b;
+    },
+
+    nul: function(a,b){
+        console.log(a*b);
+        return a*b
+    }
+}
+
+
+// calculateIt.sub(4,5)          //📍📍 Answer is :-  -1
+// calculateIt.nul(5,8)          //📍📍 Answer is :-  40
+
+
+//✅✅NOTE✅✅ 
+// In the same way "Math.PI", "Math.random" etc. is also an predefined OBJECT in JS having "Math" as its name &  "PI"  &  "random" as its methods
+
+
 //🍀🍀🍀🍀🍀🍀🍀🍀
 
