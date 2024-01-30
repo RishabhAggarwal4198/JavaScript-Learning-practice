@@ -130,14 +130,51 @@ const info = [
 
 
 
+
 //💎✅💎 MATH - OBJECT 👇👇
 
-console.log(Math.PI);                //📍📍 Answer is :- 3.141592653589793  
+// console.log(Math.PI);                //📍📍 Answer is :- 3.141592653589793  
 
 
 
+//Methods of MATH-OBJECTs 👇
+
+let num0 = Math.abs(-12)       //✅ Returns the absolute value (i.e. the Positive value)
+// console.log(num0);         //📍📍 Answer is :- 12
 
 
+
+let num1 = Math.pow(3, 2)     //✅ Returns the exponent of 3 by the power 2
+// console.log(num1);            //📍📍 Answer is :- 9
+
+
+
+let num2 = Math.floor(5.7)     //✅ Rounds Off to the "Nearest Smallest Whole "value
+// console.log(num2);            //📍📍 Answer is :- 5
+let num3 = Math.floor(-6.8)
+// console.log(num3);            //📍📍 Answer is :-7
+
+
+
+let num4 = Math.ceil(9.7)     //✅ Rounds Off to the " Nearest Largest Whole" value
+// console.log(num4);            //📍📍 Answer is :- 10
+
+
+let num5 = Math.random()     //✅ Give the numerical value from "0 - 1" (in which  1 is exclusive)
+// console.log(num5);
+
+
+//For generating RANDOM numbers in a RANGE (of suppose 1 - 33) 👇
+
+let random = Math.floor(Math.random()*3) + 1;
+// console.log(random);     //📍📍 Run it for the Answer
+
+		        // 🔽🔽
+
+//For generating RANDOM numbers in a RANGE (of suppose 21 - 25) 👇
+
+let random0 = Math.floor(Math.random()*5) + 21
+// console.log(random0);
 
 
 // 🍀🍀🍀🍀🍀🍀🍀🍀
