@@ -79,7 +79,7 @@ let s2 = sum(sum(6, 5), 9)
 
 	     // 🔽🔽
 
-	     
+
 let str = [' Hello', ' Hi', ' Bye', ' Bye' , ' !']
 
 function concat (arr){
@@ -299,5 +299,50 @@ function loginUserMessage (username) {
 
 
 
+
+
+
+
+
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
+
+// 💎✅💎 HIGH ORDER FUNCTION 👇👇
+
+function multipleGreet(func, count){
+	for(let i = 1; i <= count; i++){
+	   func();	
+	}
+}
+
+let greet = function () {
+	console.log("Hello");
+}
+
+// multipleGreet(greet, 5)         //📍📍 Answer is :-  
+				// Hello
+				// Hello
+				// Hello
+				// Hello
+				// Hello
+
+
+		 // 🔽🔽
+
+// multipleGreet(function(){console.log('Namaste')}, 11)    //📍📍 Answer is :-  
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+								// Namaste
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
 
     
