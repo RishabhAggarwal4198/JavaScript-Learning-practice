@@ -97,6 +97,35 @@ const PersonlaInfo = {
 // console.log(PersonlaInfo.Aastha.Rank);       //📍📍 Answer is :-  640 
 
 
+
+
+//✅ ARRAY in OBJECTs  👇👇
+
+const info = [
+	    {
+		Age: '29',
+		Rank: 540,
+		Graduate: true
+	    },
+    
+	    {
+		Age: '40',
+		Rank: 640,
+		Graduate: true
+	    },
+    
+	    {
+		Age: '39',
+		Rank: 740,
+		Graduate: false
+	    }
+    
+]
+
+
+// console.log(info[2].Rank);        //📍📍 Answer is :-  740  
+
+
 // 🍀🍀🍀🍀🍀🍀🍀🍀
 
 
