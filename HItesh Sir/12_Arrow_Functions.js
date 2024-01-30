@@ -180,3 +180,28 @@ const myArray = [2, 5, 3, 7, 8]
 
 
 
+
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
+
+// 💎✅💎 SET-INTERVAL👇👇 [two times use(once to execute) & second to stop it]
+
+let id = setInterval( ()=>{
+    console.log("Hello World");
+}, 2000)
+
+
+setInterval( () =>{
+console.log(`"SetInterval Stopped"`);             //📍📍 Answer is :- RUN to see the Answer 
+clearInterval(id);         
+
+}, 10000)
+
+
+
+
+
+//🍀🍀🍀🍀🍀🍀🍀🍀
+
+
