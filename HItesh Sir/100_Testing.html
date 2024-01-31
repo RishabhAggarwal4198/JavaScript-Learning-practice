@@ -1143,9 +1143,16 @@ let result1 = numz.filter((g) => {
 
     function min(...argu){
         return argu.reduce((e, b) => {
-            
+            if( e > b){
+                return e
+            } else {
+                return b
+            }
         })
     }
+
+    let j = min(4, 5, 8, 2, 5)
+    console.log(j); 
 
 
     
