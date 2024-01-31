@@ -119,8 +119,10 @@
 let smallImages = document.getElementsByClassName("oldImg");
 
 for(let i = 0; i< smallImages.length; i++){
-	console.dir(smallImages[i]);       //📍📍 Answer is :- we will get Each image Element in the console
-	console.dir(smallImages[i].src)    //📍📍 Answer is :- we will get the source Url of Each image
+	console.dir(smallImages[i]);       //✅ Will get Each image Element in the console
+	console.dir(smallImages[i].src)    //✅ Will get the source Url of Each image
+	// console.dir(smallImages[i].src = `/Starter Code (Part-9)/Images/spiderman_img.png`)    //✅ Will replace the "src" of all the images with the src of spiderman Image 
+
 }
 
 
