@@ -1050,6 +1050,9 @@ let result1 = numz.filter((g) => {
 
 
 
+
+
+
     // 💎✅💎 SPREAD 👇👇
 
     let u = [6, 7, 4, 3, 8, 2, 9]
@@ -1057,12 +1060,63 @@ let result1 = numz.filter((g) => {
 
     // console.log(...u);          //📍📍 Answer is :-  6 7 4 3 8 2 9
 
-    let v = [...u,...x]
-    // console.log(v);             //📍📍 Answer is :-  [6, 7, 4, 3, 8, 2, 9, 'A', 'B', 'C', 'D']
+    //-----------------------------------------
 
     // console.log(...'Hello');    //📍📍 Answer is :- H e l l o
-
     
+    let hh = [...`Namaskaaram`]
+    // console.log(hh);               //📍📍 Answer is :- ['N', 'a', 'm', 'a', 's', 'k', 'a', 'a', 'r', 'a', 'm']
+    
+    //-----------------------------------------
+
+    let v = [...u,...x]
+   // console.log(v);             //📍📍 Answer is :-  [6, 7, 4, 3, 8, 2, 9, 'A', 'B', 'C', 'D']
+
+   //-----------------------------------------
+
+   const data = {
+        email: "user@gmail.com",
+        password: 123
+   }
+
+   const g2 = {...data, id: 23, title: "user" }
+   //  console.log(g2);             //📍📍 Answer is :-  {email: 'user@gmail.com', password: 123, id: 23, title: 'user'}
+
+
+   //-----------------------------------------
+
+   let rr = ['ww', 55, '88', 'gg', 77]
+   let y = {...rr}
+//    console.log(y);               //📍📍 Answer is :- {0: 'ww', 1: 55, 2: '88', 3: 'gg', 4: 77}
+
+    //-----------------------------------------
+
+    let ee = `Happy Today`
+    let cc = {...ee}
+    // console.log(cc);              //📍📍 Answer is :-  {0: 'H', 1: 'a', 2: 'p', 3: 'p', 4: 'y', 5: ' ', 6: 'T', 7: 'o', 8: 'd', 9: 'a', 10: 'y'}
+
+
+
+
+
+
+
+
+
+     // 💎✅💎 REST 👇👇
+
+     function sum (...args){
+        for(let i=0; i < args.length; i++){
+            console.log(`You gave us: ${args[i]}`);
+        }
+     }
+    // sum(2, 4)    //📍📍 Answer is :-
+                    // You gave us: 2
+                    // You gave us: 4
+
+
+
+
 
 
 </script>
