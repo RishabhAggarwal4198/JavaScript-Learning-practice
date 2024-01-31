@@ -1116,7 +1116,39 @@ let result1 = numz.filter((g) => {
 
 
 
+    function minz() {
+        console.log(arguments);         // ✅✅✅ "arguments" is an IN-BULIT collection parameter in JS
+        console.log(arguments.length);
+    }
 
+    // minz('A', 'B', 5, 7, 8)    //📍📍 Answer is :-
+                               // Arguments(5) ['A', 'B', 5, 7, 8, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+                               // 5
+
+
+                            // 🔽🔽
+
+    function sum (...tt){
+        return tt.reduce((x, z) => {
+            console.log(x+z);
+            return x+z
+        })
+    }
+
+    // sum(2, 3, 5, 6, 8, 9)         //📍📍 Answer is :-  5 10 16 24 33
+
+
+                         // 🔽🔽
+    
+
+    function min(...argu){
+        return argu.reduce((e, b) => {
+            
+        })
+    }
+
+
+    
 
 
 </script>
