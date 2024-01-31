@@ -138,7 +138,6 @@ let vall = lang.reverse().indexOf(`JavaScript`)
 
 
 
-
 //🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀
 
 

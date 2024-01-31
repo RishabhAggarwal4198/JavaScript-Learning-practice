@@ -890,6 +890,59 @@ document.querySelector('#table').addEventListener('click', () => {
 
 
 
+
+
+
+let numz = [11, 22, 33, 44, 55]
+
+let result = numz.forEach((bb) => {
+    //   console.log(bb*bb);
+})
+
+
+
+let result0 = numz.map((el) => {
+     return (el*el)
+})
+
+// console.log(result0);        //📍📍 Answer is :-  [121, 484, 1089, 1936, 3025]
+ 
+
+
+
+let result1 = numz.filter((g) => {
+    return (g % 2 == 0 || g > 40)
+})
+
+// console.log(result1);          //📍📍 Answer is :-  [22, 44, 55]
+
+
+
+
+  let h =  [2, 4, 6, 8].every((el) => {
+        return el%2 == 0
+    })
+
+    // console.log(h);             //📍📍 Answer is :-  true
+
+
+
+  let h0 =  [ 8, 5, 7, 9, 3].some((el) => {
+        return el%2 == 0
+    })
+
+    // console.log(h0);            //📍📍 Answer is :-  true
+
+
+
+
+    let h1 = [ 11, 22, 33, 44 ].reduce((h, l) => {
+       return (h+l) 
+    })
+    // console.log(h1);       //📍📍 Answer is :-  110
+
+
+
 </script>
 
 </html>
