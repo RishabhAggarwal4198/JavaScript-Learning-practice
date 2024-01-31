@@ -116,7 +116,12 @@
 <script>
 
 	
+let smallImages = document.getElementsByClassName("oldImg");
 
+for(let i = 0; i< smallImages.length; i++){
+	console.dir(smallImages[i]);       //📍📍 Answer is :- we will get Each image Element in the console
+	console.dir(smallImages[i].src)    //📍📍 Answer is :- we will get the source Url of Each image
+}
 
 
 
