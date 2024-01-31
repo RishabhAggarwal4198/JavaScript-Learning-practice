@@ -981,7 +981,8 @@ let result1 = numz.filter((g) => {
 
 
 
-    
+
+
     // 💎✅💎 To FIND a MINIMUM value in an ARRAY ( by using REDUCE) 👇👇
 
     let gg = [44, 66, 88, 33, 11, 33]
@@ -997,7 +998,25 @@ let result1 = numz.filter((g) => {
     // console.log(resul);          //📍📍 Answer is :-  11 
 
 
+                    // 🔽🔽
 
+    function getMin (val) {
+        let res = gig.reduce( (r, h) => {
+        if(r < h){
+            return r
+        } else {
+            return h
+        }
+     });
+     console.log(res);
+     return res
+
+    }
+   
+
+    let gig = [66, 55, 77, 4, 33, 44, 88]
+
+    // getMin(gig)      //📍📍 Answer is :-  4
 
 
 </script>
