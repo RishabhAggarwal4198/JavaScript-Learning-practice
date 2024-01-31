@@ -936,15 +936,54 @@ let result1 = numz.filter((g) => {
 
 
 
-    
+
     let h1 = [ 11, 22, 33, 44 ].reduce((h, l) => {
-       return (h*l) 
+       return (h+l) 
     })
-    // console.log(h1);       //📍📍 Answer is :-  351384
+    // console.log(h1);       //📍📍 Answer is :-  110
 
 
 
-   
+
+
+    
+
+    // 💎✅💎 To FIND a MAXIMUM value in an ARRAY ( by using LOOPs) 👇👇
+
+    let arr = [10, 20, 30, 40 ,50 ,60, 70 , 80]
+
+    let maxx = -1;
+
+    for(let i=0; i<arr.length; i++){
+        if(maxx < arr[i]){
+            maxx = arr[i]
+        }
+    }
+
+    // console.log(maxx);        //📍📍 Answer is :-  80
+
+
+
+
+    // 💎✅💎 To FIND a MAXIMUM value in an ARRAY ( by using REDUCE) 👇👇
+
+    let maxr = arr.reduce((s, l) => {
+        if( s < l){
+            return l
+        } else {
+            return s
+        }
+    })
+
+    console.log(maxr);       //📍📍 Answer is :-  80
+
+
+
+
+
+
+
+
 
 </script>
 
