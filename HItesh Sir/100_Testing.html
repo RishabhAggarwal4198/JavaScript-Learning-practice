@@ -1169,24 +1169,26 @@ let result1 = numz.filter((g) => {
         })
     }
 
-    let f = minz("Hello",4, 5, 8, 2, 5)
+    // let f = minz("Hello",4, 5, 8, 2, 5) 
     // console.log(f);             //📍📍 Answer is :-
                                 // Hello
                                 // 8
  
 
-    let n = minz(60000,4, 5, 8, 2, 5)
+    // let n = minz(60000,4, 5, 8, 2, 5)
     // console.log(n);             //📍📍 Answer is :-
                                 // 6000
                                 // 8
  
+
 
     
 
 
 
 
-    // 💎✅💎 DESTRUCTURING 👇👇  [Parrt-8]
+
+    // 💎✅💎 DESTRUCTURING (in ARRAYs)👇👇  [Parrt-8]
 
     let names = [`Mark`, `Antony`, `James`, `Gabriel`, `Harold`, `Gilbert`, `Wilson`]
 
@@ -1201,8 +1203,44 @@ let result1 = numz.filter((g) => {
     // console.log(Winner);               //📍📍 Answer is :- Mark
     // console.log(IstRunnerUp);          //📍📍 Answer is :- Antony
     // console.log(IIndRunnerUp);          //📍📍 Answer is :- James
-    // console.log(othersLeft);             //📍📍 Answer is :-  ['Gabriel', 'Harold', 'Gilbert', 'Wilson']
-                                            // ✅✅ "othersLeft"  became an ARRAY & stored all the left out values
+    // console.log(othersLeft);            //📍📍 Answer is :-  ['Gabriel', 'Harold', 'Gilbert', 'Wilson']
+                                           // ✅✅ "othersLeft"  became an ARRAY & stored all the left out values
+
+
+
+
+
+
+
+
+    // 💎✅💎 DESTRUCTURING (in OBJECTs)👇👇  [Parrt-8]
+
+    const student = {
+        name: `Raman`,
+        age: 14,
+        class:9,
+        subjects: [`Hindi`, `English`, `Maths`, `Science`],
+        username: "raman@123",
+        password: 5678
+    }
+
+    
+    let {username : user, 
+        password: pass, 
+        subjects: sub,
+         city = 'Nagpur',   // ✅ could also Assign a new Variable which was not in the Oringial OBJECT
+                        } = student
+
+    // console.log(user);          //📍📍 Answer is :- raman@123
+    // console.log(pass);          //📍📍 Answer is :- 5678
+    // console.log(sub);            //📍📍 Answer is :- ['Hindi', 'English', 'Maths', 'Science'] 
+    // console.log(sub[2]);         //📍📍 Answer is :- Maths
+    // console.log(city);         //📍📍 Answer is :- Nagpur
+
+
+
+
+
 
 
 </script>
