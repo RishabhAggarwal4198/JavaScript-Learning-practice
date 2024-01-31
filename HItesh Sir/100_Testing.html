@@ -1103,7 +1103,7 @@ let result1 = numz.filter((g) => {
 
 
 
-     // 💎✅💎 REST 👇👇
+     // 💎✅💎 REST 👇👇  [Parrt-8]
 
      function sum (...args){
         for(let i=0; i < args.length; i++){
@@ -1152,10 +1152,57 @@ let result1 = numz.filter((g) => {
     }
 
     let j = min(4, 5, 8, 2, 5)
-    console.log(j); 
+    // console.log(j);            //📍📍 Answer is :-  8
 
+
+                         // 🔽🔽
+    
+
+    function minz(valz, ...argu){
+        console.log(valz);
+        return argu.reduce((e, b) => {
+            if( e > b){
+                return e
+            } else {
+                return b
+            }
+        })
+    }
+
+    let f = minz("Hello",4, 5, 8, 2, 5)
+    // console.log(f);             //📍📍 Answer is :-
+                                // Hello
+                                // 8
+ 
+
+    let n = minz(60000,4, 5, 8, 2, 5)
+    // console.log(n);             //📍📍 Answer is :-
+                                // 6000
+                                // 8
+ 
 
     
+
+
+
+
+    // 💎✅💎 DESTRUCTURING 👇👇  [Parrt-8]
+
+    let names = [`Mark`, `Antony`, `James`, `Gabriel`, `Harold`, `Gilbert`, `Wilson`]
+
+    // let winner = names[0]
+    // let firstRunnerUp = names[1]
+    // let secondRunerUp = names[2]
+
+              // 🔽🔽 OR ( short way of writing this)
+    
+    let [Winner, IstRunnerUp, IIndRunnerUp, ...othersLeft] = names
+
+    // console.log(Winner);               //📍📍 Answer is :- Mark
+    // console.log(IstRunnerUp);          //📍📍 Answer is :- Antony
+    // console.log(IIndRunnerUp);          //📍📍 Answer is :- James
+    // console.log(othersLeft);             //📍📍 Answer is :-  ['Gabriel', 'Harold', 'Gilbert', 'Wilson']
+                                            // ✅✅ "othersLeft"  became an ARRAY & stored all the left out values
 
 
 </script>
