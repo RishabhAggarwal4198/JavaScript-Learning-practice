@@ -1019,6 +1019,52 @@ let result1 = numz.filter((g) => {
     // getMin(gig)      //📍📍 Answer is :-  4
 
 
+
+
+
+
+   // 💎✅💎 DEFAULT - PARAMETERS 👇👇
+
+
+   function test ( a, b = 4){
+       console.log(a**b);
+        return  a**b
+   }
+
+//  test(2, 5)     //📍📍 Answer is :-  32
+//  test(3)        //📍📍 Answer is :-  81
+
+
+           // 🔽🔽
+
+
+    function test0 (d=2, m){      // ❌❌ WRONG Syntax (for writing DEFAULT-PARAMETERS)
+        console.log(d*m);
+        return d*m
+    }
+
+    // test0(7)         //📍📍 Answer is :- NaN  (✅ bcoz "7" got assigned to 'd' & 'm' is still undefined )
+
+
+
+
+
+
+    // 💎✅💎 SPREAD 👇👇
+
+    let u = [6, 7, 4, 3, 8, 2, 9]
+    let x = [`A`, `B`, `C`, `D`]
+
+    // console.log(...u);          //📍📍 Answer is :-  6 7 4 3 8 2 9
+
+    let v = [...u,...x]
+    // console.log(v);             //📍📍 Answer is :-  [6, 7, 4, 3, 8, 2, 9, 'A', 'B', 'C', 'D']
+
+    // console.log(...'Hello');    //📍📍 Answer is :- H e l l o
+
+    
+
+
 </script>
 
 </html>
