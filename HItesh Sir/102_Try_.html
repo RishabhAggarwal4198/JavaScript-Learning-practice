@@ -60,7 +60,7 @@
 let para = document.createElement('p')
 para.innerHTML=`<b>Hey I'm red !!</b>`
 
-document.querySelector('body').appendChild(para)
+document.querySelector('body').append(para)
 para.classList.add('paraStyle1')
 
 
@@ -71,7 +71,7 @@ para.classList.add('paraStyle1')
 let h3 = document.createElement('h3')
 h3.innerHTML = `<b>Hello! I'm BLUE h3 </b>`
 
-document.querySelector('body').appendChild(h3)
+document.querySelector('body').append(h3)
 h3.classList.add('paraStyle2')
 
 
@@ -79,15 +79,17 @@ h3.classList.add('paraStyle2')
 
 
 
+// DIV
+
 let div = document.createElement('div')
-document.querySelector('body').appendChild(div)
+document.querySelector('body').append(div)
 div.classList.add('div')
 
 
 let h1 = document.createElement('h1')
 h1.innerHTML = `<b>"I'm in a div"</b>`
 
-document.querySelector('div').appendChild(h1)
+document.querySelector('div').append(h1)
 
 
 
@@ -96,7 +98,7 @@ document.querySelector('div').appendChild(h1)
 let para2 = document.createElement('p')
 para2.innerHTML = `<b>MEE  TOO !!</b>` 
 
-document.querySelector('div').appendChild(para2)
+document.querySelector('div').append(para2)
 para2.classList.add('para2')
 
 
