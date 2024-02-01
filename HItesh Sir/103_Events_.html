@@ -8,8 +8,8 @@
 
 <body>
 
-	<button onclick="console.log(`You Clciked the button`); console.log(`This Button Name is Hello`);">
-		Start
+	<button>
+		Click Me
 	</button>
 
 
@@ -18,13 +18,19 @@
 
 <script>
 
-	document.querySelector('button').addEventListener('click', () => {
-		
-		let para = document.createElement('p')
-		para.innerHTML=`<b>🍁WELCOME EVERYONE🍁</b>`
+	// document.querySelector('button').addEventListener('click', () => {
+	// 	for(let i = 0; i <=10; i++){
+	// 		let para = document.createElement('p') 
+	// 	    document.querySelector('body').append(para)
+	// 		para.innerHTML=`<b>🍁WELCOME EVERYONE🍁</b>`
+	// 	}
+ 	// })
 
-		document.querySelector('body').append(para)
- 	})
+	
+	let btn = document.querySelector('button')
+	console.dir(btn)
+
+
 
 </script>
 
