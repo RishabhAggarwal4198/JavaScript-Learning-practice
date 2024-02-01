@@ -193,12 +193,23 @@ CSS-STYLING through DOM changes only the INLINE-CSS not the CSS which we have wr
 
 let imeg = document.querySelector('img')
 
-imeg.classList;                   // ✅✅ Will give the names of all the classes of the 'img'
+imeg.classList;                        // ✅✅ Will give the names of all the classes of the 'img'
 
-imeg.classList.add('newClass')    // ✅✅ Will ADD new class to the list of name 'newClass'
-                                  // ✅✅ Now we could ADD this class to your separate CSS file & add all the styling (whichever we want)
+imeg.classList.add('newClass')         // ✅✅ Will ADD new class to the list of name 'newClass'
+                                       // ✅✅ Now we could ADD this class to your separate CSS file & add all the styling (whichever we want)
 
-imeg.classList.remove('newClass') // ✅✅ Will remove the class = 'newClass' (from the classList)
+imeg.classList.remove('newClass')      // ✅✅ Will remove the class = 'newClass' (from the classList)
+
+imeg.classList.contains('newClass');   // ✅✅ To check whether in 'classList' there exists any class with name 'newClass'
+                                       // 📍📍Will display 'false' in console [bcoz it got removed]
+
+imeg.classList.toggle('newClass')      // ✅✅ Will ADD the class if was not present previusly or will REMOVE the class is the class was present                      
+                                       // ✅ [Watch @Part-9 , class-List Property ]
+                                       // 📍📍Will display 'true' in console [as it got ADDED now]
+
+
+imeg.classList.toggle('newClass')       // 📍📍Will display 'false' in console [as it got REMOVED now]
+
 
 
 
