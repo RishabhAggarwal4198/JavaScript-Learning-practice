@@ -132,7 +132,8 @@ heading.innerHTML=`<u>${heading.innerText}</u>`
 
 
 
-let imgg = document.querySelector('img');
+
+// let imgg = document.querySelector('img');
 
 // CHANGING 'Ids' 👇👇 
 // imgg.getAttribute('id'); 
@@ -146,6 +147,36 @@ let imgg = document.querySelector('img');
 // ADDING Attribute of 'class' 👇👇
 // imgg.setAttribute('class', 'imagezz')
 // img.getAttribute('class')                //📍📍 Answer is :- imagezz
+
+
+
+
+
+
+
+
+// 💎✅💎 MANIPULATING - STYLEs👇👇
+
+
+let heading0 = document.querySelector('h1')
+
+heading0.style.color='Red'
+heading0.style.backgroundColor = "#D0D6B5"
+
+
+
+
+//changing the COLORS od anchor tags👇
+
+let links = document.querySelectorAll('.box  a')    //✅ Will select all the '<a> </a>' tags present inside DIV with  class = "box"
+
+for(let i=0; i < links.length; i++){
+  links[i].style.color = "green"
+}
+
+
+
+
 
 
 
