@@ -27,12 +27,23 @@
 		}
 
 		.div{
-			height: 200px;
-			width: 300px;
+			height: 300px;
+			width: 440px;
 			border-style:solid;
 			border-width: 3px;
 			border-color: black;
 			background-color: pink;
+		}
+
+		h1{
+			margin-left: 10px;
+			color: rgb(120, 10, 184);
+		}
+
+		.para2{
+			margin-left:10px;
+			font-size: 28px;
+			color: rgb(253, 0, 0);
 		}
 
 	</style>
@@ -67,9 +78,30 @@ h3.classList.add('paraStyle2')
 
 
 
+
 let div = document.createElement('div')
 document.querySelector('body').appendChild(div)
 div.classList.add('div')
+
+
+let h1 = document.createElement('h1')
+h1.innerHTML = `<b>"I'm in a div"</b>`
+
+document.querySelector('div').appendChild(h1)
+
+
+
+
+
+let para2 = document.createElement('p')
+para2.innerHTML = `<b>MEE  TOO !!</b>` 
+
+document.querySelector('div').appendChild(para2)
+para2.classList.add('para2')
+
+
+
+
 
 
 
