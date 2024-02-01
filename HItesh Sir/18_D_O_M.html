@@ -97,11 +97,16 @@
    🔽🔽 Adding Contents 👇👇 :-
 
    ➤   title.innerText      [📍 only displays the text part that is visible on the page ( i.e. doesn't  displays any  HTML tags present in the text node) ] [ ✅Text will not be visible in 'innerText '  if we make "style= display: none"]
-   
+                             ✅ If we gonna enter TEXT with HTML tags in it, it's not gonna recognise it & tags will be visible as it is on the web Page
+
+
    ➤   title.textContent    [📍 displays everything whatever is there in the Text Node ] [✅ Text will be visible in 'title.textContent' even if we make "style= display: none"]
    
-   ➤   title.innerHTML      [📍 displays everything whatever is there in the Text Node along with their HTML tags]
 
+
+   ➤   title.innerHTML      [📍 displays everything whatever is there in the Text Node along with their HTML tags]
+                             ✅ If we gonna enter TEXT with HTML tags in it, it's gonna recognise it  & will be visible onto the page with effect
+                             ✅ Like:- document.querySelector('#para1').innerHTML = "Hi, I am <b>Peter Parker</b>" [will be visible on the page with bold text]
    
 
 
