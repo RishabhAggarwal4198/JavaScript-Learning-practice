@@ -75,9 +75,9 @@
     <div class="box">
       <h4>Publication Info</h4>
       <ul>
-        <li><a href="#" class="boxLink">Publisher</a></li>
-        <li><a href="#" class="boxLink">First Appearance</a></li>
-        <li>
+        <li id="li_A"><a href="#" class="boxLink">Publisher</a></li>
+        <li id="li_B"><a href="#" class="boxLink">First Appearance</a></li>
+        <li id="li_C">
           Created by
           <ul>
             <li><a href="#" class="boxLink">Stan Lee</a></li>
@@ -214,14 +214,40 @@ imeg.classList.toggle('newClass')       // 📍📍Will display 'false' in conso
 
 
 
-
-
-
 //changing the COLORS of DIV with class="box" 👇
 
 let box = document.querySelector('.box')
-box.classList.add('yellowBG')
+box.classList.add('yellowBG')         // ✅ [As we have already added class with name 'yellowBG' in CSS  <style> tag ]
 
+
+
+
+
+
+
+// 💎✅💎 NAVIGATION on page 👇👇
+
+let h4 = document.querySelector('h4');
+h4.parentElement          //📍📍 Answer will be :- <div class ='box'>  </div> 
+
+
+let boxx = document.querySelector('.box')
+box.children                 //📍📍 Answer will be :- HTMLCollection(2) [h4, ul]
+box.childElementCount         //📍📍 Answer will be :-  2
+
+
+
+let ul = document.querySelector('ul');
+ul.parentElement        //📍📍 Answer will be :- <div  class="box  yellowBG">  <div>
+ul.childElementCount    //📍📍 Answer will be :-  3
+ul.children            //📍📍 Answer will be :-  HTMLCollection(3) [li, li, li]
+
+ul.children[0]      //📍📍 Answer will be :- <li id="li_A"> </li>
+ul.children[2]       //📍📍 Answer will be :- <li id="li_C"> </li>
+
+ul.children[2].previousElementSibling   //📍📍 Answer will be :- <li id="li_B"> </li>
+ul.children[0].previousElementSibling   //📍📍 Answer will be :- null
+ul.children[1].nextElementSibling      //📍📍 Answer will be :- <li id="li_C"> </li>
 
 
 
