@@ -277,6 +277,22 @@ let newP = document.createElement('p')       //✅ Created a New Element
 newP.innerHTML = "Hi, I am a new p"         //✅ new TEXT value got inserted into it
 // console.dir(newP)
 
+let body = document.querySelector('body')
+
+body.appendChild(newP)                    //✅ "APPEND" means to insert something at the last
+                                          //📍📍  "newP" element just got added at the end of the body
+
+                 // 🔽🔽
+
+
+let newT = document.createElement('div')
+newT.innerHTML= `<b> Hello  Everyone </b>`
+
+let container = document.querySelector('.box')
+
+container.appendChild(newT)               //📍📍  "newT" element just got added at the end of the 'container'  
+
+
 
 
 
