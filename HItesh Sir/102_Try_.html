@@ -16,6 +16,16 @@
 			font-family: Teko;
 		}
 
+		.paraStyle1{
+			color: red;
+			font-size: 28px;
+		}
+
+		.paraStyle2{
+			color: blue;
+			font-size: 32px;
+		}
+
 	</style>
 </head>
 
@@ -28,12 +38,26 @@
 <script>
 
 let para = document.createElement('p')
-
-para.innerHTML=`<b>hey I'm red!</b>`
-para.style.color="red"
-
+para.innerHTML=`<b>Hey I'm red !!</b>`
 
 document.querySelector('body').appendChild(para)
+para.classList.add('paraStyle1')
+
+
+
+
+
+
+let h3 = document.createElement('h3')
+h3.innerHTML = `<b>Hello! I'm BLUE h3 </b>`
+
+document.querySelector('body').appendChild(h3)
+h3.classList.add('paraStyle2')
+
+
+
+
+
 
 
 </script>
