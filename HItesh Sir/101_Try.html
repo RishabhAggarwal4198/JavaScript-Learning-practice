@@ -228,7 +228,7 @@ box.classList.add('yellowBG')         // ✅ [As we have already added class wit
 
 
 
-// 💎✅💎 NAVIGATION on page 👇👇
+// 💎✅💎 NAVIGATION on page 👇👇 [accssing an elemnt with the help of the names of other ELements]
 
 let h4 = document.querySelector('h4');
 h4.parentElement          //📍📍 Answer will be :- <div class ='box'>  </div> 
@@ -254,7 +254,6 @@ ul.children[1].nextElementSibling      //📍📍 Answer will be :- <li id="li_C
 
 
 
-
 //MANIPULATING an ELEMENT using its above properties 👇
 
 let para = document.querySelector('p')
@@ -262,6 +261,21 @@ let para = document.querySelector('p')
 para.previousElementSibling.style.color = "Green"               //📍📍 Will change to color of "About" to green
 para.previousElementSibling.style.backgroundColor = "skyblue"  //📍📍 Will change to BackgroundColor of "About" to skyblue
 para.children[0].style.backgroundColor="pink"                  //📍📍 Will change to color of "Spider-Man" to pink
+
+
+
+
+
+
+
+
+ 
+// 💎✅💎 CREATING or ADDING new Elements👇👇
+
+let newP = document.createElement('p')       //✅ Created a New Element
+
+newP.innerHTML = "Hi, I am a new p"         //✅ new TEXT value got inserted into it
+// console.dir(newP)
 
 
 
