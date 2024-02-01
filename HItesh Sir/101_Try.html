@@ -32,7 +32,7 @@
 		}
 
     .yellowBG {
-      background-color: yellow;
+      background-color: rgb(188, 188, 40);
     }
 
 		.boxLink {
@@ -270,7 +270,7 @@ para.children[0].style.backgroundColor="pink"                  //📍📍 Will c
 
 
  
-// 💎✅💎 CREATING or ADDING new Elements👇👇
+// 💎✅💎 CREATING or ADDING new Elements 👇👇 [CREATEELEMENT & APPEND-CHILD ]
 
 let newP = document.createElement('p')       //✅ Created a New Element
 
@@ -279,21 +279,36 @@ newP.innerHTML = "Hi, I am a new p"         //✅ new TEXT value got inserted in
 
 let body = document.querySelector('body')
 
-body.appendChild(newP)                    //✅ "APPEND" means to insert something at the last
+body.appendChild(newP)                    //🍁✅🍁 "APPEND" means to insert something at the last
                                           //📍📍  "newP" element just got added at the end of the body
 
                  // 🔽🔽
 
 
 let newT = document.createElement('div')
-newT.innerHTML= `<b> Hello  Everyone </b>`
+newT.innerHTML= `<b> Hello  Everyone </b>`  //---------------
 
 let container = document.querySelector('.box')
+container.appendChild(newT)                    //📍📍  "newT" element just got added at the end of the 'container'  
 
-container.appendChild(newT)               //📍📍  "newT" element just got added at the end of the 'container'  
+               // 🔽🔽
 
+let btn = document.createElement('button')
+btn.innerHTML = `Exit`
+// console.dir(btn)          //📍📍 to check the properties of the 'btn'
 
+let patra = document.querySelector('.box')
+patra.appendChild(btn)                        //📍📍  "btn" element just got added at the end of the 'patra' (after 'newT'  element)  
 
+btn.append(' - From Here')         //✅ Will insert the given text in the Button
+
+             // 🔽🔽
+
+let btn1 = document.createElement('button');
+btn1.innerHTML = `Hello`
+
+newT.append(btn1)                 //🍁✅🍁 will inert button 'btn1' after text 'Hello Everyone' 
+newT.append(`You`)                //🍁✅🍁 will inert text 'You' at the end of 'newT' HTML
 
 
 
