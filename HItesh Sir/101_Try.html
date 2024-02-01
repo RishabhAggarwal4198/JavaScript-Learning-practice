@@ -172,9 +172,21 @@ let links = document.querySelectorAll('.box  a')    //✅ Will select all the '<
 
 for(let i=0; i < links.length; i++){
   links[i].style.color = "green"
+  links[i].innerHTML= `<b> ${links[i].innerText}<b>`
+}
+                // 🔽🔽OR (by using FOR-OF Loop)
+
+for(zz of links){
+  zz.style.color = "purple"
+  zz.innerHTML = `<i> ${zz.innerText}</i>`
 }
 
 
+/* 
+✅✅NOTE✅✅
+CSS-STYLING through DOM changes only the INLINE-CSS not the CSS which we have written in the separate CSS file
+& as in most cases we link & use another CSS file to style our webpage... so we prefer not to Manipulate or change CSS by using DOM more frequently
+*/
 
 
 
