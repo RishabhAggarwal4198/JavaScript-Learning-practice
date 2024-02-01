@@ -272,7 +272,7 @@ para.children[0].style.backgroundColor="pink"                  //📍📍 Will c
  
 // 💎✅💎 CREATING or ADDING new Elements 👇👇 [CREATEELEMENT & APPEND-CHILD ]
 
-let newP = document.createElement('p')       //✅ Created a New Element
+let newP = document.createElement('p')       //🍁✅🍁 Created a New Element
 
 newP.innerHTML = "Hi, I am a new p"         //✅ new TEXT value got inserted into it
 // console.dir(newP)
@@ -286,7 +286,7 @@ body.appendChild(newP)                    //🍁✅🍁 "APPEND" means to insert
 
 
 let newT = document.createElement('div')
-newT.innerHTML= `<b> Hello  Everyone </b>`  //---------------
+newT.innerHTML= `<b> Everyone </b>`  //---------------
 
 let container = document.querySelector('.box')
 container.appendChild(newT)                    //📍📍  "newT" element just got added at the end of the 'container'  
@@ -307,9 +307,10 @@ btn.append(' - From Here')         //✅ Will insert the given text in the Butto
 let btn1 = document.createElement('button');
 btn1.innerHTML = `Hello`
 
-newT.append(btn1)                 //🍁✅🍁 will inert button 'btn1' after text 'Hello Everyone' 
-newT.append(`You`)                //🍁✅🍁 will inert text 'You' at the end of 'newT' HTML
-
+newT.append(btn1)                 //🍁✅🍁 will inert button 'btn1' after text 'Everyone' 
+newT.append(`You`)                //🍁✅🍁 will inert text 'You' at the end of 'newT' HTMLtext
+                                  // Watch Part-9 @ Adding Elements on Page
+newT.prepend('Hello')             //🍁✅🍁 will inert text 'Hello' at the starting 'newT' HTMLtext    
 
 
 
