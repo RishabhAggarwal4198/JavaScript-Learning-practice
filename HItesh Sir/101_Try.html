@@ -118,13 +118,34 @@
 let smallImages = document.getElementsByClassName("oldImg");
 
 for(let i = 0; i< smallImages.length; i++){
-	console.dir(smallImages[i]);       //✅ Will get Each image Element in the console
-	console.dir(smallImages[i].src)    //✅ Will get the source Url of Each image
+	// console.dir(smallImages[i]);       //✅ Will get Each image Element in the console
+	// console.dir(smallImages[i].src)    //✅ Will get the source Url of Each image
 	// console.dir(smallImages[i].src = `/Starter Code (Part-9)/Images/spiderman_img.png`)    //✅ Will replace the "src" of all the images with the src of spiderman Image 
 
 }
 
 
+let heading = document.querySelector('h1')
+
+heading.innerHTML=`<u>${heading.innerText}</u>`
+
+
+
+
+let imgg = document.querySelector('img');
+
+// CHANGING 'Ids' 👇👇 
+// imgg.getAttribute('id'); 
+// imgg.setAttribute('id', 'SpiderMan')
+
+
+// CHANGING 'src' 👇👇 
+// imgg.setAttribute('src', '/Starter Code (Part-9)/Images/creation_3.jpeg' )
+
+
+// ADDING Attribute of 'class' 👇👇
+// imgg.setAttribute('class', 'imagezz')
+// img.getAttribute('class')                //📍📍 Answer is :- imagezz
 
 
 
