@@ -214,10 +214,13 @@ imeg.classList.toggle('newClass')       // 📍📍Will display 'false' in conso
 
 
 
+
 //changing the COLORS of DIV with class="box" 👇
 
 let box = document.querySelector('.box')
 box.classList.add('yellowBG')         // ✅ [As we have already added class with name 'yellowBG' in CSS  <style> tag ]
+
+
 
 
 
@@ -248,6 +251,19 @@ ul.children[2]       //📍📍 Answer will be :- <li id="li_C"> </li>
 ul.children[2].previousElementSibling   //📍📍 Answer will be :- <li id="li_B"> </li>
 ul.children[0].previousElementSibling   //📍📍 Answer will be :- null
 ul.children[1].nextElementSibling      //📍📍 Answer will be :- <li id="li_C"> </li>
+
+
+
+
+//MANIPULATING an ELEMENT using its above properties 👇
+
+let para = document.querySelector('p')
+
+para.previousElementSibling.style.color = "Green"               //📍📍 Will change to color of "About" to green
+para.previousElementSibling.style.backgroundColor = "skyblue"  //📍📍 Will change to BackgroundColor of "About" to skyblue
+para.children[0].style.backgroundColor="pink"                  //📍📍 Will change to color of "Spider-Man" to pink
+
+
 
 
 
