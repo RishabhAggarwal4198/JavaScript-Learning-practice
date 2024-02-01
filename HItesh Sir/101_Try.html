@@ -31,6 +31,10 @@
 			padding: 1rem;
 		}
 
+    .yellowBG {
+      background-color: yellow;
+    }
+
 		.boxLink {
 			text-decoration: none;
 		}
@@ -190,7 +194,6 @@ CSS-STYLING through DOM changes only the INLINE-CSS not the CSS which we have wr
 
 
 
-
 let imeg = document.querySelector('img')
 
 imeg.classList;                        // ✅✅ Will give the names of all the classes of the 'img'
@@ -207,8 +210,19 @@ imeg.classList.toggle('newClass')      // ✅✅ Will ADD the class if was not p
                                        // ✅ [Watch @Part-9 , class-List Property ]
                                        // 📍📍Will display 'true' in console [as it got ADDED now]
 
-
 imeg.classList.toggle('newClass')       // 📍📍Will display 'false' in console [as it got REMOVED now]
+
+
+
+
+
+
+//changing the COLORS of DIV with class="box" 👇
+
+let box = document.querySelector('.box')
+box.classList.add('yellowBG')
+
+
 
 
 
