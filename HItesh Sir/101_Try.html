@@ -323,10 +323,24 @@ let prgph = document.querySelector('p')
 
 //🍁👇🍁Different conditions that where we want to add the "newBtn" in the "prgph" 👇
 
-// prgph.insertAdjacentElement('beforebegin', newBtn)    //🍁✅🍁 will inert  'newBtn' before the beginning of 'prgrph'
-// prgph.insertAdjacentElement('afterbegin', newBtn)     //🍁✅🍁 will inert  'newBtn' after the beginning of 'prgrph'
-// prgph.insertAdjacentElement('beforeend', newBtn)      //🍁✅🍁 will inert  'newBtn' before the end  of 'prgrph' 
-// prgph.insertAdjacentElement('afterend', newBtn)       //🍁✅🍁 will inert  'newBtn' after the beginning of 'prgrph'  
+// prgph.insertAdjacentElement('beforebegin', newBtn)     //🍁✅🍁 will inert  'newBtn' before the beginning of 'prgrph'
+// prgph.insertAdjacentElement('afterbegin', newBtn)      //🍁✅🍁 will inert  'newBtn' after the beginning of 'prgrph'
+// prgph.insertAdjacentElement('beforeend', newBtn)       //🍁✅🍁 will inert  'newBtn' before the end  of 'prgrph' 
+// prgph.insertAdjacentElement('afterend', newBtn)        //🍁✅🍁 will inert  'newBtn' after the beginning of 'prgrph'  
+
+             // 🔽🔽
+
+let paraa = document.createElement('p')
+
+paraa.innerHTML = `<b>This is information abou it</b>`
+
+let info = document.querySelector('#description')
+
+info.appendChild(paraa)
+
+info.removeChild(paraa)                                  //🍁✅🍁 will remove the appended child 'paraa' from 'info'
+// info.remove()                                         //🍁✅🍁 will remove the whole 'paraa' from the Web-Page
+
 
 
 
