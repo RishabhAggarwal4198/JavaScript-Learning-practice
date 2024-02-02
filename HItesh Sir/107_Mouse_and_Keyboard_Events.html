@@ -7,6 +7,13 @@
 
 	<style>
 
+		#input2 {
+			height: 40vh;
+		}
+
+	
+		
+
 
 	</style>
 
@@ -21,7 +28,10 @@
 		<button id="btn_2" >Button 2 </button>
 		<br>
 		<br>
-		<input  placeholder="type here...">
+		<input id="input1"  placeholder="type here...">
+		<br>
+		<br>
+		<input id="input2"  placeholder="TYPE HERE">
 	
 </body>
 
@@ -51,13 +61,14 @@
 
 
 
+
+
 	// 💎✅💎 KEYBOARD-EVENTS 👇👇
 
-	let input = document.querySelector('input')
+	let input = document.querySelector('#input1')
 
 
-
-	input.addEventListener('keypress', (e) => {
+	input.addEventListener('keydown', (e) => {
 		// console.log(e);                   //📍📍Will see 'KeyboardEvent' printed in the console
 	    console.log(e.code);				 //✅ CODE property shows us the NAME of the key WHICH was pressed
 		console.log(e.key); 				  //✅ KEY  property shows us WHAT'S VISIBLE ON THE SCREEN after pressing of that key
@@ -68,6 +79,40 @@
 		para.innerHTML=`<b>'Hello Everyone'</b>`
 		document.querySelector('body').append(para)
 	})
+
+
+					// 🔽🔽
+
+
+	let input2 = document.querySelector('#input2')
+
+	input2.addEventListener('keydown', (evnt) => {
+		// console.log(`Code :- ${evnt.code} `);
+		// console.log(`Key  :- ${evnt.key} `);
+
+		/*
+		Now Suppose :-
+		ArrowUp      =  W
+		ArrowDown    =  S
+		ArrowLeft    =  A
+		ArrowRight   =  D
+		*/
+
+		// So,
+
+		if(evnt.code === `KeyW`) {
+			console.log(`'ArrowUp' key was pressed`);
+		} else if (evnt.code === `KeyS`) {
+			console.log(`'ArrowDown' key was pressed`);
+		} else if (evnt.code === `KeyA`) {
+			console.log(`'ArrowLeft' key was pressed`);
+		} else if (evnt.code === `KeyD`) {
+			console.log(`'ArrowRight' key was pressed`);
+		}
+
+
+	})
+
 
 
 	
