@@ -244,10 +244,25 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
-
-
 >>>> Week 1.2 | JS Foundations         (By Harkirat Singh)
 ♦️♦️start watching from{@01:32:57}♦️♦️
+
+
+
+
+
+
+
+
+
+APNA -COLLEGE :-
+
++ JavaScript-10 >> Mouse Pointer Events >> watch @ 06:30
+
+
+
+
+
 
 
 
