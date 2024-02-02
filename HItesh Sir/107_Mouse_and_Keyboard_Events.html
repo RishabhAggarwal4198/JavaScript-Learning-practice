@@ -55,9 +55,18 @@
 
 	let input = document.querySelector('input')
 
+
+
 	input.addEventListener('keypress', (e) => {
-		// console.log(e);
-		console.log('Something Entered');
+		// console.log(e);                   //📍📍Will see 'KeyboardEvent' printed in the console
+	    console.log(e.code);				 //✅ CODE property shows us the NAME of the key WHICH was pressed
+		console.log(e.key); 				  //✅ KEY  property shows us WHAT'S VISIBLE ON THE SCREEN after pressing of that key
+		
+		// console.log('Something Entered');
+		
+		let para = document.createElement('p')
+		para.innerHTML=`<b>'Hello Everyone'</b>`
+		document.querySelector('body').append(para)
 	})
 
 
