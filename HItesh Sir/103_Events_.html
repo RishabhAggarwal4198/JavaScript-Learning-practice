@@ -9,12 +9,17 @@
 <body>
 
 	<button>
-		Click Me
+		Button 1
 	</button>
 
 
-	<button id="btn_2">
-		Touch Me
+	<button >
+		Button 2
+	</button>
+
+
+	<button id="btn_3">
+		Button 3
 	</button>
 
 
@@ -42,20 +47,54 @@
 
 
 
-
-	// APPLYING LOOP to all of the  BUTTONS  👇👇
-	
-	let btns = document.querySelectorAll('button')
+	// let btns = document.querySelectorAll('button')
 	// console.dir(btn)
 
-	for(btn of btns){
-		btn.onclick = sayHello;     //✅ REMEMBER:- Here we are just passing the definition of the function 'sayHello'
-	}                               // , if we have passed  'sayHello()' then the function would have gotten 
+
+
+	// 💎✅💎 ON-CLICK event 👇👇
+	
+	// for(btn of btns){
+	// 	btn.onclick = sayHello;     //✅ REMEMBER:- Here we are just passing the definition of the function 'sayHello'
+	// }                               // , if we have passed  'sayHello()' then the function would have gotten 
 									// executed over there without even touching it
 	function sayHello() {
 		alert("Hello");
 	}
 
+
+
+
+
+
+	// 💎✅💎 ON-MOUSE event 👇👇
+
+	// for (btn of btns){
+	// 	btn.onmouseenter = function () {
+	// 		// console.log("You enetered a Button");
+	// 	}
+	// }
+
+
+
+
+
+
+
+	// 💎✅💎 EVENT-LISTNERS 👇👇 (✅NOTE:- by 'addEventListner'  we can perform multiple operations on single click, while with 'onclick' we acn perform only single event at a time )
+
+	let btn3 = document.querySelector('#btn_3')
+
+	btn3.addEventListener('click', greet)
+	btn3.addEventListener('click', wel)
+
+	function greet (){
+		console.log(`Hello Everyone !!`);
+	}
+
+	function wel () {
+		console.log(`Welcome !!`);
+	}
 
 	
 
