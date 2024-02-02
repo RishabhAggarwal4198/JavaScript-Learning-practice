@@ -126,15 +126,18 @@
 
 
 
+	
 
 	// 💎✅💎 FORMS-EVENTS 👇👇
 
 	let form = document.querySelector('form')
 
-	form.addEventListener('submit', (evnt) => {
-		evnt.preventDefault();       // ✅ Enabling it will prevent the DEFAULT redirecting of the page to the URL mentioned in the ACTION
+	form.addEventListener('submit', (evnt) => {   // ✅ 'SUBMIT' event for submitting the form
+		evnt.preventDefault();           // ✅ Enabling it will prevent the DEFAULT redirecting of the page to the URL mentioned in the ACTION
 		alert('Form Submitted')
 	});
+
+
 
 
 
