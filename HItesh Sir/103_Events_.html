@@ -13,11 +13,19 @@
 	</button>
 
 
+	<button id="btn_2">
+		Touch Me
+	</button>
+
+
 	
 </body>
 
 <script>
 
+
+	// 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁 IGNORE-IT 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
+	
 	// document.querySelector('button').addEventListener('click', () => {
 	// 	for(let i = 0; i <=10; i++){
 	// 		let para = document.createElement('p') 
@@ -26,10 +34,30 @@
 	// 	}
  	// })
 
-	
-	let btn = document.querySelector('button')
-	console.dir(btn)
+	// 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁 IGNORE-IT 🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁
 
+
+
+
+
+
+
+
+
+	
+	let btns = document.querySelectorAll('button')
+	// console.dir(btn)
+
+	for(btn of btns){
+		btn.onclick = sayHello;
+	}
+
+	function sayHello() {
+		alert("Hello");
+	}
+
+
+	
 
 
 </script>
