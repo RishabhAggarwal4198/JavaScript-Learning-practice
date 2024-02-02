@@ -8,7 +8,7 @@
 	<style>
 
 		#input2 {
-			height: 40vh;
+			height: 18vh;
 		}
 
 	
@@ -32,6 +32,18 @@
 		<br>
 		<br>
 		<input id="input2"  placeholder="TYPE HERE">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+
+		<form action="https://www.google.com/">
+			<input>
+			<button>Register</button>
+		</form>
 	
 </body>
 
@@ -110,8 +122,21 @@
 			console.log(`'ArrowRight' key was pressed`);
 		}
 
-
 	})
+
+
+
+
+	// 💎✅💎 FORMS-EVENTS 👇👇
+
+	let form = document.querySelector('form')
+
+	form.addEventListener('submit', (evnt) => {
+		evnt.preventDefault();       // ✅ Enabling it will prevent the DEFAULT redirecting of the page to the URL mentioned in the ACTION
+		alert('Form Submitted')
+	});
+
+
 
 
 
