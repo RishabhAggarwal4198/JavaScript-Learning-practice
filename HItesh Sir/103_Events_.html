@@ -57,7 +57,7 @@
 	// for(btn of btns){
 	// 	btn.onclick = sayHello;     //✅ REMEMBER:- Here we are just passing the definition of the function 'sayHello'
 	// }                               // , if we have passed  'sayHello()' then the function would have gotten 
-									// executed over there without even touching it
+									// executed over there without even touching  the button
 	function sayHello() {
 		alert("Hello");
 	}
@@ -85,18 +85,35 @@
 
 	let btn3 = document.querySelector('#btn_3')
 
-	btn3.addEventListener('click', greet)
-	btn3.addEventListener('click', wel)
+	// btn3.addEventListener('click', greet)
+	// btn3.addEventListener('click', wel)
+	btn3.addEventListener('keyup', wel)
+	btn3.addEventListener('keypress', displayMessage)
+	btn3.addEventListener('dblclick', displayLuck )
 
 	function greet (){
 		console.log(`Hello Everyone !!`);
 	}
 
+
 	function wel () {
 		console.log(`Welcome !!`);
 	}
 
+	function displayMessage () {
+		let para = document.createElement('p')
+		para.innerHTML = `WELCOME EVERYONE`
+
+		document.querySelector('body').append(para)
+	}
 	
+
+
+	function displayLuck (){
+		let par = document.createElement('p')
+		par.innerHTML=`Hello!! How are you ?`
+		document.querySelector('body').append(par)
+	}
 
 
 </script>

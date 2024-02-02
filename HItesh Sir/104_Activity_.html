@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Document</title>
+
+	<style>
+		body{
+			background-color: #212121;
+			display: grid;
+			place-items: center;	
+			row-gap: 10px;
+			margin-top: 40px;
+			text-align: center;
+		}
+
+
+		div{
+			height: 50vh;
+			width:80vh ;
+			border: 9px solid red;
+			background-color: rgb(192, 216, 255);
+		}
+
+	</style>
+
+</head>
+
+
+
+<body>
+
+	<button>Generate Color</button>
+	<div> This is your New Color </div>
+	
+</body>
+
+
+
+<script>
+
+	// let btn = document.querySelector('button')
+
+	// function generateColor (){
+	// 	let hex = `0123456789ABCDEF`
+	// 	let color = `#`
+
+	// 	for(let i=0; i < 6; i++){
+	// 		color += hex[Math.floor(Math.random()*15)]
+	// 	}
+	// 	return color
+	// }
+
+	// let txt = document.createElement('p')
+
+	// btn.addEventListener('click', ()=> {
+		
+	// 	txt.innerHTML = `<b>THE CURRENT COLOR IS : ${generateColor()} </b>`
+	// 	txt.style.color= "#ffffff"
+
+	// 	document.querySelector('body').prepend(txt)
+
+
+	// 	let div = document.querySelector('div')
+	// 	div.style.backgroundColor = generateColor();
+	// }) 
+
+
+
+				    // 🔽🔽 (Re-Trying It)
+
+	 
+
+	 let btn = document.querySelector('button')
+
+
+	 function colorGenerater () {
+
+		let hex = `0123456789ABCDEF`
+		let color = `#`
+		for(let i=0; i <6; i++){
+			color += hex[Math.floor(Math.random()*15)]
+		}
+		// console.log(color);
+		return color
+	 }
+
+
+
+	 let para = document.createElement('p')
+
+	 let brdr = [`dotted`, `dashed`,`solid`, `double`, `groove`, `ridge`, `inset`, `outset`, `none`, `hidden`, ]
+
+	 btn.addEventListener('click', () => {
+
+		para.innerHTML= `<b>THE CURRENT COLOR IS : ${colorGenerater()})</b>`
+		document.querySelector('body').prepend(para)
+		para.style.color = `${colorGenerater()}`
+
+		let div = document.querySelector('div')
+		div.style.backgroundColor = colorGenerater();
+		
+		let vall = brdr[Math.floor(Math.random()*9)]
+		div.style.borderStyle = vall
+	 })
+
+
+	 
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>

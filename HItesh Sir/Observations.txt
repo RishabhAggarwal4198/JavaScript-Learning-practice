@@ -133,12 +133,7 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
-💎💎 👇👇📍📍✅✅ ❌❌ 🔽🔽 🍁🍁👆👆 🧱🧱🍀🍀
 
-// 💎✅💎  👇👇
-// 🔽🔽  👇👇
-//📍📍 Answer is :-  " "  
-// 🔽🔽
 
 
 
@@ -254,13 +249,21 @@ master "JavaScript Objects" &   "Browser Web events/ Browser Events/ DOM Events"
 
 
 
+💎💎 👇👇📍📍✅✅ ❌❌ 🔽🔽 🍁🍁👆👆 🧱🧱🍀🍀
+
+// 💎✅💎  👇👇
+// 🔽🔽  👇👇
+//📍📍 Answer is :-  " "  
+// 🔽🔽
+
 
 APNA -COLLEGE :-
 
 + JavaScript-10 >> Mouse Pointer Events >> watch @ 06:30
 
++ JavaScript-10 >> Event Listners >> watch @ 1:33
 
-
++ EVENTs & EVENT-LISTNERS ( JavaScript-10 >> Event Listners >> watch @ 5:09 )
 
 
 
