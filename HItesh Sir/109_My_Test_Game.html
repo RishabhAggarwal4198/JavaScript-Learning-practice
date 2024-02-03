@@ -12,16 +12,16 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				
 			}
 			
 			#div_1{
-				height: 80vh;
-				width: 80vh;
+				height: 90vh;
+				width: 90vh;
 				background-color: rgb(97, 101, 233);
 				border: 2px solid red;
 				padding: 8px;
 				display: flex;
+				flex-direction: row;
 				column-gap: 8px;
 				
 			}
@@ -46,17 +46,11 @@
 
 		<div id="div_1">
 
-			<div class="div_2">
-				
-			</div>
+			<div class="div_2"></div>
+			<div class="div_2"></div>
+			<div class="div_2"></div>
+			<div class="div_2"></div>
 
-			<div class="div_2">
-				
-			</div>
-
-			<div class="div_2">
-				
-			</div>
 
 		</div>
 
@@ -72,9 +66,9 @@
 
 		let div_1 = document.querySelector('#div_1')
 
-		let postnHrzntl = [ `'center'`, `flex-start`, `flex-end`, `space-between` , `space-around`, `space-evenly` ]
+		let postnHrzntl = [ `center`, `flex-start`, `flex-end`, `space-between` , `space-around`, `space-evenly` ]
 		
-		let postnVerti = [ `'center'`, `flex-start`, `flex-end`, `baseline` , `stretch` ]
+		let postnVerti = [ `center`, `flex-start`, `flex-end`, `baseline` , `stretch` ]
 
 		let div_2 = document.querySelectorAll('.div_2')
 
@@ -89,7 +83,7 @@
 			div_1.style.justifyContent = hori 
 			div_1.style.alignItems = verti
 			})
-		}
+		} 
 		
 
 		
