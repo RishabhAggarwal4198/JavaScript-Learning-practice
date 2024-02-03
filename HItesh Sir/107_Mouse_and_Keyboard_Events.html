@@ -47,6 +47,16 @@
 			<input id="pass" placeholder="password" type="password">
 			<button>Register</button> 
 		</form>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2>My text Editor</h2>
+		<p></p>
+		<input id="Text_Editor">
+
+
+
 	
 </body>
 
@@ -172,6 +182,29 @@
 
 
 	
+
+
+
+
+
+
+	// 💎✅💎 INPUT & CHANGE Events 👇👇  (JavaScript-10 >> More Events >>  watch @ 3:02 )
+
+	let textEditor = document.querySelector('#Text_Editor')
+
+	let paraz = document.createElement('p')
+
+	textEditor.addEventListener('input', function () {
+		console.log(textEditor.value);          //📍📍 'console.log' to see the results
+		
+		paraz.innerHTML = `<b>${textEditor.value}</b>`
+		
+		let h2 = document.querySelector('h2')
+
+		h2.insertAdjacentElement("afterend", paraz)
+	})
+	
+
 	
 
 
