@@ -55,11 +55,12 @@
 
 	let div = document.querySelector('div')
 	let ul = document.querySelector('ul')
-	let lis = document.querySelector('li')
+	let list = document.querySelectorAll('li')
 	let para = document.createElement('p')
 
+	// console.log(list.length);
+
 	div.addEventListener('click', function (evnt) {
-		evnt.stopPropagation(); 
 		console.log(`'div' was clicked`);
 		para.innerHTML= `'div' was clicked`
 		document.querySelector('body').append(para)
@@ -67,20 +68,25 @@
 
 
 	ul.addEventListener('click', function (evnt) {
-		evnt.stopPropagation();
+		// evnt.stopPropagation();           // ✅ To perevent the bubbling of the EVENT
 		console.log(`'ul' was clicked`);
 		para.innerHTML= `'ul' was clicked`
 		document.querySelector('body').append(para)
 	});
 
 
-	lis.addEventListener('click', function (evnt) {
-		evnt.stopPropagation();  
+	for (lis of list ){
+		lis.addEventListener('click', function (evnt) {
+		// evnt.stopPropagation();  
 		console.log(`'list' was clicked`);
 		para.innerHTML= `'list' was clicked`
 		document.querySelector('body').append(para)
 	});
+	}
 
+	
+
+	
 
 	
 
