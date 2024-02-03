@@ -8,7 +8,7 @@
 	<style>
 
 	
-		div{
+		#div_1{
 			background-color: pink;
 			height: 200px;
 			width: 400px;
@@ -33,13 +33,16 @@
 
 <body>
 
-	<div>
-
+	<div id="div_1">
 		<ul>
 			<li> One </li>
 			<li> Two </li>
 			<li> Three </li>
 		</ul>
+	</div>
+
+
+	<div>
 
 	</div>
 	
@@ -68,7 +71,7 @@
 
 
 	ul.addEventListener('click', function (evnt) {
-		// evnt.stopPropagation();           // ✅ To perevent the bubbling of the EVENT
+		evnt.stopPropagation();           // ✅ To perevent the bubbling of the EVENT (from inside to outside)
 		console.log(`'ul' was clicked`);
 		para.innerHTML= `'ul' was clicked`
 		document.querySelector('body').append(para)
@@ -77,7 +80,7 @@
 
 	for (lis of list ){
 		lis.addEventListener('click', function (evnt) {
-		// evnt.stopPropagation();  
+		evnt.stopPropagation();  
 		console.log(`'list' was clicked`);
 		para.innerHTML= `'list' was clicked`
 		document.querySelector('body').append(para)

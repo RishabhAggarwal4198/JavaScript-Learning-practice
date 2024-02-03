@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Document</title>
+
+		<style>
+
+			body{
+				background-color: #212121;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			
+			#div_1{
+				height: 80vh;
+				width: 80vh;
+				background-color: rgb(97, 101, 233);
+				border: 2px solid red;
+				padding: 8px;
+				display: flex;
+				column-gap: 8px;
+				
+			}
+
+			.div_2{
+				height: 14vh;
+				width: 14vh;
+				background-color: red;
+
+			}
+
+
+
+		</style>
+
+	</head>
+
+
+
+
+	<body>
+
+		<div id="div_1">
+
+			<div class="div_2">
+				
+			</div>
+
+			<div class="div_2">
+				
+			</div>
+
+			<div class="div_2">
+				
+			</div>
+
+		</div>
+
+
+	
+
+	</body>
+
+
+
+
+	<script>
+
+		let div_1 = document.querySelector('#div_1')
+
+		let postnHrzntl = [ `'center'`, `flex-start`, `flex-end`, `space-between` , `space-around`, `space-evenly` ]
+		
+		let postnVerti = [ `'center'`, `flex-start`, `flex-end`, `baseline` , `stretch` ]
+
+		let div_2 = document.querySelectorAll('.div_2')
+
+		console.log(div_2.length);
+
+
+		for(divTwo of div_2) {
+			divTwo.addEventListener('click', function () {
+
+			let hori = postnHrzntl[Math.floor(Math.random()*6)]
+			let verti = postnVerti[Math.floor(Math.random()*5)]
+			div_1.style.justifyContent = hori 
+			div_1.style.alignItems = verti
+			})
+		}
+		
+
+		
+
+	</script>
+
+
+
+</html>
