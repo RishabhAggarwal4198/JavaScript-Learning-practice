@@ -55,11 +55,11 @@
 
 	let div = document.querySelector('div')
 	let ul = document.querySelector('ul')
-	let list = document.querySelector('li')
+	let lis = document.querySelector('li')
 	let para = document.createElement('p')
 
 	div.addEventListener('click', function (evnt) {
-		evnt.stopPropagation();
+		evnt.stopPropagation(); 
 		console.log(`'div' was clicked`);
 		para.innerHTML= `'div' was clicked`
 		document.querySelector('body').append(para)
@@ -74,8 +74,8 @@
 	});
 
 
-	list.addEventListener('click', function (evnt) {
-		evnt.stopPropagation();
+	lis.addEventListener('click', function (evnt) {
+		evnt.stopPropagation();  
 		console.log(`'list' was clicked`);
 		para.innerHTML= `'list' was clicked`
 		document.querySelector('body').append(para)
