@@ -7,12 +7,14 @@
 
 	<style>
 
+		body{
+			height: 1000px;
+		}
+
 		#input2 {
 			height: 18vh;
 		}
 
-	
-		
 
 
 	</style>
@@ -42,8 +44,6 @@
 
 		<form action="https://www.google.com/">
 			<input id="user" placeholder="username" type="text">
-			<br>
-			<br>
 			<input id="pass" placeholder="password" type="password">
 			<button>Register</button> 
 		</form>
@@ -152,8 +152,23 @@
 		alert(`Hii ! ${user.value}, passowrd entered by you is : ${pass.value}`)
 	});
 
+							
+							// 🔽🔽 OR (another shortcut way of doing above thing)
 
-				
+
+		form.addEventListener('submit', (evnt) => {  
+		evnt.preventDefault(); 
+		console.log(form);      
+
+		let user = form.elements[0]  //  OR this.elemnts[0]  (✅when not using 'Arrow-function')
+		let pass = form.elements[1]  //  OR this.elemnts[1]  (✅when not using 'Arrow-function')
+
+		console.log(user.value);            //📍📍 Will print the value which you entered
+		console.log(pass.value);            //📍📍 Will print the value which you entered
+	
+		alert(`Hii ! ${user.value}, passowrd entered by you is : ${pass.value}`)
+	});
+
 	
 	
 
