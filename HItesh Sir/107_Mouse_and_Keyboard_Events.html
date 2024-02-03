@@ -41,8 +41,11 @@
 
 
 		<form action="https://www.google.com/">
-			<input>
-			<button>Register</button>
+			<input id="user" placeholder="username" type="text">
+			<br>
+			<br>
+			<input id="pass" placeholder="password" type="password">
+			<button>Register</button> 
 		</form>
 	
 </body>
@@ -134,10 +137,22 @@
 
 	form.addEventListener('submit', (evnt) => {   // ✅ 'SUBMIT' event for submitting the form
 		evnt.preventDefault();           // ✅ Enabling it will prevent the DEFAULT redirecting of the page to the URL mentioned in the ACTION
-		alert('Form Submitted')
+		// alert('Form Submitted')
+
+		// let inp = document.querySelector('#user');
+		// console.dir(inp)                  // ✅ Will give the PROPERTIES of "inp"
+		// console.log(inp.value)            // 🍁🍁Will give the TEXT we entered inside the 'inp'
+
+		let user = document.querySelector(`#user`)
+		let pass = document.querySelector(`#pass`)
+
+		console.log(user.value);            //📍📍 Will print the value which you entered
+		console.log(pass.value);            //📍📍 Will print the value which you entered
 	});
 
-
+				
+	
+	
 
 
 
