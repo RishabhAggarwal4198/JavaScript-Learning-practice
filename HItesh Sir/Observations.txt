@@ -263,8 +263,11 @@ APNA -COLLEGE :-
 
 + JavaScript-10 >> Event Listners >> watch @ 1:33
 
-+ EVENTs & EVENT-LISTNERS ( JavaScript-10 >> Event Listners >> watch @ 5:09 )
++ 🍁EVENTs & EVENT-LISTNERS ( JavaScript-10 >> Event Listners >> watch @ 5:09 )
 
++ ❓❓CHANGE-EVENTs ( JavaScript-10 >> More Events >>  watch @ 3:02 )
+
++ 🍁 EVENT-DELEGATION( JavaScript (Mini-Project) >> Event Delegation )
 
 
 
