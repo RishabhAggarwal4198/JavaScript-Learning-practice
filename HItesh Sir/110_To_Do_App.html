@@ -109,10 +109,16 @@
 		})
 
 
-		ul.addEventListener('click', function () {
-			
-		})
+		ul.addEventListener('click', function (evt) {
+			// console.dir(evt.target);
+			// console.dir(evt.target.nodeName);
+			console.dir(evt.target.tagName);
+			if(evt.target.tagName == `BUTTON`){
+				let lt = evt.target.parentElement;
+				lt.remove();
+			}
 
+		})
 
 
 		btn2.addEventListener('click', function () {
