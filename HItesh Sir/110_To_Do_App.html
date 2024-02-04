@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Document</title>
+
+		<style>
+
+			body{
+				background-color: #212121;
+				color: #ffffff;
+			}
+
+			ul{
+				list-style:circle;
+			}
+
+		
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<h1> To do App </h1>
+		<input placeholder="enter your task here">
+		<button id="button1"> Add task </button>
+		<button id="button2" > Reset </button>
+		<ul>
+
+		</ul>
+		
+
+	
+	</body>
+
+	<script>
+
+		let input =	document.querySelector('input')
+		
+		let btn1 = document.querySelector('#button1')
+		let btn2 = document.querySelector('#button2')
+		let ul = document.querySelector('ul')
+
+		btn1.addEventListener('click', function () {
+
+			let list = document.createElement('li')
+			list.innerHTML = `${input.value}`
+			ul.append(list)
+			input.value = null
+			
+		})
+
+	
+	</script>
+
+
+
+</html>
