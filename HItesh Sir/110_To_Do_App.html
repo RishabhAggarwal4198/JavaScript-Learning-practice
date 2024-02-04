@@ -14,6 +14,7 @@
 
 			ul{
 				list-style:circle;
+				
 			}
 
 		
@@ -28,7 +29,7 @@
 		<h1> To do App </h1>
 		<input placeholder="enter your task here">
 		<button id="button1"> Add task </button>
-		<button id="button2" > Reset </button>
+		<button id="button2"> Reset </button>
 		<ul>
 
 		</ul>
@@ -44,15 +45,48 @@
 		let btn1 = document.querySelector('#button1')
 		let btn2 = document.querySelector('#button2')
 		let ul = document.querySelector('ul')
-
+		
 		btn1.addEventListener('click', function () {
 
 			let list = document.createElement('li')
-			list.innerHTML = `${input.value}`
+			list.innerHTML = `${input.value}    <button id='dlt_Btn'>❌</button>`
 			ul.append(list)
-			input.value = null
+			list.style.margin = '28px';
+			input.value = ``
+
+			let dltBtn = document.querySelectorAll('#dlt_Btn')
+
+
+			//    dltBtn.addEventListener('click', function() {
+			//    this.parentElement.remove()
+			//    })
+			
+						// 🔽🔽
+
+			for (DBtn of dltBtn) {
+			   DBtn.addEventListener('click', function() {
+			   this.parentElement.remove()
+			})}
+			
 			
 		})
+
+	
+
+
+
+
+
+		// let allLists = document.querySelectorAll('li')
+
+		// for (all of allLists) {
+
+		//  all.addEventListener('click', function () {
+		// 	allLists.innerHTML = `Hello`
+		// })
+
+		// }
+		
 
 	
 	</script>
