@@ -114,6 +114,18 @@ function levelUp () {
   btnFlash(randBtn);
 }
 
+function btnPress () {
+	// console.log(this);    //✅ 'this' will give the value of the button pressed
+	let btn = this;
+}
+
+let allBtns = document.querySelectorAll('.btn')
+
+for(btn of allBtns){
+	btn.addEventListener('click', btnPress)
+}
+
+
 
 
 
