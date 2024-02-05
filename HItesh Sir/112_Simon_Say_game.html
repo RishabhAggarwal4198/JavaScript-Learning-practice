@@ -108,7 +108,7 @@ function levelUp () {
 
   let randIdx = Math.floor(Math.random()*4)
   let randColor = btns[randIdx]
-  let randBtn = document.querySelector(`.${randColor}`)
+  let randBtn = document.querySelector(`.${randColor}`)     //✅ It will give the value of different classes of diffrent buttons stored with the names like 'red', 'green', 'yellow', 'blue'
   console.log(randIdx);
   console.log(randColor);
   btnFlash(randBtn);
