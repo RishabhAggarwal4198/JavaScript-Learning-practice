@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>SIMON SAY</title>
+		<title>My SIMON SAY</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,6 +71,10 @@
 				background-color: rgb(52, 112, 201);
 				border-radius: 18px;
 			}
+
+			.flash {
+				background-color: rgb(211, 203, 203);
+			}
 	
 		</style>
 
@@ -122,6 +126,10 @@
 				num ++ ;
 				lvl.innerHTML = `<b>Current Level is ${num}</b>`
 				outDiv.insertAdjacentElement('beforebegin', lvl )
+				div1.classList.add ("flash")
+				setTimeout(function () {
+					div1.classList.remove("flash")
+				}, 1000)
 				
 			}
 			
@@ -140,7 +148,7 @@
 				box.addEventListener ('click', lvlUp)
 			}
 		
-
+			
 
 			
 					
