@@ -5,11 +5,16 @@
 
 		<title>SIMON SAY</title>
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+
 		<style>
 
 			body {
 				background-color: #d3cbcb;
-				color: #323131;
+				color: #3f3d3d;
 				display: grid;
 				place-items: center;
 				gap: 0px;
@@ -19,7 +24,9 @@
 			h1,
 			h3{
 				margin: 0;
+				font-family:Ubuntu;
 			}
+
 
 			#out_div{
 				display: grid;
@@ -29,19 +36,23 @@
 
 			}
 
+
 			#In_div1{
 				height: 110px;
 				width: 110px;
 				border: 5px solid rgb(0, 0, 0);
-				background-color: rgb(228, 81, 81);
+				background-color: rgb(232, 97, 97);
 				border-radius: 18px;
+			}
+			#In_div1 ::click {
+
 			}
 
 			#In_div2{
 				height: 110px;
 				width: 110px;
 				border: 5px solid rgb(0, 0, 0);
-				background-color: rgb(46, 123, 71);
+				background-color: rgb(56, 142, 83);
 				border-radius: 18px;
 			}
 
@@ -49,7 +60,7 @@
 				height: 110px;
 				width: 110px;
 				border: 5px solid rgb(0, 0, 0);
-				background-color: rgb(232, 124, 35);
+				background-color: rgb(211, 120, 46);
 				border-radius: 18px;
 			}
 
@@ -57,7 +68,7 @@
 				height: 110px;
 				width: 110px;
 				border: 5px solid rgb(0, 0, 0);
-				background-color: rgb(35, 97, 189);
+				background-color: rgb(52, 112, 201);
 				border-radius: 18px;
 			}
 	
@@ -68,7 +79,7 @@
 
 	<body>
 
-		<h1>Simon Game</h1>
+		<h1>Simon Says Game</h1>
 		<h3>Press Any Key to Start the GAME !</h3>
 
 		<div id="out_div">
@@ -86,14 +97,12 @@
 
 		
 
-		
-
 	
 	</body>
 
 		<script>
 
-			let lvl = document.createElement('p')
+			let lvl = document.querySelector('h3')
 			lvl.style.margin= 0;
 			let h1 = document.querySelector('h1')
 			let body = document.querySelector('body')
@@ -109,24 +118,26 @@
 
 			// console.log(div2);
 
-			function lvlincr () {
+			function lvlUp () {
 				num ++ ;
 				lvl.innerHTML = `<b>Current Level is ${num}</b>`
 				outDiv.insertAdjacentElement('beforebegin', lvl )
+				
 			}
 			
 
-			// div1.addEventListener('click', lvlincr)
-			// div2.addEventListener('click', lvlincr)
-			// div3.addEventListener('click', lvlincr)
-			// div4.addEventListener('click', lvlincr)
+			// div1.addEventListener('click', lvlUp)
+			// div2.addEventListener('click', lvlUp)
+			// div3.addEventListener('click', lvlUp)
+			// div4.addEventListener('click', lvlUp) 
 
 							// 🔽🔽 OR
+							
 
 			let colrBoxes = [div1, div2, div3, div4]
 
 			for(box of colrBoxes){
-				box.addEventListener ('click', lvlincr)
+				box.addEventListener ('click', lvlUp)
 			}
 		
 
