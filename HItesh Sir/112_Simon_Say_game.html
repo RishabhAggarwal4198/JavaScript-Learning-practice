@@ -126,23 +126,34 @@ function levelUp () {
   gameFlash(randBtn);
 }
 
+
+function checkAns () {
+  console.log(`curr level : ${level}`);
+}
+
+
+
 function btnPress () {
 	console.log(this);    //✅ 'this' will give the value of the button pressed
 	let btn = this;
 	userFlash(btn)
 
-	userColor = btn.get
+	let userColor = btn.getAttribute('id')
+	console.log(userColor);
+
+	checkAns();
 }
 
 
 let allBtns = document.querySelectorAll('.btn')
 
 for(btn of allBtns){
-	btn.addEventListener('click', btnPress)
+	btn.addEventListener('click', btnPress) 
 }
 
 
 
+ 
 
 
 
