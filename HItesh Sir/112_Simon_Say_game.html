@@ -102,6 +102,7 @@ let gameSeq = []
 let userSeq = []
 // console.log(userSeq); 
 
+let p = document.querySelector('p')
 
 let btns = [`red`,`green`,`yellow`,`blue`]
 
@@ -162,7 +163,9 @@ function checkAns () {
 	}
   } else {
 	h2.innerText = `Game Over! Press any key to start`
-	reset();
+	p.innerHTML = `Reset`
+	p.classList.add('.p')
+	finalButton;
   }
 }
 
@@ -187,6 +190,12 @@ let allBtns = document.querySelectorAll('.btn')
 for(btn of allBtns){
 	btn.addEventListener('click', btnPress) 
 } 
+
+function finalButton () {
+	p.addEventListener('click', reset())
+
+}
+
 
 function reset() {
 	started = false
