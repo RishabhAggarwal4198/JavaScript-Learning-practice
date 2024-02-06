@@ -50,6 +50,9 @@
 	.flash {
 		background-color: #d3cbcb;
 	}
+	.userflash {
+		background-color: #ff0000;
+	}
 
 
 	</style>
@@ -94,10 +97,17 @@ document.addEventListener('keypress', function () {
 })
 
 
-function btnFlash (btn) {
+function gameFlash (btn) {
 	btn.classList.add('flash')
 	setTimeout(function() {
 		btn.classList.remove('flash')
+	}, 200)
+}
+
+function userFlash (btn) {
+	btn.classList.add('userflash')
+	setTimeout(function() {
+		btn.classList.remove('userflash')
 	}, 200)
 }
 
@@ -111,19 +121,22 @@ function levelUp () {
   let randBtn = document.querySelector(`.${randColor}`)     //✅ It will give the value of different classes of diffrent buttons stored with the names like 'red', 'green', 'yellow', 'blue'
   console.log(randIdx);
   console.log(randColor);
-  btnFlash(randBtn);
+  gameFlash(randBtn);
 }
 
 function btnPress () {
-	// console.log(this);    //✅ 'this' will give the value of the button pressed
+	console.log(this);    //✅ 'this' will give the value of the button pressed
 	let btn = this;
+	userFlash(btn)
 }
+
 
 let allBtns = document.querySelectorAll('.btn')
 
 for(btn of allBtns){
 	btn.addEventListener('click', btnPress)
 }
+
 
 
 
