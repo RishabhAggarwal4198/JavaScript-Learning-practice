@@ -14,6 +14,8 @@
 		height: 400px;
 	}
 
+
+
 	.btn{
 		height: 140px;
 		width: 140px;
@@ -29,6 +31,22 @@
 		justify-content: center;
 		gap: 20px;
 	}
+
+	.rsetBtn {
+	 /* height: 30px;
+	 width: 100px; */
+	 padding: 5px 20px  ;
+	 border: 4px groove rgb(87, 85, 85);
+	 margin: 0 0 20px 0;
+	 background-color:rgb(111, 108, 108) ;
+	 border-radius: 14px;
+	 color: white;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 font-size: 20px;
+	}
+
 
 	.red{
 	 background-color: rgb(232, 97, 97);
@@ -51,17 +69,19 @@
 		background-color: #d3cbcb;
 	}
 	.userflash {
-		background-color: #ff0000;
+		background-color: rgb(81, 79, 79);
 	}
 
+	
 
 	</style>
 
 </head>
 
 <body>
-	<h1>Simon Says Game</h1>
-	<h2>Press any key to start the game</h2>
+	<h1 style="margin: 0 0 18px 0;">Simon Says Game</h1>
+	<h2 style="margin: 0 0 19px 0;">Press any key to start the game</h2>
+	<p></p>
 
 	<div class="btn-conainer">
 		<div class="btn red" type="button" id="red" ></div>
@@ -78,9 +98,10 @@
 <script>
 
 let gameSeq = []
-console.log(gameSeq);
+// console.log(gameSeq);
 let userSeq = []
-console.log(userSeq); 
+// console.log(userSeq); 
+
 
 let btns = [`red`,`green`,`yellow`,`blue`]
 
@@ -91,7 +112,7 @@ let h2 = document.querySelector('h2')
 
 document.addEventListener('keypress', function () {
 	if (started == false) {
-		console.log(`game started`);
+		// console.log(`game started`);
 		started = true
 
 		levelUp()
@@ -115,6 +136,7 @@ function userFlash (btn) {
 
 
 function levelUp () { 
+  userSeq = [];
   level ++;
   h2.innerText = `Level : ${level}`
 
@@ -122,7 +144,7 @@ function levelUp () {
   let randColor = btns[randIdx]
   let randBtn = document.querySelector(`.${randColor}`)     //✅ It will give the value of different classes of diffrent buttons stored with the names like 'red', 'green', 'yellow', 'blue'
   gameSeq.push(randColor) 
-  console.log(gameSeq);
+//   console.log(gameSeq);
 //   console.log(randIdx);
 //   console.log(randColor);
   gameFlash(randBtn);
@@ -135,16 +157,16 @@ function checkAns () {
   let idx = level-1;
 
   if(userSeq[idx] === gameSeq[idx]) {
-	console.log(`same value`);
 	if(userSeq.length == gameSeq.length) {
-		levelUp(); 
+		setTimeout(levelUp, 500)                        //✅ this 'setTimeout' id given to delay the flash by .5 seconds
 	}
   } else {
 	h2.innerText = `Game Over! Press any key to start`
+	reset();
   }
 }
 
-
+ 
 
 function btnPress () {
 	console.log(this);    //✅ 'this' will give the value of the button pressed
@@ -166,6 +188,12 @@ for(btn of allBtns){
 	btn.addEventListener('click', btnPress) 
 } 
 
+function reset() {
+	started = false
+	gameSeq = [];
+	userSeq = [];
+	level = 0;
+}
 
 
  
