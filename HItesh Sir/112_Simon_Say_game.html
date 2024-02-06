@@ -18,7 +18,7 @@
 		height: 140px;
 		width: 140px;
 		border-radius: 20%;
-		border: 10px solid black;
+		border: 10px solid rgb(81, 79, 79);
 		/* margin: 10px; */
 	}
 
@@ -64,10 +64,10 @@
 	<h2>Press any key to start the game</h2>
 
 	<div class="btn-conainer">
-		<div class="btn red" type="button"></div>
-		<div class="btn  green" type="button"></div>
-		<div class="btn yellow" type="button"></div>
-		<div class="btn  blue" type="button"></div>
+		<div class="btn red" type="button" id="red" ></div>
+		<div class="btn  green" type="button" id="green" ></div>
+		<div class="btn yellow" type="button" id="yellow" ></div>
+		<div class="btn  blue" type="button" id="blue" ></div>
 	</div>
 
 	
@@ -119,8 +119,10 @@ function levelUp () {
   let randIdx = Math.floor(Math.random()*4)
   let randColor = btns[randIdx]
   let randBtn = document.querySelector(`.${randColor}`)     //✅ It will give the value of different classes of diffrent buttons stored with the names like 'red', 'green', 'yellow', 'blue'
-  console.log(randIdx);
-  console.log(randColor);
+  gameSeq.push(randColor) 
+  console.log(gameSeq);
+//   console.log(randIdx);
+//   console.log(randColor);
   gameFlash(randBtn);
 }
 
@@ -128,6 +130,8 @@ function btnPress () {
 	console.log(this);    //✅ 'this' will give the value of the button pressed
 	let btn = this;
 	userFlash(btn)
+
+	userColor = btn.get
 }
 
 
