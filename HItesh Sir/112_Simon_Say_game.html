@@ -35,7 +35,7 @@
 	}
 
 	.green{
-	background-color: rgb(56, 142, 83);
+	background-color: rgb(46, 129, 72);
 	}
 
 	.yellow{
@@ -78,7 +78,9 @@
 <script>
 
 let gameSeq = []
+console.log(gameSeq);
 let userSeq = []
+console.log(userSeq); 
 
 let btns = [`red`,`green`,`yellow`,`blue`]
 
@@ -112,7 +114,7 @@ function userFlash (btn) {
 }
 
 
-function levelUp () {
+function levelUp () { 
   level ++;
   h2.innerText = `Level : ${level}`
 
@@ -126,13 +128,17 @@ function levelUp () {
   gameFlash(randBtn);
 }
 
+ 
 
 function checkAns () {
-  console.log(`curr level : ${level}`);
+  console.log(`current level : ${level}`);
   let idx = level-1;
 
-  if(userSeq(idx) === gameSeq(idx)) {
+  if(userSeq[idx] === gameSeq[idx]) {
 	console.log(`same value`);
+	if(userSeq.length == gameSeq.length) {
+		levelUp(); 
+	}
   } else {
 	h2.innerText = `Game Over! Press any key to start`
   }
@@ -142,12 +148,12 @@ function checkAns () {
 
 function btnPress () {
 	console.log(this);    //✅ 'this' will give the value of the button pressed
-	let btn = this;
-	userFlash(btn)
+	let btnn = this;
+	userFlash(btnn)
 
-	let userColor = btn.getAttribute('id')
+	userColor = btnn.getAttribute('id')
 	console.log(userColor);
-	userSeq.push(userColor)
+	userSeq.push(userColor) 
 
 	checkAns();
 }
@@ -158,7 +164,7 @@ let allBtns = document.querySelectorAll('.btn')
 
 for(btn of allBtns){
 	btn.addEventListener('click', btnPress) 
-}
+} 
 
 
 
