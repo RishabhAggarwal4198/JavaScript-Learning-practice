@@ -12,6 +12,7 @@
 		place-items: center;
 		gap: 0px;
 		height: 400px;
+		text-align: center;
 	}
 
 
@@ -162,10 +163,15 @@ function checkAns () {
 		setTimeout(levelUp, 500)                        //✅ this 'setTimeout' id given to delay the flash by .5 seconds
 	}
   } else {
-	h2.innerText = `Game Over! Press any key to start`
-	p.innerHTML = `Reset`
-	p.classList.add('.p')
-	finalButton;
+	h2.innerHTML = `Game Over !! You score was <b>${level}</b> <br> Press any key to start `
+	document.querySelector("body").style.backgroundColor = 'red'
+	setTimeout(function() {
+		document.querySelector("body").style.backgroundColor = '#d3cbcb'
+	},150)
+	// p.classList.add ('.rsetBtn')   // 📍📍📍📍📍
+	// p.innerHTML = `Reset`          // 📍📍📍📍📍
+	// finalButton;                   // 📍📍📍📍📍   
+	reset()
   }
 }
 
@@ -191,10 +197,10 @@ for(btn of allBtns){
 	btn.addEventListener('click', btnPress) 
 } 
 
-function finalButton () {
-	p.addEventListener('click', reset())
+// function finalButton () {    // 📍📍📍📍📍
+// 	p.addEventListener('click', reset())
 
-}
+// }             // 📍📍📍📍📍
 
 
 function reset() {
