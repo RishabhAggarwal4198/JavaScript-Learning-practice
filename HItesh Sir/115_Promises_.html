@@ -141,7 +141,19 @@ savetoDb('apna college')
 
 
 
+
+
 // 💎✅💎 Chaining in PROMISES 👇👇
+
+savetoDb('apna college')
+.then(() => {
+	console.log('promise was resolved');
+	savetoDb(`Hello World !`)
+})
+.catch(() => {
+	console.log('promise was rejected');
+})
+
 
 
 
