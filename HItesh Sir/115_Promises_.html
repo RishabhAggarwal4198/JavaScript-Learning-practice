@@ -186,9 +186,29 @@ function savetoDb(data) {
 
 
 
-	// 💎✅💎 Results & Errors in PROMISES 👇👇
+	// 💎✅💎 parameters 'then' & 'catch' in PROMISES 👇👇
 
-	
+	savetoDb('apna college')
+	.then((rzlt) => {
+		console.log('data1 saved');
+		console.log('result of promise: ', rzlt);
+		return savetoDb('Hello World')   //✅ 'return' a function -----➀
+	})
+	.then((rzlt)  => {
+		console.log('data2 saved');     //✅If ➀ got resolved it will be printed & if not it will show 'promise was rejected'
+		console.log('result of promise: ', rzlt);
+		return savetoDb('Rishabh')
+	})
+	.then((rzlt) => {
+		console.log(`data3 saved`);      //✅ 'return' a function -------➁
+		                                 //✅If ➁ got resolved it will be printed & if not it will show 'promise was rejected'	
+		console.log('result of promise: ', rzlt);
+	})									 
+	.catch((err) => {
+		console.log('promise was rejected');
+		console.log('result of promise: ', err);
+	})
+
 
 
 
