@@ -95,13 +95,44 @@ function savetoDb(data) {
 	});
 } 
 
-// savetoDb("Hello Everyone")
 
+//✅ Write this :- "savetoDb("Hello Everyone")" thing in the console od the browser to see the result
  
 //✅ Three states of PROMISES :-
 // + Pending
 // + Rejected
 // + Fullfilled
+
+
+
+
+
+
+
+// 💎✅💎Then & Catch in PROMISES 👇👇
+
+let request = savetoDb('apna college');     //📍 Where 'request' is a promise object
+
+request.then(() => {
+	console.log('promise was resolved');
+})
+.catch(() => {
+	console.log('promise was rejected');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
