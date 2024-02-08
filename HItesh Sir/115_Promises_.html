@@ -128,13 +128,13 @@ function savetoDb(data) {
 			   // 🔽🔽 (OR) [much more efficeint way of doing this]
 
 
-savetoDb('apna college')
-.then(() => {
-	console.log('promise was resolved');
-})
-.catch(() => {
-	console.log('promise was rejected');
-})
+// savetoDb('apna college')
+// .then(() => {
+// 	console.log('promise was resolved');
+// })
+// .catch(() => {
+// 	console.log('promise was rejected');
+// })
 
 
 
@@ -145,20 +145,50 @@ savetoDb('apna college')
 
 // 💎✅💎 Chaining in PROMISES 👇👇
 
-savetoDb('apna college')
-.then(() => {
-	console.log('promise was resolved');
-	savetoDb(`Hello World !`)
-})
-.catch(() => {
-	console.log('promise was rejected');
-})
+	// savetoDb('apna college')
+	// .then(() => {
+	// 	console.log('data1 saved');
+	// 	savetoDb(`Hello World !`)
+	// 		.then(() =>{
+	// 			console.log('data2 saved');
+	// 		});
+	// })
+	// .catch(() => {
+	// 	console.log('promise was rejected');
+	// })
+
+	//✅✅ If even a single of the PROMISE in the aboe not got 'resolved', so it will show  'promise was rejected'
+
+
+			  // 🔽🔽Much more effective way of writing the above CODE
+
+			  
+	savetoDb('apna college')
+	.then(() => {
+		console.log('data1 saved');
+		return savetoDb('Hello World')   //✅ 'return' a function -----➀
+	})
+	.then(()  => {
+		console.log('data2 saved');     //✅If ➀ got resolved it will be printed & if not it will show 'promise was rejected'
+		return savetoDb('Rishabh')
+	})
+	.then(() => {
+		console.log(`data3 saved`);      //✅ 'return' a function -------➁
+	})									 //✅If ➁ got resolved it will be printed & if not it will show 'promise was rejected'	
+	.catch(() => {
+		console.log('promise was rejected');
+	})
+
+	//📍📍 Run the above code to see how it works
+
+	
 
 
 
 
+	// 💎✅💎 Results & Errors in PROMISES 👇👇
 
-
+	
 
 
 
