@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+
+	<style>
+
+		body{
+			background-color: #212121;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	
+</body>
+
+
+<script>
+
+	// function savetoDb(data, success, failure) {
+	// 	let internetSpeed = Math.floor((Math.random()*10)+1);
+
+	// 	if(internetSpeed > 4) {
+	// 		console.log('Your data was saved: ', data);
+	// 	}else {
+	// 		console.log('Weak connection, data nt saved');
+	// 	}
+	// }
+
+				       // 🔽🔽
+
+
+	function savetoDb(data, success, failure) {
+		let internetSpeed = Math.floor((Math.random()*10)+1);
+
+		if(internetSpeed > 4) {
+			success();	
+		}else {
+			failure();
+		}
+	}
+
+
+
+
+	// ❌❌❌❌ CALL-BACK HELL ❌❌❌❌ 👇👇
+
+	savetoDb('apna college',
+	() => {
+		console.log(`your data was saved `);
+		savetoDb(
+			'hello world',
+			() => {
+				console.log(`success2: data2 saved`);
+				savetoDb('Rishabh', () => {
+					console.log('success3: data 3 saved');
+				})
+			}, 
+			() => {
+				console.log(`failure2: weak connection`);
+			}
+		)
+	}, 
+	() => {
+		console.log(`Weak connection. Data not saved`);
+	} )
+
+
+
+
+
+
+// 💎✅💎 PROMISE 👇👇
+
+function savetoDb(data) {
+	let internetSpeed = Math.floor((Math.random()*10)+1);
+
+}
+
+
+	
+
+
+
+</script>
+
+
+
+
+
+
+</html>

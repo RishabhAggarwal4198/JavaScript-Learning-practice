@@ -80,6 +80,7 @@ function changeColor(color, delay, nextColorFXN) {
 }
 
 //✅ CALL-BACK nesting like this is called 'CALLBACK HELL'👇
+//❌❌❌❌Not a good way of writing 'NESTED-CALLBACK' ❌❌❌❌
 
 changeColor('red', 1000, () => {
 	changeColor('green', 1000, () => {
@@ -91,6 +92,8 @@ changeColor('red', 1000, () => {
 	} )
 })
 
+
+//💎✅💎 and to escape such kind of problems we use 'PROMISES'
 
 
 
