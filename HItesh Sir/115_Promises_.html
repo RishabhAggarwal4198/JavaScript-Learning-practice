@@ -107,17 +107,17 @@ function savetoDb(data) {
 
 
 
-
-
 // 💎✅💎Then & Catch in PROMISES 👇👇
 
-let request = savetoDb('apna college');     //📍 Where 'request' is a promise object
+let request = savetoDb('apna college');     // ✅Where 'request' is a promise object
 
 request.then(() => {
 	console.log('promise was resolved');
+	console.log(request);
 })
 .catch(() => {
 	console.log('promise was rejected');
+	console.log(request);
 })
 
 
