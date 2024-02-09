@@ -262,10 +262,10 @@ function savetoDb(data) {
 					resolve ('color changed')    
 				}, delay)
 			})
-
 	}
 
-	// let rqstPromise = changeColor('red', 1000)   
+	
+	// let rqstPromise = changeColor('red', 1000)     //📍📍 RUN this to see the results
 
 	//  rqstPromise      //📍 Run this in 'console' & ANSWER will be :-
 						 // Promise {<fulfilled>: 'color changed'}
@@ -302,26 +302,26 @@ function savetoDb(data) {
 
 	//💎💎✅✅Writing above in terms of 'then' & 'catch'
 
-	changeColor('red', 2000) 
-	.then(() => {
-		console.log('red colour was completed');
-		return changeColor('green', 5000) 
-	})
-	.then(() => {
-		console.log('green colour was completed');
-		return changeColor('blue', 4000)
-	})
-	.then(() => {
-		console.log('blue colour was completed');
-		return changeColor('yellow', 4000)
-	})
-	.then(() => {
-		console.log('yellow colour was completed');
-		return changeColor('skyblue', 4000)
-	})
-	.catch(() => {
-		console.log(`All colours hasn't changed`);
-	})
+	// changeColor('red', 2000) 
+	// .then(() => {
+	// 	console.log('red colour was completed');
+	// 	return changeColor('green', 5000) 
+	// })
+	// .then(() => {
+	// 	console.log('green colour was completed');
+	// 	return changeColor('blue', 4000)
+	// })
+	// .then(() => {
+	// 	console.log('blue colour was completed');
+	// 	return changeColor('yellow', 4000)
+	// })
+	// .then(() => {
+	// 	console.log('yellow colour was completed');
+	// 	return changeColor('skyblue', 4000)
+	// })
+	// .catch(() => {
+	// 	console.log(`All colours hasn't changed`);
+	// })
 	
 	//📍📍 RUN the above code to see the result
 
