@@ -45,12 +45,38 @@ function changeColor(color, delay) {
 		})
 }
 
-async function colorDemo () {
+
+// async function colorDemo () {
+// 		await changeColor('red',     1000)
+// 		await changeColor('green',   1000)
+// 		await changeColor('blue',    1000)
+// 		await changeColor('pink',    1000)
+// 		await changeColor('yellow',  1000)
+
+// 		let a = 5;                              // ❌❌ & Bcoz of these REJECTIONS these works will never get executed
+// 		console.log(a);							// -----------------(1)
+// 		console.log('new number = ', a + 3);
+// 	}
+
+
+				// 🔽🔽 [& to avoid the problems like at (1), 
+				//        we execute the code like following 👇👇]
+
+
+async function colorDemo1 () {
+	try{                     				//🍁✅ The code which is having the possibility of getting an "error" enclose it inside TRY
 		await changeColor('red',     1000)
 		await changeColor('green',   1000)
 		await changeColor('blue',    1000)
 		await changeColor('pink',    1000)
-		      changeColor('yellow',  1000)
+		await changeColor('yellow',  1000)
+	} catch (errr0rrr) {       			    //🍁✅ catch() will catch the error
+		console.log(`ERROR CAUGHT & it was '${errr0rrr}' `);
+	}
+		
+		let a = 5;                             
+		console.log(a);							
+		console.log('new number = ', a + 3);
 	}
 
 
