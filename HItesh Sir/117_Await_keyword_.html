@@ -28,21 +28,26 @@
 
 function getNum () {
 	return new Promise((rezolv, rjct) => {
-		let num = Math.floor((Math.random()*10)+1)
-		console.log(num);
-		rezolv();
-	}, 1000)
+		setTimeout ( () => {
+			let num = Math.floor((Math.random()*10)+1)
+			console.log(num);
+			rezolv();
+		}, 1000)
+	});
 }
  
+
 async function demo () {
 	await  getNum();                    //🍁✅🍁 'await' keyword before a function ensures that till the promise of that function don't get resolved, the next function will not get executed
 									    //🍁✅🍁'await' could only be used in an ASYNC function
-
-
-
-
+	await getNum(); 	
+	await getNum(); 	
+	await getNum(); 	
+	await getNum(); 	
 }															
 
+
+//✅ Just print 'demo()' in console & we will see that each 'getNum()' will get printed at a gap of 1 second from each other
 
 
 </script>
