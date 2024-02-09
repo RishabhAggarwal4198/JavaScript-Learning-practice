@@ -6,6 +6,11 @@
 
 	<style>
 
+		body{
+			background-color: #212121;
+			color: #c5c1c1;
+		}
+
 	</style>
 </head>
 
@@ -28,6 +33,11 @@ let h1 = document.querySelector('h1')
 function changeColor(color, delay) {
 	return new Promise ((resolve, reject) => {
 			setTimeout(() => {
+				let num = Math.floor((Math.random()*5)+1)
+				if(num > 3 ){
+					reject(`promise rejected`);     // ❌❌ Bcoz of this on the basis of 'RANDOM-NUMBER' any of our promise could get rejected
+				}
+
 				h1.style.color = color
 				resolve ('color changed')  
 				console.log(`'${color}' color Got Executed`);  
