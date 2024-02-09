@@ -37,17 +37,30 @@ async function greet() {
   return 'hello';
 }
 
-//📍📍Now when we will RUN 'greet()' in the console we will get :-
-						 // Promise {<fulfilled>: 'hello'}
-					     // [[Prototype]]: Promise
-						 // [[PromiseState]]: "fulfilled"
-						 // [[PromiseResult]]: "hello"
+//📍📍Now when we will RUN 'greet()' in the console & we will get :-
+								// Promise {<fulfilled>: 'hello'}
+								// [[Prototype]]: Promise
+								// [[PromiseState]]: "fulfilled"
+								// [[PromiseResult]]: "hello"
 
 //✅ its returning [[PromiseState]]: "fulfilled" , even though we havn't even written any promise statement into it, but still returning the same
 //✅ So basically the STRING 'hello' which we have wrote after 'return' , it's making a result & it's getting stored in the PROMISE
 
 
+						    // 🔽🔽
 
+
+async function greet1() {
+  
+}
+
+//📍📍 RUN 'greet1()' now in the console & we will get :-
+								// Promise {<fulfilled>: 'undefined'}
+								// [[Prototype]]: Promise
+								// [[PromiseState]]: "fulfilled"
+								// [[PromiseResult]]: "undefined"
+
+//✅ So Even if we don't return anything from that ASYNC function, even than we will get the // [[PromiseState]]: "fulfilled"
 
 
 
