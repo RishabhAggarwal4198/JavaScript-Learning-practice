@@ -9,6 +9,7 @@
 		body{
 			background-color: #212121;
 			color: #ffffff;
+
 		}
 
 	</style>
@@ -54,6 +55,9 @@ async function demo () {
 
 
 
+
+
+
 // 💎✅💎Now trying to SHORTEN & PRINT👇👇 
 // the most last part of the code of 
 // the file "115_Promises_.html" using ASYNC keyword
@@ -65,36 +69,60 @@ function changeColor(color, delay) {
 	return new Promise ((resolve, reject) => {
 			setTimeout(() => {
 				h1.style.color = color
-				resolve ('color changed')    
+				resolve ('color changed')  
+				console.log(`'${color}' color Got Executed`);  
 			}, delay)
 		})
-
 }
 
+	// ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
-changeColor('red', 2000) 
-	.then(() => {
-		console.log('red colour was completed');
-		return changeColor('green', 5000) 
-	})
-	.then(() => {
-		console.log('green colour was completed');
-		return changeColor('blue', 4000)
-	})
-	.then(() => {
-		console.log('blue colour was completed');
-		return changeColor('yellow', 4000)
-	})
-	.then(() => {
-		console.log('yellow colour was completed');
-		return changeColor('skyblue', 4000)
-	})
-	.catch(() => {
-		console.log(`All colours hasn't changed`);
-	})
-	
+	// changeColor('red', 2000) 
+	// 	.then(() => {
+	// 		console.log('red colour was completed');
+	// 		return changeColor('green', 5000) 
+	// 	})
+	// 	.then(() => {
+	// 		console.log('green colour was completed');
+	// 		return changeColor('blue', 4000)
+	// 	})
+	// 	.then(() => {
+	// 		console.log('blue colour was completed');
+	// 		return changeColor('yellow', 4000)
+	// 	})
+	// 	.then(() => {
+	// 		console.log('yellow colour was completed');
+	// 		return changeColor('skyblue', 4000)
+	// 	})
+	// 	.catch(() => {
+	// 		console.log(`All colours hasn't changed`);
+	// 	})
 
+	// ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌
 
+						// 🔽🔽
+
+	// async function colorDemo () {
+	// 	changeColor('red',     1000)
+	// 	changeColor('green',   1000)
+	// 	changeColor('blue',    1000)
+	// 	changeColor('pink',    1000)
+	// 	changeColor('yellow', 1000)
+	// }
+
+	//✅ So, by calling 'colorDemo()' in the above all of it will get executed at the same time
+ 
+						// 🔽🔽
+
+	async function colorDemo () {
+		await changeColor('red',     1000)
+		await changeColor('green',   1000)
+		await changeColor('blue',    1000)
+		await changeColor('pink',    1000)
+		 changeColor('yellow',  1000)
+	}
+
+	colorDemo()
 
 
 
@@ -102,3 +130,5 @@ changeColor('red', 2000)
 </script>
 
 </html>
+
+
