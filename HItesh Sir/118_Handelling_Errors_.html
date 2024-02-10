@@ -9,6 +9,7 @@
 		body{
 			background-color: #212121;
 			color: #c5c1c1;
+			
 		}
 
 	</style>
@@ -68,10 +69,10 @@ async function colorDemo1 () {
 		await changeColor('red',     1000)
 		await changeColor('green',   1000)
 		await changeColor('blue',    1000)
-		await changeColor('pink',    1000)
+		await changeColor('seagreen',1000)
 		await changeColor('yellow',  1000)
 		await changeColor('pink',    1000)
-		await changeColor('orange',    1000)
+		await changeColor('orange',  1000)
 	} catch (errr0rrr) {       			    //🍁✅ catch() will catch the error
 		console.log(`ERROR CAUGHT & it was '${errr0rrr}' `);
 	}
@@ -81,6 +82,8 @@ async function colorDemo1 () {
 		console.log('new number = ', a + 3);
 	}
 
+	// colorDemo1 ()
+
 
 	/*✅✅ NOTE:- So whenever we gonna call/use PROMISE or wait a PROMISE &&
 	               whenever we use AWAIT, so we try to put them all the
@@ -89,6 +92,8 @@ async function colorDemo1 () {
 				   CATCH (so that the tasks which lies beyond that don't get stopped
 				   from getting executed)
 	*/
+
+
 
 
 
