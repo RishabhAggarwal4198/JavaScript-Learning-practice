@@ -9,11 +9,10 @@
 
 			body{
 				background-color: #d3cbcb;
-				width: 100%;
-				height: 100%;
 				display: flex;
 				justify-content: center;
-				align-items:center;
+				align-items: center;
+				height: 100vh;
 			}
 			
 			#div_1{
@@ -31,8 +30,8 @@
 			.div_2{
 				height: 50px;
 				width: 50px;
-				background-color: rgb(232, 97, 97);
-				border: 2px solid rgb(15, 15, 15);
+				background-color: rgb(169, 171, 242);
+				border: 4px solid rgb(81, 79, 79);
 				border-radius: 18px;
 				display: flex;
 				justify-content: center;
@@ -77,7 +76,8 @@
 		
 		let postnVerti = [ `center`, `flex-start`, `flex-end`, `baseline` , `stretch` ]
 
-		let flower = [`💐`, `🌻`, `🌷`, `🌹`, `🪻`]
+		// let flower = [`💐`, `🌻`, `🌷`, `🌹`, `🪻`]
+		let items = ['🍔' , '🍟' , '🥗' , '🍙', '🌯', '🥪']
 
 		let div_2 = document.querySelectorAll('.div_2')
 
@@ -89,7 +89,7 @@
 
 			let hori = postnHrzntl[Math.floor(Math.random()*6)]
 			let verti = postnVerti[Math.floor(Math.random()*5)]
-			// let flow = flower[Math.floor(Math.random()*5)]
+			// let flow = items[Math.floor(Math.random()*5)]
 			// console.log(flow);
 			div_1.style.justifyContent = hori 
 			div_1.style.alignItems = verti
@@ -103,13 +103,20 @@
 
 			let hori = postnHrzntl[Math.floor(Math.random()*6)]
 			let verti = postnVerti[Math.floor(Math.random()*5)]
-			// let flow = flower[Math.floor(Math.random()*5)]
-			// console.log(flow);
+			let flow = items[Math.floor(Math.random()*5)]
+		
 			div_1.style.justifyContent = hori 
 			div_1.style.alignItems = verti
-			// divTwo.innerHTML= `${flow}`
+			
+			for(ele of div_2 ){
+				ele.innerHTML = `${flow}`
+				ele.style.fontSize = '40px'
+			}
+
+			
 			})
 
+			
 		
 
 		
