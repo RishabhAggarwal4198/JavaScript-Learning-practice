@@ -8,11 +8,19 @@
 		<style>
 
 			body{
-				background-color: #d3cbcb;
+				background-color: #7b7979;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				flex-direction: column;
 				height: 100vh;
+			}
+
+			.para {
+				background-color: rgb(97, 101, 233);
+				border: 10px solid rgb(81, 79, 79);
+				border-radius: 40px;
+				padding: 8px;
 			}
 			
 			#div_1{
@@ -50,6 +58,8 @@
 
 	<body>
 
+		<p></p>
+
 		<div id="div_1">
 
 			<div class="div_2"> </div>
@@ -57,8 +67,14 @@
 			<div class="div_2"> </div>
 			<div class="div_2"> </div>
 
-
 		</div>
+
+		<!-- <div>
+			<button>Play</button>
+			<button></button>
+		</div> -->
+
+
 
 
 	
@@ -78,6 +94,7 @@
 
 		// let flower = [`💐`, `🌻`, `🌷`, `🌹`, `🪻`]
 		let items = ['🍔' , '🍟' , '🥗' , '🍙', '🌯', '🥪']
+		// let items = ['🔴' , '🔵' , '🟢' , '🟡' , '🟤', '🟣']
 
 		let div_2 = document.querySelectorAll('.div_2')
 
@@ -103,16 +120,30 @@
 
 			let hori = postnHrzntl[Math.floor(Math.random()*6)]
 			let verti = postnVerti[Math.floor(Math.random()*5)]
-			let flow = items[Math.floor(Math.random()*5)]
+			let flow0 = items[Math.floor(Math.random()*5)]
+			let flow1 = items[Math.floor(Math.random()*5)]
+			let flow2 = items[Math.floor(Math.random()*5)]
+			let flow3 = items[Math.floor(Math.random()*5)]
 		
 			div_1.style.justifyContent = hori 
 			div_1.style.alignItems = verti
 			
+			// for(ele of div_2 ){
+			// 	ele.innerHTML = `${flow}`
+			// 	ele.style.fontSize = '40px'
+			// }
+
 			for(ele of div_2 ){
-				ele.innerHTML = `${flow}`
 				ele.style.fontSize = '40px'
 			}
 
+			div_2[0].innerHTML = `${flow0}`
+		   
+			div_2[1].innerHTML = `${flow1}`
+
+			div_2[2].innerHTML = `${flow2}`
+
+			div_2[3].innerHTML = `${flow3}`
 			
 			})
 
