@@ -10,10 +10,11 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			height: 100vh;
 			align-items: center;
-			row-gap: 10px;
+			/* row-gap: 10px; */
 			flex: 1 1 1 1;
-
+			
 		}
 
 		input{
@@ -21,22 +22,31 @@
 			width: 200px;
 			background-color: #e0d9d9;
 			border: 2px solid red;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			color: rgb(0, 38, 255);
+			font-weight: bold;
+			font-size: large;
 			
 		}
 
 		input::placeholder{
 			margin-bottom: 0px;
 			padding-bottom: 2px;
+			text-align: center;
 		}
 
-		
+
 		div{
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr ;
 			justify-content:space-evenly;
 			gap: 10px;
-			background-color: aquamarine;
-			padding: 8px;
+			background-color: rgb(89, 90, 90);
+			border-radius: 10px;
+			border: 2px solid red;
+			padding: 7px;
+			
 		}
 
 
@@ -45,6 +55,14 @@
 			width: 40px;
 			border: 2px solid red;
 			border-radius: 40px;
+			background-color: #9e9c9c;
+			color: rgb(0, 38, 255);
+			font-weight: bold;
+			font-size: large;
+		}
+
+		button:hover{
+			background-color: #efb907;
 		}
 
 		
@@ -60,12 +78,16 @@
 		<button  id="btn2" >2</button>
 		<button  id="btn3" >3</button>
 		<button  id="btn4" >4</button>
+		<button  id="btn5" onclick="input.value += 5" >5</button>
+		<button  id="btn5" onclick="input.value += 6" >6</button>
+		<button  id="btn5" onclick="input.value += 7" >7</button>
+		<button  id="btn5" onclick="input.value += 8" >8</button>
 		<button  id="btnMulti" >*</button>
 		<button  id="btnDiv" >/</button>
 		<button  id="btnAdd" >+</button>
 		<button  id="btnMin" >-</button>
 		<button  id="btnSq" >sq</button>
-		<button  id="btnCube" >cube</button>
+		<button  id="btnCube" >cu</button>
 		<button  id="btnEql" >=</button>
 		<button  id="btnClr" >C</button>
 	</div>
@@ -135,6 +157,7 @@
 		input.value = null
 	})
 
+	
 
 
 
