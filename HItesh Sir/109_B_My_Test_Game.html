@@ -66,17 +66,35 @@
 <script>
 
 let outDiv = document.querySelector('#outDiv')
-let inDiv = document.querySelector('#inDiv')
+let inDivAll = document.querySelectorAll('#inDiv')
+
+
 
 let justi = ['center', 'end', 'left', 'right' , 'space-around', 'space-between', 'space-evenly']
 let align = [ 'center', 'end', 'start', 'flex-start', 'flex-end', 'self-end', 'self-start']
 
+let items = ['🍁', '💎', '🔰' ,'🧿', '🏮']
+
 document.addEventListener('keypress', function () {
 	let valuJust = justi[ Math.floor(Math.random()*7)]
 	let valuAlign = align [ Math.floor(Math.random()*7)]
+	let valuItems = items[Math.floor(Math.random()*5)]
 
 	outDiv.style.justifyContent = valuJust
 	outDiv.style.alignItems = valuAlign
+
+	for(indiv of inDivAll) {
+		indiv.style.fontSize = '3rem'
+		indiv.style.display = 'flex'
+		indiv.style.justifyContent = 'center'
+		indiv.style.alignItems = 'center'
+	}
+
+	inDivAll[0].innerHTML = items[Math.floor(Math.random()*5)]
+	inDivAll[1].innerHTML = items[Math.floor(Math.random()*5)]
+	inDivAll[2].innerHTML = items[Math.floor(Math.random()*5)]
+	inDivAll[3].innerHTML = items[Math.floor(Math.random()*5)]
+	inDivAll[4].innerHTML = items[Math.floor(Math.random()*5)]
 })
 
 
