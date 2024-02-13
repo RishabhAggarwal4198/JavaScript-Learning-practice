@@ -25,15 +25,27 @@
 
 			.outer{
 				width: 80vh;
-				height: 60vh;
+				height: 70vh;
 				background-color: rgb(235, 116, 116);
 				border-radius: 10vh;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				row-gap: 5vh;
-				align-items: center;
+				row-gap: 4vh;
+				align-items:center;
 				/* box-shadow: ; */
+				box-shadow: 0px 0px 10px 10px  rgba(rgb(117, 66, 66), rgb(143, 210, 143), rgb(77, 77, 211), 1);
+			}
+
+			.outer h1 {
+				font-size: 8vh;
+			}
+
+			.outer label{
+				font-size: 4vh;
+				padding: 2vh;
+				background-color: #b499e7;
+				border-radius: 1vh;
 			}
 
 			#input-file{
@@ -43,6 +55,9 @@
 			img{
 				height: 30vh;
 				width: 30vh;
+				border-radius: 80%;
+				border: 1.5vh solid rgb(110, 193, 80);
+				padding: 1.4vh;
 			}
 
 			/* #out_Div{
@@ -86,7 +101,6 @@
 			<label for="input-file"> Upload Image</label>
 			<input type="file" accept="image/*" id="input-file" >
 
-
 	</div>
 	
 
@@ -94,6 +108,16 @@
 
 
 <script>
+ let img = document.querySelector('img')
+ let label = document.querySelector('label')
+ let input = document.querySelector('input')
+
+input.onchange =  () => {
+	img.src = URL.createObjectURL(input.files[0])
+ }
+
+
+
 
 </script>
 
