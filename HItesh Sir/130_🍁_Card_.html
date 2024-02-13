@@ -12,6 +12,12 @@
 				box-sizing: border-box;
 			}
 
+			@media only screen and (max-width: 500px)  { 
+				body{
+					background-color: #212121;
+				}
+			}
+
 
 			.hero{
 				width:100%;
@@ -34,7 +40,7 @@
 				row-gap: 4vh;
 				align-items:center;
 				/* box-shadow: ; */
-				box-shadow: 0px 0px 20px 20px rgba(92, 145, 199, 0.95);
+				box-shadow: 0px 0px 20px 0 rgba(28, 28, 29, 0.7);
 			}
 
 			.outer h1 {
@@ -46,6 +52,7 @@
 				padding: 2vh;
 				background-color: #b499e7;
 				border-radius: 1vh;
+				box-shadow: 0px 0px 2vh 0 rgb(0, 0, 0, .4) ;
 			}
 
 			#input-file{
@@ -58,6 +65,7 @@
 				border-radius: 80%;
 				border: 1.5vh solid rgb(197, 79, 79);
 				padding: 1.4vh;
+				background-color: #ffffff;
 			}
 
 			/* #out_Div{
@@ -111,11 +119,20 @@
  let img = document.querySelector('img')
  let label = document.querySelector('label')
  let input = document.querySelector('input')
+ let masterDiv = document.querySelector('.hero')
 
-input.onchange =  () => {
-	img.src = URL.createObjectURL(input.files[0])
- }
+// input.onchange = function () {
+// 	img.src = URL.createObjectURL(input.files[0])
+//  }
 
+input.addEventListener('change', function () {
+	let imgLink  = URL.createObjectURL(input.files[0])
+     img.src = imgLink
+	 
+	 masterDiv.style.backgroundImage = `url(${imgLink})`
+
+
+ } )
 
 
 
