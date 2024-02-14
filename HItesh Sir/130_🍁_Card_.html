@@ -18,11 +18,17 @@
 				}
 			}
 
-
-			.hero{
-				width:100%;
-				min-height: 100vh;
+			body{
 				background: linear-gradient(#eab0ad, #b499e7) ;
+				display: grid;
+				row-gap: 80px;
+				padding: 100px;
+			}
+
+			
+			.hero{
+				/* width:100%;
+				min-height: 100vh; */
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -57,8 +63,16 @@
 				box-shadow: 0px 0px 2vh 0 rgb(0, 0, 0, .4) ;
 			}
 
+
+			#label_2{
+				background-color:rgb(235, 116, 116);
+				box-shadow: 0px 0px 0px;
+			}
+
+
+
 			#input-file{
-				display: none;
+				/* display: none; */
 			}
 
 			img{
@@ -69,6 +83,20 @@
 				padding: 1.4vh;
 				background-color: #ffffff;
 			}
+
+			#img_Up{
+				height: 20vh;
+				width: 20vh;
+				border-radius: 2vh;
+				background-color:  rgb(238, 133, 133);;
+				border: 1.4px dashed  rgb(137, 45, 45);
+				box-sizing: content-box;
+				padding: 18px 50px;
+				opacity: .8;
+				
+			}
+
+
 
 			/* #out_Div{
 				width: 200px;
@@ -102,18 +130,25 @@
 </body>
 
 <div class="hero">
-
-
 	<div class="outer">
-
 			<h1>Profile Picture</h1>
 			<img src="/Starter Code (Part-9)/Images/creation_1.png" alt="">
 			<label for="input-file"> Upload Image</label>
-			<input type="file" accept="image/*" id="input-file" >
-
+			<input type="file" accept="image/*" id="input-file" hidden >
 	</div>
-	
+</div>
 
+
+<div class="hero">
+	<div class="outer">
+			<h4><b>Upload Image</b></h4>
+
+			<label for="inputFile" id="label_2">
+				<img id="img_Up" src="/Starter Code (Part-9)/Images/Upload-PNG.png" alt="">
+				<input type="file" accept="image/*" id="inputFile" hidden >
+			</label>
+			
+	</div>
 </div>
 
 
@@ -124,18 +159,30 @@
  let masterDiv = document.querySelector('.hero')
  let outerDiv = document.querySelector('.outer')
  let para = document.createElement('p')
+ let imgUpl = document.querySelector('#img_Up')
+ let input_fileE = document.querySelector('#input_fileE')
 
 // input.onchange = function () {
 // 	img.src = URL.createObjectURL(input.files[0])
 //  }
+				
+					// 🔽🔽
 
 input.addEventListener('change', function () {
 	let imgLink  = URL.createObjectURL(input.files[0])
      img.src = imgLink
-	 
 	 masterDiv.style.backgroundImage = `url(${imgLink})`
 
  } )
+ 
+
+	inputFile.onchange = function(){
+	imgUpl.src = URL.createObjectURL(inputFile.files[0])
+	
+ }
+
+
+
 
 
 
