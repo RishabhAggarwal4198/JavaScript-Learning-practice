@@ -89,7 +89,7 @@
 				width: 20vh;
 				border-radius: 2vh;
 				background-color:  rgb(238, 133, 133);;
-				border: 1.4px dashed  rgb(137, 45, 45);
+				border: 1px dashed  rgb(137, 45, 45);
 				box-sizing: content-box;
 				padding: 18px 50px;
 				opacity: .8;
@@ -160,7 +160,7 @@
  let outerDiv = document.querySelector('.outer')
  let para = document.createElement('p')
  let imgUpl = document.querySelector('#img_Up')
- let input_fileE = document.querySelector('#input_fileE')
+ let inputFile = document.querySelector('#inputFile')
 
 // input.onchange = function () {
 // 	img.src = URL.createObjectURL(input.files[0])
@@ -171,13 +171,14 @@
 input.addEventListener('change', function () {
 	let imgLink  = URL.createObjectURL(input.files[0])
      img.src = imgLink
-	 masterDiv.style.backgroundImage = `url(${imgLink})`
+	//  masterDiv.style.backgroundImage = `url(${imgLink})`
 
  } )
  
 
-	inputFile.onchange = function(){
-	imgUpl.src = URL.createObjectURL(inputFile.files[0])
+inputFile.onchange = function(){
+	let newImgLink = URL.createObjectURL(inputFile.files[0])
+	imgUpl.backgroundImage = `url(${newImgLink})`
 	
  }
 
