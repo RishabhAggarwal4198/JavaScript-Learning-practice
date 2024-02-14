@@ -87,13 +87,12 @@
 			#img_Up{
 				height: 20vh;
 				width: 20vh;
-				border-radius: 2vh;
+				border-radius: 4vh;
 				background-color:  rgb(238, 133, 133);;
 				border: 1px dashed  rgb(137, 45, 45);
 				box-sizing: content-box;
-				padding: 18px 50px;
+				padding: 22px 55px;
 				opacity: .8;
-				
 			}
 
 
@@ -115,6 +114,7 @@
 				border: 8px solid rgb(0, 30, 255);
 				background-color: rgb(138, 132, 240);
 			} */
+
 
 	</style>
 
@@ -145,8 +145,9 @@
 
 			<label for="inputFile" id="label_2">
 				<img id="img_Up" src="/Starter Code (Part-9)/Images/Upload-PNG.png" alt="">
-				<input type="file" accept="image/*" id="inputFile" hidden >
 			</label>
+
+			<input type="file" accept="image/*" id="inputFile" hidden >
 			
 	</div>
 </div>
@@ -178,18 +179,14 @@ input.addEventListener('change', function () {
 
 inputFile.onchange = function(){
 	let newImgLink = URL.createObjectURL(inputFile.files[0])
-	imgUpl.backgroundImage = `url(${newImgLink})`
-	
+	// imgUpl.src = newImgLink
+	imgUpl.style.backgroundImage = `url(${newImgLink})`	
  }
 
 
+ 
 
-
-
-
-
-
-// 💎💎-----++------JUST SOME TEST CODE-------++-------💎💎
+// 💎💎------++------JUST SOME TEST CODE-------++-------💎💎
 
 //  masterDiv.onclick = function () {
 // 	para.innerHTML = `Today is beautiful !!`
