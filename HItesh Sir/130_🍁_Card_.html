@@ -178,6 +178,7 @@
  let para = document.createElement('p')
  let img_View = document.querySelector('#img_View')
  let inputFile = document.querySelector('#inputFile')
+ let label2 = document.querySelector('#label_2')
 
 // input.onchange = function () {
 // 	img.src = URL.createObjectURL(input.files[0])
@@ -192,8 +193,9 @@ input.addEventListener('change', function () {
 
  } )
  
+inputFile.addEventListener('change', uploadImage)
 
-inputFile.onchange = function(){
+ function uploadImage (){
 	let newImgLink = URL.createObjectURL(inputFile.files[0])
 	// img_View.src = newImgLink
 	img_View.style.backgroundImage = `url(${newImgLink})`	
@@ -202,7 +204,17 @@ inputFile.onchange = function(){
  }
 
 
+ label2.addEventListener('dragover', function(e){
+	e.preventDefault();
+ });
 
+ label2.addEventListener('drop', function(e){
+	e.preventDefault();
+	inputFile.files = e.dataTransfer.files
+	uploadImage ()
+ });
+
+ 
  
 
 
