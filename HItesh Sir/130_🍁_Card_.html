@@ -84,15 +84,26 @@
 				background-color: #ffffff;
 			}
 
-			#img_Up{
+			#img_2{
 				height: 20vh;
 				width: 20vh;
+			}
+
+			#img_View{
+				height: 80px;
+				width: 80px;
 				border-radius: 4vh;
 				background-color:  rgb(238, 133, 133);;
 				border: 1px dashed  rgb(137, 45, 45);
 				box-sizing: content-box;
 				padding: 22px 55px;
 				opacity: .8;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				background-position: center;
+				background-size: cover;
 			}
 
 
@@ -144,10 +155,15 @@
 			<h4><b>Upload Image</b></h4>
 
 			<label for="inputFile" id="label_2">
-				<img id="img_Up" src="/Starter Code (Part-9)/Images/Upload-PNG.png" alt="">
+				<input type="file" accept="image/*" id="inputFile" hidden >
+				
+				<div id ="img_View">
+					<img id="img_2" src="/Starter Code (Part-9)/Images/Upload-PNG.png" alt="">
+				
+				</div>
+				
 			</label>
 
-			<input type="file" accept="image/*" id="inputFile" hidden >
 			
 	</div>
 </div>
@@ -160,13 +176,13 @@
  let masterDiv = document.querySelector('.hero')
  let outerDiv = document.querySelector('.outer')
  let para = document.createElement('p')
- let imgUpl = document.querySelector('#img_Up')
+ let img_View = document.querySelector('#img_View')
  let inputFile = document.querySelector('#inputFile')
 
 // input.onchange = function () {
 // 	img.src = URL.createObjectURL(input.files[0])
 //  }
-				
+
 					// 🔽🔽
 
 input.addEventListener('change', function () {
@@ -179,9 +195,14 @@ input.addEventListener('change', function () {
 
 inputFile.onchange = function(){
 	let newImgLink = URL.createObjectURL(inputFile.files[0])
-	// imgUpl.src = newImgLink
-	imgUpl.style.backgroundImage = `url(${newImgLink})`	
+	// img_View.src = newImgLink
+	img_View.style.backgroundImage = `url(${newImgLink})`	
+	img_View.textContent = "";
  }
+
+
+
+ 
 
 
  
