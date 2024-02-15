@@ -90,8 +90,8 @@
 			}
 
 			#img_View{
-				height: 80px;
-				width: 80px;
+				height: 20vh;
+				width: 30vh;
 				border-radius: 4vh;
 				background-color:  rgb(238, 133, 133);;
 				border: 1px dashed  rgb(137, 45, 45);
@@ -197,7 +197,8 @@ inputFile.onchange = function(){
 	let newImgLink = URL.createObjectURL(inputFile.files[0])
 	// img_View.src = newImgLink
 	img_View.style.backgroundImage = `url(${newImgLink})`	
-	img_View.textContent = '';
+	img_View.textContent = '';			 // ✅ will remove everything from the text box
+	img_View.style.border = 0;           // ✅ it will remove the BORDER
  }
 
 
