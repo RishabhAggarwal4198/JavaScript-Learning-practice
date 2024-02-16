@@ -100,3 +100,8 @@ button img {
 	width: 100%;
 	padding: 10px
 }
+
+.icons_filter p {
+	margin-bottom: 3px;
+	font-size: .9rem;
+}
