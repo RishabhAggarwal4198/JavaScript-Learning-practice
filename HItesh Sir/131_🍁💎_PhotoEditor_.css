@@ -38,7 +38,7 @@ button img {
 	justify-content: center;
 	align-items: center;
 	overflow:hidden;
-	padding: 10px;
+	padding: 14px;
 }
 
 .view_img  img {
@@ -53,12 +53,21 @@ button img {
 	width: 100%;
 	display: grid;
 	place-items: center;
-	padding: 8px;
-	background-color: red;
+	/* padding: 8px; */
+	/* background-color: red; */
 }
 
 .choose_img button {
 	font-size: 1 rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 25px;
+}
+
+
+.choose_img button img {
+	width: 35px;
 }
 
 
