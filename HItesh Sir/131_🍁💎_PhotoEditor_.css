@@ -32,7 +32,15 @@ button img {
 }
 
 
-.view_img{
-	width: 100%;
+.view_img {
 	background-color: pink;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.view_img img {
+	width: 400px;
+	height: 360px;
+}
+
