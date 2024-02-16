@@ -48,3 +48,17 @@ button img {
 	border-radius: 20px;
 }
 
+
+.choose_img{
+	width: 100%;
+	display: grid;
+	place-items: center;
+	padding: 8px;
+	background-color: red;
+}
+
+.choose_img button {
+	font-size: 1 rem;
+}
+
+
