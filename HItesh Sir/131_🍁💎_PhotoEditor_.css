@@ -103,13 +103,26 @@ button img {
 
 .icons_filter p {
 	text-transform: capitalize;
-	margin-bottom: 3px;
+	margin-bottom: 8px;
 	font-size: .9rem;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.icons_filter .icon_room{
+.icons_filter .icons_room{
 	width: 100%;
-	display: flew;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.icons_filter .icons_room button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+ .icons_room button img {
+	width: 40px;
 }
