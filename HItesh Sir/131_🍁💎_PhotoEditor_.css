@@ -33,12 +33,12 @@ button img {
 
 
 .view_img {
-	background-color: pink;
+	/* background-color: pink; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow:hidden;
-	padding: 14px;
+	padding: 22px;
 }
 
 .view_img  img {
