@@ -91,7 +91,12 @@ button img {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1rem;
-	text-transform: capitalize;
+	text-transform:capitalize;
 	font-family: Arial, Helvetica, sans-serif;
-	
+}
+
+
+.icons_filter {
+	width: 100%;
+	padding: 10px
 }
