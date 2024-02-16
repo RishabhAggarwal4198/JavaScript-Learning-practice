@@ -37,10 +37,14 @@ button img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow:hidden;
+	padding: 10px;
 }
 
-.view_img img {
-	width: 400px;
+.view_img  img {
+	width: 360px;
 	height: 360px;
+	object-fit: contain;
+	border-radius: 20px;
 }
 
