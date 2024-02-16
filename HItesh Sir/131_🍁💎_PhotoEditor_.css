@@ -78,9 +78,13 @@ button img {
 .slider {
 	width: 100%;
 	position:relative;
+	padding: 0 10px;
 }
 
-.slider input [type = "range"]{
+.slider input[type = "range"]{
 	width: 100%;
 }
 
+.slider .filter_info {
+	
+}
