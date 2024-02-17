@@ -200,3 +200,10 @@ button img {
 	background-color: rgb(52, 178, 63);
 	color: #fff;
 }
+
+
+@media (max-width:768px){
+	.container{
+		width: 100%;
+	}
+}
