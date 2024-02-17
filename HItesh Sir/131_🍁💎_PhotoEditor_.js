@@ -6,6 +6,8 @@ let slider = document.querySelector('.slider input')
 let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
 
+let brightness = 100;
+
 
 
 choose_img_Btn.addEventListener('click', () => choose_Input.click());  
@@ -29,7 +31,7 @@ filter_buttons.forEach((ele) => {
 		 document.querySelector(".active").classList.remove("active");
 		 ele.classList.add("active");
 		 if(ele.id === 'brightness'){
-			console.log();
+			slider.max = '200';
 		 }
 	});
 });
