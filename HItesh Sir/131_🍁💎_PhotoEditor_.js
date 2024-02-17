@@ -32,6 +32,8 @@ filter_buttons.forEach((ele) => {
 		 ele.classList.add("active");
 		 if(ele.id === 'brightness'){
 			slider.max = '200';
+			slider.value = brightness;
 		 }
 	});
 });
+
