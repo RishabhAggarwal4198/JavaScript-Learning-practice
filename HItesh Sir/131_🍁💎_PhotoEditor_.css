@@ -10,6 +10,7 @@ body{
 	height: 100vh;
 	place-items: center;
 	display: grid;
+	background-color: rgb(236, 231, 231);
 }
 
 button img {
@@ -154,4 +155,14 @@ button img {
 .icons_room1 button img{
 	height: 20px;
 	width: 20px;
+}
+
+
+.icons_room1 button:first-child{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.icons_room1 button:Last-child {
+	transform:rotate(90deg) ;
 }
