@@ -6,7 +6,9 @@ let slider = document.querySelector('.slider input')
 let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
 
-let brightness = 100, contrast = 100;
+let brightness = 100, 
+contrast = 100,
+saturate = 100
 
 
 
