@@ -13,6 +13,7 @@ body{
 	background-color: rgb(236, 231, 231);
 }
 
+
 button img {
 	height: 40px;
 }
@@ -63,6 +64,7 @@ button img {
 	pointer-events: none;
 	opacity: .5;
 }
+
 
 .choose_img button {
 	font-size: 1 rem;
