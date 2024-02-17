@@ -1,7 +1,7 @@
 let  choose_img_Btn = document.querySelector('.choose_img  button')
 let choose_Input = document.querySelector('.choose_img input')
 let imgSrc = document.querySelector('.view_img img');
-let filter_buttons = document.querySelectorAll('.icons-room  button')
+let filter_buttons = document.querySelectorAll('.icons_room  button');
 
 
 

@@ -156,7 +156,7 @@ button img {
 
 
 .active {
-	background-color: aqua !important;
+	background-color: rgb(106, 233, 233) !important;
 	padding: 5px;
 	border-radius: 50%;
 }
