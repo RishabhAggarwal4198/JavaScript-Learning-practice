@@ -33,8 +33,8 @@ choose_Input.addEventListener('change', () => {
 
 filter_buttons.forEach((element) => {
 	element.addEventListener('click', () => {
-		 document.querySelector(".active").classList.remove("active");
-		 element.classList.add("active");
+		document.querySelector(".active").classList.remove("active");
+		element.classList.add("active");
 
 		 filter_name.innerText = element.id;
 
