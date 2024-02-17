@@ -10,6 +10,8 @@ choose_Input.addEventListener('change', () => {
 	let file = choose_Input.files[0];
 	if(!file) return;           //✅✅If 'file' doesn't exist return nothing
 	imgSrc.src = URL.createObjectURL(file);
-
+	imgSrc.addEventListener('load', () => {
+		document.querySelector('.container').classList.remove('disabled')
+	})
 })
 
