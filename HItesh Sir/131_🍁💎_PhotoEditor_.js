@@ -46,8 +46,8 @@ filter_buttons.forEach((ele) => {
 
 slider.addEventListener('input', () => {
 	slider_value.innerText = `${slider.value}%`;
-	let sliderState = document.querySelectorAll('.icons_room  .active');
-	if(sliderState.id === 'brightness'){
+	let sliderState = document.querySelector('.icons_room  .active');
+	if(sliderState.id === "brightness" ){
 		brightness = slider.value;
 	}
 	imgSrc.style.filter = `brigthness(${brightness}%)`;
