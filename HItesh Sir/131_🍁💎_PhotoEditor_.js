@@ -21,9 +21,9 @@ choose_Input.addEventListener('change', () => {
 })
 
 
-filter_buttons.forEach((element) => {
-	element.addEventListener('click', () => {
+filter_buttons.forEach((ele) => {
+	ele.addEventListener('click', () => {
 		 document.querySelector(".active").classList.remove("active");
-		 element.classList.add("active");
+		 ele.classList.add("active");
 	});
-})
+});
