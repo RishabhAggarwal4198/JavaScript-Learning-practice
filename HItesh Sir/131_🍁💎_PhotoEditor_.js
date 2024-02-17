@@ -51,6 +51,6 @@ slider.addEventListener('input', () => {
 		brightness = slider.value;
 	}
 
-	imgSrc.style.filter = `brigthness(${brightness}%)`;
+	imgSrc.style.filter = `brightness(${brightness}%)`;
 });
 
