@@ -59,6 +59,11 @@ button img {
 	/* background-color: red; */
 }
 
+.disabled .view_img {
+	pointer-events: none;
+	opacity: .5;
+}
+
 .choose_img button {
 	font-size: 1 rem;
 	display: flex;
