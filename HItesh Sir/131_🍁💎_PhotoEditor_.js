@@ -62,8 +62,10 @@ slider.addEventListener('input', () => {
 		brightness = slider.value;
 	} else if (sliderState.id === "contrast") {
 		contrast = slider.value;
+	} else if (sliderState.id === "saturate") {
+		saturate = slider.value;
 	}
 
-	imgSrc.style.filter = `brightness(${brightness}%) contrast(${contrast})`;
+	imgSrc.style.filter = `brightness(${brightness}%) contrast(${contrast}%)  saturate(${saturate}%)`;
 });
 
