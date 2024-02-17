@@ -8,9 +8,8 @@ let slider_value = document.querySelector(".filter_info  .value")
 
 let brightness = 100, 
 contrast = 100,
-saturate = 100;
-
-
+saturate = 100,
+invert = 0;
 
 
 choose_img_Btn.addEventListener('click', () => choose_Input.click());  
