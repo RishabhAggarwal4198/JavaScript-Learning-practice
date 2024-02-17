@@ -38,7 +38,18 @@ filter_buttons.forEach((ele) => {
 			slider.max = '200';
 			slider.value = brightness;
 			slider_value.innerText = `${brightness}`
+
 		 }
 	});
 });
+
+
+slider.addEventListener('input', () => {
+	slider_value.innerText = `${slider.value}%`;
+	let sliderState = document.querySelectorAll('.icons_room  .active');
+	if(sliderState.id === 'brightness'){
+		brightness = slider.value;
+	}
+	imgSrc.style.filter = `brigthness(${brightness}%)`
+})
 
