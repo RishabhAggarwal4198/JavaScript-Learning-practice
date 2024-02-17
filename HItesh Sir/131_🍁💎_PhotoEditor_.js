@@ -31,6 +31,7 @@ filter_buttons.forEach((ele) => {
 	ele.addEventListener('click', () => {
 		 document.querySelector(".active").classList.remove("active");
 		 ele.classList.add("active");
+		 filter_name.innerText = ele.id
 		 if(ele.id === 'brightness'){
 			slider.max = '200';
 			slider.value = brightness;
