@@ -47,7 +47,7 @@ filter_buttons.forEach((element) => {
 			slider.value = contrast;
 			slider_value.innerText = `${contrast}`
 		 } else if (element.id === 'contrast'){
-			slider.max = '200';
+			slider.max = '200'; 
 			slider.value = saturate;
 			slider_value.innerText = `${saturate}`
 		 } else if (element.id === 'invert'){
