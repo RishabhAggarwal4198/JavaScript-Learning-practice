@@ -136,3 +136,22 @@ button img {
 	padding: 5px;
 	border-radius: 50%;
 }
+
+
+.icons_room1{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.icons_filter .icons_room1 button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.icons_room1 button img{
+	height: 20px;
+	width: 20px;
+}
