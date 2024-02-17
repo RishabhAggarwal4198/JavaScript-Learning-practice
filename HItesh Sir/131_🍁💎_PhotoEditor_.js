@@ -54,6 +54,10 @@ filter_buttons.forEach((element) => {
 			slider.max = '100';
 			slider.value = invert;
 			slider_value.innerText = `${invert}`
+		 } else if (element.id === 'blur'){
+			slider.max = '100';
+			slider.value = blur; 
+			slider_value.innerText = `${blur}`
 		 }
 
 	});
@@ -72,11 +76,14 @@ slider.addEventListener('input', () => {
 		saturate = slider.value;
 	} else if (sliderState.id === "invert") {
 		invert = slider.value;
+	}else if (sliderState.id === "blur") {
+		blur = slider.value;
 	}
 
 	imgSrc.style.filter = `brightness(${brightness}%)
 						   contrast(${contrast}%)  
 	                	   saturate(${saturate}%)
-						   invert(${invert}%)`;
+						   invert(${invert}%)
+						   blur(${blur}%)`;
 });
 
