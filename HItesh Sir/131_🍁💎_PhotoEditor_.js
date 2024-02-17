@@ -27,29 +27,30 @@ choose_Input.addEventListener('change', () => {
 
 
 
-filter_buttons.forEach((ele) => {
-	ele.addEventListener('click', () => {
+filter_buttons.forEach((element) => {
+	element.addEventListener('click', () => {
 		 document.querySelector(".active").classList.remove("active");
-		 ele.classList.add("active");
+		 element.classList.add("active");
 
-		 filter_name.innerText = ele.id
+		 filter_name.innerText = element.id;
 
-		 if(ele.id === 'brightness'){
+		 if(element.id === 'brightness'){
 			slider.max = '200';
 			slider.value = brightness;
 			slider_value.innerText = `${brightness}`
-
 		 }
 	});
 });
 
 
+
 slider.addEventListener('input', () => {
 	slider_value.innerText = `${slider.value}%`;
-	let sliderState = document.querySelector('.icons_room  .active');
+	let sliderState = document.querySelector(".icons_room  .active");
 	if(sliderState.id === "brightness" ){
 		brightness = slider.value;
 	}
+
 	imgSrc.style.filter = `brigthness(${brightness}%)`;
-})
+});
 
