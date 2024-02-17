@@ -191,6 +191,10 @@ button img {
 	position: relative;
 	margin: 5px 0;
 }
+.disabled .btn_contain{
+ pointer-events: none;
+ opacity: .5;
+}
 
 .btn_contain button {
 	padding: 10px 20px;
