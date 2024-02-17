@@ -3,6 +3,8 @@ let choose_Input = document.querySelector('.choose_img input')
 let imgSrc = document.querySelector('.view_img img');
 let filter_buttons = document.querySelectorAll('.icons_room  button');
 let slider = document.querySelector('.slider input')
+let filter_name = document.querySelector(".filter_info  .name")
+let slider_value = document.querySelector(".filter_info  .value")
 
 
 
