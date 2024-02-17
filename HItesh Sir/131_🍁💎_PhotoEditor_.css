@@ -88,6 +88,12 @@ button img {
 	padding: 0 10px;
 }
 
+.disabled .slider {
+	pointer-events: none;
+	opacity: .5;
+} 
+
+
 .slider input[type = "range"]{
 	width: 100%;
 }
@@ -102,7 +108,6 @@ button img {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .icons_filter {
 	width: 100%;
 	padding: 10px;
@@ -110,6 +115,14 @@ button img {
 	border: 1px solid rgb(0, 0, 0, .1);
 	margin-bottom: 5px;
 }
+
+.icons_filter .icons_room{
+	width: 100%;
+	display: flex;
+	justify-content:  space-around;
+	align-items: center;
+}
+
 
 .icons_filter p {
 	text-transform: capitalize;
