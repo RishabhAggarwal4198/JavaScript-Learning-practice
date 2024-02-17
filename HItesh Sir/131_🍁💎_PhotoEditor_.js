@@ -48,7 +48,12 @@ filter_buttons.forEach((element) => {
 			slider.max = '200';
 			slider.value = saturate;
 			slider_value.innerText = `${saturate}`
+		 } else if (element.id === 'invert'){
+			slider.max = '100';
+			slider.value = invert;
+			slider_value.innerText = `${invert}`
 		 }
+		 
 	});
 });
 
