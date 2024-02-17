@@ -26,6 +26,7 @@ choose_Input.addEventListener('change', () => {
 })
 
 
+
 filter_buttons.forEach((ele) => {
 	ele.addEventListener('click', () => {
 		 document.querySelector(".active").classList.remove("active");
