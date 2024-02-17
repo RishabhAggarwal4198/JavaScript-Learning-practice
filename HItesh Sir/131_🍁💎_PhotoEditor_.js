@@ -8,7 +8,7 @@ let slider_value = document.querySelector(".filter_info  .value")
 
 let brightness = 100, 
 contrast = 100,
-saturate = 100
+saturate = 100;
 
 
 
@@ -44,7 +44,11 @@ filter_buttons.forEach((element) => {
 		 } else if (element.id === 'contrast'){
 			slider.max = '200';
 			slider.value = contrast;
-			slider_value.innerText = `${brightness}`
+			slider_value.innerText = `${contrast}`
+		 } else if (element.id === 'contrast'){
+			slider.max = '200';
+			slider.value = saturate;
+			slider_value.innerText = `${saturate}`
 		 }
 	});
 });
