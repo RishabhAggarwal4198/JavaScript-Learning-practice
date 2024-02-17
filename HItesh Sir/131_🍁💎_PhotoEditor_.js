@@ -9,7 +9,9 @@ let slider_value = document.querySelector(".filter_info  .value")
 let brightness = 100, 
 contrast = 100,
 saturate = 100,
-invert = 0;
+invert = 0,
+blur = 0;
+
 
 
 choose_img_Btn.addEventListener('click', () => choose_Input.click());  
@@ -53,7 +55,7 @@ filter_buttons.forEach((element) => {
 			slider.value = invert;
 			slider_value.innerText = `${invert}`
 		 }
-		 
+
 	});
 });
 
@@ -68,8 +70,13 @@ slider.addEventListener('input', () => {
 		contrast = slider.value;
 	} else if (sliderState.id === "saturate") {
 		saturate = slider.value;
+	} else if (sliderState.id === "invert") {
+		invert = slider.value;
 	}
 
-	imgSrc.style.filter = `brightness(${brightness}%) contrast(${contrast}%)  saturate(${saturate}%)`;
+	imgSrc.style.filter = `brightness(${brightness}%)
+						   contrast(${contrast}%)  
+	                	   saturate(${saturate}%)
+						   invert(${invert}%)`;
 });
 
