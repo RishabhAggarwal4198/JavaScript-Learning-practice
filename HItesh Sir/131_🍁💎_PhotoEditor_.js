@@ -2,6 +2,7 @@ let  choose_img_Btn = document.querySelector('.choose_img  button')
 let choose_Input = document.querySelector('.choose_img input')
 let imgSrc = document.querySelector('.view_img img');
 let filter_buttons = document.querySelectorAll('.icons_room  button');
+let slider = document.querySelector('.slider input')
 
 
 
@@ -25,5 +26,8 @@ filter_buttons.forEach((ele) => {
 	ele.addEventListener('click', () => {
 		 document.querySelector(".active").classList.remove("active");
 		 ele.classList.add("active");
+		 if(ele.id === 'brightness'){
+			console.log();
+		 }
 	});
 });
