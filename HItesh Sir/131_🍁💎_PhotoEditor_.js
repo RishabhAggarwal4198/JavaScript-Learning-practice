@@ -6,7 +6,8 @@ let slider = document.querySelector('.slider input')
 let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
 
-let brightness = 100;
+let brightness = 100, contrast = 100;
+
 
 
 
@@ -38,6 +39,10 @@ filter_buttons.forEach((element) => {
 			slider.max = '200';
 			slider.value = brightness;
 			slider_value.innerText = `${brightness}`
+		 } else if (element.id === 'contrast'){
+			slider.max = '200';
+			slider.value = contrast;
+			slider_value.innerText = `${brightness}`
 		 }
 	});
 });
@@ -49,8 +54,10 @@ slider.addEventListener('input', () => {
 	let sliderState = document.querySelector(".icons_room  .active");
 	if(sliderState.id === "brightness" ){
 		brightness = slider.value;
+	} else if (sliderState.id === "contrast") {
+		contrast = slider.value;
 	}
 
-	imgSrc.style.filter = `brightness(${brightness}%)`;
+	imgSrc.style.filter = `brightness(${brightness}%) contrast(${contrast})`;
 });
 
