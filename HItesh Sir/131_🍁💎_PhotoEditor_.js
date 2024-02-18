@@ -133,7 +133,7 @@ reset.addEventListener('click', () => {
 	flip_x = 1;
 	flip_y = 1;
 
-	
+
 	imgSrc.style.transform = `rotate(${rotate}deg)  scale(${flip_x}, ${flip_y})`;
 
 	imgSrc.style.filter = `brightness(${brightness}%)
@@ -149,7 +149,7 @@ save.addEventListener('click', () => {
 	let canvas = document.createElement('canvas')
 	// console.log(canvas.getContext('2d'));
 	let ctx = canvas.getContext('2d');
-	canvas.width = imgSrc.naturalWidth;
+	canvas.width = imgSrc.naturalWidth
 	canvas.height = imgSrc.naturalHeight;
 
 	ctx.filter = `brightness(${brightness}%)
