@@ -9,12 +9,12 @@ let slider_value = document.querySelector(".filter_info  .value")
 let brightness = 100, 
 contrast = 100,
 saturate = 100,
-invert = 0,
-blur = 0;
+invert = 0;
+// blur = 0;
 
 
 
-choose_img_Btn.addEventListener('click', () => choose_Input.click());  
+choose_img_Btn.addEventListener ('click', () => choose_Input.click());  
 choose_Input.addEventListener('change', () => {
 
     //  console.log(choose_Input.files[0]); 
@@ -54,11 +54,12 @@ filter_buttons.forEach((element) => {
 			slider.max = '100';
 			slider.value = invert;
 			slider_value.innerText = `${invert}`
-		 } else if (element.id === 'blur'){
-			slider.max = '100';
-			slider.value = blur; 
-			slider_value.innerText = `${blur}`
-		 }
+		 } 
+		//  else if (element.id === 'blur'){
+		// 	slider.max = '100';
+		// 	slider.value = blur; 
+		// 	slider_value.innerText = `${blur}`
+		//  }
 
 	});
 });
@@ -76,14 +77,15 @@ slider.addEventListener('input', () => {
 		saturate = slider.value;
 	} else if (sliderState.id === "invert") {
 		invert = slider.value;
-	}else if (sliderState.id === "blur") {
-		blur = slider.value;
 	}
+	// else if (sliderState.id === "blur") {
+	// 	blur = slider.value;
+	// }
 
 	imgSrc.style.filter = `brightness(${brightness}%)
 						   contrast(${contrast}%)  
 	                	   saturate(${saturate}%)
-						   invert(${invert}%)
-						   blur(${blur}%)`;
+						   invert(${invert}%)`;
+						// blur(${blur}%)`;
 });
 
