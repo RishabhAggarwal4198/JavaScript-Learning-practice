@@ -5,14 +5,16 @@ let filter_buttons = document.querySelectorAll('.icons_room  button');
 let slider = document.querySelector('.slider input')
 let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
+let rotate_btns = document.querySelectorAll('.icons_room1  button')
+
 
 let brightness = 100, 
 contrast = 100,
 saturate = 100,
 invert = 0,
 blur = 0,
-grayscale = 0;
-
+grayscale = 0,
+rotate = 0;
 
 
 choose_img_Btn.addEventListener ('click', () => choose_Input.click());  
@@ -88,8 +90,6 @@ slider.addEventListener('input', () => {
 	}
 
 	
-	
-
 	imgSrc.style.filter = `brightness(${brightness}%)
 						   contrast(${contrast}%)  
 	                	   saturate(${saturate}%)
@@ -98,3 +98,20 @@ slider.addEventListener('input', () => {
 						   blur(${blur}px)`;
 });
 
+
+rotate_btns.forEach((ele) => {
+	ele.addEventListener('click', () => {
+		if(ele.id === "rotate_left"){
+			rotate -= 90;
+		} else if (ele.id === "rotate_right"){
+			rotate += 90;
+		} else if (ele.id === 'flip_x') {
+
+		}else if (ele.id === 'flip_y') {
+
+		}
+
+
+		imgSrc.style.transform = `rotate(${rotate}deg)`
+	})
+})
