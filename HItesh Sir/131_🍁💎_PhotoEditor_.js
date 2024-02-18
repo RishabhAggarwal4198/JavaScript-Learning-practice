@@ -62,7 +62,6 @@ filter_buttons.forEach((element) => {
 		// 	slider_value.innerText = `${blur}`
 		//  }
 		
-
 	});
 });
 
