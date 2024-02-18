@@ -156,6 +156,7 @@ save.addEventListener('click', () => {
 					grayscale(${grayscale}%)
 					blur(${blur}px)`;
 
-	ctx.scale(flip_x, flip_y);				
+	ctx.scale(flip_x, flip_y);	
+	ctx.transform(canvas.width / 2 , canvas.height / 2);		
 
 })
