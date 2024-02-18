@@ -10,8 +10,8 @@ let brightness = 100,
 contrast = 100,
 saturate = 100,
 invert = 0,
-grayscale = 100,
-blurr = 0;
+blur = 0,
+grayscale = 0;
 
 
 
@@ -39,31 +39,32 @@ filter_buttons.forEach((element) => {
 
 		 filter_name.innerText = element.id;
 
-		//  if(element.id === 'brightness'){
-		// 	// slider.max = '200';
-		// 	// slider.value = brightness;
-		// 	// slider_value.innerText = `${brightness}`
-		//  } else if (element.id === 'contrast'){
-		// 	// slider.max = '200';
-		// 	// slider.value = contrast;
-		// 	// slider_value.innerText = `${contrast}`
-		//  } else if (element.id === 'contrast'){
-		// 	slider.max = '200'; 
-		// 	slider.value = saturate;
-		// 	slider_value.innerText = `${saturate}`
-		//  } else if (element.id === 'invert'){
-		// 	slider.max = '100';
-		// 	slider.value = invert;
-		// 	slider_value.innerText = `${invert}`
-		//  } 
-		//  else if (element.id === 'blur'){
-		// 	slider.max = '100';
-		// 	slider.value = blur; 
-		// 	slider_value.innerText = `${blur}`
-		//  }
+		 if(element.id === 'brightness'){
+			slider.max = '200';
+			slider.value = brightness;
+			slider_value.innerText = `${brightness}`
+		 } else if (element.id === 'contrast'){
+			slider.max = '200';
+			slider.value = contrast;
+			slider_value.innerText = `${contrast}`
+		 } else if (element.id === 'contrast'){
+			slider.max = '200'; 
+			slider.value = saturate;
+			slider_value.innerText = `${saturate}`
+		 } else if (element.id === 'invert'){
+			slider.max = '100';
+			slider.value = invert;
+			slider_value.innerText = `${invert}`
+		 } 
+		 else if (element.id === 'blur'){
+			slider.max = '100';
+			slider.value = blur; 
+			slider_value.innerText = `${blur}`
+		 }
 		
 	});
 });
+
 
 
 
@@ -78,19 +79,22 @@ slider.addEventListener('input', () => {
 		saturate = slider.value;
 	} else if (sliderState.id === "invert") {
 		invert = slider.value;
-	}else if (sliderState.id === "blur") {
-		blurr = slider.value;
-	}else if (sliderState.id === "grayscale") {
+	}
+	else if (sliderState.id === "blur") {
+		blur = slider.value;
+	}
+	else if (sliderState.id === "grayscale") {
 		grayscale = slider.value;
 	}
 
-
+	
+	
 
 	imgSrc.style.filter = `brightness(${brightness}%)
 						   contrast(${contrast}%)  
 	                	   saturate(${saturate}%)
 						   invert(${invert}%)
-						   blur(${blurr}%)
-						   grayscale(${grayscale}%)`;
+						   grayscale(${grayscale}%)
+						   blur(${blur}%)`;
 });
 
