@@ -74,6 +74,7 @@ filter_buttons.forEach((element) => {
 
 
 
+
 slider.addEventListener('input', () => {
 	slider_value.innerText = `${slider.value}%`;
 	let sliderState = document.querySelector(".icons_room  .active");
@@ -101,6 +102,7 @@ slider.addEventListener('input', () => {
 						   grayscale(${grayscale}%)
 						   blur(${blur}px)`;
 });
+
 
 
 rotate_btns.forEach((ele) => {
@@ -131,6 +133,7 @@ reset.addEventListener('click', () => {
 	flip_x = 1;
 	flip_y = 1;
 
+	
 	imgSrc.style.transform = `rotate(${rotate}deg)  scale(${flip_x}, ${flip_y})`;
 
 	imgSrc.style.filter = `brightness(${brightness}%)
