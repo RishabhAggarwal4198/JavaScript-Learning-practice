@@ -140,3 +140,9 @@ reset.addEventListener('click', () => {
 						   grayscale(${grayscale}%)
 						   blur(${blur}px)`;
 })
+
+
+save.addEventListener('click', () => {
+	let canvas = document.createElement('canvas')
+	// console.log(canvas.getContext('2d'));
+})
