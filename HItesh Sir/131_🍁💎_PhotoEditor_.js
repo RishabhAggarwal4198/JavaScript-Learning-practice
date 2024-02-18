@@ -7,7 +7,7 @@ let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
 
 let brightness = 100, 
-contrast = 100,
+// contrast = 100,
 saturate = 100,
 invert = 0;
 // blur = 0;
@@ -39,13 +39,13 @@ filter_buttons.forEach((element) => {
 		 filter_name.innerText = element.id;
 
 		 if(element.id === 'brightness'){
-			slider.max = '200';
-			slider.value = brightness;
-			slider_value.innerText = `${brightness}`
+			// slider.max = '200';
+			// slider.value = brightness;
+			// slider_value.innerText = `${brightness}`
 		 } else if (element.id === 'contrast'){
-			slider.max = '200';
-			slider.value = contrast;
-			slider_value.innerText = `${contrast}`
+			// slider.max = '200';
+			// slider.value = contrast;
+			// slider_value.innerText = `${contrast}`
 		 } else if (element.id === 'contrast'){
 			slider.max = '200'; 
 			slider.value = saturate;
@@ -60,6 +60,7 @@ filter_buttons.forEach((element) => {
 		// 	slider.value = blur; 
 		// 	slider_value.innerText = `${blur}`
 		//  }
+		
 
 	});
 });
