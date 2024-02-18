@@ -157,6 +157,19 @@ save.addEventListener('click', () => {
 					blur(${blur}px)`;
 
 	ctx.scale(flip_x, flip_y);	
-	ctx.transform(canvas.width / 2 , canvas.height / 2);		
+	ctx.translate(canvas.width / 2 , canvas.height / 2);		
+	ctx.drawImage(
+		imgSrc, 
+		-canvas.width/2, 
+		-canvas.height/2, 
+		canvas.width, 
+		canvas.height
+		);
+
+		
+	let link = document.createElement('a')	
+	link.download = 'img.jpg';
+	link.href = canvas.toDataURL();
+	link.click();
 
 })
