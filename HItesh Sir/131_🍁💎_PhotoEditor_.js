@@ -145,4 +145,6 @@ reset.addEventListener('click', () => {
 save.addEventListener('click', () => {
 	let canvas = document.createElement('canvas')
 	// console.log(canvas.getContext('2d'));
+	let ctx = canvas.getContext('2d')
+	
 })
