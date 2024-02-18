@@ -10,8 +10,8 @@ let brightness = 100,
 contrast = 100,
 saturate = 100,
 invert = 0,
-grayscale = 100;
-// blur = 0;
+grayscale = 100,
+blurr = 0;
 
 
 
@@ -78,11 +78,9 @@ slider.addEventListener('input', () => {
 		saturate = slider.value;
 	} else if (sliderState.id === "invert") {
 		invert = slider.value;
-	}
-	// else if (sliderState.id === "blur") {
-	// 	blur = slider.value;
-	// }
-	else if (sliderState.id === "grayscale") {
+	}else if (sliderState.id === "blur") {
+		blurr = slider.value;
+	}else if (sliderState.id === "grayscale") {
 		grayscale = slider.value;
 	}
 
@@ -92,7 +90,7 @@ slider.addEventListener('input', () => {
 						   contrast(${contrast}%)  
 	                	   saturate(${saturate}%)
 						   invert(${invert}%)
+						   blur(${blurr}%)
 						   grayscale(${grayscale}%)`;
-						// blur(${blur}%)`;
 });
 
