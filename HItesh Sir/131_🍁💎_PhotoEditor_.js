@@ -38,23 +38,23 @@ filter_buttons.forEach((element) => {
 
 		 filter_name.innerText = element.id;
 
-		 if(element.id === 'brightness'){
-			// slider.max = '200';
-			// slider.value = brightness;
-			// slider_value.innerText = `${brightness}`
-		 } else if (element.id === 'contrast'){
-			// slider.max = '200';
-			// slider.value = contrast;
-			// slider_value.innerText = `${contrast}`
-		 } else if (element.id === 'contrast'){
-			slider.max = '200'; 
-			slider.value = saturate;
-			slider_value.innerText = `${saturate}`
-		 } else if (element.id === 'invert'){
-			slider.max = '100';
-			slider.value = invert;
-			slider_value.innerText = `${invert}`
-		 } 
+		//  if(element.id === 'brightness'){
+		// 	// slider.max = '200';
+		// 	// slider.value = brightness;
+		// 	// slider_value.innerText = `${brightness}`
+		//  } else if (element.id === 'contrast'){
+		// 	// slider.max = '200';
+		// 	// slider.value = contrast;
+		// 	// slider_value.innerText = `${contrast}`
+		//  } else if (element.id === 'contrast'){
+		// 	slider.max = '200'; 
+		// 	slider.value = saturate;
+		// 	slider_value.innerText = `${saturate}`
+		//  } else if (element.id === 'invert'){
+		// 	slider.max = '100';
+		// 	slider.value = invert;
+		// 	slider_value.innerText = `${invert}`
+		//  } 
 		//  else if (element.id === 'blur'){
 		// 	slider.max = '100';
 		// 	slider.value = blur; 
