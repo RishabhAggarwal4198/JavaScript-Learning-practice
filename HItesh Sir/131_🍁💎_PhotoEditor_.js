@@ -145,6 +145,17 @@ reset.addEventListener('click', () => {
 save.addEventListener('click', () => {
 	let canvas = document.createElement('canvas')
 	// console.log(canvas.getContext('2d'));
-	let ctx = canvas.getContext('2d')
-	
+	let ctx = canvas.getContext('2d');
+	canvas.width = imgSrc.naturalWidth;
+	canvas.height = imgSrc.naturalHeight;
+
+	ctx.filter = `brightness(${brightness}%)
+					contrast(${contrast}%)  
+					saturate(${saturate}%)
+					invert(${invert}%)
+					grayscale(${grayscale}%)
+					blur(${blur}px)`;
+
+	ctx.scale(flip_x, flip_y);				
+
 })
