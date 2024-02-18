@@ -110,7 +110,7 @@ rotate_btns.forEach((ele) => {
 		} else if (ele.id === 'flip_x') {
 			flip_x = flip_x === 1 ? -1 : 1      // Watch [@ 1:32:50]
 		}else if (ele.id === 'flip_y') {
-
+			flip_y = flip_y === 1 ? -1 : 1      // Watch [@ 1:32:50]
 		}
 
 
