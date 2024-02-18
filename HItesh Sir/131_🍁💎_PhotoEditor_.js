@@ -7,6 +7,8 @@ let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
 let rotate_btns = document.querySelectorAll('.icons_room1  button')
 let reset = document.querySelector('.reset');
+let save = document.querySelector('.save');
+
 
 let brightness = 100, 
 contrast = 100,
@@ -128,7 +130,7 @@ reset.addEventListener('click', () => {
 	rotate = 0;
 	flip_x = 1;
 	flip_y = 1;
-	
+
 	imgSrc.style.transform = `rotate(${rotate}deg)  scale(${flip_x}, ${flip_y})`;
 
 	imgSrc.style.filter = `brightness(${brightness}%)
