@@ -14,7 +14,9 @@ saturate = 100,
 invert = 0,
 blur = 0,
 grayscale = 0,
-rotate = 0;
+rotate = 0,
+flip_x = 1,
+flip_y = 1;
 
 
 choose_img_Btn.addEventListener ('click', () => choose_Input.click());  
@@ -106,7 +108,7 @@ rotate_btns.forEach((ele) => {
 		} else if (ele.id === "rotate_right"){
 			rotate += 90;
 		} else if (ele.id === 'flip_x') {
-
+			flip_x = flip_x === 1 ? -1 : 1      // Watch [@ 1:32:50]
 		}else if (ele.id === 'flip_y') {
 
 		}
