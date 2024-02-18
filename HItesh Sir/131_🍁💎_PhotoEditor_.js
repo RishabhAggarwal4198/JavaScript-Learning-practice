@@ -7,9 +7,10 @@ let filter_name = document.querySelector(".filter_info  .name")
 let slider_value = document.querySelector(".filter_info  .value")
 
 let brightness = 100, 
-// contrast = 100,
+contrast = 100,
 saturate = 100,
-invert = 0;
+invert = 0,
+grayscale = 100;
 // blur = 0;
 
 
@@ -82,11 +83,17 @@ slider.addEventListener('input', () => {
 	// else if (sliderState.id === "blur") {
 	// 	blur = slider.value;
 	// }
+	else if (sliderState.id === "grayscale") {
+		grayscale = slider.value;
+	}
+
+
 
 	imgSrc.style.filter = `brightness(${brightness}%)
 						   contrast(${contrast}%)  
 	                	   saturate(${saturate}%)
-						   invert(${invert}%)`;
+						   invert(${invert}%)
+						   grayscale(${grayscale}%)`;
 						// blur(${blur}%)`;
 });
 

@@ -178,6 +178,7 @@ button img {
 .icons_room1 button img{
 	height: 20px;
 	width: 20px;
+	
 }
 
 
@@ -219,11 +220,14 @@ button img {
 	border: none;
 	background-color: rgb(61, 61, 210);
 	color: #fff;
+	
 }
 
 .btn_contain button:last-child {
 	background-color: rgb(52, 178, 63);
 	color: #fff;
+	
+	
 }
 
 
