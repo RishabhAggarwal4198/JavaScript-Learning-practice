@@ -166,10 +166,11 @@ save.addEventListener('click', () => {
 		canvas.height
 		);
 
+
 		
 	let link = document.createElement('a')	
 	link.download = 'img.jpg';
 	link.href = canvas.toDataURL();
 	link.click();
 
-})
+});
