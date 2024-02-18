@@ -95,6 +95,6 @@ slider.addEventListener('input', () => {
 	                	   saturate(${saturate}%)
 						   invert(${invert}%)
 						   grayscale(${grayscale}%)
-						   blur(${blur}%)`;
+						   blur(${blur}px)`;
 });
 
