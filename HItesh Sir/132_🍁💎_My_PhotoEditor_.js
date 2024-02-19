@@ -23,3 +23,6 @@ filterBtns.forEach((ele) => {
 		ele.classList.add('activeBtn')
 	})
 })
+
+
+

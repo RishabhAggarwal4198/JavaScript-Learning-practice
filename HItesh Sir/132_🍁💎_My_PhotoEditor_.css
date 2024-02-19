@@ -136,14 +136,14 @@ h1{
 	box-shadow: 0rem 0rem .3rem .2rem  rgb(211, 208, 203, .5);
 	border: none;
 	border-radius: .3rem; 
-	background-color: #6E8898FF;
+	background-color: rgb(89, 123, 144);
 
 }
 
 .filters button img {
 	height:90%;
 	width:90%;
-	background-color: #6E8898FF;
+	background-color: rgb(89, 123, 144);
 	opacity: .8;
 }
 
@@ -156,6 +156,5 @@ h1{
 }
 
 .activeBtn {
-	background-color: rgb(236, 233, 228) ;
-	box-shadow: 0rem 0rem .8rem .2rem  #D3D0CBFF;
+	box-shadow: 0rem 0rem .8rem .6rem  rgb(211, 208, 203) !important;
 }
