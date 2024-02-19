@@ -3,7 +3,15 @@ let uploadInput = document.querySelector('#uploaD input')
 let focusImage = document.querySelector('.image_div  img')
 let outContainer = document.querySelector('.out_container')
 let filterBtns = document.querySelectorAll('.filters button')
+let sliderInput = document.querySelector('.slider input')
+let filterType = document.querySelector('.filter_type')
+let filterMagnitude = document.querySelector('.value')
 
+let bright = 100,
+contrAAst = 100,
+saturation = 100,
+Gray_iSSkale = 0,
+Balarrr = 0;
 
 
 uploadBtn.addEventListener('click', () => uploadInput.click());
@@ -21,6 +29,14 @@ filterBtns.forEach((ele) => {
 	ele.addEventListener('click', () => {
 		document.querySelector('.activeBtn').classList.remove('activeBtn')
 		ele.classList.add('activeBtn')
+
+		filterType.innerHTML = ele.id.toUpperCase()
+
+		if(ele.id === 'Brightness'){
+			sliderInput.max = '400'
+			sliderInput.value = bright;
+			filterMagnitude.innerText = `${bright}`
+		}
 	})
 })
 
