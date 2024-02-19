@@ -6,6 +6,7 @@ let filterBtns = document.querySelectorAll('.filters button')
 let sliderInput = document.querySelector('.slider input')
 let filterType = document.querySelector('.filter_type')
 let filterMagnitude = document.querySelector('.value')
+let activeSlider = document.querySelector('.filters  .activeBtn')
 
 let bright = 100,
 contrAAst = 100,
