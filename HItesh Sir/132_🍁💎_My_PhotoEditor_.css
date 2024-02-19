@@ -27,13 +27,31 @@ body{
 	padding: 1rem;
 	text-align: center;
 	background-color: #2E5266FF;
+	display: grid;
 }
 
+.image_div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
 
-.image_div img {
+.mainIMG {
 	height: 14rem;
-	margin: 2rem 0rem;
+	width: auto;
+	margin: 2rem 1rem;
 	opacity: .6;
+}
+
+ .NewImg {
+	height: 14rem;
+	width: auto;
+	margin: 2rem 1rem;
+	/* object-fit: contain; */
+	opacity: 1;
+	border-radius: 1rem;
+	box-shadow: 0rem 0rem .6rem .2rem  #D3D0CBFF;
 }
 
 .uploadBtn button {
@@ -50,16 +68,50 @@ body{
 
 
 .uploadBtn button:hover {
-	background-color:rgb(198, 196, 191);
+	background-color:rgb(217, 215, 210);
+}
+.slider{
+	border: 2px solid red;
 }
 
 .slider div {
 	display: flex;
-	margin-top: 1rem;
+	margin: .4rem 0rem;
 	justify-content: space-between;
 }
 
 
 .slider input{
 	width: 100%;
+	/* filter: ; */
+}
+
+
+.filetrsBox {
+	margin: 1rem 0rem;
+	display: grid;
+	row-gap: 1rem;
+	padding: .4rem;
+	border: 2px solid red;
+}
+
+
+
+.filters{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.filters button {
+	height: 2rem;
+	width: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filters button img {
+	height: 2rem;
+	width: 2rem;
 }
