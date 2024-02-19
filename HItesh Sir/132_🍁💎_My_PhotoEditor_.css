@@ -40,7 +40,7 @@ body{
 .mainIMG {
 	height: 14rem;
 	width: auto;
-	margin: 2rem 1rem;
+	margin: 1rem 1rem;
 	opacity: .6;
 }
 
@@ -71,7 +71,10 @@ body{
 	background-color:rgb(217, 215, 210);
 }
 .slider{
-	border: 2px solid red;
+	/* border: 2px solid red; */
+	border-radius: 1rem;
+	box-shadow: 0rem 0rem .3rem .2rem  rgb(211, 208, 203, .5);
+	padding: .5rem;
 }
 
 .slider div {
@@ -87,12 +90,15 @@ body{
 }
 
 
+
 .filetrsBox {
 	margin: 1rem 0rem;
 	display: grid;
 	row-gap: 1rem;
 	padding: .4rem;
-	border: 2px solid red;
+	border-radius: 1rem;
+	box-shadow: 0rem 0rem .3rem .2rem  rgb(211, 208, 203, .5);
+	padding: .5rem;
 }
 
 
@@ -100,6 +106,7 @@ body{
 .filters{
 	display: flex;
 	justify-content: space-between;
+	padding: .2rem;
 
 }
 
@@ -109,9 +116,18 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0rem 0rem .3rem .2rem  rgb(211, 208, 203, .5);
+	border: none;
+	border-radius: .3rem;
+	background-color: #6E8898FF;
+
 }
 
 .filters button img {
-	height: 2rem;
-	width: 2rem;
+	height:90%;
+	width:90%;
+	background-color: #6E8898FF;
+	opacity: .8;
+
+	
 }
