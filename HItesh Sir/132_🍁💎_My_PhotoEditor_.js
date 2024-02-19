@@ -18,5 +18,8 @@ uploadInput.addEventListener('change', () => {
 
 
 filterBtns.forEach((ele) => {
-	
+	ele.addEventListener('click', () => {
+		document.querySelector('.activeBtn').classList.remove('activeBtn')
+		ele.classList.add('activeBtn')
+	})
 })

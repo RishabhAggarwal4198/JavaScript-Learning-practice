@@ -135,7 +135,7 @@ h1{
 	align-items: center;
 	box-shadow: 0rem 0rem .3rem .2rem  rgb(211, 208, 203, .5);
 	border: none;
-	border-radius: .3rem;
+	border-radius: .3rem; 
 	background-color: #6E8898FF;
 
 }
@@ -153,4 +153,9 @@ h1{
 .disabled .filetrsBox{
 	pointer-events: none;
 	opacity: .2;
+}
+
+.activeBtn {
+	background-color: rgb(236, 233, 228) ;
+	box-shadow: 0rem 0rem .8rem .2rem  #D3D0CBFF;
 }
