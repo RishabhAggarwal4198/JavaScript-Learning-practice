@@ -132,7 +132,7 @@ reset.addEventListener('click', () => {
 	rotate = 0;
 	flip_x = 1;
 	flip_y = 1;
-
+	
 
 	imgSrc.style.transform = `rotate(${rotate}deg)  scale(${flip_x}, ${flip_y})`;
 
