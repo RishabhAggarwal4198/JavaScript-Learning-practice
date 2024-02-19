@@ -153,6 +153,7 @@ h1{
 .disabled .filetrsBox{
 	pointer-events: none;
 	opacity: .2;
+	
 }
 
 .activeBtn {

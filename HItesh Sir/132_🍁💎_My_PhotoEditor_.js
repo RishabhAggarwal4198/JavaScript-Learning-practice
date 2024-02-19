@@ -49,9 +49,12 @@ filterBtns.forEach((ele) => {
 sliderInput.addEventListener('input', () => {
 	filterMagnitude.innerHTML = `${sliderInput.value}%`
 
-	if(){
-
+	if(activeSlider.id === 'Brightness'){
+		bright = sliderInput.value
 	}
+
+
+	focusImage.style.filter = `brightness(${bright})`
 
 
 })
