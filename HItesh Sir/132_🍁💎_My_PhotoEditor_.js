@@ -6,9 +6,9 @@ let filterBtns = document.querySelectorAll('.filters button')
 let sliderInput = document.querySelector('.slider input')
 let filterType = document.querySelector('.filter_type')
 let filterMagnitude = document.querySelector('.value')
-let activeSlider = document.querySelector('.filters  .activeBtn')
 
-let bright = 1,
+
+let bright = 100,
 contrAAst = 100,
 saturation = 100,
 Gray_iSSkale = 0,
@@ -34,7 +34,7 @@ filterBtns.forEach((ele) => {
 		filterType.innerHTML = ele.id.toUpperCase()
 
 		if(ele.id === 'Brightness'){
-			sliderInput.max = '20'
+			sliderInput.max = '200'
 			sliderInput.value = bright;
 			// filterMagnitude.innerText = `${bright}`
 		}
@@ -42,24 +42,35 @@ filterBtns.forEach((ele) => {
 			sliderInput.max = '200'
 			sliderInput.value = contrAAst;
 		}
+		else if(ele.id === 'Saturate'){
+			sliderInput.max = '200'
+			sliderInput.value = saturation;
+		}
 	})
 })
 
 
 function editImage (){
 	filterMagnitude.innerHTML = `${sliderInput.value}%`
+	let activeSlider = document.querySelector('.filters  .activeBtn')
 
 	if(activeSlider.id === 'Brightness'){
 		bright = sliderInput.value
 	}
+	else if(activeSlider.id === 'Contrast'){
+		contrAAst = sliderInput.value
+	}
+	else if(activeSlider.id === 'Saturate'){
+		saturation = sliderInput.value
+	}
 
-	focusImage.style.filter = `brightness(${bright})  contrast(${contrAAst})`
+	focusImage.style.filter = `brightness(${bright}%)  contrast(${contrAAst}%)  saturate(${saturation}%) )`
 }
 
 
 
-sliderInput.addEventListener('input', editImage )
-sliderInput.addEventListener('wheel', editImage )
+sliderInput.addEventListener('input', editImage)
+
 
 
 
