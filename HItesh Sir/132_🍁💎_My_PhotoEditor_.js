@@ -38,10 +38,21 @@ filterBtns.forEach((ele) => {
 			// filterMagnitude.innerText = `${bright}`
 		}
 		else if(ele.id === 'Contrast'){
-			sliderInput.max = '400'
+			sliderInput.max = '200'
 			sliderInput.value = contrAAst;
 		}
 	})
+})
+
+
+sliderInput.addEventListener('input', () => {
+	filterMagnitude.innerHTML = `${sliderInput.value}%`
+
+	if(){
+
+	}
+
+
 })
 
 
