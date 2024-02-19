@@ -6,7 +6,7 @@
 	color: #ecc7c7;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
-	
+	font-family: Gabarito;
 }
 
 
@@ -16,10 +16,12 @@ body{
 	height: 100vh;
 }
 
-
+h1{
+	margin-bottom: .5rem;
+}
 
 .out_container{
-	height: 40rem;
+	height: 45rem;
 	width: 30rem;
 	border: 2px none red;
 	box-shadow: 0rem 0rem 2rem .2rem  #D3D0CBFF;
@@ -27,8 +29,15 @@ body{
 	padding: 1rem;
 	text-align: center;
 	background-color: #2E5266FF;
-	display: grid;
+	/* display: grid; */
 }
+
+   #p1 {
+	height: 2px;
+	width: 100%;
+	border: 1px solid rgb(140, 158, 169);
+	margin-bottom: .5rem;
+	}
 
 .image_div{
 	display: flex;
@@ -57,6 +66,7 @@ body{
 .uploadBtn button {
 	height: 2.5rem;
 	width: 11rem;
+	font-size: 1rem;
 	border: none;
 	color: #2E5266FF;
 	font-weight: 800;
@@ -64,6 +74,7 @@ body{
 	border-radius: 1rem;
 	box-shadow: 0rem 0rem .5rem 0rem rgb(211, 208, 203, .5) ;
 	transition: 600ms;
+	
 }
 
 
@@ -75,6 +86,7 @@ body{
 	border-radius: 1rem;
 	box-shadow: 0rem 0rem .3rem .2rem  rgb(211, 208, 203, .5);
 	padding: .5rem;
+	margin-top: 1rem;
 }
 
 .slider div {
@@ -128,6 +140,4 @@ body{
 	width:90%;
 	background-color: #6E8898FF;
 	opacity: .8;
-
-	
 }
