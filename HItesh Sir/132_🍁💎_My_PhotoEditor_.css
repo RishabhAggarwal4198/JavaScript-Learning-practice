@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #2E5266FF;
-	color: #ecc7c7;
+	color: #D3D0CBFF;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	font-family: Gabarito;
@@ -20,6 +20,8 @@ h1{
 	margin-bottom: .5rem;
 }
 
+
+
 .out_container{
 	height: 45rem;
 	width: 30rem;
@@ -31,6 +33,9 @@ h1{
 	background-color: #2E5266FF;
 	/* display: grid; */
 }
+
+
+
 
    #p1 {
 	height: 2px;
@@ -79,7 +84,7 @@ h1{
 
 
 .uploadBtn button:hover {
-	background-color:rgb(217, 215, 210);
+	background-color:rgb(217, 215, 210) ;
 }
 .slider{
 	/* border: 2px solid red; */
@@ -140,4 +145,12 @@ h1{
 	width:90%;
 	background-color: #6E8898FF;
 	opacity: .8;
+}
+
+.disabled h1,
+.disabled p,
+.disabled .slider,
+.disabled .filetrsBox{
+	pointer-events: none;
+	opacity: .2;
 }

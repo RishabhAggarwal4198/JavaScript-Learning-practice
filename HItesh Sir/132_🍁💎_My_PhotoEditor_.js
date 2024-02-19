@@ -1,6 +1,7 @@
 let uploadBtn = document.querySelector('#uploaD button')
 let uploadInput = document.querySelector('#uploaD input')
 let focusImage = document.querySelector('.image_div  img')
+let outContainer = document.querySelector('.out_container')
 
 
 
@@ -11,4 +12,5 @@ uploadInput.addEventListener('change', () => {
 	focusImage.src = newUrl
 	focusImage.classList.remove('mainIMG')
 	focusImage.classList.add('NewImg')
+	outContainer.classList.remove('disabled')
 })
