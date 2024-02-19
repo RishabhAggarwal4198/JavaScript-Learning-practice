@@ -84,7 +84,8 @@ h1{
 
 
 .uploadBtn button:hover {
-	background-color:rgb(217, 215, 210) ;
+	background-color:rgb(236, 235, 232);
+	box-shadow: 0rem 0rem 1rem .4rem  rgb(211, 208, 203, .5);
 }
 .slider{
 	/* border: 2px solid red; */
@@ -137,8 +138,8 @@ h1{
 	border: none;
 	border-radius: .3rem; 
 	background-color: rgb(89, 123, 144);
-
 }
+
 
 .filters button img {
 	height:90%;
@@ -146,6 +147,12 @@ h1{
 	background-color: rgb(89, 123, 144);
 	opacity: .8;
 }
+
+/* .filters button :hover,
+.filters button img :hover {
+	background-color: rgb(134, 132, 130);
+	 box-shadow: 0rem 0rem .8rem .6rem  rgb(134, 132, 130);
+} */
 
 .disabled h1,
 .disabled p,
