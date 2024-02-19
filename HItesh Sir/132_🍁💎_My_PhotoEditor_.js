@@ -35,7 +35,11 @@ filterBtns.forEach((ele) => {
 		if(ele.id === 'Brightness'){
 			sliderInput.max = '400'
 			sliderInput.value = bright;
-			filterMagnitude.innerText = `${bright}`
+			// filterMagnitude.innerText = `${bright}`
+		}
+		else if(ele.id === 'Contrast'){
+			sliderInput.max = '400'
+			sliderInput.value = contrAAst;
 		}
 	})
 })
