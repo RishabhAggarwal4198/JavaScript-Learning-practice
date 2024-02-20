@@ -10,9 +10,9 @@ let filterMagnitude = document.querySelector('.value')
 
 let bright = 100,
 contrAAst = 100,
-saturation = 100,
-Gray_iSSkale = 0,
-Balarrr = 0;
+Sa2Rate = 100,
+GrayIsskale = 0,
+Blurrr = 0;
 
 
 uploadBtn.addEventListener('click', () => uploadInput.click());
@@ -43,25 +43,26 @@ filterBtns.forEach((ele) => {
 			sliderInput.max = '400';
 			sliderInput.value = contrAAst;
 		}
-		// else if(ele.id === 'Saturate'){
-		// 	sliderInput.max = '200';
-		// 	sliderInput.value = saturation;
-		// }
-		else if(ele.id === 'Grayscale'){
+		else if(ele.id === 'Saturate'){
 			sliderInput.max = '200';
-			sliderInput.value = Gray_iSSkale;
+			sliderInput.value = Sa2Rate;
+		} 
+		else if(ele.id === 'Grayscale'){
+			sliderInput.max = '400';
+			sliderInput.value = GrayIsskale;
+		}
+		else if(ele.id === 'Blur'){
+			sliderInput.max = '400';
+			sliderInput.value = Blurrr;
 		}
 	})
 })
 
 
 
-// function editImage () {
-// }
 
 
-
-sliderInput.addEventListener('input', () => {
+function editImage ()  {
 	filterMagnitude.innerHTML = `${sliderInput.value}%`
 	let activeSlider = document.querySelector('.filters  .activeBtn')
 
@@ -71,19 +72,28 @@ sliderInput.addEventListener('input', () => {
 	else if(activeSlider.id === 'Contrast'){
 		contrAAst = sliderInput.value
 	}
-	// else if(activeSlider.id === 'Saturate'){
-	// 	saturation = sliderInput.value
-	// }
-	else if(activeSlider.id === 'Gray_iSSkale'){
-		Gray_iSSkale = sliderInput.value
+	else if(activeSlider.id === 'Saturate'){
+		Sa2Rate = sliderInput.value
+	}
+	else if(activeSlider.id === 'Grayscale'){
+		GrayIsskale = sliderInput.value
+	}
+	else if(activeSlider.id === 'Blur' ){
+		Blurrr = sliderInput.value
 	}
 
 	focusImage.style.filter = `brightness(${bright}%)
 							   contrast(${contrAAst}%)
-							   grayscale(${Gray_iSSkale}%)`;
-							//   saturate(${saturation}%))`;
+							   grayscale(${GrayIsskale}%)
+							   saturate(${Sa2Rate}%))
+							   blur(${Blurrr}px)
+							   `;
 
-});
+}
+
+
+
+sliderInput.addEventListener('input', editImage );
 
 
 
