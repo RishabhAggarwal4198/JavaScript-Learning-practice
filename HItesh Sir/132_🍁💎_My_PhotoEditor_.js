@@ -26,6 +26,7 @@ uploadInput.addEventListener('change', () => {
 })
 
 
+
 filterBtns.forEach((ele) => {
 	ele.addEventListener('click', () => {
 		document.querySelector('.activeBtn').classList.remove('activeBtn')
@@ -34,23 +35,33 @@ filterBtns.forEach((ele) => {
 		filterType.innerHTML = ele.id.toUpperCase()
 
 		if(ele.id === 'Brightness'){
-			sliderInput.max = '200'
+			sliderInput.max = '400';
 			sliderInput.value = bright;
 			// filterMagnitude.innerText = `${bright}`
 		}
 		else if(ele.id === 'Contrast'){
-			sliderInput.max = '200'
+			sliderInput.max = '400';
 			sliderInput.value = contrAAst;
 		}
-		else if(ele.id === 'Saturate'){
-			sliderInput.max = '200'
-			sliderInput.value = saturation;
+		// else if(ele.id === 'Saturate'){
+		// 	sliderInput.max = '200';
+		// 	sliderInput.value = saturation;
+		// }
+		else if(ele.id === 'Grayscale'){
+			sliderInput.max = '200';
+			sliderInput.value = Gray_iSSkale;
 		}
 	})
 })
 
 
-function editImage (){
+
+// function editImage () {
+// }
+
+
+
+sliderInput.addEventListener('input', () => {
 	filterMagnitude.innerHTML = `${sliderInput.value}%`
 	let activeSlider = document.querySelector('.filters  .activeBtn')
 
@@ -60,16 +71,19 @@ function editImage (){
 	else if(activeSlider.id === 'Contrast'){
 		contrAAst = sliderInput.value
 	}
-	else if(activeSlider.id === 'Saturate'){
-		saturation = sliderInput.value
+	// else if(activeSlider.id === 'Saturate'){
+	// 	saturation = sliderInput.value
+	// }
+	else if(activeSlider.id === 'Gray_iSSkale'){
+		Gray_iSSkale = sliderInput.value
 	}
 
-	focusImage.style.filter = `brightness(${bright}%)  contrast(${contrAAst}%)  saturate(${saturation}%) )`
-}
+	focusImage.style.filter = `brightness(${bright}%)
+							   contrast(${contrAAst}%)
+							   grayscale(${Gray_iSSkale}%)`;
+							//   saturate(${saturation}%))`;
 
-
-
-sliderInput.addEventListener('input', editImage)
+});
 
 
 
